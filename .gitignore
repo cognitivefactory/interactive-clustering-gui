@@ -1,0 +1,30 @@
+# python
+__pycache__/
+*.py[cod]
+.venv/
+
+# build
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# tests
+.coverage*
+.pytest_cache/
+.mypy_cache/
+.hypothesis/
+
+# documentation
+site/
+
+# various
+poetry.lock
+
+# editors (you should put this in your global gitignore though)
+# git config --global core.excludesfile ~/.gitignore_global
+.idea/
+.vscode/
+
+# temporary analysis
+TEMP/
