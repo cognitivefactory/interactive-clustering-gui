@@ -3,7 +3,7 @@
 [![ci](https://github.com/cognitivefactory/interactive-clustering-gui/workflows/ci/badge.svg)](https://github.com/cognitivefactory/interactive-clustering-gui/actions?query=workflow%3Aci)
 [![documentation](https://img.shields.io/badge/docs-mkdocs%20material-blue.svg?style=flat)](https://cognitivefactory.github.io/interactive-clustering-gui/)
 [![pypi version](https://img.shields.io/pypi/v/interactive-clustering-gui.svg)](https://pypi.org/project/interactive-clustering-gui/)
-[![gitter](https://badges.gitter.im/join%20chat.svg)](https://gitter.im/interactive-clustering-gui/community)
+[![pypi version](https://img.shields.io/pypi/v/cognitivefactory-interactive-clustering-gui.svg)](https://pypi.org/project/cognitivefactory-interactive-clustering-gui/)
 
 An annotation tool for NLP data based on Interactive Clustering methodology.
 
