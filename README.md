@@ -6,11 +6,15 @@
 
 An annotation tool for NLP data based on Interactive Clustering methodology.
 
-## Quick description
+## <a name="Description"></a> Quick description
 
 _TODO_
 
-## Requirements
+## <a name="Documentation"></a> Documentation
+
+- [Main documentation](https://cognitivefactory.github.io/interactive-clustering-gui/)
+
+## <a name="Requirements"></a> Requirements
 
 Interactive Clustering GUI requires Python 3.6 or above.
 
@@ -34,16 +38,50 @@ pyenv global system 3.6.12
 ```
 </details>
 
-## Installation
+## <a name="Installation"></a> Installation
 
 With `pip`:
 ```bash
-python3.6 -m pip install cognitivefactory-interactive-clustering-gui
+# install package
+python3 -m pip install cognitivefactory-interactive-clustering-gui
+
+# install spacy language model dependencies (the one you want, with version "^2.3")
+python3 -m spacy download fr_core_news_sm-2.3.0 --direct
 ```
 
 With [`pipx`](https://github.com/pipxproject/pipx):
 ```bash
-python3.6 -m pip install --user pipx
+# install pipx
+python3 -m pip install --user pipx
 
-pipx install --python python3.6 cognitivefactory-interactive-clustering-gui
+# install package
+pipx install --python python3 cognitivefactory-interactive-clustering-gui
+
+# install spacy language model dependencies (the one you want, with version "^2.3")
+python3 -m spacy download fr_core_news_sm-2.3.0 --direct
 ```
+
+## <a name="Development"></a> Development
+
+To work on this project or contribute to it, please read
+[the Copier Poetry documentation](https://pawamoy.github.io/copier-poetry/).
+
+### Quick setup and help
+
+Get the code and prepare the environment:
+
+```bash
+git clone https://github.com/cognitivefactory/interactive-clustering-gui/
+cd interactive-clustering-gui
+make setup
+```
+
+Show the help:
+
+```bash
+make help  # or just make
+```
+
+## <a name="References"></a> References
+
+_TODO_
