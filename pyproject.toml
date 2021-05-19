@@ -11,13 +11,14 @@ license = "CeCILL-C License v1.0"
 readme = "README.md"
 repository = "https://github.com/cognitivefactory/interactive-clustering-gui"
 homepage = "https://github.com/cognitivefactory/interactive-clustering-gui"
-keywords = []
+keywords = ["natural-language-processing", "constraints", "annotation-tool", "interactive-clustering", "constraints-annotation"]
 packages = [ { include = "cognitivefactory", from = "src" } ]
 
 [tool.poetry.dependencies]
 python = "^3.6"
 
 # code dependencies
+cognitivefactory-interactive-clustering = "^0.1.0"
 # TODO: Add here yours dependencies
 
 [tool.poetry.dev-dependencies]
@@ -60,6 +61,10 @@ mkdocs-coverage = "^0.2.1"
 mkdocs-macros-plugin = "^0.5.0"
 mkdocs-material = "^6.2.7"
 mkdocstrings = "^0.15.0"
+
+# code dependencies
+fr-core-news-sm = { url = "https://github.com/explosion/spacy-models/releases/download/fr_core_news_sm-2.3.0/fr_core_news_sm-2.3.0.tar.gz" }
+en-core-web-sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.0/en_core_web_sm-2.3.0.tar.gz" }
 
 [tool.poetry.scripts]
 interactive-clustering-gui = "cognitivefactory.interactive_clustering_gui.cli:main"
