@@ -18,7 +18,7 @@ packages = [ { include = "cognitivefactory", from = "src" } ]
 python = "^3.6"
 
 # code dependencies
-cognitivefactory-interactive-clustering = "^0.1.0"
+cognitivefactory-interactive-clustering = "^0.1.2"
 # TODO: Add here yours dependencies
 
 [tool.poetry.dev-dependencies]
