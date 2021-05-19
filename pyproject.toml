@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "cognitivefactory-interactive-clustering-gui"
-version = "0.1.1"
+version = "0.1.2"
 description = "An annotation tool for NLP data based on Interactive Clustering methodology."
 authors = ["Erwan Schild <erwan.schild@e-i.com>"]
 license = "CeCILL-C License v1.0"
