@@ -65,7 +65,7 @@ python3 -m spacy download fr_core_news_sm-2.3.0 --direct
 ## <a name="Development"></a> Development
 
 To work on this project or contribute to it, please read
-[the Copier Poetry documentation](https://pawamoy.github.io/copier-poetry/).
+[the Copier PDM documentation](https://pawamoy.github.io/copier-pdm/).
 
 ### Quick setup and help
 
