@@ -1,5 +1,5 @@
 # Changes here will be overwritten by Copier
-_commit: e9e472d
+_commit: 0.4.1
 _src_path: gh:pawamoy/copier-pdm.git
 author_email: erwan.schild@e-i.com
 author_fullname: Erwan Schild
@@ -8,7 +8,8 @@ copyright_date: '2021'
 copyright_holder: Erwan Schild
 copyright_holder_email: erwan.schild@e-i.com
 copyright_license: CeCILL-C License v1.0
-project_description: An annotation tool for NLP data based on Interactive Clustering methodology.
+project_description: An annotation tool for NLP data based on Interactive Clustering
+  methodology.
 project_name: Interactive Clustering GUI
 python_package_command_line_name: interactive-clustering-gui
 python_package_distribution_name: cognitivefactory-interactive-clustering-gui
