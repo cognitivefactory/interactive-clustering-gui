@@ -28,7 +28,7 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
-    "cognitivefactory-interactive-clustering~=0.1.2",
+    "cognitivefactory-interactive-clustering~=0.4.2",
 ]
 
 [project.urls]
