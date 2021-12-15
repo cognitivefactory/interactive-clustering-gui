@@ -190,6 +190,44 @@ class annotation(tk.Frame):
                 self.annoter("MUST_LINK", self.lfr)
                 self.new_annotations(self.Zone1, self.Zone2, self.b1, self.b2, self.b3)
 
+
+    def writeinboxes(self,box1,box2,liste):
+        idselect = liste.size() - int(liste.curselection()[0]) - 1
+        box1.config(state="normal")
+        box2.config(state="normal")
+        box1.delete("1.0","end")
+        box2.delete("1.0","end")
+        print("ID:" + str(idselect))
+        box1.insert("end", self.questions[int(DICTSAVE["constraints"][idselect]["ID1"])])
+        box2.insert("end", self.questions[int(DICTSAVE["constraints"][idselect]["ID2"])])
+        box1.config(state="disabled")
+        box2.config(state="disabled")
+
+    def supprimerannotation(self,liste):
+        idselect = liste.size() - int(liste.curselection()[0]) - 1
+        global DICTSAVE
+        del DICTSAVE["constraints"][idselect]
+        liste.delete(int(liste.curselection()[0]))
+
+
+    def corrections(self):
+        window = tk.Tk()
+        window.title("Corrections")
+        window.geometry("200x400")
+        lb = tk.Listbox(window,selectmode="SINGLE")
+        txt1 = tk.Text(window,width=30,height=1,state="disabled")
+        txt2 = tk.Text(window,width=30,height=1,state="disabled")
+        b1 = tk.Button(window,text="Sélectionner",command=lambda:[self.writeinboxes(txt1,txt2,lb)])
+        b2 = tk.Button(window,text="Supprimer l'annotation",command=lambda:[self.supprimerannotation(lb)])
+        lb.pack()
+        for i in reversed(DICTSAVE["constraints"]):
+            lb.insert("end",str(i["ID1"])+" "+str(i["ID2"]))
+        b1.pack()
+        txt1.pack()
+        txt2.pack()
+        b2.pack()
+        window.mainloop()
+
     def Get_questions(self):
         file = open(INIFILEPATH)
         reader = csv.reader(file)
@@ -320,6 +358,7 @@ class annotation(tk.Frame):
                 controller.show_frame("clustering"),
             ],
         ).pack(side=tk.TOP, padx=5, pady=5)
+        tk.Button(self,text="Corriger",command=lambda:[self.corrections()]).pack(side=tk.BOTTOM,padx=5,pady=5)
 
 
 class commencer(tk.Frame):
