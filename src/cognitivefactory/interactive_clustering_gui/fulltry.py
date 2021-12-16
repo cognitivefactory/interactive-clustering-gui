@@ -186,7 +186,7 @@ class Accueil(tk.Frame):
             label: Label entity where the name is stored
         """
         changeIni()
-        reg = re.compile(r'.*\.csv')
+        reg = re.compile(r".*\.csv")
         if re.fullmatch(reg, INIFILEPATH) is None:
             tk.Label(label, text="/!\\ ERREUR D'IMPORTATION /!\\", fg="red").pack()
         else:
@@ -202,7 +202,7 @@ class Accueil(tk.Frame):
         """
         changeSave()
         global SAVEFOLDERPATH
-        reg = re.compile(r'.*\.json')
+        reg = re.compile(r".*\.json")
         if re.fullmatch(reg, SAVEFOLDERPATH) is None:
             tk.Label(label, text="/!\\ ERREUR D'IMPORTATION /!\\", fg="red").pack()
         else:
@@ -325,7 +325,8 @@ class Annotation(tk.Frame):
         Args:
             event: tkinter event that contains the info of the key press
         """
-        if self.isUp == 1:
+        if self.isup == 1:
+            print(event.keysym)
             if event.keysym == "Right":
                 self.annoter("CANNOT_LINK", self.lfr)
                 self.new_annotations(self.Zone1, self.Zone2, self.b1, self.b2, self.b3)
@@ -410,6 +411,19 @@ class Annotation(tk.Frame):
         print(ID1, ID2)
         return (ID1, ID2)
 
+    def inibindings(self):
+        """
+        Initializes the control window for keyboard support of annotations.
+        """
+        bindings = tk.Tk()
+        bindings.bind("<KeyPress>", self.onKeyPress)
+        text = tk.Label(
+            bindings,
+            text="Si vous souhaitez utiliser les touches du clavier pour l'annotation, gardez cette fenêtre active.",
+        )
+        text.pack(side=tk.TOP)
+        bindings.mainloop()
+
     def new_annotations(self, Zone1, Zone2, b, c, e):
         """
         Asks the user for a new annotation if there are still pairings in the queue, otherwise asks them if they want to go to clustering.
@@ -457,7 +471,7 @@ class Annotation(tk.Frame):
                 c.pack_forget()
                 d.pack(side=tk.TOP, padx=5, pady=5)
                 self.number = 0
-                self.isUp = 0
+                self.isup = 0
 
     def annoter(self, annotype, label):
         """
@@ -480,6 +494,7 @@ class Annotation(tk.Frame):
             manager: Sample manager currently loaded in the app.
             nb: amount of pairs required.
         """
+        self.isup = 1
         if REQRESULTS == 0:
             self.samples = SAMPLER.sample(manager, nb)
         else:
@@ -543,10 +558,11 @@ class Annotation(tk.Frame):
                 b.pack(side=tk.LEFT, padx=5, pady=5),
                 c.pack(side=tk.RIGHT, padx=5, pady=5),
                 e.pack(side=tk.BOTTOM, padx=5, pady=5),
+                self.inibindings(),
             ],
         )
         a.pack(side=tk.TOP, padx=5, pady=5)
-        tk.Button(self, text="Sauvegarder", command=save()).pack(side=tk.BOTTOM, padx=5, pady=5)
+        tk.Button(self, text="Sauvegarder", command=lambda: save()).pack(side=tk.BOTTOM, padx=5, pady=5)
         tk.Button(
             self,
             text="Clustering",
@@ -779,7 +795,7 @@ class Clustering(tk.Frame):
             ],
         )
         d.pack(side=tk.BOTTOM)
-        f = tk.Button(self, text="Sauvegarder", command=save())
+        f = tk.Button(self, text="Sauvegarder", command=lambda: save())
         f.pack(side=tk.BOTTOM)
 
     def bar(self, progress):
