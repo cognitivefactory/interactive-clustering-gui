@@ -8,22 +8,27 @@ __pycache__/
 dist/
 build/
 pip-wheel-metadata/
-__pypackages__/
 
 # tests
+tests/temp/*.json
 .coverage*
 .pytest_cache/
 .mypy_cache/
 .hypothesis/
 htmlcov/
+loadtests/
 
 # documentation
 site/
 
 # various
-poetry.lock
 pdm.lock
+poetry.lock
+api-docs-*.html
+openapi.json
 .pdm.toml
+__pypackages__/
+.data/
 
 # editors (you should put this in your global gitignore though)
 # git config --global core.excludesfile ~/.gitignore_global
@@ -32,4 +37,4 @@ pdm.lock
 *.rej
 
 # temporary analysis
-TEMP/
+.temp/

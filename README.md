@@ -17,10 +17,10 @@ _TODO_
 
 ## <a name="Requirements"></a> Requirements
 
-Interactive Clustering GUI requires Python 3.6 or above.
+Interactive Clustering GUI requires Python 3.7 or above.
 
 <details>
-<summary>To install Python 3.6, I recommend using <a href="https://github.com/pyenv/pyenv"><code>pyenv</code></a>.</summary>
+<summary>To install Python 3.7, I recommend using <a href="https://github.com/
 
 ```bash
 # install pyenv
@@ -31,11 +31,11 @@ export PATH="${HOME}/.pyenv/bin:${PATH}"
 export PYENV_ROOT="${HOME}/.pyenv"
 eval "$(pyenv init -)"
 
-# install Python 3.6
-pyenv install 3.6.12
+# install Python 3.7
+pyenv install 3.7
 
 # make it available globally
-pyenv global system 3.6.12
+pyenv global system 3.7
 ```
 </details>
 
@@ -45,9 +45,6 @@ With `pip`:
 ```bash
 # install package
 python3 -m pip install cognitivefactory-interactive-clustering-gui
-
-# install spacy language model dependencies (the one you want, with version "^2.3")
-python3 -m spacy download fr_core_news_sm-2.3.0 --direct
 ```
 
 With [`pipx`](https://github.com/pipxproject/pipx):
@@ -57,9 +54,6 @@ python3 -m pip install --user pipx
 
 # install package
 pipx install --python python3 cognitivefactory-interactive-clustering-gui
-
-# install spacy language model dependencies (the one you want, with version "^2.3")
-python3 -m spacy download fr_core_news_sm-2.3.0 --direct
 ```
 
 ## <a name="Development"></a> Development
@@ -83,6 +77,19 @@ Show the help:
 make help  # or just make
 ```
 
+For more details, read the [Contributing](https://cognitivefactory.github.io/interactive-clustering-gui/contributing/) documentation.
+
 ## <a name="References"></a> References
 
-_TODO_
+- **Interactive Clustering**:
+    - First presentation: `Schild, E., Durantin, G., Lamirel, J.C., & Miconi, F. (2021). Conception itérative et semi-supervisée d'assistants conversationnels par regroupement interactif des questions. In EGC 2021 - 21èmes Journées Francophones Extraction et Gestion des Connaissances. Edition RNTI. ⟨hal-03133007⟩.`
+    - Theoretical study: `Schild, E., Durantin, G., Lamirel, J., & Miconi, F. (2022). Iterative and Semi-Supervised Design of Chatbots Using Interactive Clustering. International Journal of Data Warehousing and Mining (IJDWM), 18(2), 1-19. http://doi.org/10.4018/IJDWM.298007. ⟨hal-03648041⟩.`
+    - Methodological discussion: `Schild, E., Durantin, G., & Lamirel, J.C. (2021). Concevoir un assistant conversationnel de manière itérative et semi-supervisée avec le clustering interactif. In Atelier - Fouille de Textes - Text Mine 2021 - En conjonction avec EGC 2021. ⟨hal-03133060⟩.`
+    - Implementation: `Schild, E. (2021). cognitivefactory/interactive-clustering. Zenodo. https://doi.org/10.5281/zenodo.4775251.`
+
+- **Web application**:
+    - _FastAPI_: `https://fastapi.tiangolo.com/`
+
+## <a name="How to cite"></a> How to cite
+
+`Schild, E. (2021). cognitivefactory/interactive-clustering-gui. Zenodo. https://doi.org/10.5281/zenodo.4775270.`

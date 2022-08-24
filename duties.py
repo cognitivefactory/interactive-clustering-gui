@@ -1,17 +1,17 @@
 """Development tasks."""
 
+import importlib
 import os
 import re
 import sys
-from functools import wraps
+from io import StringIO
 from pathlib import Path
-from shutil import which
 from typing import List, Optional, Pattern
 from urllib.request import urlopen
 
 from duty import duty
 
-PY_SRC_PATHS = (Path(_) for _ in ("src/cognitivefactory", "tests", "duties.py", "docs"))
+PY_SRC_PATHS = (Path(_) for _ in ("src", "tests", "duties.py", "docs"))
 PY_SRC_LIST = tuple(str(_) for _ in PY_SRC_PATHS)
 PY_SRC = " ".join(PY_SRC_LIST)
 TESTING = os.environ.get("TESTING", "0") in {"1", "true"}
@@ -35,12 +35,205 @@ def _unreleased(versions, last_release):
     return versions
 
 
+@duty(silent=True)
+def clean(ctx):
+    """
+    Delete temporary files.
+
+    Arguments:
+        ctx: The context instance (passed automatically).
+    """
+    ctx.run("rm -rf .coverage*")
+    ctx.run("rm -rf .mypy_cache")
+    ctx.run("rm -rf .pytest_cache")
+    ctx.run("rm -rf tests/.pytest_cache")
+    ctx.run("rm -rf build")
+    ctx.run("rm -rf dist")
+    ctx.run("rm -rf htmlcov")
+    ctx.run("rm -rf pip-wheel-metadata")
+    ctx.run("rm -rf site")
+    ctx.run("find . -type d -name __pycache__ | xargs rm -rf")
+    ctx.run("find . -name '*.rej' -delete")
+
+
+@duty
+def format(ctx):
+    """
+    Run formatting tools on the code.
+
+    Arguments:
+        ctx: The context instance (passed automatically).
+    """
+    ctx.run(
+        f"autoflake -ir --exclude tests/fixtures --remove-all-unused-imports {PY_SRC}",
+        title="Removing unused imports",
+        pty=PTY,
+    )
+    ctx.run(f"isort {PY_SRC}", title="Ordering imports", pty=PTY)
+    ctx.run(f"black {PY_SRC}", title="Formatting code", pty=PTY)
+
+
+@duty(pre=["check_quality", "check_types", "check_docs", "check_dependencies"])
+def check(ctx):
+    """
+    Check it all!
+
+    Arguments:
+        ctx: The context instance (passed automatically).
+    """
+
+
+@duty
+def check_quality(ctx, files=PY_SRC):
+    """
+    Check the code quality.
+
+    Arguments:
+        ctx: The context instance (passed automatically).
+        files: The files to check.
+    """
+    ctx.run(f"flake8 --config=config/flake8.ini {files}", title="Checking code quality", pty=PTY)
+
+
+@duty
+def check_dependencies(ctx):
+    """
+    Check for vulnerabilities in dependencies.
+
+    Arguments:
+        ctx: The context instance (passed automatically).
+    """
+    # undo possible patching
+    # see https://github.com/pyupio/safety/issues/348
+    for module in sys.modules:  # noqa: WPS528
+        if module.startswith("safety.") or module == "safety":
+            del sys.modules[module]  # noqa: WPS420
+
+    importlib.invalidate_caches()
+
+    # reload original, unpatched safety
+    from safety.formatter import report
+    from safety.safety import check as safety_check
+    from safety.util import read_requirements
+
+    # retrieve the list of dependencies
+    requirements = ctx.run(
+        ["pdm", "export", "-f", "requirements", "--without-hashes"],
+        title="Exporting dependencies as requirements",
+        allow_overrides=False,
+    )
+
+    # check using safety as a library
+    def safety():  # noqa: WPS430
+        packages = list(read_requirements(StringIO(requirements)))
+        vulns = safety_check(packages=packages, ignore_ids="", key="", db_mirror="", cached=False, proxy={})
+        output_report = report(vulns=vulns, full=True, checked_packages=len(packages))
+        if vulns:
+            print(output_report)
+
+    ctx.run(safety, title="Checking dependencies")
+
+
+@duty
+def check_docs(ctx):
+    """
+    Check if the documentation builds correctly.
+
+    Arguments:
+        ctx: The context instance (passed automatically).
+    """
+    Path("htmlcov").mkdir(parents=True, exist_ok=True)
+    Path("htmlcov/index.html").touch(exist_ok=True)
+    ctx.run("mkdocs build", title="Building documentation", pty=PTY)
+
+
+@duty
+def check_types(ctx):  # noqa: WPS231
+    """
+    Check that the code is correctly typed.
+
+    Arguments:
+        ctx: The context instance (passed automatically).
+    """
+    os.environ["MYPYPATH"] = "src"
+    ctx.run(
+        "mypy --config-file config/mypy.ini src --namespace-packages --explicit-package-bases",
+        title="Type-checking",
+        pty=PTY,
+    )
+
+
+@duty
+def test(ctx, match: str = ""):
+    """
+    Run the test suite.
+
+    Arguments:
+        ctx: The context instance (passed automatically).
+        match: A pytest expression to filter selected tests.
+    """
+    py_version = f"{sys.version_info.major}{sys.version_info.minor}"
+    os.environ["COVERAGE_FILE"] = f".coverage.{py_version}"
+    ctx.run(
+        ["pytest", "-c", "config/pytest.ini", "-n", "auto", "-k", match, "tests"],
+        title="Running tests",
+        pty=PTY,
+    )
+
+
+@duty(silent=True)
+def coverage(ctx):
+    """
+    Report coverage as text and HTML.
+
+    Arguments:
+        ctx: The context instance (passed automatically).
+    """
+    ctx.run("coverage combine", nofail=True)
+    ctx.run("coverage report --rcfile=config/coverage.ini", capture=False)
+    ctx.run("coverage html --rcfile=config/coverage.ini")
+
+
+@duty
+def docs(ctx):
+    """
+    Build the documentation locally.
+
+    Arguments:
+        ctx: The context instance (passed automatically).
+    """
+    ctx.run("mkdocs build", title="Building documentation")
+
+
+@duty
+def docs_serve(ctx, host="127.0.0.1", port=8000):
+    """
+    Serve the documentation (localhost:8000).
+
+    Arguments:
+        ctx: The context instance (passed automatically).
+        host: The host to serve the docs from.
+        port: The port to serve the docs on.
+    """
+    ctx.run(f"mkdocs serve -a {host}:{port}", title="Serving documentation", capture=False)
+
+
+@duty
+def docs_deploy(ctx):
+    """
+    Deploy the documentation on GitHub pages.
+
+    Arguments:
+        ctx: The context instance (passed automatically).
+    """
+    ctx.run("mkdocs gh-deploy", title="Deploying documentation")
+
+
 def update_changelog(
     inplace_file: str,
     marker: str,
     version_regex: str,
     template_url: str,
-    commit_style: str,
 ) -> None:
     """
     Update the given changelog file in place.
@@ -50,15 +243,16 @@ def update_changelog(
         marker: The line after which to insert new contents.
         version_regex: A regular expression to find currently documented versions in the file.
         template_url: The URL to the Jinja template used to render contents.
-        commit_style: The style of commit messages to parse.
     """
     from git_changelog.build import Changelog
+    from git_changelog.commit import AngularStyle
     from jinja2.sandbox import SandboxedEnvironment
 
+    AngularStyle.DEFAULT_RENDER.insert(0, AngularStyle.TYPES["build"])
     env = SandboxedEnvironment(autoescape=False)
     template_text = urlopen(template_url).read().decode("utf8")  # noqa: S310
     template = env.from_string(template_text)
-    changelog = Changelog(".", style=commit_style)
+    changelog = Changelog(".", style="angular")
 
     if len(changelog.versions_list) == 1:
         last_version = changelog.versions_list[0]
@@ -98,196 +292,10 @@ def changelog(ctx):
             "marker": "<!-- insertion marker -->",
             "version_regex": r"^## \[v?(?P<version>[^\]]+)",
             "template_url": template_url,
-            "commit_style": "angular",
         },
         title="Updating changelog",
         pty=PTY,
     )
-
-
-@duty(pre=["check_code_quality", "check_types", "check_docs", "check_dependencies"])
-def check(ctx):
-    """
-    Check it all!
-
-    Arguments:
-        ctx: The context instance (passed automatically).
-    """
-
-
-@duty
-def check_code_quality(ctx, files=PY_SRC):
-    """
-    Check the code quality.
-
-    Arguments:
-        ctx: The context instance (passed automatically).
-        files: The files to check.
-    """
-    ctx.run(f"flake8 --config=config/flake8.ini {files}", title="Checking code quality", pty=PTY)
-
-
-@duty
-def check_dependencies(ctx, nofail=True):
-    """
-    Check for vulnerabilities in dependencies.
-
-    Arguments:
-        ctx: The context instance (passed automatically).
-        nofail: Whether to fail or not.
-    """
-    # Get or Set path to safety.
-    safety = which("safety")
-    if not safety:
-        pipx = which("pipx")
-
-        if pipx:
-            safety = f"{pipx} run safety"
-        else:
-            safety = "safety"
-            nofail = True
-
-    # Get proxy information.
-    if "HTTPS_PROXY" in os.environ.keys():
-        proxy_options = f" --proxy-host={os.environ['HTTPS_PROXY']}"
-    else:
-        proxy_options = ""
-
-    ctx.run(
-        f"pdm export -f requirements --without-hashes | {safety} check --stdin --full-report {proxy_options}",
-        title="Checking dependencies",
-        pty=PTY,
-        nofail=nofail,
-    )
-
-
-def no_docs_py36(nofail=True):
-    """
-    Decorate a duty that builds docs to warn that it's not possible on Python 3.6.
-
-    Arguments:
-        nofail: Whether to fail or not.
-
-    Returns:
-        The decorated function.
-    """
-
-    def decorator(func):
-        @wraps(func)
-        def wrapper(ctx):
-            if sys.version_info <= (3, 7, 0):
-                ctx.run(["false"], title="Docs can't be built on Python 3.6", nofail=nofail, quiet=True)
-            else:
-                func(ctx)
-
-        return wrapper
-
-    return decorator
-
-
-@duty
-@no_docs_py36()
-def check_docs(ctx):
-    """
-    Check if the documentation builds correctly.
-
-    Arguments:
-        ctx: The context instance (passed automatically).
-    """
-    Path("htmlcov").mkdir(parents=True, exist_ok=True)
-    Path("htmlcov/index.html").touch(exist_ok=True)
-    ctx.run("mkdocs build -s", title="Building documentation", pty=PTY)
-
-
-@duty
-def check_types(ctx):
-    """
-    Check that the code is correctly typed.
-
-    Arguments:
-        ctx: The context instance (passed automatically).
-    """
-    ctx.run(
-        "mypy --config-file config/mypy.ini src/cognitivefactory",
-        title="Type-checking",
-        pty=PTY,
-    )
-
-
-@duty(silent=True)
-def clean(ctx):
-    """
-    Delete temporary files.
-
-    Arguments:
-        ctx: The context instance (passed automatically).
-    """
-    ctx.run("rm -rf .coverage*")
-    ctx.run("rm -rf .mypy_cache")
-    ctx.run("rm -rf .pytest_cache")
-    ctx.run("rm -rf tests/.pytest_cache")
-    ctx.run("rm -rf build")
-    ctx.run("rm -rf dist")
-    ctx.run("rm -rf htmlcov")
-    ctx.run("rm -rf pip-wheel-metadata")
-    ctx.run("rm -rf site")
-    ctx.run("find . -type d -name __pycache__ | xargs rm -rf")
-    ctx.run("find . -name '*.rej' -delete")
-
-
-@duty
-@no_docs_py36(nofail=False)
-def docs(ctx):
-    """
-    Build the documentation locally.
-
-    Arguments:
-        ctx: The context instance (passed automatically).
-    """
-    ctx.run("mkdocs build", title="Building documentation")
-
-
-@duty
-@no_docs_py36(nofail=False)
-def docs_serve(ctx, host="127.0.0.1", port=8000):
-    """
-    Serve the documentation (localhost:8000).
-
-    Arguments:
-        ctx: The context instance (passed automatically).
-        host: The host to serve the docs from.
-        port: The port to serve the docs on.
-    """
-    ctx.run(f"mkdocs serve -a {host}:{port}", title="Serving documentation", capture=False)
-
-
-@duty
-@no_docs_py36(nofail=False)
-def docs_deploy(ctx):
-    """
-    Deploy the documentation on GitHub pages.
-
-    Arguments:
-        ctx: The context instance (passed automatically).
-    """
-    ctx.run("mkdocs gh-deploy", title="Deploying documentation")
-
-
-@duty
-def format(ctx):
-    """
-    Run formatting tools on the code.
-
-    Arguments:
-        ctx: The context instance (passed automatically).
-    """
-    ctx.run(
-        f"autoflake -ir --exclude tests/fixtures --remove-all-unused-imports {PY_SRC}",
-        title="Removing unused imports",
-        pty=PTY,
-    )
-    ctx.run(f"isort {PY_SRC}", title="Ordering imports", pty=PTY)
-    ctx.run(f"black {PY_SRC}", title="Formatting code", pty=PTY)
 
 
 @duty
@@ -307,35 +315,23 @@ def release(ctx, version):
         ctx.run("git push --tags", title="Pushing tags", pty=False)
         ctx.run("pdm build", title="Building dist/wheel", pty=PTY)
         ctx.run("twine upload --skip-existing dist/*", title="Publishing version", pty=PTY)
-        docs_deploy.run()  # type: ignore
-
-
-@duty(silent=True)
-def coverage(ctx):
-    """
-    Report coverage as text and HTML.
-
-    Arguments:
-        ctx: The context instance (passed automatically).
-    """
-    ctx.run("coverage combine", nofail=True)
-    ctx.run("coverage report --rcfile=config/coverage.ini", capture=False)
-    ctx.run("coverage html --rcfile=config/coverage.ini")
+        docs_deploy.run()
 
 
 @duty
-def test(ctx, match: str = ""):
+def run(ctx, host="127.0.0.1", port=8080):
     """
-    Run the test suite.
+    Run the FastAPI application (localhost:8080).
+
+    You can change the host and port with, for example,
+    `host=0.0.0.0 port=6000`.
 
     Arguments:
         ctx: The context instance (passed automatically).
-        match: A pytest expression to filter selected tests.
+        host: The host to serve on.
+        port: The port to serve on.
     """
-    py_version = f"{sys.version_info.major}{sys.version_info.minor}"
-    os.environ["COVERAGE_FILE"] = f".coverage.{py_version}"
-    ctx.run(
-        ["pytest", "-v", "-c", "config/pytest.ini", "-n", "auto", "-k", match, "tests"],
-        title="Running tests",
-        pty=PTY,
-    )
+    sys.path.append(os.path.dirname(__file__))
+    from run import run as runserver
+
+    ctx.run(runserver, kwargs={"reload": True}, capture=False, pty=PTY, silent=True)

@@ -4,29 +4,29 @@ SHELL := bash
 DUTY = $(shell [ -n "${VIRTUAL_ENV}" ] || echo pdm run) duty
 
 args = $(foreach a,$($(subst -,_,$1)_args),$(if $(value $a),$a="$($a)"))
-check_code_quality_args = files
+check_quality_args = files
 docs_serve_args = host port
 release_args = version
 test_args = match
 
 BASIC_DUTIES = \
-	changelog \
 	clean \
-	coverage \
 	docs \
-	docs-deploy \
-	docs-regen \
 	docs-serve \
-	format \
-	release
+	docs-deploy \
+	changelog \
+	release \
+	run
 
 QUALITY_DUTIES = \
+	format \
 	check \
-	check-code-quality \
-	check-dependencies \
+	check-quality \
 	check-docs \
 	check-types \
-	test
+	check-dependencies \
+	test \
+	coverage
 
 .PHONY: help
 help:
