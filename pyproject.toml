@@ -40,13 +40,12 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
-    # Functionnal dependencies.
-    "pandas>=1.1.4",  # >=1.1.4
+    # Functionnal dependencies.,
+    "pandas>=1.1.4",
     "cognitivefactory-interactive-clustering>=0.5.2",
-    "scikit-learn>=0.24.1",  # 0.24.1,
-    "fr-core-news-md==3.1.0",
+    "scikit-learn>=0.24.1",
 
-    # Technical dependencies.
+    # Technical dependencies.,
     "fastapi>=0.65.2",
     "filelock>=3.0.12",
     "jinja2>=3.0.1",
@@ -57,6 +56,7 @@ dependencies = [
     "python-multipart>=0.0.5",
     "uvicorn>=0.12.2",
     "zipp>=3.5.0",
+    "fr-core-news-md @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.1.0/fr_core_news_md-3.1.0.tar.gz",
 ]
 
 [project.urls]
@@ -66,9 +66,6 @@ Changelog = "https://cognitivefactory.github.io/interactive-clustering-gui/chang
 Repository = "https://github.com/cognitivefactory/interactive-clustering-gui"
 Issues = "https://github.com/cognitivefactory/interactive-clustering-gui/issues"
 Discussions = "https://github.com/cognitivefactory/interactive-clustering-gui/discussions"
-
-[project.scripts]
-interactive-clustering-gui = "cognitivefactory.interactive_clustering_gui.cli:main"
 
 [tool.pdm]
 includes = [
