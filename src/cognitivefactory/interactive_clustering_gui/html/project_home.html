@@ -1,0 +1,408 @@
+<!-- Inherit from "_base.html" -->
+{% extends "_base.html" %}
+
+<!-- Surcharge block "header_javascripts" of "_base.html" -->
+{% block header_javascripts %}
+	<script src="/js/projects.js"></script>
+	<script src="/js/constraints.js"></script>
+	<script src="/js/status.js"></script>
+	<script src="/js/tasks.js"></script>
+{% endblock %}
+
+<!-- Surcharge block "content" of "_base.html" -->
+{% block content %}
+
+	<!-- CONTAINER PROJECT DESCRIPTION -->
+	<div class="container">
+
+		<!-- CONTAINER PROJECT DESCRIPTION - TITLE -->
+		<h3 class="container_title collapsible">
+			Description and Settings
+		</h3>
+
+		<!-- CONTAINER PROJECT DESCRIPTION - CONTENT -->
+		<div class="container_content">
+
+			<!-- CONTAINER PROJECT DESCRIPTION - CONTENT INFORMATION -->
+			<div class="container_content_div">
+				<table class="table_description">
+					<!-- Project ID -->
+					<tr class="row hide">
+						<td class="column" style="width: 33%;">
+							<b>The ID of the project</b>:
+						</td>
+						<td class="column" id="project_id" style="width: 67%;">
+							<i>{{project_id}}</i>
+						</td>
+					</tr>
+					<!-- Create Date -->
+					<tr class="row">
+						<td class="column">
+							<b>Was created</b>:
+						</td>
+						<td class="column">
+							on {{metadata.creation_timestamp|timestamp_to_date}},
+							at {{metadata.creation_timestamp|timestamp_to_hour}}.
+						</td>
+					</tr>
+					<!-- Iteration ID -->
+					<tr class="row">
+						<td class="column">
+							<b>Is on iteration</b>:
+						</td>
+						<td class="column">
+							{{status.iteration_id}}
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<!-- CONTAINER PROJECT DESCRIPTION - CONTENT ACTIONS -->
+			<div class="container_content_actions">
+				<button
+					class="button_action material-icons"
+					onclick="downloadProject({projectID:'{{project_id}}'});"
+					title="Dowload the project.">
+					download
+				</button>
+				<button
+					class="button_action material-icons"
+					onclick="deleteProject({projectID:'{{project_id}}', projectName:'{{metadata.project_name}}'});"
+					title="Delete the project.">
+					delete
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- CONTAINER ITERATION MAIN STEPS -->
+	<div class="container" id="container_for_main_steps">
+
+		<!-- CONTAINER ITERATION MAIN STEPS - TITLE -->
+		<h3 class="container_title collapsible" id="container_title_for_iteration_main_steps">
+			Iteration ({{status.iteration_id}}): Main steps
+		</h3>
+
+		<!-- CONTAINER ITERATION MAIN STEPS - CONTENT -->
+		<div class="container_content">
+
+			<!-- CONTAINER ITERATION MAIN STEPS - CONTENT INFORMATION -->
+			<div class="container_content_div">
+				<table class="table_main_steps">
+
+					<!-- INITIALIZE MODELIZATION -->
+					<tr class="row hide" id="row_step_initialize_modelization">
+
+						<td class="column" style="width: 75%;">
+							<!-- Description for initialize modelization step -->
+							<details id="details_step_initialize_modelization">
+								<summary>
+									Initialize the modelization
+								</summary>
+								<div>
+									After its creation or importation, a project need to <b>initialize its modelization</b>: (1) <i>texts preprocessing</i>, (2) <i>texts vectorization</i>, (3) <i>constraints inference</i>.</br>
+									<div
+										class="material-icons info_bulle align_rigth color_info"
+										title="Modelization task can be long (several minutes).">
+										info
+									</div>
+									<div
+										class="material-icons info_bulle align_rigth color_warning"
+										title="Remember to adjust settings before running this task.">
+										warning
+									</div>
+									<br/>
+								</div>
+							</details>
+							<!-- Loading bar for initialize modelization job -->
+							<div id="loadingbar_initialize_modelization" class="loadingbar hide">
+								<div class="loadingbar_bar"></div>
+								<div>
+									<div class="loadingbar_icon" onclick="hideElement('loadingbar_initialize_modelization');"></div>
+									<div class="loadingbar_text"></div>
+								</div>
+							</div>
+						</td>
+
+						<td class="column center" style="width: 25%;">
+							<!-- Settings for initialize_modelization job -->
+							<button
+								class="material-icons button_steps"
+								style="font-size: 1em; vertical-align: middle;"
+								id="button_settings_initialize_modelization"
+								title="Define settings for modelization."
+								onclick="goToSettingsPage({projectID:'{{project_id}}', iterationID:null, settingsNames:['preprocessing', 'vectorization']});"
+							>
+								settings
+							</button>
+							<!-- Run initialize modelization job -->
+							<button
+								disabled
+								class="material-icons button_steps"
+								id="button_run_initialize_modelization"
+								title="Run the initialize modelization job."
+								onclick="this.disabled=true; runModelizationUpdateTask({projectID:'{{project_id}}'})">
+								<div class="inner_middle">
+									<span style="font-size: 0.66em;">RUN MODELIZATION</span>
+									sync
+								</div>
+							</button>
+						</td>
+					</tr>
+
+					<!-- CONSTRAINTS SAMPLING -->
+					<tr class="row hide" id="row_step_sampling">
+
+						<td class="column" style="width: 75%;">
+							<!-- Description for constraints sampling step -->
+							<details id="details_step_sampling">
+								<summary>
+									Constraints sampling
+								</summary>
+								<div>
+									This step <b>determines the most interesting constraints to annotate</b> based on the previous constrained clustering results.</br>
+									<div
+										class="material-icons info_bulle align_rigth color_info"
+										title="Constraints sampling task can be long (several minutes).">
+										info
+									</div>
+									<div
+										class="material-icons info_bulle align_rigth color_warning"
+										title="Remember to adjust settings before running this task.">
+										warning
+									</div>
+									<br/>
+								</div>
+							</details>
+							<!-- Loading bar for constraints sampling job -->
+							<div id="loadingbar_sampling" class="loadingbar hide">
+								<div class="loadingbar_bar"></div>
+								<div>
+									<div class="loadingbar_icon" onclick="hideElement('loadingbar_sampling');"></div>
+									<div class="loadingbar_text"></div>
+								</div>
+							</div>
+						</td>
+
+						<td class="column center" style="width: 25%;">
+							<!-- Settings for constraints sampling job -->
+							<button
+								class="material-icons button_steps"
+								style="font-size: 1em;"
+								id="button_settings_constraints_sampling"
+								title="Define settings for constraints sampling."
+								onclick="goToSettingsPage({projectID:'{{project_id}}', iterationID:null, settingsNames:['sampling']});"
+							>
+								settings
+							</button>
+							<!-- Run constraints sampling job -->
+							<button
+								disabled
+								class="material-icons button_steps"
+								id="button_run_constraints_sampling"
+								title="Run the constraints sampling job."
+								onclick="this.disabled=true; runConstraintsSamplingTask({projectID:'{{project_id}}'})"
+							>
+								<div class="inner_middle">
+									<span style="font-size: 0.66em;">RUN SAMPLING</span>
+								</div>
+							</button>
+						</td>
+					</tr>
+
+					<!-- CONSTRAINTS ANNOTATION AND MODELIZATION -->
+					<tr class="row hide" id="row_step_annotation_and_modelization">
+
+						<td class="column" style="width: 75%;">
+							<!-- Description for constraints annotation step -->
+							<details id="details_annotation_and_modelization">
+								<summary>
+									Constraints annotation and modelization
+								</summary>
+								<div>
+									After sampling step, you can <b>start your constraints annotation/reviewing</b>.</br>
+									Howeber, <b>each modification makes the modelization obsolete</b>: text deletion, constraints correction, modelization setting, ...</br>
+									So, you need to <b>regularly update the modelization</b>: (1) <i>texts preprocessing</i>, (2) <i>texts vectorization</i>, (3) <i>constraints inference</i>.</br>
+									<div
+										class="material-icons info_bulle align_rigth color_info"
+										title="Modelization update task can be long (several minutes).">
+										info
+									</div>
+									<div
+										class="material-icons info_bulle align_rigth color_warning"
+										title="Remember to adjust settings before running this task.">
+										warning
+									</div>
+									<br/>
+								</div>
+							</details>
+							<!-- Loading bar for annotation and modelization jobs -->
+							<div id="loadingbar_annotation_and_modelization" class="loadingbar hide">
+								<div class="loadingbar_bar"></div>
+								<div>
+									<div class="loadingbar_icon" onclick="hideElement('loadingbar_annotation_and_modelization');"></div>
+									<div class="loadingbar_text"></div>
+								</div>
+							</div>
+						</td>
+
+						<td class="column center" style="width: 25%;">
+							<!-- Go to texts summary -->
+							<button
+								disabled
+								class="material-icons button_steps"
+								id="button_go_to_texts"
+								title="See texts."
+								onclick="goToTextsSummaryPage({projectID:'{{project_id}}'})">
+								<div class="inner_middle">
+									<span style="font-size: 0.66em;">TEXTS</span>
+									inventory_2
+								</div>
+							</button>
+							<!-- Go to constraints summary -->
+							<button
+								disabled
+								class="material-icons button_steps"
+								id="button_go_to_constraints"
+								title="See constraints."
+								onclick="goToConstraintsSummaryPage({projectID:'{{project_id}}'})">
+								<div class="inner_middle">
+									<span style="font-size: 0.66em;">CONSTRAINTS</span>
+									inventory_2
+								</div>
+							</button>
+							<br/>
+							<!-- Settings for modelization update job -->
+							<button
+								class="material-icons button_steps"
+								style="font-size: 1em;"
+								id="button_settings_modelization_update"
+								title="Define settings for modelization update."
+								onclick="goToSettingsPage({projectID:'{{project_id}}', iterationID:null, settingsNames:['preprocessing', 'vectorization']});"
+							>
+								settings
+							</button>
+							<!-- Modelization update job -->
+							<button
+								disabled
+								class="material-icons button_steps"
+								id="button_run_modelization_update"
+								title="Run the modelization update job."
+								onclick="this.disabled=true; runModelizationUpdateTask({projectID:'{{project_id}}'})">
+								<div class="inner_middle">
+									<span style="font-size: 0.66em;">UPDATE</span>
+									sync
+								</div>
+							</button>
+							<!-- Constraints annotation approbation -->
+							<button
+								disabled
+								class="material-icons button_steps"
+								id="button_approve_annotations"
+								title="Approve all constraints and their annotations."
+								onclick="this.disabled=true; approveConstraintsAnnotations({projectID:'{{project_id}}'})">
+								<div class="inner_middle">
+									<span style="font-size: 0.66em;">APPROVE</span>
+									verified
+								</div>
+							</button>
+						</td>
+					</tr>
+
+					<!-- CONSTRAINED CLUSTERING -->
+					<tr class="row hide" id="row_step_clustering">
+
+						<td class="column" style="width: 75%;">
+							<!-- Description for constrained clustering step -->
+							<details id="details_step_clustering">
+								<summary>
+									Constraints clustering
+								</summary>
+								<div>
+									This step <b>group texts by their similarities</b> according to previous annotated constraints.</br>
+									<div
+										class="material-icons info_bulle align_rigth color_info"
+										title="Constrained clustering task can be long (several minutes).">
+										info
+									</div>
+									<div
+										class="material-icons info_bulle align_rigth color_warning"
+										title="Remember to adjust settings before running this task.">
+										warning
+									</div>
+									<br/>
+								</div>
+							</details>
+							<!-- Loading bar for constrained clustering job -->
+							<div id="loadingbar_clustering" class="loadingbar hide">
+								<div class="loadingbar_bar"></div>
+								<div>
+									<div class="loadingbar_icon" onclick="hideElement('loadingbar_clustering');"></div>
+									<div class="loadingbar_text"></div>
+								</div>
+							</div>
+						</td>
+
+						<td class="column center" style="width: 25%;">
+							<!-- Settings for constrained clustering job -->
+							<button
+								class="material-icons button_steps"
+								style="font-size: 1em;"
+								id="button_settings_constrained_clustering"
+								title="Define settings for constrained clustering."
+								onclick="goToSettingsPage({projectID:'{{project_id}}', iterationID:null, settingsNames:['clustering']});"
+							>
+								settings
+							</button>
+							<!-- Run constrained clustering job -->
+							<button
+								disabled
+								class="material-icons button_steps"
+								id="button_run_constrained_clustering"
+								title="Run the constrained clustering job."
+								onclick="this.disabled=true; runConstrainedClusteringTask({projectID:'{{project_id}}'})"
+							>
+								<div class="inner_middle">
+									<span style="font-size: 0.66em;">RUN CLUSTERING</span>
+								</div>
+							</button>
+						</td>
+					</tr>
+
+					<!-- NEXT ITERATION CREATION -->
+					<tr class="row hide" id="row_next_iteration">
+
+						<td class="column" style="width: 75%;">
+							<!-- Description for next iteration -->
+							<details id="details_next_iteration">
+								<summary>
+									Next iteration
+								</summary>
+								<div>
+									When all these steps are done, <b>this iteration is complete and you can go to the next one</b>.
+								</div>
+							</details>
+						</td>
+
+						<td class="column center" style="width: 25%;">
+							<!-- Create next iteration -->
+							<button
+								disabled
+								class="material-icons button_steps"
+								id="button_create_next_iteration"
+								title="Create the next iteration."
+								onclick="this.disabled=true; createNextIteration({projectID:'{{project_id}}'})"
+							>
+								<div class="inner_middle">
+									<span style="font-size: 0.66em;">NEXT ITERATION</span>
+								</div>
+							</button>
+						</td>
+					</tr>
+
+				</table>
+			</div>
+
+		</div>
+	</div>
+{% endblock %}

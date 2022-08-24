@@ -1,0 +1,441 @@
+<!-- Inherit from "_base.html" -->
+{% extends "_base.html" %}
+
+<!-- Surcharge block "header_javascripts" of "_base.html" -->
+{% block header_javascripts %}
+{% endblock %}
+
+<!-- Surcharge block "content" of "_base.html" -->
+{% block content %}
+
+	<!-- CONTAINER DESCRIPTION -->
+	<div class="container">
+
+		<!-- CONTAINER DESCRIPTION - TITLE -->
+		<h3 class="container_title collapsible">
+			What is <i>Interactive Clustering</i> methodology ?
+		</h3>
+
+		<!-- CONTAINER DESCRIPTION - CONTENT -->
+		<div class="container_content">
+
+			<!-- CONTAINER DESCRIPTION - CONTENT INFORMATION -->
+			<div class="container_content_div">
+				
+				<!-- QUICK DESCRIPTION -->
+				<p>
+					<b><i>Interactive Clustering</i></b> is a method intended to assist in the design of a training data set.
+					The main objective it to create a labelled dataset without a prior/subjective definition of represented thema.
+					In fact, it is based on an active learning methodology where the computer suggest a data partitionning and the expert correct iteratively the computer decision.
+				</p>
+
+				<!-- STEPS OF THE METHOD -->
+				<p>
+					This iterative process begins with an unlabeled dataset, and it uses a sequence of two substeps :
+					<ol>
+						<li>
+							the user <b>defines constraints</b> on data sampled by the computer;
+						</li>
+						<li>
+							the computer <b>performs data partitioning</b> using a constrained clustering algorithm.
+						</li>
+					</ol>
+					Thus, at each step of the process:
+					<ul>
+						<li>
+							the user <b>corrects the clustering</b> of the previous steps using constraints, and
+						</li>
+						<li>
+							the computer offers a corrected and <b>more relevant data partitioning</b> for the next step.
+						</li>
+					</ul>
+					At the end of the process, we obtain a relevant data partitioning that we can use to train a classification model.
+				</p>
+
+
+				<figure style="max-width:50%; min-width: 300px;">
+					<img src="/resources/diagrams/interactive_clustering.png" alt="Schema of Interactive Clustering process." style="width: 100%;"/>
+					<figcaption>
+						Schema of Interactive Clustering process.
+					</figcaption>
+				</figure>
+
+				<!-- ADVANTAGES AND DISADVANTAGES -->
+				<p>
+					Use this method avoid performing the following annoying tasks:
+					<ul>
+						<li>
+							<b>No more intent abstract definition</b>:
+							Annotation by label requires to define the list of possible labels to annotate.
+							The choice of label and their defintion is most often based on a subjective with of annotators,
+							and this task is abstract and can lead to incomprehension or ambiguities.
+							Here, intents are discovered during clustering computation and correction.
+						</li>
+						<li>
+							<b>No more complex label annotation</b>:
+							Choosing an intent for data is an abstract task when the number of labels is large, and careless errors are common.
+							Here, the description of data similarity with an constraint is more intuitive,
+							because it corresponds to compare the similarity of expected actions
+							(i.e. do you answer the same way to these two questions?)
+						</li>
+					</ul>
+
+					However, there are some points of attention during the process:
+					<ul>
+						<li>
+							<b>Convergence of iterations</b> can be optimized with various strategies.
+							In fact, constraints sampling and constrained clustering are the two main steps to set carefully:
+							A bad clustering algorithm will gives an unrelevant result,
+							and an badly tuned sampling algorithm will not correct the clustering execution.
+							Therefore settings should be chosen wisely.
+						</li>
+						<li>
+							<b>Conflicts can occurs</b> after mistakes.
+							In fact, the computer can face inconsistency in constraints, leading to contradiction in the execution.
+							A step of constraint review is needed to prevent these conflicts.
+						</li>
+					</ul>
+				</p>
+				
+				<!-- MORE DETAILS -->
+				<p>
+					For more details, see <b><i>Frequently Asked Questions</i></b> and read articles in <b><i>References</i></b> sections.
+				</p>
+			</div>
+
+			<!-- CONTAINER DESCRIPTION - CONTENT ACTIONS -->
+			<div class="container_content_actions border-top">
+				<h3>
+					Do you want to start the experiment?
+				</h3>
+				<br/>
+
+				<button
+					class="button_action button_main"
+					title="Go to the projects page to create or load one."
+					onclick="location.assign('/gui/projects');"
+				>
+					LET'S GO !
+				</button>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- CONTAINER FAQ -->
+	<div class="container">
+
+		<!-- CONTAINER FAQ - TITLE -->
+		<h3 class="container_title collapsible">
+			Frequently Asked Questions
+		</h3>
+
+		<!-- CONTAINER FAQ - CONTENT -->
+		<div class="container_content">
+			
+			<!-- FAQ - CLUSTERING -->
+			<details>
+				<summary>
+					What is a <i>clustering</i> algorithm?
+				</summary>
+				<div>
+					<p>
+						It's an unsupervised algorithm aimed at <b>group data by their similarities</b>.
+						In NLP, it can use common linguistic patterns, lexical or syntactical similarities, word vectors distance, ...
+					</p>
+					<figure style="max-width: 17.5%; min-width: 200px;">
+						<img src="/resources/diagrams/example_clustering.png" alt="Example of clustering with three topics." style="width: 100%;"/>
+						<figcaption>
+							Example of clustering with three topics
+						</figcaption>
+					</figure>
+					<p>
+						The main advantage of such algorithms is the ability to explore data in order to find topics.
+						However, experts often consider raw results to be of low value
+						(hard to distinguishing ambiguous formulations, to dealing with unbalanced topics, etc...).
+						Thus, to have semantically relevant results, manual corrections are sometimes necessary.
+					</p>
+				</div>
+			</details>
+			
+			<!-- FAQ - CONSTRAINTS -->
+			<details>
+				<summary>
+					What is a <i>constraint</i> on data?
+				</summary>
+				<div>
+					<p>
+						It's information given by the expert on data similarity.
+						We deal with two type of constraints:
+						<ul>
+							<li>
+								<b class="color_must_link"><i>MUST LINK</i></b> :
+								data are similar (i.e. same cluster / intent / answer / action/...);
+							</li>
+							<li>
+								<b class="color_cannot_link"><i>CANNOT LINK</i></b> :
+								data are not similar (i.e. different clusters / intents / answers / actions/...).
+							</li>
+						</ul>
+					</p>
+					<figure style="max-width: 17.5%; min-width: 200px;">
+						<img src="/resources/diagrams/example_constraints.png" alt="Example of constraints (MUST LINK, CANNOT LINK)." style="width: 100%;"/>
+						<figcaption>
+							Example of constraints.<br/>
+							(MUST LINK in green, CANNOT LINK in red).
+						</figcaption>
+					</figure>
+					<p>
+						It can be used in <i>constrained clustering</i> to guide the computer operation.
+					</p>
+					<figure class="center" style="max-width: 35%; min-width: 200px;">
+						<img src="/resources/diagrams/example_clustering.png" alt="Example of unconstrained clutering." style="width: 49%;"/>
+						<img src="/resources/diagrams/example_constrained_clustering.png" alt="Example of constrained clutering." style="width: 49%;"/>
+						<figcaption>
+							Comparison between unconstrained and constrained clustering.
+						</figcaption>
+					</figure>
+				</div>
+			</details>
+			
+			<!-- FAQ - SAMPLING -->
+			<details>
+				<summary>
+					Why use <i>sampling</i> to chose data to annotate?
+				</summary>
+				<div>
+					<p>
+						The sampling step is needed to determine the constraints to be annotated to most effectively correct the clustering functioning.
+						Sampling strategies can be based on:
+						<ul>
+							<li>
+								<b><i>random selection</i></b> :
+								it gives the baseline; 
+							</li>
+							<li>
+								<b><i>previous clustering results</i></b> :
+								it allows to influence the functioning of the algorithm; 
+							</li>
+							<li>
+								<b><i>questions distance</i></b> :
+								it allows to influence the representation of data;
+							</li>
+							<li>
+								a <b><i></i>combination of previous strategies</i></b> like:
+								<ul>
+									<li>
+										<i>closest neighbors in different clusters</i>,
+										checking if border of clusters are misplaced;
+									</li>
+									<li>
+										<i>farthest neighbors in same cluster</i>,
+										checking if a cluster is unfortunately an agglomerate of several distinct themes.
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</p>
+					<figure style="max-width: 17.5%; min-width: 200px;">
+						<img src="/resources/diagrams/example_sampling.png" alt="Example of constraints sampling." style="width: 100%;"/>
+						<figcaption>
+							Example of constraints sampling.
+						</figcaption>
+					</figure>
+				</div>
+			</details>
+			
+			<!-- FAQ - ITERATIVE -->
+			<details>
+				<summary>
+					Why is the methodology <i>iterative</i>?
+				</summary>
+				<div>
+					<!-- TODO -->
+					<div style="color: orange;">
+						TODO
+					</div>
+				</div>
+			</details>
+
+			<!-- FAQ - AMBIGUITY -->
+			<details>
+				<summary>
+					What should I do if data is <i>ambiguous</i>?
+				</summary>
+				<div>
+					<!-- TODO -->
+					<div style="color: orange;">
+						TODO
+					</div>
+				</div>
+			</details>
+			
+			<!-- FAQ - GROUNDTRUTH -->
+			<details>
+				<summary>
+					Waht is <i>constraints groundtruth</i>?
+				</summary>
+				<div>
+					<!-- TODO -->
+					<div style="color: orange;">
+						TODO
+					</div>
+				</div>
+			</details>
+
+			<!-- FAQ - INFERENCE -->
+			<details>
+				<summary>
+					What is a <i>constraint inference</i>?
+				</summary>
+				<div>
+					<!-- TODO -->
+					<div style="color: orange;">
+						TODO
+					</div>
+					<figure class="center" style="max-width: 35%; min-width: 200px;">
+						<img src="/resources/diagrams/example_constraints_inference_must_link.png" alt="Example infered MUST LINK constraint." style="width: 49%;"/>
+						<img src="/resources/diagrams/example_constraints_inference_cannot_link.png" alt="Example infered CANNOT LINK constraint." style="width: 49%;"/>
+						<figcaption>
+							Example of constraint inference.<br/>
+							On left side: (a) MUST LINK + (b) MUST LINK implies (c) MUST LINK ;<br/>
+							On right side: (a) MUST LINK + (b) CANNOT LINK implies (c) CANNOT LINK.
+						</figcaption>
+					</figure>
+				</div>
+			</details>
+
+			<!-- FAQ - CONFLICT -->
+			<details>
+				<summary>
+					What is a <i>conflict</i>?
+				</summary>
+				<div>
+					<!-- TODO -->
+					<div style="color: orange;">
+						TODO
+					</div>
+					<figure style="max-width: 17.5%; min-width: 200px;">
+						<img src="/resources/diagrams/example_constraints_conflict.png" alt="Example constraints conflicts." style="width: 100%;"/>
+						<figcaption>
+							Example constraints conflicts.<br/>
+							In fact: (a) MUST LINK + (b) MUST LINK implies (c) MUST LINK,
+							but the annotation is CANNOT LINK: there is an error somewhere.
+						</figcaption>
+					</figure>
+				</div>
+			</details>
+
+			<!-- FAQ - COMPLETUDE -->
+			<details>
+				<summary>
+					What is the <i>constraint completude</i>?
+				</summary>
+				<div>
+					<!-- TODO -->
+					<div style="color: orange;">
+						TODO
+					</div>
+				</div>
+			</details>
+
+			<!-- FAQ - END -->
+			<details>
+				<summary>
+					When is the <i>job done</i>?
+				</summary>
+				<div>
+					<!-- TODO -->
+					<div style="color: orange;">
+						TODO
+					</div>
+				</div>
+			</details>
+			
+		</div>
+	</div>
+
+
+	<!-- CONTAINER USER DOCUMENTATION -->
+	<div class="container">
+
+		<!-- CONTAINER USER DOCUMENTATION - TITLE -->
+		<h3 class="container_title collapsible">
+			User documentation
+		</h3>
+
+		<!-- CONTAINER USER DOCUMENTATION - CONTENT -->
+		<div class="container_content hide">
+			<ol type="i">
+				<!-- TODO -->
+				<div style="color: orange;">
+					TODO
+				</div>
+			</ol>
+		</div>
+	</div>
+
+
+	<!-- CONTAINER REFERENCES -->
+	<div class="container">
+
+		<!-- CONTAINER REFERENCES - TITLE -->
+		<h3 class="container_title collapsible">
+			References
+		</h3>
+
+		<!-- CONTAINER REFERENCES - CONTENT -->
+		<div class="container_content hide">
+			
+			<ul>
+				<li>
+					<b>Scientific contributions</b>:
+					<ul>
+						<li>
+							Presentation of the method:
+							<code style="color: #008000;">
+								Schild, E., Durantin, G., Lamirel, J.C., & Miconi, F. (2021). Conception itérative et semi-supervisée d'assistants conversationnels par regroupement interactif des questions. In EGC 2021 - 21èmes Journées Francophones Extraction et Gestion des Connaissances. Edition RNTI. ⟨hal-03133007⟩
+							</code>
+						</li>
+						<li>
+							Extended presentation of the method
+							<code style="color: #008000;">
+								Schild, E., Durantin, G., Lamirel, J.C., & Miconi, F. (2022). Iterative and Semi-Supervised Design of Chatbots Using Interactive Clustering. In International Journal of Data Warehousing and Mining (IJDWM), IGI Global, 2022, 18 (2), pp.1-19. ⟨10.4018/IJDWM.298007⟩, ⟨hal-03648041⟩
+							</code>
+						</li>
+						<li>
+							Methodological discussion:
+							<code style="color: #008000;">
+								Schild, E., Durantin, G., & Lamirel, J.C. (2021). Concevoir un assistant conversationnel de manière itérative et semi-supervisée avec le clustering interactif. In Atelier - Fouille de Textes - Text Mine 2021 - En conjonction avec EGC 2021. ⟨hal-03133060⟩
+							</code>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<b>Sampling and Clustering Algorithms</b>:
+					<ul>
+						<li>
+							GitHub repository: <a href="https://cognitivefactory.github.io/interactive-clustering">cognitivefactory/interactive-clustering</a>
+						</li>
+						<li>
+							Main documentation: <a href="https://cognitivefactory.github.io/interactive-clustering">interactive-clustering</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<b>API and Web Application (GUI)</b>:
+					<ul>
+						<li>
+							GitHub repository: <a href="https://cognitivefactory.github.io/interactive-clustering-gui">cognitivefactory/interactive-clustering-gui</a>
+						</li>
+						<li>
+							Main documentation: <a href="https://cognitivefactory.github.io/interactive-clustering-gui">interactive-clustering-gui</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+<!-- Inherit from "_base.html" -->
+{% extends "_base.html" %}
+
+<!-- Surcharge block "header_javascripts" of "_base.html" -->
+{% block header_javascripts %}
+{% endblock %}
+
+<!-- Surcharge block "content" of "_base.html" -->
+{% block content %}
+
+	<!-- CONTAINER ERROR -->
+	<div class="container">
+
+		<!-- CONTAINER ERROR - TITLE -->
+		<h3 class="container_title">
+			Error: {{status_code}}
+		</h3>
+
+		<!-- CONTAINER ERROR - CONTENT -->
+		<div class="container_content">
+
+			<!-- CONTAINER ERROR - DETAIL -->
+			<div class="container_content_div center">
+				{{detail}}
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,320 @@
+<!-- Inherit from "_base.html" -->
+{% extends "_base.html" %}
+
+<!-- Surcharge block "header_javascripts" of "_base.html" -->
+{% block header_javascripts %}
+	<script src="/js/constraints.js"></script>
+	<script src="/js/status.js"></script>
+	<script src="/js/tasks.js"></script>
+{% endblock %}
+
+<!-- Surcharge block "content" of "_base.html" -->
+{% block content %}
+
+	<!-- CONTAINER TEXTS -->
+	<div class="container">
+
+		<!-- CONTAINER TEXTS - TITLE -->
+		<h3 class="container_title collapsible">
+			Iteration ({{status.iteration_id}}): Texts synthesis
+		</h3>
+
+		<!-- CONTAINER TEXTS - CONTENT -->
+		<div class="container_content">
+
+			<!-- CONTAINER TEXTS - INFORMATIONS -->
+			<div class="container_content_div">
+				<table class="table_description">
+
+					<!-- CONTAINER TEXTS - INFORMATIONS - PROJECT ID -->
+					<tr class="row hide">
+						<td class="column" style="width: 33%;">
+							<b>The ID of the project</b>:
+						</td>
+						<td class="column" id="project_id" style="width: 33%;">
+							<i>{{project_id}}</i>
+						</td>
+						<td class="column" style="width: 33%;">
+							
+						</td>
+					</tr>
+
+					<!-- CONTAINER TEXTS - INFORMATIONS - TEXTS -->
+					{% set number_of_remaining_texts = (texts.values() | selectattr("is_deleted", "equalto", false) | list | length) %}
+					{% set number_of_deleted_texts = (texts.values() | selectattr("is_deleted", "equalto", true) | list | length) %}
+					{% set number_of_texts = (number_of_remaining_texts + number_of_deleted_texts) %}
+					<tr class="row">
+						<td class="column" style="width: 33%;">
+							<b>Number of texts</b>:
+						</td>
+						<td class="column" style="width: 33%;">
+							<b>{{ number_of_remaining_texts }} texts</b>
+							<span
+								class="material-icons info_bulle align_rigth"
+								title="initial: {{ number_of_texts }}, is_deleted: {{ number_of_deleted_texts }}.">
+								info
+							</span>
+						</td>
+						<td class="column center" style="width: 33%;">
+						</td>
+					</tr>
+					<!-- CONTAINER TEXTS - INFORMATIONS - CONSTRAINTS -->
+					{% set number_of_MUST_LINK_constraints = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("constraint_type", "equalto", "MUST_LINK") | list | length) %}
+					{% set number_of_CANNOT_LINK_constraints = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("constraint_type", "equalto", "CANNOT_LINK") | list | length) %}
+					{% set number_of_SKIP_constraints = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("constraint_type", "equalto", none) | list | length) %}
+					{% set number_of_constraints = (number_of_MUST_LINK_constraints + number_of_CANNOT_LINK_constraints) %}
+					{% set number_of_constraints_to_annotate = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("to_annotate", "equalto", true) | list | length) %}
+					{% set number_of_constraints_to_review = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("to_review", "equalto", true) | list | length) %}
+					{% set number_of_constraints_to_fix = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("to_fix_conflict", "equalto", true) | list | length) %}
+					<tr class="row">
+						<td class="column">
+							<b>Number of constraints</b>:
+						</td>
+						<td class="column">
+							{% if number_of_constraints==0 %}
+								<b>No constraint</b>
+							{% else %}
+								<b>{{ number_of_constraints }} constraints</b>
+							{% endif %}
+							{% if status.state_details.step == "ANNOTATION" %}
+								<br/>
+								and {{ number_of_constraints_to_annotate }} need your annotation.
+							{% endif %}
+							<span
+								class="material-icons info_bulle align_rigth"
+								title="MUST LINK: {{ number_of_MUST_LINK_constraints }}, CANNOT LINK: {{ number_of_CANNOT_LINK_constraints }}, SKIP: {{ number_of_SKIP_constraints }} &#013;to annotate: {{ number_of_constraints_to_annotate }}, to review: {{ number_of_constraints_to_review }}, to fix: {{ number_of_constraints_to_fix }}.">
+								info
+							</span>
+						</td>
+						<td class="column center">
+							<button
+								class="material-icons button_steps"
+								id="button_go_to_constraints"
+								title="See constraints."
+								onclick="goToConstraintsSummaryPage({projectID:'{{project_id}}'})">
+								<div class="inner_middle">
+									<span style="font-size: 0.66em;">CONSTRAINTS</span>
+									inventory_2
+								</div>
+							</button>
+						</td>
+					</tr>
+					{% if status.state_details.step == "ANNOTATION" %}
+						<!-- CONTAINER TEXTS - INFORMATIONS - MODELIZATION -->
+						{% set modelization_disabled = (status.state not in ["ANNOTATION_WITH_OUTDATED_MODELIZATION_WITHOUT_CONFLICTS", "ANNOTATION_WITH_OUTDATED_MODELIZATION_WITH_CONFLICTS"]) %}
+						<tr class="row">
+							<td class="column">
+								<b>Modelization state</b>:
+							</td>
+							<td class="column">
+								{% if (status.state_details.modelization_status == "TODO") %}
+									<span class="material-icons annotation_tag color_warning">warning</span>
+									<b>Modelization is empty</b>.
+									<em>Please run modelization update.</em>
+								{% elif (status.state_details.modelization_status == "UPTODATE") %}
+									<span class="material-icons annotation_tag color_correct">done_all</span>
+									<b>Modelization is up to date</b>.
+									<em>Any modification will lead to an outdated modelization.</em>
+								{% elif (status.state_details.modelization_status == "OUTDATED") %}
+									<span class="material-icons annotation_tag color_warning">warning</span>
+									<b>Modelization is outdated{% if status.state_details.conflict_status == "TRUE" %} with some conflits{% endif %}</b>.
+									<em>Please run modelization update after your modifications to check project consistency and constraints conflicts.</em>
+								{% elif (status.state_details.modelization_status in ["PENDING", "WORKING"]) %}
+									<span class="material-icons annotation_tag color_warning">update</span>
+									<b>Modelization update is in progress</b>.
+									<em>Page will reload in a few moments.</em>
+								{% else %}
+									<span class="material-icons annotation_tag color_error">error</span>
+									<b>An unexpected modelization error occurred</b>.
+									<em>Please check your project.</em>
+								{% endif %}
+							</td>
+							<td class="column center">
+								<!-- Settings for modelization update job -->
+								<button
+									class="material-icons button_steps"
+									style="font-size: 1em;"
+									id="button_settings_modelization_update"
+									title="Define settings for modelization update."
+									onclick="goToSettingsPage({projectID:'{{project_id}}', iterationID:null, settingsNames:['preprocessing', 'vectorization']});"
+								>
+									settings
+								</button>
+								<!-- Modelization update job -->
+								<button
+									disabled
+									class="material-icons button_steps"
+									id="button_run_modelization_update"
+									title="Run the modelization update job."
+									onclick="this.disabled=true; runModelizationUpdateTask({projectID:'{{project_id}}'})">
+									<div class="inner_middle">
+										<span style="font-size: 0.66em;">UPDATE</span>
+										sync
+									</div>
+								</button>
+								<br/>
+								<!-- Loading bar for annotation and modelization jobs -->
+								<div id="loadingbar_annotation_and_modelization" class="loadingbar hide">
+									<div class="loadingbar_bar"></div>
+									<div>
+										<div class="loadingbar_icon" onclick="hideElement('loadingbar_annotation_and_modelization');"></div>
+										<div class="loadingbar_text"></div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					{% endif %}
+				</table>
+			</div>
+
+
+			<!-- CONTAINER TEXTS - ACTIONS -->
+			<div class="container_content_actions">
+				{% if status.state_details.step == "SAMPLING" %}
+					<b>Please finish sampling step</b> to be able to perform modification.
+				{% elif status.state_details.step == "ANNOTATION" %}
+					{% set has_conflicts = (status.state_details.conflict_status == "TRUE") %}
+					{% if has_conflicts %}
+						<b>Please run modelization update to check project consistency and constraints conflicts.</b>
+					{% endif %}
+				{% else %}
+					<b>Annotation step is finished and constraints have been approved.</b>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+
+	<!-- CONTAINER TEXTS LIST -->
+	<div class="container">
+
+		<!-- CONTAINER TEXTS LIST - TITLE -->
+		<h3 class="container_title collapsible">
+			List of texts
+		</h3>
+		{% set modification_disabled = (status.state not in ["ANNOTATION_WITH_UPTODATE_MODELIZATION", "ANNOTATION_WITH_OUTDATED_MODELIZATION_WITHOUT_CONFLICTS", "ANNOTATION_WITH_OUTDATED_MODELIZATION_WITH_CONFLICTS"]) %}
+
+		<!-- CONTAINER TEXTS LIST - CONTENT -->
+		<div class="container_content">
+
+			<div class="center" style="margin: 5px auto;">
+				Sort by:
+				<select 
+					required
+					style="font-size: 1em; width: 8em"
+					onchange="goToTextsSummaryPage({projectID:'{{project_id}}', sortedBy:this.value, sortedReverse:'{{parameters.sorted_reverse}}'});"
+				>
+					<option
+						value="id"
+						{% if parameters.sorted_by=="id" %}selected{% endif %}>
+						default
+					</option>
+					<option
+						value="alphabetical"
+						{% if parameters.sorted_by=="alphabetical" %}selected{% endif %}>
+						alphabetical
+					</option>
+					<option
+						value="is_deleted"
+						{% if parameters.sorted_by=="is_deleted" %}selected{% endif %}>
+						is_deleted
+					</option>
+				</select>
+
+				<select 
+					required
+					style="font-size: 1em; width: 8em"
+					onchange="goToTextsSummaryPage({projectID:'{{project_id}}', sortedBy:'{{parameters.sorted_by}}', sortedReverse:this.value});">
+					<option
+						value="False"
+						{% if parameters.sorted_reverse==false %}selected{% endif %}>
+						descending
+					</option>
+					<option
+						value="True"
+						{% if parameters.sorted_reverse==true %}selected{% endif %}>
+						ascending
+					</option>
+				</select>
+
+			<!-- CONTAINER TEXTS LIST - TEXT TABLE -->
+			<div class="container_content_div">
+				<table class="table_annotation_synthesis">
+					<tr class="row">
+						<th class="column" style="width: 45%;" title="The normalized text value used by algorithms.">
+							Preprocess text
+						</th>
+						<th class="column" style="width: 45%;" title="The current text value.">
+							Current text
+						</th>
+						<th class="column" style="width: 10%;" title="The deletion text status.">
+							Deleted
+						</th>
+					</tr>
+					{% for text_id, text in texts.items() %}
+						<!-- TEXT {{ text_id }} -->
+						<tr
+							class="row"
+							id="{{ text_id }}">
+							<td
+								class="column center {% if text.is_deleted==true %}color_delete text_crossed_out{%endif %}"
+								title="Text ID: {{ text_id }}">
+								<i>&laquo; <b>{{ text.text_preprocessed }}</b> &raquo;</i>
+							</td>
+							<td
+								class="column center {% if text.is_deleted==true %}color_delete text_crossed_out{%endif %}"
+								title="Original: &laquo; {{ text.text_original }} &raquo;">
+								<!-- Current text. -->
+								<div id="{{ text_id }}.print">
+									<i>&laquo; {{ text.text }} &raquo;</i>
+									<button
+										{% if modification_disabled %}disabled{% endif %}
+										class="material-icons align_rigth"
+										onclick="document.getElementById('{{text_id}}.print').classList.add('hide'); document.getElementById('{{text_id}}.edit').classList.remove('hide');"
+										title="Rename the text.">
+										edit
+									</button>
+								</div>
+								<!-- Edit text. -->
+								<form id="{{ text_id }}.edit" class="hide">
+									<input
+										id="{{ text_id }}.edit.input"
+										type="text"
+										minlength="3"
+										maxlength="512"
+										style="font-size: 1em; width: 95%;"
+										value="{{ text.text }}"/>
+									<button
+										class="button_form_reset"
+										title="Cancel renaming"
+										onclick="document.getElementById('{{text_id}}.edit').classList.add('hide'); document.getElementById('{{text_id}}.print').classList.remove('hide');">
+										Reset
+									</button>
+									<button
+										class="button_form_submit"
+										id="button_renaming_text_submit"
+										title="Update text renaming."
+										onclick="this.disabled=true; renameText({projectID:'{{project_id}}', textID:'{{text_id}}', newTextValue:document.getElementById('{{ text_id }}.edit.input').value, reloadOption:true});">
+										Update
+									</button>
+								</form>
+							</td>
+							<td class="column center">
+								<input
+									{% if modification_disabled %}disabled{% endif %}
+									type="checkbox"
+									class="accent_color_delete"
+									style="width: 1.5em; height: 1.5em;"
+									{% if text.is_deleted==true %}checked{% endif %}
+									onchange="this.disabled=true; deleteText({projectID:'{{project_id}}', textID:'{{text_id}}', toDelete:this.checked, reloadOption:true});">
+								<span class="material-icons color_delete">
+									delete
+								</span>
+							</td>
+						</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</div>
+{% endblock %}

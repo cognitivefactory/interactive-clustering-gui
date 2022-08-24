@@ -1,0 +1,426 @@
+<!-- Inherit from "_base.html" -->
+{% extends "_base.html" %}
+
+<!-- Surcharge block "header_javascripts" of "_base.html" -->
+{% block header_javascripts %}
+	<script src="/js/annotation.js"></script>
+	<script src="/js/constraints.js"></script>
+	<script src="/js/status.js"></script>
+	<script src="/js/tasks.js"></script>
+	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+{% endblock %}
+
+<!-- Surcharge block "content" of "_base.html" -->
+{% block content %}
+
+	{% if constraint_id in constraints.keys() %}
+		{% set number_of_constraints_to_annotate = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("to_annotate", "equalto", true) | list | length) %}
+		{% set constraint = constraints[constraint_id] %}
+		{% set navigation_next = constraint_id | get_next_key(constraints) %}
+		{% set navigation_previous = constraint_id | get_previous_key(constraints) %}
+		{% set text_ID1 = constraint.data.id_1 %}
+		{% set text_ID2 = constraint.data.id_2 %}
+		{% set modification_disabled = (status.state not in ["ANNOTATION_WITH_UPTODATE_MODELIZATION", "ANNOTATION_WITH_OUTDATED_MODELIZATION_WITHOUT_CONFLICTS", "ANNOTATION_WITH_OUTDATED_MODELIZATION_WITH_CONFLICTS"]) %}
+
+		<!-- CONTAINER ANNOTATION -->
+		<div class="container" id="{{ constraint_id }}">
+
+			<!-- CONTAINER ANNOTATION - TITLE -->
+			<h3 class="container_title collapsible">
+				Iteration ({{status.iteration_id}}): Annotations
+				(<em>{{number_of_constraints_to_annotate}} remaining</em>)<br/>
+				Do you answer these two questions in the same way?
+			</h3>
+
+			<!-- CONTAINER ANNOTATION - CONTENT -->
+			<div class="container_content">
+
+				<!-- CONTAINER ANNOTATION - TEXTS -->
+				<div class="container_content_div">
+					<table class="table_annotation">
+						<tr class="row">
+							<th class="column" style="width: 50%;">
+								<b>Text 1</b>
+								(
+								<span class="material-icons color_delete annotation_tag">
+									delete
+								</span>
+								=
+								<input
+									{% if modification_disabled %}disabled{% endif %}
+									type="checkbox"
+									class="accent_color_delete"
+									style="width: 1.5em; height: 1.5em; vertical-align: text-bottom;"
+									{% if texts[text_ID1].is_deleted==true %}checked{% endif %}
+									title="Delete text 1."
+									onchange="this.disabled=true; this.classList.add('annotation_selected'); deleteText({projectID:'{{project_id}}', textID:'{{text_ID1}}', toDelete:this.checked, goToNextConstraint:'null', goToSummaryPage:'false', reloadOption:true});">
+								)
+							</th>
+							<th class="column" style="width: 50%;">
+								<b>Text 2</b>
+								(
+								<span class="material-icons color_delete annotation_tag">
+									delete
+								</span>
+								=
+								<input
+									{% if modification_disabled %}disabled{% endif %}
+									type="checkbox"
+									class="accent_color_delete"
+									style="width: 1.5em; height: 1.5em; vertical-align: text-bottom;"
+									{% if texts[text_ID2].is_deleted==true %}checked{% endif %}
+									title="Delete text 2."
+									onchange="this.disabled=true; this.classList.add('annotation_selected'); deleteText({projectID:'{{project_id}}', textID:'{{text_ID2}}', toDelete:this.checked, goToNextConstraint:'null', goToSummaryPage:'false', reloadOption:true});">
+								)
+								</th>
+						</tr>
+						<tr class="row">
+							<th
+								class="column {% if texts[text_ID1].is_deleted==true %}text_crossed_out{%endif %}"
+								title="Text ID 1: {{ text_ID1 }}">
+								<i style="font-size: 2em;">&laquo; {{ texts[text_ID1].text_preprocessed }} &raquo;</i>
+							</th>
+							<th
+							class="column {% if texts[text_ID2].is_deleted==true %}text_crossed_out{%endif %}"
+								title="Text ID 2: {{ text_ID2 }}">
+								<i style="font-size: 2em;">&laquo; {{ texts[text_ID2].text_preprocessed }} &raquo;</i>
+							</th>
+						</tr>
+						<tr class="row">
+							<th
+								class="column center"
+								title="Text ID 1: {{ text_ID1 }}">
+								<span
+									class="material-icons info_bulle"
+									title="Unpreprocessed text: &#013; &laquo; {{ texts[text_ID1].text }} &raquo;">
+									info
+								</span>
+							</th>
+							<th
+							class="column center"
+								title="Text ID 2: {{ text_ID2 }}">
+								<span
+									class="material-icons info_bulle"
+									title="Unpreprocessed text: &#013; &laquo; {{ texts[text_ID2].text }} &raquo;">
+									info
+								</span>
+							</th>
+						</tr>
+					</table>
+				</div>
+
+				<!-- CONTAINER ANNOTATION - ACTIONS ANNOTATION -->
+				<div class="container_content_actions">
+					<button
+						{% if modification_disabled or constraint.is_hidden %}disabled{% endif %}
+						class="fas fa-equals {% if constraint.constraint_type == 'MUST_LINK' %}annotation_selected{% elif constraint.constraint_type == 'CANNOT_LINK' %}annotation_not_selected{% endif %}"
+						id="button_annotation_must_link"
+						title="Annotate a MUST_LINK constraint. &#013;Shortcut: [A] (for accept)"
+						onclick="this.disabled=true; this.classList.add('annotation_selected'); updateConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', constraintType:'MUST_LINK', goToNextConstraint:'{% if navigation_next is none %}null{% else %}{{navigation_next}}{% endif %}', goToSummaryPage:'{% if navigation_next is none %}true{% else %}false{% endif %}', reloadOption:false});">
+					</button>  <!-- material-icons, done -->
+					<button
+						{% if modification_disabled or constraint.is_hidden %}disabled{% endif %}
+						class="material-icons {% if (constraint.constraint_type is not none) and (constraint.to_annotate==false) %}annotation_not_selected{% endif %}"
+						id="button_annotation_skip"
+						title="Skip the  &#013;Shortcut: [Space]"
+						onclick="this.disabled=true; this.classList.add('annotation_selected'); updateConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', constraintType:null, goToNextConstraint:'{% if navigation_next is none %}null{% else %}{{navigation_next}}{% endif %}', goToSummaryPage:'{% if navigation_next is none %}true{% else %}false{% endif %}', reloadOption:false});">
+						help_outline
+					</button> <!-- material-icons, do_disturb_alt -->
+					<button
+						{% if modification_disabled or constraint.is_hidden %}disabled{% endif %}
+						class="fas fa-not-equal {% if constraint.constraint_type == 'CANNOT_LINK' %}annotation_selected{% elif constraint.constraint_type == 'MUST_LINK' %}annotation_not_selected{% endif %}"
+						id="button_annotation_cannot_link"
+						title="Annotate a CANNOT_LINK constraint. &#013;Shortcut: [R] (for reject)"
+						onclick="this.disabled=true; this.classList.add('annotation_selected'); updateConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', constraintType:'CANNOT_LINK', goToNextConstraint:'{% if navigation_next is none %}null{% else %}{{navigation_next}}{% endif %}', goToSummaryPage:'{% if navigation_next is none %}true{% else %}false{% endif %}', reloadOption:false});">
+					</button>  <!-- material-icons, close -->
+				</div>
+
+				<!-- CONTAINER ANNOTATION - ACTIONS COMMENT/REVIEW -->
+				<div class="container_content_actions">
+					<!-- CONSTRAINT CONFLICT -->
+					{% if constraint.to_fix_conflict == true %}
+						<span class="material-icons color_error">
+							priority_high
+						</span>
+						<b>
+							This contraint is involved in a conflict
+						</b>
+						<span class="material-icons color_error">
+							priority_high
+						</span>
+						<br/>
+					{% endif %}
+					<!-- CONSTRAINT REVIEW -->
+					To review:
+					<input
+						type="checkbox"
+						style="width: 1.5em; height: 1.5em;"
+						{% if constraint.to_review==true %}checked{% endif %}
+						title="Is this constraint to review ?""
+						onchange="reviewConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', toReview:this.checked, reloadOption:false});">
+					<br/>
+					<!-- CONSTRAINT COMMENT -->
+					<textarea
+						id="constraint_comment"
+						title="Comment of the constraint."
+						placeholder="Comment of the constraint."
+						onchange="commentConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', comment:this.value, reloadOption:false});"
+						maxlength="256"
+						style="width: 300px; height: 30px;"
+						>{% if constraint.comment != "" %}{{constraint.comment}}{% endif %}</textarea>
+				</div>
+
+				<!-- CONTAINER ANNOTATION - DETAILS -->
+				<div class="container_content_div">
+
+					<!-- CONTAINER ANNOTATION - DETAILS CARD DESCRIPTION -->
+					<div class="card">
+						<!-- CARD DESCRIPTION - TITLE -->
+						<h4 class="card_title collapsible">
+							Get more details...
+						</h4>
+						<!-- CARD DESCRIPTION - CONTENT -->
+						<div class="card_content hide">
+							<!-- CARD DESCRIPTION - CONTENT INFORMATION -->
+							<div class="card_content_div">
+								<table class="table_description">
+									<!-- CARD DESCRIPTION - CONTENT INFORMATIONS - PROJECT ID -->
+									<tr class="row hide">
+										<td class="column" style="width: 33%;">
+											<b>The ID of the project</b>:
+										</td>
+										<td class="column" id="project_id" style="width: 67%;">
+											<i>{{project_id}}</i>
+										</td>
+									</tr>
+									<!-- CARD DESCRIPTION - CONTENT INFORMATIONS - CLUSTERS -->
+									<tr class="row">
+										<td class="column" style="width: 33%;">
+											<b>The computer decision (clustering) was</b>:
+										</td>
+										<td class="column center" style="width: 67%;">
+											{% if text_ID1 not in clusters.keys() or text_ID2 not in clusters.keys() %}
+												<b class="material-icons annotation_tag">help_outline</b>
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="At least one text wasn't clustered (cf. text deletion).">
+													info
+												</span>
+											{% elif clusters[text_ID1] == clusters[text_ID2] %}
+												<b class="fas fa-equals annotation_tag color_must_link"></b>
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="According to constrained clustering, &#013;these two texts are in the same cluster: {{clusters[text_ID1]}}.">
+													info
+												</span>
+											{% else %} <!-- elif clusters[text_ID1] != clusters[text_ID2] -->
+												<b class="fas fa-not-equal annotation_tag color_cannot_link"></b>
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="According to constrained clustering, &#013;these two texts are in different clusters: {{clusters[text_ID1]}} and {{clusters[text_ID2]}}.">
+													info
+												</span>
+											{% endif %}
+										</td>
+									</tr>
+									<!-- CARD DESCRIPTION - CONTENT INFORMATIONS - CONSTRAINTS ANNOTATED -->
+									<tr class="row">
+										<td class="column">
+											<b>Your previous annotation was</b>:
+										</td>
+										<td class="column center">
+											{% if (constraint.constraint_type_previous | length) == 0 %}
+												<b>No history available</b>.
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="It's the first time this annotation is encountered &#013;or no annotation have been filled in previous iterations.">
+													info
+												</span>
+											{% else %}
+												{% if constraint.constraint_type_previous[-1] == "MUST_LINK" %}
+													<b class="fas fa-equals annotation_tag color_must_link"></b>
+												{% elif constraint.constraint_type_previous[-1] == "CANNOT_LINK" %}
+													<b class="fas fa-not-equal annotation_tag color_cannot_link"></b>
+												{% else %} <!-- elif constraint.constraint_type_previous[-1] is none -->
+													<b class="material-icons annotation_tag">help_outline</b>
+												{% endif %}
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="On {{constraint.date_of_update|timestamp_to_date}}, &#013;at {{constraint.date_of_update|timestamp_to_hour}}.">
+													info
+												</span>
+											{% endif %}
+										</td>
+									</tr>
+									<!-- CARD DESCRIPTION - CONTENT INFORMATIONS - MODELIZATION -->
+									<tr class="row">
+										<td class="column">
+											<b>The inference according to other annotations is</b>:
+										</td>
+										<td class="column center">
+											{% if text_ID1 not in modelization.keys() or text_ID2 not in modelization.keys() %}
+												<b>No modelization available</b>.
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="At least one text wasn't modelized (cf. text deletion).">
+													info
+												</span>
+											{% elif text_ID1 in modelization[text_ID2].MUST_LINK %}
+												<b class="fas fa-equals annotation_tag color_must_link"></b>
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="According to constraints modelization/inference, &#013;these two texts are similar.">
+													info
+												</span>
+											{% elif text_ID1 in modelization[text_ID2].CANNOT_LINK %}
+												<b class="fas fa-not-equal annotation_tag color_cannot_link"></b>
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="According to constraints modelization/inference, &#013;these two texts are different.">
+													info
+												</span>
+											{% else %} <!-- elif (text_ID1 not in modelization[text_ID2].MUST_LINK) and (text_ID1 in modelization[text_ID2].CANNOT_LINK) -->
+												<b class="material-icons annotation_tag">help_outline</b>
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="According to constraints modelization/inference, &#013;these two texts aren't yet linked.">
+													info
+												</span>
+											{% endif %}
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<!-- CONTAINER ANNOTATION - DETAILS CARD LOCAL GRAPH -->
+					<div class="card">
+						<!-- CARD LOCAL GRAPH - TITLE -->
+						<h4 class="card_title collapsible">
+							Local graph of constraints...
+						</h4>
+						<!-- CARD LOCAL GRAPH - CONTENT -->
+						<div class="card_content center">
+
+							<!-- CARD LOCAL GRAPH - CONTENT GRAPH -->
+							<div class="card_content_div" id="plot_local_constraints_graph">
+
+							</div>
+							<script>
+								// Get needed data.
+								var dataToPlot = {
+									"projectID": '{{ project_id }}',
+									"constraintID": '{{ constraint_id }}',
+									"texts": JSON.parse('{{ texts | tojson }}'),  // TODO: Read constraint from jinja variable.
+									"constraints": JSON.parse('{{ constraints | tojson }}'),  // TODO: Read constraint from jinja variable.
+									"modelization": JSON.parse('{{ modelization | tojson }}'),  // TODO: Read constraint from jinja variable.
+								}
+
+								// Initialize local constraints graph.
+								plotLocalConstraintsGraph({
+									projectID: dataToPlot["projectID"],
+									constraintID: dataToPlot["constraintID"],
+									texts: dataToPlot["texts"],
+									constraints: dataToPlot["constraints"],
+									modelization: dataToPlot["modelization"],
+								});
+
+								// In no conflict, hide local constraints graph.
+								if (! dataToPlot["constraints"][ dataToPlot["constraintID"] ].to_fix_conflict) {
+									document.getElementById("plot_local_constraints_graph").parentNode.classList.add("hide");
+								}
+							</script>
+
+							{% if status.state_details.step == "ANNOTATION" %}
+
+								{% if (status.state_details.modelization_status == "OUTDATED") %}
+									<!-- CARD LOCAL GRAPH - MODELIZATION OUTDATED -->
+									<div class="card_content_div"">
+										<span class="material-icons annotation_tag color_warning">warning</span>
+										<b>Modelization is outdated{% if status.state_details.conflict_status == "TRUE" %} with some conflits{% endif %}</b>.
+										<em>Please run modelization update after your modifications to check project consistency and constraints conflicts.</em>
+									</div>
+								{% endif %}
+
+								<!-- CARD LOCAL GRAPH - CONTENT ACTION -->
+								<div class="card_content_actions border-top">
+									<!-- Modelization update job -->
+									<button
+										disabled
+										class="material-icons button_steps"
+										id="button_run_modelization_update"
+										title="Run the modelization update job."
+										onclick="this.disabled=true; runModelizationUpdateTask({projectID:'{{project_id}}'})">
+										<div class="inner_middle">
+											<span style="font-size: 0.66em;">UPDATE</span>
+											sync
+										</div>
+									</button>
+									<br/>
+									<!-- Loading bar for annotation and modelization jobs -->
+									<div id="loadingbar_annotation_and_modelization" class="loadingbar hide">
+										<div class="loadingbar_bar"></div>
+										<div>
+											<div class="loadingbar_icon" onclick="hideElement('loadingbar_annotation_and_modelization');"></div>
+											<div class="loadingbar_text"></div>
+										</div>
+									</div>
+								</div>
+							{% endif %}
+
+						</div>
+				</div>
+
+				<!-- CONTAINER ANNOTATION - ACTIONS NAVIGATION -->
+				<div class="container_content_actions">
+					<button
+						{% if navigation_previous is none %}disabled{% endif %}
+						class="material-icons"
+						id="button_navigation_previous"
+						title="Go to previous constraint annotation page. &#013;Shortcut: [ArrowLeft]"
+						onclick="goToConstraintsAnnotationPage({projectID:'{{project_id}}', constraintID:'{{navigation_previous}}'});">
+						arrow_back_ios
+					</button>
+					<button
+						class="material-icons"
+						id="button_navigation_home"
+						title="Go to constraints summary page. &#013;Shortcut: [ArrowDown]"
+						onclick="goToConstraintsSummaryPage({projectID:'{{project_id}}'});">
+						list
+					</button>
+					<button
+						{% if navigation_next is none %}disabled{% endif %}
+						class="material-icons"
+						id="button_navigation_next"
+						title="Go to next constraint annotation page. &#013;Shortcut: [ArrowRight]"
+						onclick="goToConstraintsAnnotationPage({projectID:'{{project_id}}', constraintID:'{{navigation_next}}'});">
+						arrow_forward_ios
+					</button>
+				</div>
+			</div>
+		</div>
+
+	{% else %}
+
+		<!-- CONTAINER ERROR -->
+		<div class="container">
+
+			<!-- CONTAINER ERROR - TITLE -->
+			<h3 class="container_title">
+				Error: 404
+			</h3>
+
+			<!-- CONTAINER ERROR - CONTENT -->
+			<div class="container_content">
+
+				<!-- CONTAINER ERROR - DETAIL -->
+				<div class="container_content_div center">
+					In project with id '{{ project_id }}', the constraint with id '{{ constraint_id }}' to annotate doesn't exist.
+				</div>
+			</div>
+		</div>
+
+	{% endif %}
+
+{% endblock %}

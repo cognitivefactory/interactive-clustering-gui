@@ -1,0 +1,417 @@
+<!-- Inherit from "_base.html" -->
+{% extends "_base.html" %}
+
+<!-- Surcharge block "header_javascripts" of "_base.html" -->
+{% block header_javascripts %}
+	<script src="/js/constraints.js"></script>
+	<script src="/js/status.js"></script>
+	<script src="/js/tasks.js"></script>
+{% endblock %}
+
+<!-- Surcharge block "content" of "_base.html" -->
+{% block content %}
+
+	<!-- CONTAINER CONSTRAINTS -->
+	<div class="container">
+
+		<!-- CONTAINER CONSTRAINTS - TITLE -->
+		<h3 class="container_title collapsible">
+			Iteration ({{status.iteration_id}}): Constraints synthesis
+		</h3>
+
+		<!-- CONTAINER CONSTRAINTS - CONTENT -->
+		<div class="container_content">
+
+			<!-- CONTAINER CONSTRAINTS - INFORMATIONS -->
+			<div class="container_content_div">
+				<table class="table_description">
+
+					<!-- CONTAINER CONSTRAINTS - INFORMATIONS - PROJECT ID -->
+					<tr class="row hide">
+						<td class="column" style="width: 33%;">
+							<b>The ID of the project</b>:
+						</td>
+						<td class="column" id="project_id" style="width: 33%;">
+							<i>{{project_id}}</i>
+						</td>
+						<td class="column" style="width: 33%;">
+							
+						</td>
+					</tr>
+
+					<!-- CONTAINER CONSTRAINTS - INFORMATIONS - TEXTS -->
+					{% set number_of_remaining_texts = (texts.values() | selectattr("is_deleted", "equalto", false) | list | length) %}
+					{% set number_of_deleted_texts = (texts.values() | selectattr("is_deleted", "equalto", true) | list | length) %}
+					{% set number_of_texts = (number_of_remaining_texts + number_of_deleted_texts) %}
+					<tr class="row">
+						<td class="column" style="width: 33%;">
+							<b>Number of texts</b>:
+						</td>
+						<td class="column" style="width: 33%;">
+							<b>{{ number_of_remaining_texts }} texts</b>
+							<span
+								class="material-icons info_bulle align_rigth"
+								title="initial: {{ number_of_texts }}, is_deleted: {{ number_of_deleted_texts }}.">
+								info
+							</span>
+						</td>
+						<td class="column center" style="width: 33%;">
+							<button
+								class="material-icons button_steps"
+								id="button_go_to_texts"
+								title="See texts."
+								onclick="goToTextsSummaryPage({projectID:'{{project_id}}'})">
+								<div class="inner_middle">
+									<span style="font-size: 0.66em;">TEXTS</span>
+									inventory_2
+								</div>
+							</button>
+						</td>
+					</tr>
+					<!-- CONTAINER CONSTRAINTS - INFORMATIONS - CONSTRAINTS -->
+					{% set number_of_MUST_LINK_constraints = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("constraint_type", "equalto", "MUST_LINK") | list | length) %}
+					{% set number_of_CANNOT_LINK_constraints = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("constraint_type", "equalto", "CANNOT_LINK") | list | length) %}
+					{% set number_of_SKIP_constraints = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("constraint_type", "equalto", none) | list | length) %}
+					{% set number_of_constraints = (number_of_MUST_LINK_constraints + number_of_CANNOT_LINK_constraints) %}
+					{% set number_of_constraints_to_annotate = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("to_annotate", "equalto", true) | list | length) %}
+					{% set number_of_constraints_to_review = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("to_review", "equalto", true) | list | length) %}
+					{% set number_of_constraints_to_fix = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("to_fix_conflict", "equalto", true) | list | length) %}
+					<tr class="row">
+						<td class="column">
+							<b>Number of constraints</b>:
+						</td>
+						<td class="column">
+							<b>{{ number_of_constraints }} constraints</b>
+							{% if status.state_details.step == "ANNOTATION" %}
+								<br/>
+								and {{ number_of_constraints_to_annotate }} need your annotation.
+							{% endif %}
+							<span
+								class="material-icons info_bulle align_rigth"
+								title="MUST LINK: {{ number_of_MUST_LINK_constraints }}, CANNOT LINK: {{ number_of_CANNOT_LINK_constraints }}, SKIP: {{ number_of_SKIP_constraints }} &#013;to annotate: {{ number_of_constraints_to_annotate }}, to review: {{ number_of_constraints_to_review }}, to fix: {{ number_of_constraints_to_fix }}.">
+								info
+							</span>
+						</td>
+						<td class="column center">
+							{% if status.state_details.step == "ANNOTATION" %}
+								<!-- Constraints approbation -->
+								{% set approbation_disabled = (status.state in ["ANNOTATION_WITH_UPTODATE_MODELIZATION"]) %}
+								<button
+									disabled
+									class="material-icons button_steps"
+									id="button_approve_annotations"
+									title="Approve all constraints and their annotations. If disabled, please run the modelization update and fix the remaining conflicts."
+									onclick="this.disabled=true; approveConstraintsAnnotations({projectID:'{{project_id}}'})">
+									<div class="inner_middle">
+										<span style="font-size: 0.66em;">APPROVE</span>
+										verified
+									</div>
+								</button>
+							{% endif %}
+						</td>
+					</tr>
+					{% if status.state_details.step == "ANNOTATION" %}
+						<!-- CONTAINER CONSTRAINTS - INFORMATIONS - MODELIZATION -->
+						<tr class="row">
+							<td class="column">
+								<b>Modelization state</b>:
+							</td>
+							<td class="column">
+								{% if (status.state_details.modelization_status == "TODO") %}
+									<span class="material-icons annotation_tag color_warning">warning</span>
+									<b>Modelization is empty</b>.
+									<em>Please run modelization update.</em>
+								{% elif (status.state_details.modelization_status == "UPTODATE") %}
+									<span class="material-icons annotation_tag color_correct">done_all</span>
+									<b>Modelization is up to date</b>.
+									<em>Any modification will lead to an outdated modelization.</em>
+									<b>You can approve your work if all annotations are done</b>.
+								{% elif (status.state_details.modelization_status == "OUTDATED") %}
+									<span class="material-icons annotation_tag color_warning">warning</span>
+									<b>Modelization is outdated{% if status.state_details.conflict_status == "TRUE" %} with some conflits{% endif %}</b>.
+									<em>Please run modelization update after your modifications to check project consistency and constraints conflicts.</em>
+								{% elif (status.state_details.modelization_status in ["PENDING", "WORKING"]) %}
+									<span class="material-icons annotation_tag color_warning">update</span>
+									<b>Modelization update is in progress</b>.
+									<em>Page will reload in a few moments.</em>
+								{% else %}
+									<span class="material-icons annotation_tag color_error">error</span>
+									<b>An unexpected modelization error occurred</b>.
+									<em>Please check your project.</em>
+								{% endif %}
+							</td>
+							<td class="column center">
+								<!-- Settings for modelization update job -->
+								<button
+									class="material-icons button_steps"
+									style="font-size: 1em;"
+									id="button_settings_modelization_update"
+									title="Define settings for modelization update."
+									onclick="goToSettingsPage({projectID:'{{project_id}}', iterationID:null, settingsNames:['preprocessing', 'vectorization']});"
+								>
+									settings
+								</button>
+								<!-- Modelization update job -->
+								<button
+									disabled
+									class="material-icons button_steps"
+									id="button_run_modelization_update"
+									title="Run the modelization update job."
+									onclick="this.disabled=true; runModelizationUpdateTask({projectID:'{{project_id}}'})">
+									<div class="inner_middle">
+										<span style="font-size: 0.66em;">UPDATE</span>
+										sync
+									</div>
+								</button>
+								<br/>
+								<!-- Loading bar for annotation and modelization jobs -->
+								<div id="loadingbar_annotation_and_modelization" class="loadingbar hide">
+									<div class="loadingbar_bar"></div>
+									<div>
+										<div class="loadingbar_icon" onclick="hideElement('loadingbar_annotation_and_modelization');"></div>
+										<div class="loadingbar_text"></div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					{% endif %}
+				</table>
+			</div>
+
+
+			<!-- CONTAINER CONSTRAINTS - ACTIONS -->
+			<div class="container_content_actions">
+				{% if status.state_details.step == "SAMPLING" %}
+					<b>Please finish sampling step</b> to be able to perform annotation.
+				{% elif status.state_details.step == "ANNOTATION" %}
+					{% set has_conflicts = (status.state_details.conflict_status == "TRUE") %}
+					{% if has_conflicts %}
+						<b>Please run modelization update to check project consistency and constraints conflicts.</b>
+					{% endif %}
+				{% else %}
+					<b>Annotation step is finished and constraints have been approved.</b>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+
+
+	<!-- CONTAINER CONSTRAINTS LIST -->
+	<div class="container">
+
+		<!-- CONTAINER CONSTRAINTS LIST - TITLE -->
+		<h3 class="container_title collapsible">
+			List of constraints
+		</h3>
+		{% set modification_disabled = (status.state not in ["ANNOTATION_WITH_UPTODATE_MODELIZATION", "ANNOTATION_WITH_OUTDATED_MODELIZATION_WITHOUT_CONFLICTS", "ANNOTATION_WITH_OUTDATED_MODELIZATION_WITH_CONFLICTS"]) %}
+
+		<!-- CONTAINER CONSTRAINTS LIST - CONTENT -->
+		<div class="container_content">
+
+			<div class="center" style="margin: 5px auto;">
+				Sort by:
+				<select 
+					required
+					style="font-size: 1em; width: 8em"
+					onchange="goToConstraintsSummaryPage({projectID:'{{project_id}}', sortedBy:this.value, sortedReverse:'{{parameters.sorted_reverse}}'});"
+				>
+					<option
+						value="id"
+						{% if parameters.sorted_by=="id" %}selected{% endif %}>
+						default
+					</option>
+					<option
+						value="text"
+						{% if parameters.sorted_by=="text" %}selected{% endif %}>
+						text
+					</option>
+					<option
+						value="constraint_type"
+						{% if parameters.sorted_by=="constraint_type" %}selected{% endif %}>
+						constraint type
+					</option>
+					<option
+						value="iteration_of_sampling"
+						{% if parameters.sorted_by=="iteration_of_sampling" %}selected{% endif %}>
+						iteration of sampling
+					</option>
+					<option
+						value="date_of_update"
+						{% if parameters.sorted_by=="date_of_update" %}selected{% endif %}>
+						date of update
+					</option>
+					<option
+						value="to_annotate"
+						{% if parameters.sorted_by=="to_annotate" %}selected{% endif %}>
+						to annotate
+					</option>
+					<option
+						value="to_review"
+						{% if parameters.sorted_by=="to_review" %}selected{% endif %}>
+						to review
+					</option>
+					<option
+						value="to_fix_conflict"
+						{% if parameters.sorted_by=="to_fix_conflict" %}selected{% endif %}>
+						to fix conflict
+					</option>
+				</select>
+
+				<select 
+					required
+					style="font-size: 1em; width: 8em"
+					onchange="goToConstraintsSummaryPage({projectID:'{{project_id}}', sortedBy:'{{parameters.sorted_by}}', sortedReverse:this.value});">
+					<option
+						value="False"
+						{% if parameters.sorted_reverse==false %}selected{% endif %}>
+						descending
+					</option>
+					<option
+						value="True"
+						{% if parameters.sorted_reverse==true %}selected{% endif %}>
+						ascending
+					</option>
+				</select>
+			</div>
+
+			<!-- CONTAINER CONSTRAINTS LIST - CONSTRAINT TABLE -->
+			<div class="container_content_div">
+				<table class="table_annotation_synthesis">
+					<tr class="row">
+						<th class="column" style="width: 32.5%;" title="The first text of the constraint.">
+							Text 1
+						</th>
+						<th class="column" style="width: 5%;" title="The value of the constraint.">
+							Constraint
+						</th>
+						<th class="column" style="width: 32.5%;" title="The second text of the constraint.">
+							Text 2
+						</th>
+						<th class="column" style="width: 5%;" title="The iteration when the constraint has been selected for annotation (step sampling).">
+							Sampling<br/>iteration  <!-- Sampling<br/>iteration -->
+						</th>
+						<th class="column" style="width: 5%;"  title="The last time when the constraint annotation has been updated.">
+							Last<br/>update  <!-- Update<br/>date -->
+						</th>
+						<th class="column" style="width: 5%;" title="Is this constraint to annotate ?">
+							To<br/>annotate  <!-- Constraint<br/>to annotate -->
+						</th>
+						<th class="column" style="width: 5%;" title="Is this constraint to review ?">
+							To<br/>review  <!-- Constraint<br/>to review -->
+						</th>
+						<th class="column" style="width: 5%;" title="Is this constraint involved in a conflict ?">
+							To<br/>fix  <!-- Constraint<br/>in conflict -->
+						</th>
+						<th class="column" style="width: 5%;" title="Go to a more detailled view of the constraint.">
+							Go<br/>to  <!-- Go to<br/>annotation -->
+						</th>
+					</tr>
+					{% for constraint_id, constraint in constraints.items() %}
+						<!-- CONSTRAINT {{ constraint_id }} -->
+						<tr
+							class="row {% if constraint.to_fix_conflict == true %}row_error{% endif %}"
+							id="{{ constraint_id }}">
+							<td class="column center" title="Text ID 1: {{ constraint.data.id_1 }}">
+								<i>&laquo; {{ texts[constraint.data.id_1].text_preprocessed }} &raquo;</i>
+								<span
+									class="material-icons info_bulle align_rigth"
+									title="Unpreprocessed text: &#013; &laquo; {{ texts[constraint.data.id_1].text }} &raquo;">
+									info
+								</span>
+							</td>
+							<td class="column center" title="Constraint ID: {{ constraint_id }}">
+								<select 
+									required
+									{% if modification_disabled %}disabled{% endif %}
+									class="{% if constraint.constraint_type == 'MUST_LINK' %}background_must_link{% elif constraint.constraint_type == 'CANNOT_LINK' %}background_cannot_link{% else %}background_blank{% endif %}"
+									id="{{ constraint_id }}.select"
+									style="font-size: 1em; width: 100%;"
+									onchange="this.disabled=true; this.classList=this.options[this.selectedIndex].classList; updateConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', constraintType:this.value, reloadOption:true});">
+									<option
+										value=""
+										{% if constraint.constraint_type is none %}selected{% endif %}
+										class="background_blank">
+										SKIP
+									</option>
+									<option
+										value="MUST_LINK"
+										{% if constraint.constraint_type == "MUST_LINK" %}selected{% endif %}
+										class="background_must_link">
+										MUST_LINK
+									</option>
+									<option
+										value="CANNOT_LINK"
+										{% if constraint.constraint_type == "CANNOT_LINK" %}selected{% endif %}
+										class="background_cannot_link">
+										CANNOT_LINK
+									</option>
+								</select>
+							</td>
+							<td class="column center" title="Text ID 2: {{ constraint.data.id_2 }}">
+								<i>&laquo; {{ texts[constraint.data.id_2].text_preprocessed }} &raquo;</i>
+								<span
+									class="material-icons info_bulle align_rigth"
+									title="Unpreprocessed text: &#013; &laquo; {{ texts[constraint.data.id_2].text }} &raquo;">
+									info
+								</span>
+							</td>
+							<td class="column center" title="Sampling iteration: {{ constraint.iteration_of_sampling }}">
+								{{ constraint.iteration_of_sampling }}
+							</td>
+							<td class="column center" title="Update date: {{ constraint.date_of_update }}" style="font-size: 0.70em;">
+								{% if constraint.date_of_update is none %}
+									Never
+								{% else %}
+									{{ constraint.date_of_update|timestamp_to_date }},<br/>
+									at {{ constraint.date_of_update|timestamp_to_hour }}.
+								{% endif %}
+							</td>
+							<td class="column center">
+								{% if constraint.to_annotate == true %}
+									<span class="material-icons color_info">
+										question_mark
+									</span>
+								{% endif %}
+							</td>
+							<td class="column center">
+								<input
+									type="checkbox"
+									style="width: 1.5em; height: 1.5em;"
+									{% if constraint.to_review==true %}checked{% endif %}
+									onchange="reviewConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', toReview:this.checked, reloadOption:false});">
+								{% if constraint.comment != "" %}
+									<span
+										class="material-icons info_bulle"
+										title="{{constraint.comment}}">
+										info
+									</span>
+								{% endif %}
+							</td>
+							<td class="column center">
+								{% if constraint.to_fix_conflict == true %}
+									<span class="material-icons color_error">
+										priority_high
+									</span>
+								{% elif constraint.constraint_type is not none %}
+									<span class="material-icons annotation_tag color_correct">
+										done
+									</span>
+								{% endif %}
+							</td>
+							<td class="column center">
+								<button
+									{% if modification_disabled %}disabled{% endif %}
+									class="material-icons"
+									onclick="goToConstraintsAnnotationPage({projectID:'{{project_id}}', constraintID:'{{constraint_id}}'});"
+									title="Go to a more detailled view of the constraint {{ constraint_id }}.">
+									chevron_right
+								</button>
+							</td>
+						</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

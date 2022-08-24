@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<!-- HEAD -->
+    <head>
+		<!-- Page title -->
+        <title>Interactive Clustering</title>
+		
+		<!-- Page logo -->
+		<link rel="icon" type="image/png" sizes="32x32" href="/resources/logos/interactive_clustering_pink.png">
+		
+		<!-- Page metadata -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Page styles -->
+		<link rel="stylesheet" href="/css/styles.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- Content: https://fonts.google.com/icons?selected=Material+Icons -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		{% block header_styles %}
+			<!-- Styles of the page -->
+		{% endblock %}
+		
+		<!-- Page scripts -->
+		<script src="/js/collapsing.js"></script>
+		<script src="/js/goto.js"></script>
+		{% block header_javascripts %}
+			<!-- Scripts of the page -->
+		{% endblock %}
+    </head>
+
+	<!-- BODY -->
+    <body>
+
+		<!-- HEADERS -->
+		<div id="header">
+			<!-- Title of the page -->
+			<h1 id="header_title">
+				<img style="height: 1em; text-align:center;" src="/resources/logos/interactive_clustering_white.png" alt=""/>
+				Interactive Clustering Graphical User Interface
+			</h1>
+		</div>
+
+		<!-- BARS -->
+		<div id="bars">
+			<!-- NAV BAR -->
+			<div id="navbar">
+				<button
+					class="material-icons"
+					title="Go to welcome page."
+					onclick="goToWelcomePage();">
+					<img
+						src="/resources/logos/interactive_clustering_black.png"
+						alt=""/>
+				</button>
+				{% if (projects is defined) or (metadata is defined) %}
+					<span
+						class="material-icons">
+						arrow_forward_ios
+					</span>
+					<button
+						class="material-icons"
+						title="Go to list of projects page."
+						onclick="goToProjectsSummaryPage();"
+					>
+						folder
+					</button>
+				{% endif %}
+				{% if metadata is defined %}
+					<span
+						class="material-icons">
+						arrow_forward_ios
+					</span>
+					<button
+						class="material-icons"
+						title="Go to project home page."
+						onclick="goToProjectHomePage({projectID:'{{metadata.project_id}}'});"
+					>
+						home
+					</button>
+					<div class="title">
+						<i>{{metadata.project_name}}</i>
+					</div>
+				{% endif %}
+				<button
+					class="material-icons right"
+					title="Contact us by mail."
+					onclick="mailToContacts();"
+				>
+					email
+				</button>
+				<button
+					class="material-icons right"
+					title="Go to help page."
+					onclick="goToHelpPage();"
+				>
+					help
+				</button>
+			</div>
+		</div>
+
+		<!-- PAGE CONTENT -->
+		<div class="body_content">
+			{% block content %}
+				&lt;&lt; <i>Insert page content here.</i> &gt;&gt;
+			{% endblock %}
+		</div>
+
+		<!-- FOOTER -->
+		<div id="footer">
+			<!-- ABOUT (This application) -->
+			<div id="copyright">
+				<div>
+					© 2022 Cognitive Factory
+				</div>
+				<div>
+					<a href="https://doi.org/10.5281/zenodo.4775270" class="without_decoration">
+						<img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4775270.svg" alt="DOI"/>
+					</a>
+				</div>
+			</div>
+			<!-- ABOUT GITHUB (Interactive Clustering) -->
+			<div id="about">
+				<!--
+					<div class="about_title center">
+						About:
+					</div>
+				-->
+				<div>
+					<a href="https://cognitivefactory.github.io/interactive-clustering" class="without_decoration gray">
+						<img src="/resources/logos/github.png" style="height: 0.8em;"/>
+						cognitivefactory/interactive-clustering
+					</a>
+				</div>
+				<div>
+					<a href="https://cognitivefactory.github.io/interactive-clustering-gui" class="without_decoration gray">
+						<img src="/resources/logos/github.png" style="height: 0.8em;"/>
+						cognitivefactory/interactive-clustering-gui
+					</a>
+				</div>
+			</div>
+		</div>
+    </body>
+
+</html>

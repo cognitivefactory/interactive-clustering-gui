@@ -1,0 +1,874 @@
+<!-- Inherit from "_base.html" -->
+{% extends "_base.html" %}
+
+<!-- Surcharge block "header_javascripts" of "_base.html" -->
+{% block header_javascripts %}
+	<script src="/js/settings.js"></script>
+{% endblock %}
+
+<!-- Surcharge block "content" of "_base.html" -->
+{% block content %}
+
+	<!-- CONTAINER SETTINGS -->
+	<div class="container">
+		
+		{%
+			set is_in_current_iteration = (
+				iteration_id is none
+				or iteration_id == status.iteration_id
+			)
+		%}
+
+		<!-- CONTAINER SETTINGS - TITLE -->
+		<h3 class="container_title">
+			{% if is_in_current_iteration %}
+				Current iteration ({{status.iteration_id}}): Settings synthesis
+			{% else %}
+				Previous iteration ({{iteration_id}}): Settings synthesis
+			{% endif %}
+		</h3>
+
+		<!-- CONTAINER SETTINGS - CONTENT -->
+		<div class="container_content">
+
+			<!-- CONTAINER SETTINGS - SETTINGS -->
+			<div class="container_content_div">
+
+				{% if "preprocessing" in settings.keys() %}
+					{%
+						set disable_preprocessing = (
+							status.state not in [
+								"INITIALIZATION_WITHOUT_MODELIZATION",
+								"ANNOTATION_WITH_UPTODATE_MODELIZATION",
+								"ANNOTATION_WITH_OUTDATED_MODELIZATION_WITHOUT_CONFLICTS",
+								"ANNOTATION_WITH_OUTDATED_MODELIZATION_WITH_CONFLICTS",
+							]
+						)
+					%}
+					<!-- CARD PREPROCESSING -->
+					<div class="card">
+						<!-- CARD PREPROCESSING - TITLE -->
+						<h4 class="card_title collapsible">
+							Settings of preprocessing step (during modelization update)
+						</h4>
+						<!-- CARD PREPROCESSING - CONTENT -->
+						<div class="card_content collapsible_content">
+							<!-- CARD PREPROCESSING - SETTINGS -->
+							<div class="card_content_div">
+								<form id="preprocessing_settings_form">
+									<table class="table_settings">
+										<!-- CARD PREPROCESSING - SETTINGS headers -->
+										<tr class="row">
+											<th class="column" style="width: 50%;">
+												Parameter
+											</th>
+											<th class="column" style="width: 50%;">
+												Value
+											</th>
+										</tr>
+										<!-- CARD PREPROCESSING - SETTINGS "apply_stopwords_deletion" -->
+										<tr class="row" id="preprocessing.apply_stopwords_deletion">
+											<td class="column">
+												Apply stopwords deletion
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The option to delete stopwords (useless words). &#013;Disabled by default.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<label class="button_switch">
+													<input
+														{% if disable_preprocessing %}disabled{% endif %}
+														type="checkbox"
+														{% if settings.preprocessing.apply_stopwords_deletion==true %}checked{% endif %}
+														onchange="updatePreprocessingSubmitButtonStatus();">
+													<span class="slider round"></span>
+												</label>
+											</td>
+										</tr>
+										<!-- CARD PREPROCESSING - SETTINGS "apply_parsing_filter" -->
+										<tr class="row" id="preprocessing.apply_parsing_filter">
+											<td class="column">
+												Apply dependency parsing filter
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The option to filter words by their dependency parsing tag. It allows to keep only important words (subjet, verb, additional subject). &#013;Disabled by default.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<label class="button_switch">
+													<input
+														{% if disable_preprocessing %}disabled{% endif %}
+														type="checkbox"
+														{% if settings.preprocessing.apply_parsing_filter==true %}checked{% endif %}
+														onchange="updatePreprocessingSubmitButtonStatus();">
+													<span class="slider round"></span>
+												</label>
+											</td>
+										</tr>
+										<!-- CARD PREPROCESSING - SETTINGS "apply_lemmatization" -->
+										<tr class="row" id="preprocessing.apply_lemmatization">
+											<td class="column">
+												Apply lemmatization
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The option to apply lemmatization (transform the word to its root form). &#013;Disabled by default.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<label class="button_switch">
+													<input
+														{% if disable_preprocessing %}disabled{% endif %}
+														type="checkbox"
+														{% if settings.preprocessing.apply_lemmatization==true %}checked{% endif %}
+														onchange="updatePreprocessingSubmitButtonStatus();">
+													<span class="slider round"></span>
+												</label>
+											</td>
+										</tr>
+										<!-- CARD PREPROCESSING - SETTINGS "spacy_language_model" -->
+										<tr class="row" id="preprocessing.spacy_language_model">
+											<td class="column">
+												Spacy language model to use
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The spacy language model to use for all the previous transformation. Several models can be available depending on project context. &#013;The default language model is selected.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<select
+													{% if disable_preprocessing %}disabled{% endif %}
+													style="font-size: 1em; width: 70%;"
+													onchange="updatePreprocessingSubmitButtonStatus();">
+													<option
+														value="fr_core_news_md"
+														{% if settings.preprocessing.spacy_language_model == "fr_core_news_md" %}selected{% endif %}>
+														fr_core_news_md
+													</option>
+												</select>
+											</td>
+										</tr>
+									</table>
+								</form>
+							</div>
+							<!-- CARD PREPROCESSING - ACTIONS -->
+							{% if not disable_preprocessing %}
+								<div class="card_content_actions">
+									<button
+										class="button_form_reset"
+										title="Reset the preprocessing settings form."
+										onclick="resetPreprocessingForm();">
+										Reset
+									</button>
+									<button
+										disabled
+										class="button_form_submit"
+										id="button_preprocessing_settings_submit"
+										title="Update preprocessing settings."
+										onclick="this.disabled=true; updatePreprocessingSettings({projectID:'{{project_id}}'});">
+										Update
+									</button>
+								</div>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+
+				{% if "vectorization" in settings.keys() %}
+					{%
+						set disable_vectorization = (
+							status.state not in [
+								"INITIALIZATION_WITHOUT_MODELIZATION",
+								"ANNOTATION_WITH_UPTODATE_MODELIZATION",
+								"ANNOTATION_WITH_OUTDATED_MODELIZATION_WITHOUT_CONFLICTS",
+								"ANNOTATION_WITH_OUTDATED_MODELIZATION_WITH_CONFLICTS",
+							]
+						)
+					%}
+					<!-- CARD VECTORIZATION -->
+					<div class="card">
+						<!-- CARD VECTORIZATION - TITLE -->
+						<h4 class="card_title collapsible">
+							Settings of vectorization step (during modelization update)
+						</h4>
+						<!-- CARD VECTORIZATION - CONTENT -->
+						<div class="card_content collapsible_content">
+							<!-- CARD VECTORIZATION - SETTINGS -->
+							<div class="card_content_div">
+								<form id="vectorization_settings_form">
+									<table class="table_settings">
+										<!-- CARD VECTORIZATION - SETTINGS headers -->
+										<tr class="row">
+											<th class="column" style="width: 50%;">
+												Parameter
+											</th>
+											<th class="column" style="width: 50%;">
+												Value
+											</th>
+										</tr>
+										<!-- CARD VECTORIZATION - SETTINGS "activate" -->
+										<tr class="row" id="vectorization.vectorizer_type">
+											<td class="column">
+												Type of vectorizer
+												<span class="material-icons info_bulle align_rigth" title="The vectorizer type to use. &#013;TFIDF is selected by default.">info</span>
+											</td>
+											<td class="column center">
+												<select
+													{% if disable_vectorization %}disabled{% endif %}
+													style="font-size: 1em; width: 70%;"
+													onchange="updateVectorizationSubmitButtonStatus();">
+													<option
+														value="tfidf"
+														{% if settings.vectorization.vectorizer_type == "tfidf" %}selected{% endif %}>
+														tfidf
+													</option>
+													<option
+														value="spacy"
+														{% if settings.vectorization.vectorizer_type == "spacy" %}selected{% endif %}>
+														spacy
+													</option>
+												</select>
+											</td>
+										</tr>
+										<!-- CARD VECTORIZATION - SETTINGS "spacy_language_model" -->
+										<tr class="row {% if settings.vectorization.spacy_language_model is none %}hide{% endif %}" id="vectorization.spacy_language_model">
+											<td class="column">
+												Spacy language model to use
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The spacy language model to use for spacy vectorizer. Several models can be available depending on project context. Is not requested for tfidf vectorizer. &#013;The default language model is selected if spacy vectorizer is selected.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<select
+													{% if disable_vectorization %}disabled{% endif %}
+													style="font-size: 1em; width: 70%;"
+													onchange="updateVectorizationSubmitButtonStatus();">
+													<option
+														value="fr_core_news_md"
+														{% if settings.vectorization.spacy_language_model == "fr_core_news_md" %}selected{% endif %}>
+														fr_core_news_md
+													</option>
+												</select>
+											</td>
+										</tr>
+										<!-- CARD VECTORIZATION - SETTINGS "random_seed" -->
+										<tr class="row" id="vectorization.random_seed">
+											<td class="column">
+												Random seed
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="A number (greater or equal to 0) used to set the random state of algorithms and to allow computation reproducibility. &#013;Defaults to 42.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<input
+													required
+													{% if disable_vectorization %}disabled{% endif %}
+													type="number"
+													min="0"
+													step="1"
+													value="{{settings.vectorization.random_seed}}"
+													style="font-size: 1em; width: 70%;"
+													onchange="updateVectorizationSubmitButtonStatus();"/>
+											</td>
+										</tr>
+									</table>
+								</form>
+							</div>
+							<!-- CARD VECTORIZATION - ACTIONS -->
+							{% if not disable_vectorization %}
+								<div class="card_content_actions">
+									<button
+										class="button_form_reset"
+										title="Reset the vectorization settings form."
+										onclick="resetVectorizationForm();">
+										Reset
+									</button>
+									<button
+										disabled
+										class="button_form_submit"
+										id="button_vectorization_settings_submit"
+										title="Update vectorization settings."
+										onclick="this.disabled=true; updateVectorizationSettings({projectID:'{{project_id}}'});">
+										Update
+									</button>
+								</div>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+
+				{% if "sampling" in settings.keys() %}
+					{%
+						set disable_sampling = (
+							status.state not in [
+								"SAMPLING_TODO",
+							]
+						)
+					%}
+					<!-- CARD SAMPLING -->
+					<div class="card">
+						<!-- CARD SAMPLING - TITLE -->
+						<h4 class="card_title collapsible">
+							Settings of sampling step
+						</h4>
+						<!-- CARD SAMPLING - CONTENT -->
+						<div class="card_content collapsible_content">
+							<!-- CARD SAMPLING - SETTINGS -->
+							<div class="card_content_div">
+								<form id="sampling_settings_form">
+									<table class="table_settings">
+										<!-- CARD SAMPLING - SETTINGS headers -->
+										<tr class="row">
+											<th class="column" style="width: 50%;">
+												Parameter
+											</th>
+											<th class="column" style="width: 50%;">
+												Value
+											</th>
+										</tr>
+										<!-- CARD SAMPLING - SETTINGS "nb_to_select" -->
+										<tr class="row" id="sampling.nb_to_select">
+											<td class="column">
+												Number of pairs of questions to select
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The number of pairs of questions to select for the annotation steps. &#013;Defaults to 25.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<input
+													required
+													{% if disable_sampling %}disabled{% endif %}
+													type="number"
+													min="5"
+													step="1"
+													value="{{settings.sampling.nb_to_select}}"
+													style="font-size: 1em; width: 70%;"
+													onchange="updateSamplingSubmitButtonStatus();"/>
+											</td>
+										</tr>
+										<!-- CARD SAMPLING - SETTINGS "algorithm" -->
+										<tr class="row" id="sampling.algorithm">
+											<td class="column">
+												Constraints sampling algorithm
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The sampling algorithm used to select pairs of questions to annotate in order to correct constraints clustering results. &#013;The default algorithm is the selection of closest pairs of questions from different clusters.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<select
+													required
+													{% if disable_sampling %}disabled{% endif %}
+													style="font-size: 1em; width: 70%;"
+													onchange="updateSamplingSubmitButtonStatus();">
+													<option
+														value="random"
+														{% if settings.sampling.algorithm == "random" %}selected{% endif %}>
+														Random
+													</option>
+													<option
+														value="random_in_same_cluster"
+														{% if settings.sampling.algorithm == "random_in_same_cluster" %}selected{% endif %}>
+														Random in a same cluster
+													</option>
+													<option
+														value="closest_in_different_clusters"
+														{% if settings.sampling.algorithm == "closest_in_different_clusters" %}selected{% endif %}>
+														Closest from different clusters
+													</option>
+													<option
+														value="farthest_in_same_cluster"
+														{% if settings.sampling.algorithm == "farthest_in_same_cluster" %}selected{% endif %}>
+														Farthest in a same cluster
+													</option>
+													<option
+														value="custom"
+														{% if settings.sampling.algorithm == "custom" %}selected{% endif %}>
+														Custom
+													</option>
+												</select>
+											</td>
+										</tr>
+										<!-- CARD SAMPLING - SETTINGS "custom.clusters_restriction" -->
+										<tr class="row {% if settings.sampling.algorithm != 'custom' %}hide{% endif %}" id="sampling.custom.clusters_restriction">
+											<td class="column">
+												[Custom] restriction on clusters
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="Restrict the sampling results with a cluster constraints. Can impose pairs of questions to be in a same cluster or from different clusters.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<select
+													required
+													{% if disable_sampling %}disabled{% endif %}
+													style="font-size: 1em; width: 70%;"
+													onchange="updateSamplingSubmitButtonStatus();">
+													<option
+														value="" hidden disabled
+														{% if (settings.sampling.init_kargs is none) or (settings.sampling.init_kargs.clusters_restriction is none) %}selected{% endif %}>
+														-- select an option --
+													</option>
+													<option
+														value="same_cluster"
+														{% if settings.sampling.init_kargs.clusters_restriction == "same_cluster" %}selected{% endif %}>
+														In a same cluster
+													</option>
+													<option
+														value="different_clusters"
+														{% if settings.sampling.init_kargs.clusters_restriction == "different_clusters" %}selected{% endif %}>
+														From different clustrers
+													</option>
+												</select>
+											</td>
+										</tr>
+										<!-- CARD SAMPLING - SETTINGS "custom.distance_restriction" -->
+										<tr class="row {% if settings.sampling.algorithm != 'custom' %}hide{% endif %}" id="sampling.custom.distance_restriction">
+											<td class="column">
+												[Custom] restriction on distance
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="Restrict the sampling results with a distance constraints. Can impose pairs of questions to be closest neighbors or farthest neighbors.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<select
+													required
+													{% if disable_sampling %}disabled{% endif %}
+													style="font-size: 1em; width: 70%;"
+													onchange="updateSamplingSubmitButtonStatus();">
+													<option
+														value=""
+														hidden
+														disabled
+														{% if (settings.sampling.init_kargs is none) or (settings.sampling.init_kargs.distance_restriction is none) %}selected{% endif %}>
+														-- select an option --
+													</option>
+													<option
+														value="closest_neighbors"
+														{% if settings.sampling.init_kargs.distance_restriction == "closest_neighbors" %}selected{% endif %}>
+														Closest neighbors
+													</option>
+													<option
+														value="farthest_neighbors"
+														{% if settings.sampling.init_kargs.distance_restriction == "farthest_neighbors" %}selected{% endif %}>
+														Farthest neighbors
+													</option>
+												</select>
+											</td>
+										</tr>
+										<!-- CARD SAMPLING - SETTINGS "custom.without_inferred_constraints" -->
+										<tr class="row {% if settings.sampling.algorithm != 'custom' %}hide{% endif %}" id="sampling.custom.without_inferred_constraints">
+											<td class="column">
+												[Custom] without inferred constraints
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The option not sample constraints that were inferred from previous annotated constraints.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<label class="button_switch">
+													<input
+														{% if disable_sampling %}disabled{% endif %}
+														type="checkbox"
+														{% if (settings.sampling.init_kargs is none) or (settings.sampling.init_kargs.without_inferred_constraints is none) or (settings.sampling.init_kargs.without_inferred_constraints==true) %}checked{% endif %}
+														onchange="updateSamplingSubmitButtonStatus();">
+													<span class="slider round"></span>
+												</label>
+											</td>
+										</tr>
+										<!-- CARD SAMPLING - SETTINGS "random_seed" -->
+										<tr class="row" id="sampling.random_seed">
+											<td class="column">
+												Random seed
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="A number (greater or equal to 0) used to set the random state of algorithms and to allow computation reproducibility. &#013;Defaults to 42.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<input
+													required
+													{% if disable_sampling %}disabled{% endif %}
+													type="number"
+													min="0"
+													step="1"
+													value="{{settings.sampling.random_seed}}"
+													style="font-size: 1em; width: 70%;"
+													onchange="updateSamplingSubmitButtonStatus();"/>
+											</td>
+										</tr>
+									</table>
+								</form>
+							</div>
+							<!-- CARD SAMPLING - ACTIONS -->
+							{% if not disable_sampling %}
+								<div class="card_content_actions">
+									<button
+										class="button_form_reset"
+										title="Reset the sampling settings form."
+										onclick="resetSamplingForm();">
+										Reset
+									</button>
+									<button
+										disabled
+										class="button_form_submit"
+										id="button_sampling_settings_submit"
+										title="Update sampling settings."
+										onclick="this.disabled=true; updateSamplingSettings({projectID:'{{project_id}}'});">
+										Update
+									</button>
+								</div>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+
+				{% if "clustering" in settings.keys() %}
+					{%
+						set disable_clustering = (
+							status.state not in [
+								"INITIALIZATION_WITHOUT_MODELIZATION",
+								"INITIALIZATION_WITH_PENDING_MODELIZATION",
+								"INITIALIZATION_WITH_WORKING_MODELIZATION",
+								"SAMPLING_TODO",
+								"SAMPLING_PENDING",
+								"SAMPLING_WORKING",
+								"ANNOTATION_WITH_UPTODATE_MODELIZATION",
+								"ANNOTATION_WITH_OUTDATED_MODELIZATION_WITHOUT_CONFLICTS",
+								"ANNOTATION_WITH_PENDING_MODELIZATION_WITHOUT_CONFLICTS",
+								"ANNOTATION_WITH_WORKING_MODELIZATION_WITHOUT_CONFLICTS",
+								"ANNOTATION_WITH_OUTDATED_MODELIZATION_WITH_CONFLICTS",
+								"ANNOTATION_WITH_PENDING_MODELIZATION_WITH_CONFLICTS",
+								"ANNOTATION_WITH_WORKING_MODELIZATION_WITH_CONFLICTS",
+								"CLUSTERING_TODO",
+							]
+						)
+					%}
+					<!-- CARD CLUSTERING -->
+					<div class="card">
+						<!-- CARD CLUSTERING - TITLE -->
+						<h4 class="card_title collapsible">
+							Settings of clustering step
+						</h4>
+						<!-- CARD CLUSTERING - CONTENT -->
+						<div class="card_content collapsible_content">
+							<!-- CARD CLUSTERING - SETTINGS -->
+							<div class="card_content_div">
+								<form id="clustering_settings_form">
+									<table class="table_settings">
+										<!-- CARD CLUSTERING - SETTINGS header -->
+										<tr class="row">
+											<th class="column" style="width: 50%;">
+												Parameter
+											</th>
+											<th class="column" style="width: 50%;">
+												Value
+											</th>
+										</tr>
+										<!-- CARD CLUSTERING - SETTINGS "nb_clusters" -->
+										<tr class="row" id="clustering.algorithm">
+											<td class="column">
+												Constrained clustering algorithm
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The clustering algorithm used to regroup questions by their similarities. &#013;The default algorithm is the Kmeans.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<select
+													required
+													{% if disable_clustering %}disabled{% endif %}
+													style="font-size: 1em; width: 70%;"
+													onchange="updateClusteringSubmitButtonStatus();">
+													<option
+														value="kmeans"
+														{% if settings.clustering.algorithm == "kmeans" %}selected{% endif %}>
+														K-Means
+													</option>
+													<option
+														value="hierarchical"
+														{% if settings.clustering.algorithm == "hierarchical" %}selected{% endif %}>
+														Hierarchical
+													</option>
+													<option
+														value="spectral"
+														{% if settings.clustering.algorithm == "spectral" %}selected{% endif %}>
+														Spectral
+													</option>
+												</select>
+											</td>
+										</tr>
+										<!-- CARD CLUSTERING - SETTINGS "nb_clusters" -->
+										<tr class="row" id="clustering.nb_clusters">
+											<td class="column">
+												Number of clusters to search
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The number of clusters to search. &#013;Defaults to 10.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<input
+													required
+													{% if disable_clustering %}disabled{% endif %}
+													type="number"
+													min="2"
+													step="1"
+													value="{{settings.clustering.nb_clusters}}"
+													style="font-size: 1em; width: 70%;"
+													onchange="updateClusteringSubmitButtonStatus();"/>
+											</td>
+										</tr>
+										<!-- CARD CLUSTERING - SETTINGS "kmeans.model" -->
+										<tr class="row {% if settings.clustering.algorithm != 'kmeans' %}hide{% endif %}" id="clustering.kmeans.model">
+											<td class="column">
+												[K-Means] Model
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The K-Means clustering model to use. &#013;The default model is COP-Kmeans.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<select
+													required
+													{% if disable_clustering %}disabled{% endif %}
+													style="font-size: 1em; width: 70%;"
+													onchange="updateClusteringSubmitButtonStatus();">
+													<option
+														value="COP"
+														{% if (settings.clustering.init_kargs is none) or (settings.clustering.init_kargs.moedel is none) or (settings.clustering.init_kargs.model == "COP") %}selected{% endif %}>
+														COP
+													</option>
+												</select>
+											</td>
+										</tr>
+										<!-- CARD CLUSTERING - SETTINGS "kmeans.max_iteration" -->
+										<tr class="row {% if settings.clustering.algorithm != 'kmeans' %}hide{% endif %}" id="clustering.kmeans.max_iteration">
+											<td class="column">
+												[K-Means] Number maximum of iterations
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The K-Means maximum iterations threshold, needed to define the convergence stop case during computation. &#013;Defaults to 150.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<input
+													required
+													{% if disable_clustering %}disabled{% endif %}
+													type="number"
+													min="1"
+													step="1"
+													value="{{settings.clustering.init_kargs.max_iteration}}"
+													style="font-size: 1em; width: 70%;"
+													onchange="updateClusteringSubmitButtonStatus();"/>
+											</td>
+										</tr>
+										<!-- CARD CLUSTERING - SETTINGS "kmeans.tolerance" -->
+										<tr class="row {% if settings.clustering.algorithm != 'kmeans' %}hide{% endif %}" id="clustering.kmeans.tolerance">
+											<td class="column">
+												[K-Means] Tolerance
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The K-Means tolerance threshold, needed to define the convergence stop case during computation. &#013;Defaults to 0,0001.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<input
+													required
+													{% if disable_clustering %}disabled{% endif %}
+													type="number"
+													min="0.0"
+													step="0.0001"
+													value="{{settings.clustering.init_kargs.tolerance}}"
+													style="font-size: 1em; width: 70%;"
+													onchange="updateClusteringSubmitButtonStatus();"/>
+											</td>
+										</tr>
+										<!-- CARD CLUSTERING - SETTINGS "hierarchical.linkage" -->
+										<tr class="row {% if settings.clustering.algorithm != 'hierarchical' %}hide{% endif %}" id="clustering.hierarchical.linkage">
+											<td class="column">
+												[Hierarchical] Linkage
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The hierarchical clustering linkage, needed to define the metric to merge clusters during computation. &#013;The default linkage is ward.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<select
+													required
+													{% if disable_clustering %}disabled{% endif %}
+													style="font-size: 1em; width: 70%;"
+													onchange="updateClusteringSubmitButtonStatus();">
+													<option
+														value="ward"
+														{% if (settings.clustering.init_kargs is none) or (settings.clustering.init_kargs.linkage is none) or (settings.clustering.init_kargs.linkage) == "ward" %}selected{% endif %}>
+														Ward link
+													</option>
+													<option
+														value="single"
+														{% if settings.clustering.init_kargs.linkage == "single" %}selected{% endif %}>
+														Single link
+													</option>
+													<option
+														value="complete"
+														{% if settings.clustering.init_kargs.linkage == "complete" %}selected{% endif %}>
+														Complete link
+													</option>
+													<option
+														value="average"
+														{% if settings.clustering.init_kargs.linkage == "average" %}selected{% endif %}>
+														Average link
+													</option>
+												</select>
+											</td>
+										</tr>
+										<!-- CARD CLUSTERING - SETTINGS "spectral.model" -->
+										<tr class="row {% if settings.clustering.algorithm != 'spectral' %}hide{% endif %}" id="clustering.spectral.model">
+											<td class="column">
+												[Spectral] Model
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The spectral clustering model to use. &#013;The default model is SPEC-spectral.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<select
+													required
+													{% if disable_clustering %}disabled{% endif %}
+													style="font-size: 1em; width: 70%;"
+													onchange="updateClusteringSubmitButtonStatus();">
+													<option
+														value="SPEC"
+														{% if (settings.clustering.init_kargs is none) or (settings.clustering.init_kargs.model is none) or (settings.clustering.init_kargs.model == "SPEC") %}selected{% endif %}>
+														SPEC
+													</option>
+												</select>
+											</td>
+										</tr>
+										<!-- CARD CLUSTERING - SETTINGS "spectral.nb_components" -->
+										<tr class="row {% if settings.clustering.algorithm != 'spectral' %}hide{% endif %}" id="clustering.spectral.nb_components">
+											<td class="column">
+												[Spectral] Number of components
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="The spectral number of components, needed to define the number of eigenvectors to compute. &#013;Defaults to empty.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<input
+													{% if disable_clustering %}disabled{% endif %}
+													type="number"
+													min="2"
+													step="1"
+													value="{% if settings.clustering.init_kargs.nb_components is none %}{% else %}{{settings.clustering.init_kargs.nb_components}}{% endif %}"
+													style="font-size: 1em; width: 70%;"
+													onchange="updateClusteringSubmitButtonStatus();"/>
+											</td>
+										</tr>
+										<!-- CARD CLUSTERING - SETTINGS "random_seed" -->
+										<tr class="row" id="clustering.random_seed">
+											<td class="column">
+												Random seed
+												<span
+													class="material-icons info_bulle align_rigth"
+													title="A number (greater or equal to 0) used to set the random state of algorithms and to allow computation reproducibility. &#013;Defaults to 42.">
+													info
+												</span>
+											</td>
+											<td class="column center">
+												<input
+													required
+													{% if disable_clustering %}disabled{% endif %}
+													type="number"
+													min="0"
+													step="1"
+													value="{{settings.clustering.random_seed}}"
+													style="font-size: 1em; width: 70%;"
+													onchange="updateClusteringSubmitButtonStatus();"/>
+											</td>
+										</tr>
+									</table>
+								</form>
+							</div>
+							<!-- CARD CLUSTERING - ACTIONS -->
+							{% if not disable_clustering %}
+								<div class="card_content_actions">
+									<button
+										class="button_form_reset"
+										title="Reset the clustering settings form."
+										onclick="resetClusteringForm();">
+										Reset
+									</button>
+									<button
+										disabled
+										class="button_form_submit"
+										id="button_clustering_settings_submit"
+										title="Update clustering settings."
+										onclick="this.disabled=true; updateClusteringSettings({projectID:'{{project_id}}'});">
+										Update
+									</button>
+								</div>
+							{% endif %}
+						</div>
+					</div>
+				{% endif %}
+
+			</div>
+
+			<!-- CONTAINER SETTINGS - ACTIONS NAVIGATION -->
+			<div class="container_content_actions">
+				{% set navigation_previous = none if (iteration_id == 0) else (iteration_id - 1) %}
+				{% set navigation_next = none if (iteration_id == status["iteration_id"]) else (iteration_id + 1) %}
+				<script>
+					// Get data from Jinja Template.
+					var settingsNames = JSON.parse('{{ parameters.settings_names | tojson }}');
+				</script>
+				<button
+					{% if navigation.previous is none %}disabled{% endif %}
+					class="material-icons"
+					title="Go to settings page of previous iteration."
+					onclick="goToSettingsPage({projectID:'{{project_id}}', iterationID:'{{navigation.previous}}', settingsNames:settingsNames});">
+					arrow_back_ios
+				</button>
+				<button
+					class="material-icons"
+					title="Go to project home page."
+					onclick="goToProjectHomePage({projectID:'{{project_id}}'});">
+					home
+				</button>
+				<button
+					{% if navigation.next is none %}disabled{% endif %}
+					class="material-icons"
+					title="Go to settings page of next iteration."
+					onclick="goToSettingsPage({projectID:'{{project_id}}', iterationID:'{{navigation.next}}', settingsNames:settingsNames})">
+					arrow_forward_ios
+				</button>
+			</div>
+		</div>
+	</div>
+
+{% endblock %}

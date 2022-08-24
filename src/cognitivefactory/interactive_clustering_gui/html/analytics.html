@@ -1,0 +1,326 @@
+<!-- Inherit from "_base.html" -->
+{% extends "_base.html" %}
+
+<!-- Surcharge block "header_javascripts" of "_base.html" -->
+{% block header_javascripts %}
+	<script src="/js/project_analytics.js"></script>
+	<script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+{% endblock %}
+
+<!-- Surcharge block "content" of "_base.html" -->
+{% block content %}
+
+	<!-- CONTAINER PROJECT DESCRIPTION -->
+	<div class="container">
+
+		<!-- CONTAINER PROJECT DESCRIPTION - TITLE -->
+		<h3 class="container_title collapsible">
+			Iteration {{iteration_id}}: Analytics synthesis
+		</h3>
+
+		<!-- CONTAINER PROJECT DESCRIPTION - CONTENT -->
+		<div class="container_content">
+
+			<!-- CONTAINER PROJECT DESCRIPTION - CONTENT INFORMATION -->
+			<div class="container_content_div">
+				<div class="container_content_div">
+					<table class="table_description">
+						<tr class="row hide">
+							<td class="column" style="width: 33%;">
+								<b>Project ID</b>:
+							</td>
+							<td class="column" id="project_id" style="width: 67%;">
+								{{project_id}}
+							</td>
+						</tr>
+						<!-- Current iteration -->
+						<tr class="row hide">
+							<td class="column" >
+								<b>Iteration ID:</b>:
+							</td>
+							<td class="column" id="iteration_id">
+								{{iteration_id}}
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<!-- CONTAINER ANNOTATION - ACTIONS NAVIGATION -->
+			<div class="container_content_actions">
+				<button {% if (navigation.previous is none) or (navigation.previous == "0") %}disabled{% endif %} class="material-icons" title="Go to previous iteration. &#013;Shortcut: [ArrowLeft]" onclick="goToAnalytics(projectID='{{project_id}}', iterationID='{{navigation.previous}}');">arrow_back_ios</button>
+				<button class="material-icons" title="Go to project home page." onclick="location.assign('/gui/projects/'+'{{project_id}}');">home</button>
+				<button {% if navigation.next is none %}disabled{% endif %} class="material-icons" title="Go to next iteration. &#013;Shortcut: [ArrowRight]" onclick="goToAnalytics(projectID='{{project_id}}', iterationID='{{navigation.next}}')">arrow_forward_ios</button>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- CONTAINER GRAPH 2D -->
+	<div class="container">
+
+		<!-- CONTAINER GRAPH 2D - TITLE -->
+		<h3 class="container_title collapsible">
+			Iteration {{iteration_id}}: Plot clusters in 2D graph.
+		</h3>
+
+		<!-- CONTAINER GRAPH 2D - CONTENT -->
+		<div class="container_content center" id="plot_clusters_in_2d">
+			{% if status.clustering.status == "DONE" %}
+				Please wait, it's loading !
+			{% else %}
+				Please run clustering step in order to visualize clusters.
+			{% endif %}
+		</div>
+		{% if status.clustering.status == "DONE" %}
+			<script>
+				// Get data from Jinja Template.
+				var dataToPlot = JSON.parse('{{ vectors | tojson }}');
+
+				// Initialize traces to plot.
+				var dictOfTracesToPlotIn2D = {};
+
+				// For each data...
+				for (var [dataID, dataInfo] of Object.entries(dataToPlot)) {
+					// Get the cluster ID.
+					var clusterID = dataInfo["cluster_id"];
+
+					// Case of new cluster.
+					if (! (clusterID in dictOfTracesToPlotIn2D)) {
+
+						// Initialize the cluster trace for 2D plot.
+						dictOfTracesToPlotIn2D[clusterID] = {
+							"name": "Cluster " + String(clusterID),
+							"text": [],
+							//"custom_data": [],
+							"x": [], "y": [],
+							"type": "scatter2d",
+							"mode": "markers",
+							"marker": {
+								"color": clusterID,
+								"size": 8,
+								"symbol": "circle",
+								"opacity": 0.8,
+								"line": {
+									"color": clusterID,
+									"width": 1,
+								},
+							},
+						}
+					}
+
+					// Update the cluster trace with this data for 2D plot.
+					dictOfTracesToPlotIn2D[clusterID]["text"].push(dataInfo["text"]);
+					dictOfTracesToPlotIn2D[clusterID]["x"].push(dataInfo["vector_2d"]["x"]);
+					dictOfTracesToPlotIn2D[clusterID]["y"].push(dataInfo["vector_2d"]["y"]);
+				}
+				
+				// Define the layout.
+				var layout2D = {
+					"margin": {
+						"l": "0.25%", "r": "0.25%", "b": "0.25%", "t": "0.25%",
+					},
+					"title": "Plot clusters in 2D graph.",
+				};
+
+				// Remove waiting message from graph placeholder.
+				document.getElementById("plot_clusters_in_2d").innerHTML = null;
+
+				// Plot clusters trace in 2D.
+				Plotly.newPlot(
+					"plot_clusters_in_2d",
+					Object.values(dictOfTracesToPlotIn2D),
+					layout2D,
+				);
+			</script>
+		{% endif %}
+	</div>
+
+	<!-- CONTAINER GRAPH 3D -->
+	<div class="container">
+
+		<!-- CONTAINER GRAPH 3D - TITLE -->
+		<h3 class="container_title collapsible">
+			Iteration {{iteration_id}}: Plot clusters in 3D graph.
+		</h3>
+
+		<!-- CONTAINER GRAPH 3D - CONTENT -->
+		<div class="container_content center" id="plot_clusters_in_3d">
+			{% if status.clustering.status == "DONE" %}
+				Please wait, it's loading !
+			{% else %}
+				Please run clustering step in order to visualize clusters.
+			{% endif %}
+		</div>
+		{% if status.clustering.status == "DONE" %}
+			<script>
+				// Get data from Jinja Template.
+				var dataToPlot = JSON.parse('{{ vectors | tojson }}');
+
+				// Initialize traces to plot.
+				var dictOfTracesToPlotIn3D = {};
+
+				// For each data...
+				for (var [dataID, dataInfo] of Object.entries(dataToPlot)) {
+					// Get the cluster ID.
+					var clusterID = dataInfo["cluster_id"];
+
+					// Case of new cluster.
+					if (! (clusterID in dictOfTracesToPlotIn3D)) {
+
+						// Initialize the cluster trace for 3D plot.
+						dictOfTracesToPlotIn3D[clusterID] = {
+							"name": "Cluster " + String(clusterID),
+							"text": [],
+							//"custom_data": [],
+							"x": [], "y": [], "z": [],
+							"type": "scatter3d",
+							"mode": "markers",
+							"marker": {
+								"color": clusterID,
+								"size": 8,
+								"symbol": "circle",
+								"opacity": 0.8,
+								"line": {
+									"color": clusterID,
+									"width": 1,
+								},
+							},
+						}
+					}
+
+					// Update the cluster trace with this data for 2D plot.
+					dictOfTracesToPlotIn3D[clusterID]["text"].push(dataInfo["text"]);
+					dictOfTracesToPlotIn3D[clusterID]["x"].push(dataInfo["vector_3d"]["x"]);
+					dictOfTracesToPlotIn3D[clusterID]["y"].push(dataInfo["vector_3d"]["y"]);
+					dictOfTracesToPlotIn3D[clusterID]["z"].push(dataInfo["vector_3d"]["z"]);
+				}
+				
+				// Define the layout.
+				var layout3D = {
+					"margin": {
+						"l": "0.25%", "r": "0.25%", "b": "0.25%", "t": "0.25%",
+					},
+					"title": "Plot clusters in 3D graph.",
+				};
+
+				// Remove waiting message from graph placeholder.
+				document.getElementById("plot_clusters_in_3d").innerHTML = null;
+
+				// Plot clusters trace in 3D.
+				Plotly.newPlot(
+					"plot_clusters_in_3d",
+					Object.values(dictOfTracesToPlotIn3D),
+					layout3D,
+				);
+			</script>
+		{% endif %}
+	</div>
+
+	<!-- CONTAINER CLUSTERING AGREEMENT -->
+	<div class="container">
+
+		<!-- CONTAINER CLUSTERING AGREEMENT - TITLE -->
+		<h3 class="container_title collapsible">
+			Iteration {{iteration_id}}: Plot clustering agreement.
+		</h3>
+
+		<!-- CONTAINER CLUSTERING AGREEMENT - CONTENT -->
+		<div class="container_content center" id="plot_clustering_agreement">
+			{% if status.clustering.status == "DONE" %}
+				Please wait, it's loading !
+			{% else %}
+				Please run clustering step in order to visualize clustering agreement.
+			{% endif %}
+		</div>
+		{% if iteration_id != "0" and status.clustering.status == "DONE" %}
+			<script>
+				// Get data from Jinja Template.
+				var clusteringAgreementToPlot = JSON.parse('{{ clustering_agreement | tojson }}');
+				console.log(clusteringAgreementToPlot)
+
+				// Initialize data to plot.
+				var xValuesIterations = [];
+				var yValuesAgreement = [];
+				var markerColors = [];
+
+				for ([iterationID, agreementValues] of Object.entries(clusteringAgreementToPlot)) {
+					
+					// Update index.
+					xValuesIterations.push(iterationID);
+
+					// Update clustering/Constraints agreement.
+					if (agreementValues["OK"] + agreementValues["KO"] == 0) {
+						yValuesAgreement.push(0);
+					} else {
+						yValuesAgreement.push(
+							100 * agreementValues["OK"] / (agreementValues["OK"] + agreementValues["KO"])
+						);
+					}
+
+					// Update clustering/Constraints agreement color.
+					if (yValuesAgreement[yValuesAgreement.length-1] < 25) {
+						markerColors.push("black");
+					} else if (yValuesAgreement[yValuesAgreement.length-1] < 50) {
+						markerColors.push("red");
+					} else if (yValuesAgreement[yValuesAgreement.length-1] < 75) {
+						markerColors.push("orange");
+					} else {
+						markerColors.push("green");
+					}
+				}
+
+				// Initialize traces to plot.
+				var clusteringAgreementTrace = {
+					"x": xValuesIterations,
+					"y": yValuesAgreement,
+					"name": "Clustering/Constraints agreement",
+					"type": "scatter",
+					"marker": {
+						"size": 15,
+						"symbol": "x",
+						"color": markerColors,
+					},
+					"line": {
+						"width": 3,
+						"color": "gray",
+					},
+					"connectgaps": true,
+				}
+				
+				// Define the layout.
+				var layoutAgreement = {
+					"margin": {
+						"l": "0.25%", "r": "0.25%", "b": "0.25%", "t": "0.25%",
+					},
+					"title": "Plot clustering agreement according to annotated constraints.",
+					"xaxis": {
+						"title": "iteration (#)",
+					},
+					"yaxis": {
+						"title": "agreement (%)",
+						"range": [0, 100],
+					},
+					"showlegend": true,
+					"legend": {
+						"y": 0.5,
+						"font": {
+							"size": 16,
+						}
+					}
+				};
+
+				// Remove waiting message from graph placeholder.
+				document.getElementById("plot_clustering_agreement").innerHTML = null;
+
+				// Plot clustering agreement.
+				Plotly.newPlot(
+					"plot_clustering_agreement",
+					[clusteringAgreementTrace],
+					layoutAgreement,
+				);
+			</script>
+		{% endif %}
+	</div>
+
+{% endblock %}

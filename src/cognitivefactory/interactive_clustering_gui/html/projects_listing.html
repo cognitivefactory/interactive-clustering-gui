@@ -1,0 +1,272 @@
+<!-- Inherit from "_base.html" -->
+{% extends "_base.html" %}
+
+<!-- Surcharge block "header_javascripts" of "_base.html" -->
+{% block header_javascripts %}
+	<script src="/js/projects.js"></script>
+	<script src="/js/projects_listing.js"></script>
+{% endblock %}
+
+<!-- Surcharge block "content" of "_base.html" -->
+{% block content %}
+
+	<!-- CONTAINER PROJECTS LISTING -->
+	<div class="container">
+
+		<!-- CONTAINER PROJECTS LISTING - TITLE -->
+		<h3 class="container_title" id="listing_container_title">
+			List of existing projects<br/>
+			{% set number_of_projects = (projects|length) %}
+			{% if number_of_projects == 0 %}
+				(no projects)
+			{% elif number_of_projects == 1 %}
+				({{number_of_projects}} project)
+			{% else %}
+				({{number_of_projects}} projects)
+			{% endif %}
+		</h3>
+		<!-- CONTAINER PROJECTS LISTING - CONTENT -->
+		<div class="container_content">
+			<!-- CONTAINER PROJECTS LISTING - CONTENT INFORMATION -->
+			<div class="container_content_div grid_projects">
+
+				{% for project_id, project_value in projects.items() %}
+					<!-- CARD PROJECT -->
+					<div class="card" id="{{project_id}}">
+						<!-- CARD PROJECT - TITLE -->
+						<h3 class="card_title">
+							{{project_value.metadata.project_name}}
+							<button
+								class="material-icons button_corner"
+								onclick="deleteProject({projectID:'{{project_id}}', projectName:'{{project_value.metadata.project_name}}'});"
+								title="Delete the project.">
+								delete
+							</button>
+							<button
+								class="material-icons button_corner"
+								onclick="downloadProject({projectID:'{{project_id}}'});"
+								title="Dowload the project.">
+								download
+							</button>
+						</h3>
+						<!-- CARD PROJECT - CONTENT -->
+						<div class="card_content">
+							<!-- CARD PROJECT - CONTENT INFORMATION -->
+							<div class="card_content_div">
+								<table>
+									<tr class="row">
+										<td class="column" style="width: 40%;">
+											Was created:
+										</td>
+										<td class="column" style="width: 60%;">
+											on {{project_value.metadata.creation_timestamp|timestamp_to_date}},
+											at {{project_value.metadata.creation_timestamp|timestamp_to_hour}}.
+										</td>
+									</tr>
+									<!-- Current Iteration -->
+									<tr class="row">
+										<td class="column">
+											Is on <b>iteration</b>:
+										</td>
+										<td class="column">
+											<span style="font-size: 1.5em;">
+												{{project_value.status.iteration_id}}
+											</span>
+										</td>
+									</tr>
+									<!-- Current Step -->
+									<tr class="row">
+										<td class="column">
+											<b>Step</b> is:
+										</td>
+										<td class="column">
+											{{project_value.status.state_details.step}}
+											(<span class="material-icons" style="font-size: 0.9em;">
+												{% if project_value.status.state_details.step_status == "LOCKED" %}
+													lock
+												{% elif project_value.status.state_details.step_status == "TODO" %}
+													close
+												{% elif project_value.status.state_details.step_status in ["PENDING", "WORKING"] %}
+													update
+												{% elif project_value.status.state_details.step_status == "ERROR" %}
+													error
+												{% endif %}
+											</span>)
+										</td>
+									</tr>
+									<!-- Current Modelization -->
+									<tr class="row">
+										<td class="column">
+											<b>Modelization</b> is:
+										</td>
+										<td class="column">
+											{% if project_value.status.state_details.modelization_status == "TODO" %}
+												EMPTY
+											{% elif project_value.status.state_details.modelization_status in ["PENDING", "WORKING"] %}
+												IN PROGRESS
+											{% elif project_value.status.state_details.modelization_status == "UPTODATE" %}
+												UP TO DATE
+											{% elif project_value.status.state_details.modelization_status == "OUTDATED" %}
+												OUTDATED
+											{% elif project_value.status.state_details.modelization_status == "ERROR" %}
+												IN ERROR
+											{% endif %}
+											{% if project_value.status.state_details.conflict_status == "TRUE" %}
+												(with some conflicts)
+											{% endif %}
+										</td>
+									</tr>
+								</table>
+							</div>
+							<!-- CARD PROJECT - CONTENT ACTIONS -->
+							<div class="card_content_actions border-top">
+								<button class="button_action" onclick="goToProjectHomePage({projectID:'{{project_id}}'});">
+									Load
+								</button>
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+
+			<!-- CONTAINER PROJECTS LISTING - CONTENT ACTIONS -->
+			<div class="container_content_actions border-top">
+				<button
+					class="button_action"
+					onclick="openPopup('popup_project_creation');">
+					Add new
+				</button>
+				<button
+					class="button_action"
+					onclick="openPopup('popup_project_import');">
+					Import
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- PROJECT CREATION POPUP -->
+	<div class="popup_background hide" id="popup_project_creation">
+		<div class="popup popup_creation">
+			<!-- PROJECT CREATION POPUP - TITLE -->
+			<h3 class="popup_title">
+				Create a new project
+				<button
+					class="material-icons button_corner"
+					onclick="closePopup('popup_project_creation');">
+					close
+				</button>
+			</h3>
+			<!-- PROJECT CREATION POPUP - CONTENT -->
+			<div class="popup_content">
+				<!-- PROJECT CREATION POPUP - CONTENT INFORMATION -->
+				<div class="popup_content_div">
+					<form id="project_creation">
+						<b>Project name</b>
+						<span
+							class="material-icons info_bulle align_rigth"
+							title="The name of your project. &#013;Do not set a blank title (only whitespaces)."
+							style="float: none;">
+							info
+						</span>
+						<input
+							required
+							id="input_project_name"
+							type="text"
+							minlength="3"
+							maxlength="64"
+							style="font-size: 1em; width: 95%;"
+							value="My project"
+							onchange="updateProjectCreationSubmitButton();"/>
+						<b>Dataset file</b>
+						<span
+							class="material-icons info_bulle align_rigth"
+							title="Use a `.csv` (`;` separator) or `.xlsx` file. &#013;Please use a list of texts in the first column, without header, with encoding 'utf-8'."
+							style="float: none;">
+							info
+						</span>
+						<input
+							required
+							id="input_dataset_file"
+							type="file"
+							style="font-size: 1em; width: 95%;"
+							accept=".json,.csv,.xlsx"
+							onchange="updateProjectCreationSubmitButton();"/>
+					</form>
+				</div>
+				<!-- PROJECT CREATION POPUP - CONTENT ACTIONS -->
+				<div class="popup_content_actions">
+					<button class="button_action button_form_reset"
+						title="Reset the project creation form."
+						onclick="resetProjectCreationForm();">
+						Reset
+					</button>
+					<button
+						disabled
+						class="button_action button_form_submit"
+						id="button_create_project"
+						title="Create a new project with this form."
+						onclick="this.disabled=true; createProject();">
+						Create
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- PROJECT IMPORT POPUP -->
+	<div class="popup_background hide" id="popup_project_import">
+		<div class="popup popup_import">
+			<!-- PROJECT IMPORT POPUP - TITLE -->
+			<h3 class="popup_title">
+				Import a project
+				<button
+					class="material-icons button_corner"
+					onclick="closePopup('popup_project_import');">
+					close
+				</button>
+			</h3>
+			<!-- PROJECT IMPORT POPUP - CONTENT -->
+			<div class="popup_content">
+				<!-- PROJECT IMPORT POPUP - CONTENT INFORMATION -->
+				<div class="popup_content_div">
+					<form id="project_import">
+						<b>Archive file</b>
+						<span
+							class="material-icons info_bulle align_rigth"
+							title="Use a `.zip` archive, given by a project download. &#013;Warning: Modify an archive is at your own risks !"
+							style="float: none;">
+							info
+						</span>
+						<input
+							required
+							id="input_archive_file"
+							type="file"
+							style="font-size: 1em; width: 95%;"
+							accept=".zip"
+							onchange="updateProjectImportSubmitButton();"/>
+					</form>
+				</div>
+				<!-- PROJECT IMPORT POPUP - CONTENT ACTIONS -->
+				<div class="popup_content_actions">
+					<button
+						class="button_action button_form_reset"
+						title="Reset the project iport form."
+						onclick="resetProjectImportForm();">
+						Reset
+					</button>
+					<button
+						disabled
+						class="button_action button_form_submit"
+						id="button_import_project"
+						title="Import a project with this form."
+						onclick="this.disabled=true; importProject();">
+						Import
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}
