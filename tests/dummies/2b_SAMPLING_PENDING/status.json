@@ -1,0 +1,8 @@
+{
+    "iteration_id": 2,
+    "state": "SAMPLING_PENDING",
+    "task": {
+        "progression": 30,
+        "detail": "Waiting for background task allocation..."
+    }
+}

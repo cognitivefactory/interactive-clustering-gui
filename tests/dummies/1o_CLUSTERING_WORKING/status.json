@@ -1,0 +1,8 @@
+{
+    "iteration_id": 1,
+    "state": "CLUSTERING_WORKING",
+    "task": {
+        "progression": 50,
+        "detail": "Run constrained clustering."
+    }
+}

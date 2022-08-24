@@ -1,0 +1,8 @@
+{
+    "iteration_id": 0,
+    "state": "INITIALIZATION_WITH_PENDING_MODELIZATION",
+    "task": {
+        "progression": 1,
+        "detail": "Waiting for background task allocation..."
+    }
+}

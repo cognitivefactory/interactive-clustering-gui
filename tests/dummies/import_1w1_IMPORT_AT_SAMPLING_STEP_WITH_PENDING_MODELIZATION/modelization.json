@@ -1,0 +1,170 @@
+{
+    "0": {
+        "MUST_LINK": [
+            "0"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 0
+    },
+    "1": {
+        "MUST_LINK": [
+            "1"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 1
+    },
+    "2": {
+        "MUST_LINK": [
+            "2"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 2
+    },
+    "3": {
+        "MUST_LINK": [
+            "3"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 3
+    },
+    "4": {
+        "MUST_LINK": [
+            "4"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 4
+    },
+    "5": {
+        "MUST_LINK": [
+            "5"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 5
+    },
+    "6": {
+        "MUST_LINK": [
+            "6"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 6
+    },
+    "7": {
+        "MUST_LINK": [
+            "7"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 7
+    },
+    "8": {
+        "MUST_LINK": [
+            "8"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 8
+    },
+    "9": {
+        "MUST_LINK": [
+            "9"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 9
+    },
+    "10": {
+        "MUST_LINK": [
+            "10"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 10
+    },
+    "11": {
+        "MUST_LINK": [
+            "11"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 11
+    },
+    "12": {
+        "MUST_LINK": [
+            "12"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 12
+    },
+    "13": {
+        "MUST_LINK": [
+            "13"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 13
+    },
+    "14": {
+        "MUST_LINK": [
+            "14"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 14
+    },
+    "15": {
+        "MUST_LINK": [
+            "15"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 15
+    },
+    "16": {
+        "MUST_LINK": [
+            "16"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 16
+    },
+    "17": {
+        "MUST_LINK": [
+            "17"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 17
+    },
+    "18": {
+        "MUST_LINK": [
+            "18"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 18
+    },
+    "19": {
+        "MUST_LINK": [
+            "19"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 19
+    },
+    "20": {
+        "MUST_LINK": [
+            "20"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 20
+    },
+    "21": {
+        "MUST_LINK": [
+            "21"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 21
+    },
+    "22": {
+        "MUST_LINK": [
+            "22"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 22
+    },
+    "23": {
+        "MUST_LINK": [
+            "23"
+        ],
+        "CANNOT_LINK": [],
+        "COMPONENT": 23
+    }
+}

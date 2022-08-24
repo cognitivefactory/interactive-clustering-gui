@@ -1,0 +1,71 @@
+{
+    "(4,7)": {
+        "data": {
+            "id_1": "4",
+            "id_2": "7"
+        },
+        "constraint_type": "CANNOT_LINK",
+        "constraint_type_previous": [
+            null,
+            "MUST_LINK"
+        ],
+        "is_hidden": false,
+        "to_annotate": false,
+        "to_review": true,
+        "to_fix_conflict": false,
+        "comment": "",
+        "date_of_update": 1657545553.46324,
+        "iteration_of_sampling": 0
+    },
+    "(1,6)": {
+        "data": {
+            "id_1": "1",
+            "id_2": "6"
+        },
+        "constraint_type": "MUST_LINK",
+        "constraint_type_previous": [
+            null
+        ],
+        "is_hidden": false,
+        "to_annotate": false,
+        "to_review": true,
+        "to_fix_conflict": false,
+        "comment": "",
+        "date_of_update": 1657543490.330898,
+        "iteration_of_sampling": 0
+    },
+    "(1,7)": {
+        "data": {
+            "id_1": "1",
+            "id_2": "7"
+        },
+        "constraint_type": "MUST_LINK",
+        "constraint_type_previous": [
+            null
+        ],
+        "is_hidden": false,
+        "to_annotate": false,
+        "to_review": true,
+        "to_fix_conflict": false,
+        "comment": "",
+        "date_of_update": 1657543507.347849,
+        "iteration_of_sampling": 0
+    },
+    "(4,6)": {
+        "data": {
+            "id_1": "4",
+            "id_2": "6"
+        },
+        "constraint_type": "MUST_LINK",
+        "constraint_type_previous": [
+            null
+        ],
+        "is_hidden": false,
+        "to_annotate": false,
+        "to_review": true,
+        "to_fix_conflict": true,
+        "comment": "",
+        "date_of_update": 1657545344.703469,
+        "iteration_of_sampling": 0
+    }
+}

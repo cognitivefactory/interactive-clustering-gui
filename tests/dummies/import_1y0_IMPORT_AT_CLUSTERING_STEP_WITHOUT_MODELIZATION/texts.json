@@ -1,0 +1,146 @@
+{
+    "0": {
+        "text_original": "cr\u00e9er un num\u00e9ro virtuel",
+        "text": "cr\u00e9er un num\u00e9ro virtuel",
+        "text_preprocessed": "creer un numero virtuel",
+        "is_deleted": false
+    },
+    "1": {
+        "text_original": "activer les num\u00e9ros de carte virtuelle",
+        "text": "activer les num\u00e9ros de carte virtuelle",
+        "text_preprocessed": "activer les numeros de carte virtuelle",
+        "is_deleted": false
+    },
+    "2": {
+        "text_original": "Comment utiliser un num\u00e9ro de carte virtuelle ?",
+        "text": "Comment utiliser un num\u00e9ro de carte virtuelle ?",
+        "text_preprocessed": "comment utiliser un numero de carte virtuelle",
+        "is_deleted": false
+    },
+    "3": {
+        "text_original": "d\u00e9bloquer le paiement avec carte virtuelle",
+        "text": "d\u00e9bloquer le paiement avec carte virtuelle",
+        "text_preprocessed": "debloquer le paiement avec carte virtuelle",
+        "is_deleted": false
+    },
+    "4": {
+        "text_original": "obtenir un num\u00e9ro virtuel pour mes achats en ligne",
+        "text": "obtenir un num\u00e9ro virtuel pour mes achats en ligne",
+        "text_preprocessed": "obtenir un numero virtuel pour mes achats en ligne",
+        "is_deleted": false
+    },
+    "5": {
+        "text_original": "O\u00f9 puis-je g\u00e9rer mes num\u00e9ros virtuels ?",
+        "text": "O\u00f9 puis-je g\u00e9rer mes num\u00e9ros virtuels ?",
+        "text_preprocessed": "ou puis je gerer mes numeros virtuels",
+        "is_deleted": false
+    },
+    "6": {
+        "text_original": "Que faire pour activer une carte bancaire virtuelle ?",
+        "text": "Que faire pour activer une carte bancaire virtuelle ?",
+        "text_preprocessed": "que faire pour activer une carte bancaire virtuelle",
+        "is_deleted": false
+    },
+    "7": {
+        "text_original": "supprimer un num\u00e9ro de carte virtuel",
+        "text": "supprimer un num\u00e9ro de carte virtuel",
+        "text_preprocessed": "supprimer un numero de carte virtuel",
+        "is_deleted": false
+    },
+    "8": {
+        "text_original": "Combien d'argent me reste-t-il sur mon compte ?",
+        "text": "Combien d'argent me reste-t-il sur mon compte ?",
+        "text_preprocessed": "combien d argent me reste t il sur mon compte",
+        "is_deleted": false
+    },
+    "9": {
+        "text_original": "Je souhaite conna\u00eetre le solde de mon compte.",
+        "text": "Je souhaite conna\u00eetre le solde de mon compte.",
+        "text_preprocessed": "je souhaite connaitre le solde de mon compte",
+        "is_deleted": false
+    },
+    "10": {
+        "text_original": "Le solde de mon compte en banque est-il dans le rouge ?",
+        "text": "Le solde de mon compte en banque est-il dans le rouge ?",
+        "text_preprocessed": "le solde de mon compte en banque est il dans le rouge",
+        "is_deleted": false
+    },
+    "11": {
+        "text_original": "Je voudrai conna\u00eetre le solde de mes comptes.",
+        "text": "Je voudrai conna\u00eetre le solde de mes comptes.",
+        "text_preprocessed": "je voudrai connaitre le solde de mes comptes",
+        "is_deleted": false
+    },
+    "12": {
+        "text_original": "Quel est le solde de mon compte courant ?",
+        "text": "Quel est le solde de mon compte courant ?",
+        "text_preprocessed": "quel est le solde de mon compte courant",
+        "is_deleted": false
+    },
+    "13": {
+        "text_original": "Quel est mon solde bancaire ?",
+        "text": "Quel est mon solde bancaire ?",
+        "text_preprocessed": "quel est mon solde bancaire",
+        "is_deleted": false
+    },
+    "14": {
+        "text_original": "solde de mon compte en banque",
+        "text": "solde de mon compte en banque",
+        "text_preprocessed": "solde de mon compte en banque",
+        "is_deleted": false
+    },
+    "15": {
+        "text_original": "Mon solde bancaire est-il toujours positif ?",
+        "text": "Mon solde bancaire est-il toujours positif ?",
+        "text_preprocessed": "mon solde bancaire est il toujours positif",
+        "is_deleted": false
+    },
+    "16": {
+        "text_original": "carte bancaire aval\u00e9e",
+        "text": "carte bancaire aval\u00e9e",
+        "text_preprocessed": "carte bancaire avalee",
+        "is_deleted": false
+    },
+    "17": {
+        "text_original": "Le distributeur ne m'a pas rendu ma carte bleue.",
+        "text": "Le distributeur ne m'a pas rendu ma carte bleue.",
+        "text_preprocessed": "le distributeur ne m a pas rendu ma carte bleue",
+        "is_deleted": false
+    },
+    "18": {
+        "text_original": "J'ai voulu retirer de l'argent, et le gab a gard\u00e9 ma carte bancaire.",
+        "text": "J'ai voulu retirer de l'argent, et le gab a gard\u00e9 ma carte bancaire.",
+        "text_preprocessed": "j ai voulu retirer de l argent et le gab a garde ma carte bancaire",
+        "is_deleted": false
+    },
+    "19": {
+        "text_original": "Le distributeur a confisqu\u00e9 ma carte de paiement...",
+        "text": "Le distributeur a confisqu\u00e9 ma carte de paiement...",
+        "text_preprocessed": "le distributeur a confisque ma carte de paiement",
+        "is_deleted": false
+    },
+    "20": {
+        "text_original": "Le GAB a gard\u00e9 ma carte de cr\u00e9dit, que faire ?",
+        "text": "Le GAB a gard\u00e9 ma carte de cr\u00e9dit, que faire ?",
+        "text_preprocessed": "le gab a garde ma carte de credit que faire",
+        "is_deleted": false
+    },
+    "21": {
+        "text_original": "Pourquoi ma carte a-t-elle \u00e9t\u00e9 aval\u00e9e ?",
+        "text": "Pourquoi ma carte a-t-elle \u00e9t\u00e9 aval\u00e9e ?",
+        "text_preprocessed": "pourquoi ma carte a t elle ete avalee",
+        "is_deleted": false
+    },
+    "22": {
+        "text_original": "Que faire si je me suis fait avaler ma carte ?",
+        "text": "Que faire si je me suis fait avaler ma carte ?",
+        "text_preprocessed": "que faire si je me suis fait avaler ma carte",
+        "is_deleted": false
+    },
+    "23": {
+        "text_original": "r\u00e9cup\u00e9rer carte bleue aval\u00e9e par distributeur",
+        "text": "r\u00e9cup\u00e9rer carte bleue aval\u00e9e par distributeur",
+        "text_preprocessed": "recuperer carte bleue avalee par distributeur",
+        "is_deleted": false
+    }
+}

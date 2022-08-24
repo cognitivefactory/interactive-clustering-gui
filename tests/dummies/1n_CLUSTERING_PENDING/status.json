@@ -1,0 +1,8 @@
+{
+    "iteration_id": 1,
+    "state": "CLUSTERING_PENDING",
+    "task": {
+        "progression": 1,
+        "detail": "Waiting for background task allocation..."
+    }
+}

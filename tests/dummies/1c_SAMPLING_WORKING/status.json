@@ -1,0 +1,8 @@
+{
+    "iteration_id": 1,
+    "state": "SAMPLING_WORKING",
+    "task": {
+        "progression": 30,
+        "detail": "Load previous clustering results."
+    }
+}

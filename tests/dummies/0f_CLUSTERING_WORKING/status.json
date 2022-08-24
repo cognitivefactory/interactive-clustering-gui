@@ -1,0 +1,8 @@
+{
+    "iteration_id": 0,
+    "state": "CLUSTERING_WORKING",
+    "task": {
+        "progression": 30,
+        "detail": "Load vectors."
+    }
+}

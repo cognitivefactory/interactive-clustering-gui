@@ -1,0 +1,54 @@
+{
+    "0": {
+        "preprocessing": {
+            "apply_stopwords_deletion": false,
+            "apply_parsing_filter": false,
+            "apply_lemmatization": false,
+            "spacy_language_model": "fr_core_news_md"
+        },
+        "vectorization": {
+            "vectorizer_type": "tfidf",
+            "spacy_language_model": null,
+            "random_seed": 42
+        },
+        "clustering": {
+            "algorithm": "kmeans",
+            "random_seed": 42,
+            "nb_clusters": 3,
+            "init_kargs": {
+                "model": "COP",
+                "max_iteration": 150,
+                "tolerance": 0.0001
+            }
+        }
+    },
+    "1": {
+        "sampling": {
+            "algorithm": "closest_in_different_clusters",
+            "random_seed": 42,
+            "nb_to_select": 25,
+            "init_kargs": null
+        },
+        "preprocessing": {
+            "apply_stopwords_deletion": false,
+            "apply_parsing_filter": false,
+            "apply_lemmatization": false,
+            "spacy_language_model": "fr_core_news_md"
+        },
+        "vectorization": {
+            "vectorizer_type": "tfidf",
+            "spacy_language_model": null,
+            "random_seed": 42
+        },
+        "clustering": {
+            "algorithm": "kmeans",
+            "random_seed": 42,
+            "nb_clusters": 3,
+            "init_kargs": {
+                "model": "COP",
+                "max_iteration": 150,
+                "tolerance": 0.0001
+            }
+        }
+    }
+}

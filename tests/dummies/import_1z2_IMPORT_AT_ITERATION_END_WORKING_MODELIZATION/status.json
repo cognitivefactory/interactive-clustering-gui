@@ -1,0 +1,8 @@
+{
+    "iteration_id": 1,
+    "state": "IMPORT_AT_ITERATION_END_WITH_WORKING_MODELIZATION",
+    "task": {
+        "progression": 20,
+        "detail": "Preprocess texts."
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "iteration_id": 0,
+    "state": "INITIALIZATION_WITH_WORKING_MODELIZATION",
+    "task": {
+        "progression": 20,
+        "detail": "Preprocess texts."
+    }
+}

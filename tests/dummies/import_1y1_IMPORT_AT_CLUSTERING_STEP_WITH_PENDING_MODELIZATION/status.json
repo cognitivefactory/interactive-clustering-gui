@@ -1,0 +1,8 @@
+{
+    "iteration_id": 1,
+    "state": "IMPORT_AT_CLUSTERING_STEP_WITH_PENDING_MODELIZATION",
+    "task": {
+        "progression": 1,
+        "detail": "Waiting for background task allocation..."
+    }
+}
