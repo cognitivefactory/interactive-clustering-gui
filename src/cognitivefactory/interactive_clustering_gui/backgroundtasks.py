@@ -16,8 +16,13 @@
 import json
 import os
 import pathlib
-import pickle  # noqa: S403
+import sys
 from typing import Any, Dict, List, Optional, Tuple
+
+if sys.version_info < 8:  # pragma: nocover
+    import pickle5 as pickle  # noqa: S403
+else:  # pragma: nocover
+    import pickle  # noqa: S403
 
 from filelock import FileLock
 from numpy import ndarray
