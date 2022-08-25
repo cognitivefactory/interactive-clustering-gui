@@ -85,6 +85,22 @@ pipx install --python python3 cognitivefactory-interactive-clustering-gui
 python3 -m spacy download fr_core_news_md-3.1.0 --direct
 ```
 
+## <a name="Run"></a> Run
+
+To launch the web app, try one of the command line in your terminal:
+
+```bash
+# Option 1: Call the web app by the script name.
+cognitivefactory-interactive-clustering-gui
+
+# Option 2: Call the web app by the python module.
+python3 -m cognitivefactory.interactive_clustering_gui
+```
+
+Then, go to the following pages in your browser:
+- Swagger: [http://localhost:8080/docs](http://localhost:8080/docs)
+- App welcome page: [http://localhost:8080/welcome](http://localhost:8080/welcome)
+
 ## <a name="Development"></a> Development
 
 To work on this project or contribute to it, please read
