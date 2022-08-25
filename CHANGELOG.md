@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.2.1](https://github.com/cognitivefactory/interactive-clustering-gui/releases/tag/0.2.1) - 2022-08-25
+
+<small>[Compare with 0.2.0](https://github.com/cognitivefactory/interactive-clustering-gui/compare/0.2.0...0.2.1)</small>
+
+### Bug Fixes
+- remove direct dependency to spacy-models/fr-core-news-md ([f02894d](https://github.com/cognitivefactory/interactive-clustering-gui/commit/f02894ddf67a5bc11263706e4561c8f70dfb9bf9) by SCHILD Erwan).
+
+
 ## [0.2.0](https://github.com/cognitivefactory/interactive-clustering-gui/releases/tag/0.2.0) - 2022-08-25
 
 <small>[Compare with 0.1.3](https://github.com/cognitivefactory/interactive-clustering-gui/compare/0.1.3...0.2.0)</small>
