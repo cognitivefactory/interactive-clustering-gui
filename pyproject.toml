@@ -52,6 +52,7 @@ dependencies = [
     "importlib-metadata>=4.8.1",
     "loguru>=0.5.3",
     "openpyxl>=3.0.7",
+    "pickle5>=0.0.12; python_version < '3.8'",
     "prometheus-fastapi-instrumentator>=5.5.1",
     "python-multipart>=0.0.5",
     "uvicorn>=0.12.2",
@@ -118,6 +119,7 @@ docs = [
 ]
 typing = [
     "mypy>=0.910",
+    "types-python-dateutil",
     "types-filelock",
     "types-markdown>=3.3",
     "types-toml>=0.10",

@@ -19,10 +19,10 @@ import pathlib
 import sys
 from typing import Any, Dict, List, Optional, Tuple
 
-if sys.version_info < 8:  # pragma: nocover
+if sys.version_info.minor < 8:  # pragma: nocover
     import pickle5 as pickle  # noqa: S403
 else:  # pragma: nocover
-    import pickle  # noqa: S403
+    import pickle  # type: ignore # noqa: S403 WPS440
 
 from filelock import FileLock
 from numpy import ndarray

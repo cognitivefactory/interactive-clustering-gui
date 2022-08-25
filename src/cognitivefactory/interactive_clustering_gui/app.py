@@ -17,10 +17,10 @@ import os
 import pathlib
 import shutil
 from datetime import datetime
-from dateutil import tz
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
 import pandas as pd
+from dateutil import tz
 from fastapi import (
     BackgroundTasks,
     Body,
@@ -103,38 +103,38 @@ templates = Jinja2Templates(directory=pathlib.Path(__file__).parent / "html")
 
 
 # Define function to convert timestamp to date.
-def timestamp_to_date(timestamp: float, time_zone_str: str = "Europe/Paris") -> str:
+def timestamp_to_date(timestamp: float, timezone_str: str = "Europe/Paris") -> str:
     """
     From timestamp to date.
 
     Args:
         timestamp (float): The timstamp to convert.
-        time_zone_str (str, optional) The time zone. Defaults to `"Europe/Paris"`.
+        timezone_str (str, optional): The time zone. Defaults to `"Europe/Paris"`.
 
     Returns:
         str: The requested date.
     """
-    time_zone = tz.gettz(time_zone_str)
-    return datetime.fromtimestamp(timestamp).strftime("%d/%m/%Y", time_zone)
+    timezone = tz.gettz(timezone_str)
+    return datetime.fromtimestamp(timestamp, timezone).strftime("%d/%m/%Y")
 
 
 templates.env.filters["timestamp_to_date"] = timestamp_to_date
 
 
 # Define function to convert timestamp to hour.
-def timestamp_to_hour(timestamp: float, time_zone_str: str = "Europe/Paris") -> str:
+def timestamp_to_hour(timestamp: float, timezone_str: str = "Europe/Paris") -> str:
     """
     From timestamp to hours.
 
     Args:
         timestamp (float): The timstamp to convert.
-        time_zone_str (str, optional) The time zone. Defaults to `"Europe/Paris"`.
+        timezone_str (str, optional): The time zone. Defaults to `"Europe/Paris"`.
 
     Returns:
         str: The requested hour.
     """
-    time_zone = tz.gettz(time_zone_str)
-    return datetime.fromtimestamp(timestamp).strftime("%H:%M:%S", time_zone)
+    timezone = tz.gettz(timezone_str)
+    return datetime.fromtimestamp(timestamp, timezone).strftime("%H:%M:%S")
 
 
 templates.env.filters["timestamp_to_hour"] = timestamp_to_hour
