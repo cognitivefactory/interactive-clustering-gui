@@ -20,7 +20,7 @@ _TODO_
 Interactive Clustering GUI requires Python 3.7 or above.
 
 <details>
-<summary>To install Python 3.7, I recommend using <a href="https://github.com/
+<summary>To install Python 3.7, I recommend using <a href="https://github.com/pyenv/pyenv"><code>pyenv</code></a>.</summary>
 
 ```bash
 # install pyenv
@@ -45,6 +45,9 @@ With `pip`:
 ```bash
 # install package
 python3 -m pip install cognitivefactory-interactive-clustering-gui
+
+# install spacy language model dependencies (the one you want, with version "3.1.x")
+python3 -m spacy download fr_core_news_md-3.1.0 --direct
 ```
 
 With [`pipx`](https://github.com/pipxproject/pipx):
@@ -54,6 +57,9 @@ python3 -m pip install --user pipx
 
 # install package
 pipx install --python python3 cognitivefactory-interactive-clustering-gui
+
+# install spacy language model dependencies (the one you want, with version "3.1.x")
+python3 -m spacy download fr_core_news_md-3.1.0 --direct
 ```
 
 ## <a name="Development"></a> Development
