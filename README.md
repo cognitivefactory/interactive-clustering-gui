@@ -10,7 +10,29 @@ An annotation tool for NLP data based on Interactive Clustering methodology.
 
 ## <a name="Description"></a> Quick description
 
-_TODO_
+_Interactive clustering_ is a method intended to assist in the design of a training data set.
+
+This iterative process begins with an unlabeled dataset, and it uses a sequence of two substeps :
+
+1. the user defines constraints on data sampled by the computer ;
+
+2. the computer performs data partitioning using a constrained clustering algorithm.
+
+Thus, at each step of the process :
+
+- the user corrects the clustering of the previous steps using constraints, and
+
+- the computer offers a corrected and more relevant data partitioning for the next step.
+
+This web application implements this annotation methodology with several features:
+
+- _data preprocessing and vectorization_ in order to reduce noise in data;
+- _constrainted clustering_ in order to automatically partition the data;
+- _constraints sampling_ in order to select the most relevant data to annotate;
+- _binary constraints annotation_ in order to correct clustering relevance;
+- _annotation review and conflicts analysis_ in order to improve constraints consistency.
+
+- For more details, read the [Documentation](#Documentation) and the articles in the [References](#References) section.
 
 ## <a name="Documentation"></a> Documentation
 
