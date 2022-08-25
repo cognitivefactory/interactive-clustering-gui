@@ -67,6 +67,9 @@ Repository = "https://github.com/cognitivefactory/interactive-clustering-gui"
 Issues = "https://github.com/cognitivefactory/interactive-clustering-gui/issues"
 Discussions = "https://github.com/cognitivefactory/interactive-clustering-gui/discussions"
 
+[project.scripts]
+cognitivefactory-interactive-clustering-gui = "cognitivefactory.interactive_clustering_gui.cli:main"
+
 [tool.pdm]
 includes = [
     "src/cognitivefactory",

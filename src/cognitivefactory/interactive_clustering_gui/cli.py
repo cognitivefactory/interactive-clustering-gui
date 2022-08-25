@@ -1,4 +1,18 @@
-"""Script used to run the program."""
+# -*- coding: utf-8 -*-
+
+"""
+* Name:         cognitivefactory.interactive_clustering_gui.cli
+* Description:  Module that contains the command line application.
+* Author:       Erwan Schild
+* Created:      22/10/2021
+* Licence:      CeCILL-C License v1.0 (https://cecill.info/licences.fr.html)
+
+Why does this file exist, and why not put this in `__main__`?
+
+You might be tempted to import things from `__main__` later, but that will cause problems: the code will get executed twice:
+- When you run `python -m cognitivefactory.interactive_clustering_gui` python will execute `__main__.py` as a script. That means there won't be any `cognitivefactory.interactive_clustering_gui.__main__` in `sys.modules`.
+- When you import `__main__` it will get executed again (as a module) because there's no `cognitivefactory.interactive_clustering_gui.__main__` in `sys.modules`.
+"""
 
 
 # ==============================================================================
@@ -100,7 +114,7 @@ class FixedLoggingConfig(Config):
 # ==============================================================================
 # RUN APPLICATION
 # ==============================================================================
-def run(
+def main(
     host: str = "127.0.0.1", port: int = 8080, log_level=LOG_LEVEL, json_logs: bool = JSON_LOGS, reload: bool = False
 ):  # noqa: S104
     """
