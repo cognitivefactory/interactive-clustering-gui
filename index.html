@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An annotation tool for NLP data based on Interactive Clustering methodology.">
+        <meta name="description" content="A web application designed for NLP data annotation using Interactive Clustering methodology..">
       
       
       
@@ -399,6 +399,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#run" class="md-nav__link">
+     Run
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#development" class="md-nav__link">
      Development
   </a>
@@ -608,11 +615,25 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="reference/cognitivefactory/interactive_clustering_gui/cli/" class="md-nav__link">
+        cli
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_1_3" type="checkbox" id="__nav_2_1_1_3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1_1_4" type="checkbox" id="__nav_2_1_1_4" >
       
       
       
@@ -622,14 +643,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="reference/cognitivefactory/interactive_clustering_gui/models/">models</a>
           
-            <label for="__nav_2_1_1_3">
+            <label for="__nav_2_1_1_4">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="models" data-md-level="4">
-        <label class="md-nav__title" for="__nav_2_1_1_3">
+        <label class="md-nav__title" for="__nav_2_1_1_4">
           <span class="md-nav__icon md-icon"></span>
           models
         </label>
@@ -835,6 +856,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#run" class="md-nav__link">
+     Run
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#development" class="md-nav__link">
      Development
   </a>
@@ -891,7 +919,7 @@
 <a href="https://cognitivefactory.github.io/interactive-clustering-gui/"><img alt="documentation" src="https://img.shields.io/badge/docs-mkdocs%20material-blue.svg?style=flat" /></a>
 <a href="https://pypi.org/project/cognitivefactory-interactive-clustering-gui/"><img alt="pypi version" src="https://img.shields.io/pypi/v/cognitivefactory-interactive-clustering-gui.svg" /></a>
 <a href="https://doi.org/10.5281/zenodo.4775270"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.4775270.svg" /></a></p>
-<p>An annotation tool for NLP data based on Interactive Clustering methodology.</p>
+<p>A web application designed for NLP data annotation using Interactive Clustering methodology.</p>
 <h2 id="quick-description"><a name="Description"></a> Quick description<a class="headerlink" href="#quick-description" title="Permanent link">&para;</a></h2>
 <p><em>Interactive clustering</em> is a method intended to assist in the design of a training data set.</p>
 <p>This iterative process begins with an unlabeled dataset, and it uses a sequence of two substeps :</p>
@@ -918,13 +946,9 @@
 <li><em>constrainted clustering</em> in order to automatically partition the data;</li>
 <li><em>constraints sampling</em> in order to select the most relevant data to annotate;</li>
 <li><em>binary constraints annotation</em> in order to correct clustering relevance;</li>
-<li>
-<p><em>annotation review and conflicts analysis</em> in order to improve constraints consistency.</p>
-</li>
-<li>
-<p>For more details, read the <a href="#Documentation">Documentation</a> and the articles in the <a href="#References">References</a> section.</p>
-</li>
+<li><em>annotation review and conflicts analysis</em> in order to improve constraints consistency.</li>
 </ul>
+<p>For more details, read the <a href="#Documentation">Documentation</a> and the articles in the <a href="#References">References</a> section.</p>
 <h2 id="documentation"><a name="Documentation"></a> Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://cognitivefactory.github.io/interactive-clustering-gui/">Main documentation</a></li>
@@ -968,6 +992,16 @@ pipx install --python python3 cognitivefactory-interactive-clustering-gui
 <span class="c1"># install spacy language model dependencies (the one you want, with version &quot;3.1.x&quot;)</span>
 python3 -m spacy download fr_core_news_md-3.1.0 --direct
 </code></pre></div></p>
+<h2 id="run"><a name="Run"></a> Run<a class="headerlink" href="#run" title="Permanent link">&para;</a></h2>
+<p>To display the help message:</p>
+<div class="highlight"><pre><span></span><code>cognitivefactory-interactive-clustering-gui --help
+</code></pre></div>
+<p>To launch the web application:</p>
+<div class="highlight"><pre><span></span><code>cognitivefactory-interactive-clustering-gui  <span class="c1"># launch on 127.0.0.1:8080</span>
+</code></pre></div>
+<p>Then, go to one of the following pages in your browser:
+- Welcome page (web application home): <a href="http://localhost:8080/welcome">http://localhost:8080/welcome</a>
+- Swagger (interactive documentation): <a href="http://localhost:8080/docs">http://localhost:8080/docs</a></p>
 <h2 id="development"><a name="Development"></a> Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h2>
 <p>To work on this project or contribute to it, please read
 <a href="https://pawamoy.github.io/copier-pdm/">the Copier PDM documentation</a>.</p>
@@ -979,6 +1013,9 @@ make setup
 </code></pre></div>
 <p>Show the help:</p>
 <div class="highlight"><pre><span></span><code>make <span class="nb">help</span>  <span class="c1"># or just make</span>
+</code></pre></div>
+<p>Launch the web application in debug mode:</p>
+<div class="highlight"><pre><span></span><code>make run  <span class="c1"># launch on 127.0.0.1:8080</span>
 </code></pre></div>
 <p>For more details, read the <a href="https://cognitivefactory.github.io/interactive-clustering-gui/contributing/">Contributing</a> documentation.</p>
 <h2 id="references"><a name="References"></a> References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
