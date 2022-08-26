@@ -1,5 +1,5 @@
 site_name: "Interactive Clustering GUI"
-site_description: "An annotation tool for NLP data based on Interactive Clustering methodology."
+site_description: "A web application designed for NLP data annotation using Interactive Clustering methodology.."
 site_url: "https://cognitivefactory.github.io/interactive-clustering-gui"
 repo_url: "https://github.com/cognitivefactory/interactive-clustering-gui"
 repo_name: "cognitivefactory/interactive-clustering-gui"

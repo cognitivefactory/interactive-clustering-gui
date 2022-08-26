@@ -6,7 +6,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4775270.svg)](https://doi.org/10.5281/zenodo.4775270)
 
 
-An annotation tool for NLP data based on Interactive Clustering methodology.
+A web application designed for NLP data annotation using Interactive Clustering methodology.
 
 ## <a name="Description"></a> Quick description
 
@@ -32,7 +32,7 @@ This web application implements this annotation methodology with several feature
 - _binary constraints annotation_ in order to correct clustering relevance;
 - _annotation review and conflicts analysis_ in order to improve constraints consistency.
 
-- For more details, read the [Documentation](#Documentation) and the articles in the [References](#References) section.
+For more details, read the [Documentation](#Documentation) and the articles in the [References](#References) section.
 
 ## <a name="Documentation"></a> Documentation
 
@@ -87,19 +87,21 @@ python3 -m spacy download fr_core_news_md-3.1.0 --direct
 
 ## <a name="Run"></a> Run
 
-To launch the web app, try one of the command line in your terminal:
+To display the help message:
 
 ```bash
-# Option 1: Call the web app by the script name.
-cognitivefactory-interactive-clustering-gui
-
-# Option 2: Call the web app by the python module.
-python3 -m cognitivefactory.interactive_clustering_gui
+cognitivefactory-interactive-clustering-gui --help
 ```
 
-Then, go to the following pages in your browser:
-- Swagger: [http://localhost:8080/docs](http://localhost:8080/docs)
-- App welcome page: [http://localhost:8080/welcome](http://localhost:8080/welcome)
+To launch the web application:
+
+```bash
+cognitivefactory-interactive-clustering-gui  # launch on 127.0.0.1:8080
+```
+
+Then, go to one of the following pages in your browser:
+- Welcome page (web application home): [http://localhost:8080/welcome](http://localhost:8080/welcome)
+- Swagger (interactive documentation): [http://localhost:8080/docs](http://localhost:8080/docs)
 
 ## <a name="Development"></a> Development
 
@@ -120,6 +122,12 @@ Show the help:
 
 ```bash
 make help  # or just make
+```
+
+Launch the web application in debug mode:
+
+```bash
+make run  # launch on 127.0.0.1:8080
 ```
 
 For more details, read the [Contributing](https://cognitivefactory.github.io/interactive-clustering-gui/contributing/) documentation.

@@ -15,7 +15,7 @@ from uvicorn.supervisors import ChangeReload
 def run(host: str = "127.0.0.1", port: int = 8080) -> None:  # noqa: S104
     """
     Run the Uvicorn server for debug.
-    
+
     Args:
         host (str, optional): The host to bind. Defaults to `"127.0.0.1"`.
         port (int, optional): The port to use. Defaults to `8080`.

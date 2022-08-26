@@ -4,7 +4,7 @@ build-backend = "pdm.pep517.api"
 
 [project]
 name = "cognitivefactory-interactive-clustering-gui"
-description = "An annotation tool for NLP data based on Interactive Clustering methodology."
+description = "A web application designed for NLP data annotation using Interactive Clustering methodology."
 authors = [
     {name = "Erwan Schild", email = "erwan.schild@e-i.com"}
 ]

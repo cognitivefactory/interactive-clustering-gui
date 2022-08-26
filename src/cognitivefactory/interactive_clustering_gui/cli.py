@@ -23,7 +23,6 @@ import argparse
 from typing import List, Optional
 
 from uvicorn import Config, Server
-from uvicorn.supervisors import ChangeReload
 
 
 # ==============================================================================
@@ -38,26 +37,19 @@ def get_parser() -> argparse.ArgumentParser:
     """
     parser = argparse.ArgumentParser(
         prog="cognitivefactory-interactive-clustering-gui",
+        description="A web application designed for NLP data annotation using Interactive Clustering methodology.",
+        epilog="For more details, https://cognitivefactory.github.io/interactive-clustering-gui/",
     )
     parser.add_argument(
-        "-h", "--host", type=str, default="127.0.0.1", help='The host to bind. Defaults to `"127.0.0.1"`.'
+        "--host", type=str, default="127.0.0.1", help="The host to bind. Defaults to `127.0.0.1`.",
     )
-    parser.add_argument("-p", "--port", type=int, default=8080, help="The port to use. Defaults to `8080`.")
+    parser.add_argument("--port", type=int, default=8080, help="The port to use. Defaults to `8080`.",)
     parser.add_argument(
-        "-l",
         "--log-level",
         type=str,
         choices=["critical", "error", "warning", "info", "debug", "trace"],
         default="info",
-        help='The log level. Defaults to `"info"`.',
-    )
-    parser.add_argument(
-        "-r",
-        "--reload",
-        type=bool,
-        choices=[True, False],
-        default=False,
-        help="The option whether to enable live-reload. Defaults to `False`.",
+        help="The log level. Defaults to `info`.",
     )
     return parser
 
@@ -67,7 +59,7 @@ def get_parser() -> argparse.ArgumentParser:
 # ==============================================================================
 
 
-def main(args: Optional[List[str]] = None) -> int:
+def main(args: Optional[List[str]] = None) -> None:  # noqa: S104
     """
     Run the main program.
 
@@ -75,9 +67,6 @@ def main(args: Optional[List[str]] = None) -> int:
 
     Args:
         args: Arguments passed from the command line.
-
-    Returns:
-        An exit code.
     """
     # Parse CLI arguments.
     parser = get_parser()
@@ -89,16 +78,8 @@ def main(args: Optional[List[str]] = None) -> int:
         host=opts.host,  # The host to bind.
         port=opts.port,  # The port to use.
         log_level=opts.log_level,  # The log level.
-        reload=opts.reload,  # The option whether to enable live-reload.
     )
     server = Server(config)
 
-    # Run the web app depending on reload option.
-    if opts.reload:
-        sock = config.bind_socket()
-        ChangeReload(config, target=server.run, sockets=[sock]).run()
-    else:
-        server.run()
-
-    # Return a default exit code.
-    return 0
+    # Launch the server.
+    server.run()

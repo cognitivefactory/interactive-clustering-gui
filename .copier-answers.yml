@@ -8,7 +8,7 @@ copyright_date: '2022'
 copyright_holder: Erwan Schild
 copyright_holder_email: erwan.schild@e-i.com
 copyright_license: CeCILL-C License v1.0
-project_description: An annotation tool for NLP data based on Interactive Clustering methodology.
+project_description: A web application designed for NLP data annotation using Interactive Clustering methodology.
 project_name: Interactive Clustering GUI
 python_package_command_line_name: cognitivefactory-interactive-clustering-gui
 python_package_distribution_name: cognitivefactory-interactive-clustering-gui
