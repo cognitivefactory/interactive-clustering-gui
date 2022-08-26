@@ -67,7 +67,7 @@ def get_parser() -> argparse.ArgumentParser:
 # ==============================================================================
 
 
-def main(args: Optional[List[str]] = None) -> None:  # noqa: S104
+def main(args: Optional[List[str]] = None) -> int:
     """
     Run the main program.
 
@@ -75,19 +75,25 @@ def main(args: Optional[List[str]] = None) -> None:  # noqa: S104
 
     Args:
         args: Arguments passed from the command line.
+
+    Returns:
+        A default exit code.
     """
     # Parse CLI arguments.
     parser = get_parser()
     opts = parser.parse_args(args=args)
 
     # Config the serveur.
-    config = Config(
+    config = Config(  # pragma: nocover
         "cognitivefactory.interactive_clustering_gui.app:app",
-        host=opts.host,  # The host to bind.
-        port=opts.port,  # The port to use.
-        log_level=opts.log_level,  # The log level.
+        host=opts.host,
+        port=opts.port,
+        log_level=opts.log_level,
     )
-    server = Server(config)
+    server = Server(config)  # pragma: nocover
 
     # Launch the server.
-    server.run()
+    server.run()  # pragma: nocover
+
+    # Return a default exit code.
+    return 0  # pragma: nocover

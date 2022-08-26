@@ -14,39 +14,25 @@
 
 import pytest
 
-from cognitivefactory.interactive_clustering_gui import cli
+from cognitivefactory.interactive_clustering_gui.cli import main
 
 # ==============================================================================
-# test_show_help
+# test_main_help
 # ==============================================================================
 
 
-def test_show_help(capsys):
+def test_main_help(capsys):
     """
     Test the CLI help display.
 
     Arguments:
         capsys: Pytest fixture to capture output.
     """
+
+    # Request the help of the CLI.
     with pytest.raises(SystemExit):
-        cli.main(["-h"])
-    captured = capsys.readouterr()
-    assert "cognitivefactory-interactive-clustering-gui" in captured.out
+        main(["-h"])
 
-
-# ==============================================================================
-# test_launch_web_app
-# ==============================================================================
-
-
-def test_launch_web_app(capsys):
-    """
-    Test the CLI web app launch.
-
-    Arguments:
-        capsys: Pytest fixture to capture output.
-    """
-    with pytest.raises(SystemExit):
-        cli.main([])
+    # Capture the output and check it.
     captured = capsys.readouterr()
     assert "cognitivefactory-interactive-clustering-gui" in captured.out

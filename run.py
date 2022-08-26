@@ -12,7 +12,7 @@ from uvicorn.supervisors import ChangeReload
 # ==============================================================================
 # RUN APPLICATION
 # ==============================================================================
-def run(host: str = "127.0.0.1", port: int = 8080) -> None:  # noqa: S104
+def run(host: str = "127.0.0.1", port: int = 8080) -> None:
     """
     Run the Uvicorn server for debug.
 
