@@ -7,6 +7,7 @@ args = $(foreach a,$($(subst -,_,$1)_args),$(if $(value $a),$a="$($a)"))
 check_quality_args = files
 docs_serve_args = host port
 release_args = version
+run_args = host port
 test_args = match
 
 BASIC_DUTIES = \

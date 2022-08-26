@@ -319,19 +319,17 @@ def release(ctx, version):
 
 
 @duty
-def run(ctx, host="127.0.0.1", port=8080):
+def run(ctx, host: str = "127.0.0.1", port: int = 8080):
     """
     Run the FastAPI application (localhost:8080).
 
-    You can change the host and port with, for example,
-    `host=0.0.0.0 port=6000`.
+    You can change the host and port with, for example, `host=0.0.0.0 port=6000`.
 
     Arguments:
         ctx: The context instance (passed automatically).
-        host: The host to serve on.
-        port: The port to serve on.
+        host (str, optional): The host to serve on. Defaults to `"127.0.0.1"`.
+        port (int, optional): The port to serve on. Defaults to `8080`.
     """
     sys.path.append(os.path.dirname(__file__))
     from run import run as runserver
-
-    ctx.run(runserver, kwargs={"reload": True}, capture=False, pty=PTY, silent=True)
+    ctx.run(runserver, kwargs={"host": host, "port": port}, capture=False, pty=PTY, silent=True)
