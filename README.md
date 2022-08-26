@@ -100,7 +100,9 @@ cognitivefactory-interactive-clustering-gui  # launch on 127.0.0.1:8080
 ```
 
 Then, go to one of the following pages in your browser:
+
 - Welcome page (web application home): [http://localhost:8080/welcome](http://localhost:8080/welcome)
+
 - Swagger (interactive documentation): [http://localhost:8080/docs](http://localhost:8080/docs)
 
 ## <a name="Development"></a> Development
