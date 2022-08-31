@@ -294,7 +294,7 @@ async def alive() -> Response:  # pragma: no cover
 ### ROUTE: Get HTML welcome page.
 ###
 @app.get(
-    "/welcome",  # TODO: Use "/".
+    "/",
     tags=["Home and Documentation"],
     response_class=Response,
     status_code=status.HTTP_200_OK,

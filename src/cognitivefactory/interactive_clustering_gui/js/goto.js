@@ -6,7 +6,7 @@
  * DESCRIPTION: Go to the welcome page.
  */
 function goToWelcomePage() {
-    location.assign("/welcome");
+    location.assign("/");
 }
 
 /**

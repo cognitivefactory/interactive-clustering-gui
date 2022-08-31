@@ -15,13 +15,11 @@ _Interactive clustering_ is a method intended to assist in the design of a train
 This iterative process begins with an unlabeled dataset, and it uses a sequence of two substeps :
 
 1. the user defines constraints on data sampled by the computer ;
-
 2. the computer performs data partitioning using a constrained clustering algorithm.
 
 Thus, at each step of the process :
 
 - the user corrects the clustering of the previous steps using constraints, and
-
 - the computer offers a corrected and more relevant data partitioning for the next step.
 
 This web application implements this annotation methodology with several features:
@@ -101,8 +99,7 @@ cognitivefactory-interactive-clustering-gui  # launch on 127.0.0.1:8080
 
 Then, go to one of the following pages in your browser:
 
-- Welcome page (web application home): [http://localhost:8080/welcome](http://localhost:8080/welcome)
-
+- Welcome page (web application home): [http://localhost:8080](http://localhost:8080)
 - Swagger (interactive documentation): [http://localhost:8080/docs](http://localhost:8080/docs)
 
 ## <a name="Development"></a> Development
@@ -131,6 +128,11 @@ Launch the web application in debug mode:
 ```bash
 make run  # launch on 127.0.0.1:8080
 ```
+
+Then, go to one of the following pages in your browser:
+
+- Welcome page (web application home): [http://localhost:8080](http://localhost:8080)
+- Swagger (interactive documentation): [http://localhost:8080/docs](http://localhost:8080/docs)
 
 For more details, read the [Contributing](https://cognitivefactory.github.io/interactive-clustering-gui/contributing/) documentation.
 
