@@ -122,9 +122,9 @@ docs = [
 ]
 typing = [
     "mypy>=0.910",
-    "types-python-dateutil",
     "types-filelock",
     "types-markdown>=3.3",
+    "types-python-dateutil",
     "types-toml>=0.10",
 ]
 security = [
