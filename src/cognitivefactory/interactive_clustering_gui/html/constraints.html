@@ -62,8 +62,8 @@
 								title="See texts."
 								onclick="goToTextsSummaryPage({projectID:'{{project_id}}'})">
 								<div class="inner_middle">
-									<span style="font-size: 0.66em;">TEXTS</span>
-									inventory_2
+									format_list_numbered
+									<span style="font-size: 0.66em;">&nbsp;TEXTS</span>
 								</div>
 							</button>
 						</td>
@@ -73,7 +73,8 @@
 					{% set number_of_CANNOT_LINK_constraints = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("constraint_type", "equalto", "CANNOT_LINK") | list | length) %}
 					{% set number_of_SKIP_constraints = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("constraint_type", "equalto", none) | list | length) %}
 					{% set number_of_constraints = (number_of_MUST_LINK_constraints + number_of_CANNOT_LINK_constraints) %}
-					{% set number_of_constraints_to_annotate = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("to_annotate", "equalto", true) | list | length) %}
+					{% set constraints_to_annotate = (constraints.items() | selectattr("1.is_hidden", "equalto", false) | selectattr("1.to_annotate", "equalto", true) | list) %}
+					{% set number_of_constraints_to_annotate = (constraints_to_annotate | length) %}
 					{% set number_of_constraints_to_review = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("to_review", "equalto", true) | list | length) %}
 					{% set number_of_constraints_to_fix = (constraints.values() | selectattr("is_hidden", "equalto", false) | selectattr("to_fix_conflict", "equalto", true) | list | length) %}
 					<tr class="row">
@@ -94,6 +95,23 @@
 						</td>
 						<td class="column center">
 							{% if status.state_details.step == "ANNOTATION" %}
+								<!-- Go to annotations -->
+								<button
+									disabled
+									class="material-icons button_steps"
+									id="button_go_to_annotations"
+									title="Start annotation of {{number_of_constraints_to_annotate}} remaining constraints."
+									{% if number_of_constraints_to_annotate > 0 %}
+										onclick="goToConstraintsAnnotationPage({projectID:'{{project_id}}', constraintID:'{{constraints_to_annotate[0].0}}'})"
+									{% else %}
+										onclick="goToConstraintsSummaryPage({projectID:'{{project_id}}'})"
+									{% endif %}
+									>
+									<div class="inner_middle">
+										rule_folder <!-- rule -->
+										<span style="font-size: 0.66em;">&nbsp;ANNOTATE</span>
+									</div>
+								</button>
 								<!-- Constraints approbation -->
 								{% set approbation_disabled = (status.state in ["ANNOTATION_WITH_UPTODATE_MODELIZATION"]) %}
 								<button
@@ -103,8 +121,8 @@
 									title="Approve all constraints and their annotations. If disabled, please run the modelization update and fix the remaining conflicts."
 									onclick="this.disabled=true; approveConstraintsAnnotations({projectID:'{{project_id}}'})">
 									<div class="inner_middle">
-										<span style="font-size: 0.66em;">APPROVE</span>
-										verified
+										done_all
+										<span style="font-size: 0.66em;">&nbsp;APPROVE</span>
 									</div>
 								</button>
 							{% endif %}
@@ -122,7 +140,7 @@
 									<b>Modelization is empty</b>.
 									<em>Please run modelization update.</em>
 								{% elif (status.state_details.modelization_status == "UPTODATE") %}
-									<span class="material-icons annotation_tag color_correct">done_all</span>
+									<span class="material-icons annotation_tag color_correct">done</span>
 									<b>Modelization is up to date</b>.
 									<em>Any modification will lead to an outdated modelization.</em>
 									<b>You can approve your work if all annotations are done</b>.
@@ -159,8 +177,8 @@
 									title="Run the modelization update job."
 									onclick="this.disabled=true; runModelizationUpdateTask({projectID:'{{project_id}}'})">
 									<div class="inner_middle">
-										<span style="font-size: 0.66em;">UPDATE</span>
-										sync
+										cloud_sync
+										<span style="font-size: 0.66em;">&nbsp;UPDATE</span>
 									</div>
 								</button>
 								<br/>
@@ -181,15 +199,13 @@
 
 			<!-- CONTAINER CONSTRAINTS - ACTIONS -->
 			<div class="container_content_actions">
-				{% if status.state_details.step == "SAMPLING" %}
-					<b>Please finish sampling step</b> to be able to perform annotation.
+				{% if status.state_details.step != "ANNOTATION" %}
+					<b>Annotation step is locked: Please follow the project steps to unlock it.</b>
 				{% elif status.state_details.step == "ANNOTATION" %}
 					{% set has_conflicts = (status.state_details.conflict_status == "TRUE") %}
 					{% if has_conflicts %}
-						<b>Please run modelization update to check project consistency and constraints conflicts.</b>
+						<b>There are conflicts in constraints: Please run modelization update to check project consistency.</b>
 					{% endif %}
-				{% else %}
-					<b>Annotation step is finished and constraints have been approved.</b>
 				{% endif %}
 			</div>
 		</div>
@@ -393,8 +409,12 @@
 										priority_high
 									</span>
 								{% elif constraint.constraint_type is not none %}
-									<span class="material-icons annotation_tag color_correct">
+									<span class="material-icons color_correct">
 										done
+									</span>
+								{% else %}
+									<span class="material-icons color_info">
+										question_mark
 									</span>
 								{% endif %}
 							</td>

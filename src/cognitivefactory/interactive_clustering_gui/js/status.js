@@ -220,6 +220,12 @@ function updateAllAccordingToProjectStatus({
         var iteration_id = getProjectStatusResponse.status.iteration_id;
         var state = getProjectStatusResponse.status.state;
         var task = getProjectStatusResponse.status.task;
+        if (task === null) {
+            task = {
+                "progression": null,
+                "detail": null
+            }
+        }
 
         // Boolean to determine if update need frequently new update.
         var redoUpdateAllAccordingToProjectStatus = false;
@@ -474,18 +480,9 @@ function updateAllAccordingToProjectStatus({
         ) {
             displayElement("row_step_annotation_and_modelization");
             updateButtonStatus({
-                button_id: "button_go_to_texts",
-                button_status: "default",
-                button_disabled: false,
-            });
-            updateDetailsOpenStatus({
-                details_id: "details_annotation_and_modelization",
-                details_open: false,
-            });
-            updateButtonStatus({
-                button_id: "button_go_to_constraints",
-                button_status: "default",
-                button_disabled: false,
+                button_id: "button_go_to_annotations",
+                button_status: "todo",
+                button_disabled: true,
             });
             updateButtonStatus({
                 button_id: "button_run_modelization_update",
@@ -497,6 +494,10 @@ function updateAllAccordingToProjectStatus({
                 button_status: "todo",
                 button_disabled: true,
             });
+            updateDetailsOpenStatus({
+                details_id: "details_annotation_and_modelization",
+                details_open: false,
+            });
             hideElement("loadingbar_annotation_and_modelization");
         } else if (  // Case of ANNOTATION in TODO UPTODATE.
             [
@@ -505,12 +506,7 @@ function updateAllAccordingToProjectStatus({
         ) {
             displayElement("row_step_annotation_and_modelization");
             updateButtonStatus({
-                button_id: "button_go_to_texts",
-                button_status: "wip",
-                button_disabled: false,
-            });
-            updateButtonStatus({
-                button_id: "button_go_to_constraints",
+                button_id: "button_go_to_annotations",
                 button_status: "wip",
                 button_disabled: false,
             });
@@ -552,12 +548,7 @@ function updateAllAccordingToProjectStatus({
         ) {
             displayElement("row_step_annotation_and_modelization");
             updateButtonStatus({
-                button_id: "button_go_to_texts",
-                button_status: "wip",
-                button_disabled: false,
-            });
-            updateButtonStatus({
-                button_id: "button_go_to_constraints",
+                button_id: "button_go_to_annotations",
                 button_status: "wip",
                 button_disabled: false,
             });
@@ -583,12 +574,7 @@ function updateAllAccordingToProjectStatus({
         ) {
             displayElement("row_step_annotation_and_modelization");
             updateButtonStatus({
-                button_id: "button_go_to_texts",
-                button_status: "wip",
-                button_disabled: false,
-            });
-            updateButtonStatus({
-                button_id: "button_go_to_constraints",
+                button_id: "button_go_to_annotations",
                 button_status: "wip",
                 button_disabled: false,
             });
@@ -631,12 +617,7 @@ function updateAllAccordingToProjectStatus({
         ) {
             displayElement("row_step_annotation_and_modelization");
             updateButtonStatus({
-                button_id: "button_go_to_texts",
-                button_status: "wip",
-                button_disabled: false,
-            });
-            updateButtonStatus({
-                button_id: "button_go_to_constraints",
+                button_id: "button_go_to_annotations",
                 button_status: "wip",
                 button_disabled: false,
             });
@@ -670,12 +651,7 @@ function updateAllAccordingToProjectStatus({
         ) {
             displayElement("row_step_annotation_and_modelization");
             updateButtonStatus({
-                button_id: "button_go_to_texts",
-                button_status: "wip",
-                button_disabled: false,
-            });
-            updateButtonStatus({
-                button_id: "button_go_to_constraints",
+                button_id: "button_go_to_annotations",
                 button_status: "wip",
                 button_disabled: false,
             });
@@ -704,14 +680,9 @@ function updateAllAccordingToProjectStatus({
         } else {  // Case of ANNOTATION in DONE.
             displayElement("row_step_annotation_and_modelization");
             updateButtonStatus({
-                button_id: "button_go_to_texts",
+                button_id: "button_go_to_annotations",
                 button_status: "done",
-                button_disabled: false,
-            });
-            updateButtonStatus({
-                button_id: "button_go_to_constraints",
-                button_status: "done",
-                button_disabled: false,
+                button_disabled: true,
             });
             updateButtonStatus({
                 button_id: "button_run_modelization_update",

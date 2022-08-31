@@ -93,8 +93,8 @@
 								title="See constraints."
 								onclick="goToConstraintsSummaryPage({projectID:'{{project_id}}'})">
 								<div class="inner_middle">
-									<span style="font-size: 0.66em;">CONSTRAINTS</span>
-									inventory_2
+									format_list_numbered
+									<span style="font-size: 0.66em;">&nbsp;CONSTRAINTS</span>
 								</div>
 							</button>
 						</td>
@@ -112,7 +112,7 @@
 									<b>Modelization is empty</b>.
 									<em>Please run modelization update.</em>
 								{% elif (status.state_details.modelization_status == "UPTODATE") %}
-									<span class="material-icons annotation_tag color_correct">done_all</span>
+									<span class="material-icons annotation_tag color_correct">done</span>
 									<b>Modelization is up to date</b>.
 									<em>Any modification will lead to an outdated modelization.</em>
 								{% elif (status.state_details.modelization_status == "OUTDATED") %}
@@ -148,8 +148,8 @@
 									title="Run the modelization update job."
 									onclick="this.disabled=true; runModelizationUpdateTask({projectID:'{{project_id}}'})">
 									<div class="inner_middle">
-										<span style="font-size: 0.66em;">UPDATE</span>
-										sync
+										cloud_sync
+										<span style="font-size: 0.66em;">&nbsp;UPDATE</span>
 									</div>
 								</button>
 								<br/>
@@ -170,15 +170,13 @@
 
 			<!-- CONTAINER TEXTS - ACTIONS -->
 			<div class="container_content_actions">
-				{% if status.state_details.step == "SAMPLING" %}
-					<b>Please finish sampling step</b> to be able to perform modification.
+				{% if status.state_details.step != "ANNOTATION" %}
+					<b>Annotation step is locked: Please follow the project steps to unlock it.</b>
 				{% elif status.state_details.step == "ANNOTATION" %}
 					{% set has_conflicts = (status.state_details.conflict_status == "TRUE") %}
 					{% if has_conflicts %}
-						<b>Please run modelization update to check project consistency and constraints conflicts.</b>
+						<b>There are conflicts in constraints: Please run modelization update to check project consistency.</b>
 					{% endif %}
-				{% else %}
-					<b>Annotation step is finished and constraints have been approved.</b>
 				{% endif %}
 			</div>
 		</div>

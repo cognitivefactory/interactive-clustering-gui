@@ -353,8 +353,8 @@
 										title="Run the modelization update job."
 										onclick="this.disabled=true; runModelizationUpdateTask({projectID:'{{project_id}}'})">
 										<div class="inner_middle">
-											<span style="font-size: 0.66em;">UPDATE</span>
-											sync
+											cloud_sync
+											<span style="font-size: 0.66em;">&nbsp;UPDATE</span>
 										</div>
 									</button>
 									<br/>
@@ -387,7 +387,7 @@
 						id="button_navigation_home"
 						title="Go to constraints summary page. &#013;Shortcut: [ArrowDown]"
 						onclick="goToConstraintsSummaryPage({projectID:'{{project_id}}'});">
-						list
+						format_list_numbered
 					</button>
 					<button
 						{% if navigation_next is none %}disabled{% endif %}

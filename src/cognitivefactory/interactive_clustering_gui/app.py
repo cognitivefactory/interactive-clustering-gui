@@ -1068,6 +1068,15 @@ async def get_html_project_home_page(
                 "metadata": (await get_metadata(project_id=project_id))["metadata"],
                 # Get the project status (iteration, step name and status, modelization state and conflict).
                 "status": (await get_status(project_id=project_id))["status"],
+                # Get the project constraints.
+                "constraints": (
+                    await get_constraints(
+                        project_id=project_id,
+                        without_hidden_constraints=True,
+                        sorted_by=ConstraintsSortOptions.ITERATION_OF_SAMPLING,
+                        sorted_reverse=False,
+                    )
+                )["constraints"],
             },
             status_code=status.HTTP_200_OK,
         )
