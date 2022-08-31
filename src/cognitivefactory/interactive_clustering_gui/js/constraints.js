@@ -33,7 +33,7 @@ function approveConstraintsAnnotations({
         );
 
         // Case of request error: Alert the user of the error.
-        if (approvalRequest.status != "202") {
+        if (approvalRequest.status != "201") {
             alert(
                 "Error " + approvalRequest.status
                 + " " + approvalRequest.statusText
