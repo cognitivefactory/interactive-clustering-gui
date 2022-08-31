@@ -59,6 +59,7 @@ function approveConstraintsAnnotations({
  * @param {str} constraintType: The type of the constraint.
  * @param {str} goToNextConstraint: The ID of the next constraint to annotate.
  * @param {bool} goToSummaryPage: The option to load the constraints summay page.
+ * @param {str} confirmOption: The option to ask confirmation before send request.
  * @param {bool} reloadOption: The option to reload alert after request acceptance.
  */
 function updateConstraint({
@@ -67,12 +68,21 @@ function updateConstraint({
     constraintType,
     goToNextConstraint = null,
     goToSummaryPage = false,
+    confirmOption = false,
     reloadOption = true,
 }={}) {
 
+    // Confirmation box before sending request.
+    if (confirmOption == true || confirmOption == "true") {
+        if (!confirm("Please confirm that you want to change the annotation of constraint '" + constraintID + "' from project '" + projectID + "' to '" + constraintType + "'.")) {
+            location.reload();
+            return;
+        }
+    }
+
     // Get required inputs for constraint update.
     var constraintUpdateQuery = "";
-    if ((constraintType !== null) & (constraintType != "")) {
+    if (constraintType !== null && constraintType != "") {
         constraintUpdateQuery += "?constraint_type=" + String(constraintType);
     }
 
@@ -120,7 +130,7 @@ function updateConstraint({
         }
 
         // Option to reload page to update.
-        if (reloadOption == true) {
+        if (reloadOption == true || reloadOption == "true") {
             location.reload();
             return;
         }

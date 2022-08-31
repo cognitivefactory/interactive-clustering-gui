@@ -116,14 +116,14 @@
 						class="fas fa-equals {% if constraint.constraint_type == 'MUST_LINK' %}annotation_selected{% elif constraint.constraint_type == 'CANNOT_LINK' %}annotation_not_selected{% endif %}"
 						id="button_annotation_must_link"
 						title="Annotate a MUST_LINK constraint. &#013;Shortcut: [A] (for accept)"
-						onclick="this.disabled=true; this.classList.add('annotation_selected'); updateConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', constraintType:'MUST_LINK', goToNextConstraint:'{% if navigation_next is none %}null{% else %}{{navigation_next}}{% endif %}', goToSummaryPage:'{% if navigation_next is none %}true{% else %}false{% endif %}', reloadOption:false});">
+						onclick="this.disabled=true; this.classList.add('annotation_selected'); updateConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', constraintType:'MUST_LINK', goToNextConstraint:'{% if (constraint.to_annotate == true) and (navigation_next is not none) %}{{navigation_next}}{% else %}null{% endif %}', goToSummaryPage:'{% if (constraint.to_annotate == true) and (navigation_next is none) %}true{% else %}false{% endif %}', confirmOption:'{% if constraint.to_annotate == false %}true{% else %}false{% endif %}', reloadOption:true});">
 					</button>  <!-- material-icons, done -->
 					<button
 						{% if modification_disabled or constraint.is_hidden %}disabled{% endif %}
 						class="material-icons {% if (constraint.constraint_type is not none) and (constraint.to_annotate==false) %}annotation_not_selected{% endif %}"
 						id="button_annotation_skip"
 						title="Skip the  &#013;Shortcut: [Space]"
-						onclick="this.disabled=true; this.classList.add('annotation_selected'); updateConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', constraintType:null, goToNextConstraint:'{% if navigation_next is none %}null{% else %}{{navigation_next}}{% endif %}', goToSummaryPage:'{% if navigation_next is none %}true{% else %}false{% endif %}', reloadOption:false});">
+						onclick="this.disabled=true; this.classList.add('annotation_selected'); updateConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', constraintType:null, goToNextConstraint:'{% if (constraint.to_annotate == true) and (navigation_next is not none) %}{{navigation_next}}{% else %}null{% endif %}', goToSummaryPage:'{% if (constraint.to_annotate == true) and (navigation_next is none) %}true{% else %}false{% endif %}', confirmOption:'{% if constraint.to_annotate == false %}true{% else %}false{% endif %}', reloadOption:true});">
 						help_outline
 					</button> <!-- material-icons, do_disturb_alt -->
 					<button
@@ -131,7 +131,7 @@
 						class="fas fa-not-equal {% if constraint.constraint_type == 'CANNOT_LINK' %}annotation_selected{% elif constraint.constraint_type == 'MUST_LINK' %}annotation_not_selected{% endif %}"
 						id="button_annotation_cannot_link"
 						title="Annotate a CANNOT_LINK constraint. &#013;Shortcut: [R] (for reject)"
-						onclick="this.disabled=true; this.classList.add('annotation_selected'); updateConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', constraintType:'CANNOT_LINK', goToNextConstraint:'{% if navigation_next is none %}null{% else %}{{navigation_next}}{% endif %}', goToSummaryPage:'{% if navigation_next is none %}true{% else %}false{% endif %}', reloadOption:false});">
+						onclick="this.disabled=true; this.classList.add('annotation_selected'); updateConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', constraintType:'CANNOT_LINK', goToNextConstraint:'{% if (constraint.to_annotate == true) and (navigation_next is not none) %}{{navigation_next}}{% else %}null{% endif %}', goToSummaryPage:'{% if (constraint.to_annotate == true) and (navigation_next is none) %}true{% else %}false{% endif %}', confirmOption:'{% if constraint.to_annotate == false %}true{% else %}false{% endif %}', reloadOption:true});">
 					</button>  <!-- material-icons, close -->
 				</div>
 
