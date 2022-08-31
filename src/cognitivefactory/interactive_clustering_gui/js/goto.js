@@ -49,7 +49,7 @@ function goToProjectHomePage({
 function goToConstraintsSummaryPage({
     projectID,
     sortedBy = "iteration_of_sampling",
-    sortedReverse = false,
+    sortedReverse = true,
 }={}) {
     location.href = "/gui/projects/"+String(projectID)+"/constraints"+"?sorted_by="+String(sortedBy)+"&sorted_reverse="+String(sortedReverse);
 }
