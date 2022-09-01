@@ -5,6 +5,26 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.4.0](https://github.com/cognitivefactory/interactive-clustering-gui/releases/tag/0.4.0) - 2022-09-01
+
+<small>[Compare with 0.3.0](https://github.com/cognitivefactory/interactive-clustering-gui/compare/0.3.0...0.4.0)</small>
+
+### Bug Fixes
+- correct expected status for constraints approval in js ([8c8ed8d](https://github.com/cognitivefactory/interactive-clustering-gui/commit/8c8ed8df2b9523b24517353de263062fe231d181) by SCHILD Erwan).
+
+### Build
+- update flake8 (incompatibilities) ([3b9461d](https://github.com/cognitivefactory/interactive-clustering-gui/commit/3b9461d77337c5c6925c74711f7e659e302722e7) by SCHILD Erwan).
+
+### Code Refactoring
+- add confirmation when modify annotation in html/js ([9c2dbdb](https://github.com/cognitivefactory/interactive-clustering-gui/commit/9c2dbdba397605ba754b78fd32b550339ce910c9) by SCHILD Erwan).
+- change constraints summary default order in js ([a0b94b0](https://github.com/cognitivefactory/interactive-clustering-gui/commit/a0b94b077f1b349b631680161fccbbd326da1c2a) by SCHILD Erwan).
+- move welcome page to '/' ([ae94345](https://github.com/cognitivefactory/interactive-clustering-gui/commit/ae943458530a22b7651813bdb71ae6fe11897b87) by SCHILD Erwan).
+- pyproject.toml ([a8b0323](https://github.com/cognitivefactory/interactive-clustering-gui/commit/a8b032322f416acee1751af7edd5588a13351d1f) by SCHILD Erwan).
+
+### Features
+- add direct link to constraints to annotate, with some ux refactor ([9522360](https://github.com/cognitivefactory/interactive-clustering-gui/commit/9522360325b9482bb659a62d02aa293905d1c848) by SCHILD Erwan).
+
+
 ## [0.3.0](https://github.com/cognitivefactory/interactive-clustering-gui/releases/tag/0.3.0) - 2022-08-26
 
 <small>[Compare with 0.2.1](https://github.com/cognitivefactory/interactive-clustering-gui/compare/0.2.1...0.3.0)</small>
