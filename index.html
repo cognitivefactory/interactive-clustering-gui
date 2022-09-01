@@ -924,21 +924,13 @@
 <p><em>Interactive clustering</em> is a method intended to assist in the design of a training data set.</p>
 <p>This iterative process begins with an unlabeled dataset, and it uses a sequence of two substeps :</p>
 <ol>
-<li>
-<p>the user defines constraints on data sampled by the computer ;</p>
-</li>
-<li>
-<p>the computer performs data partitioning using a constrained clustering algorithm.</p>
-</li>
+<li>the user defines constraints on data sampled by the computer ;</li>
+<li>the computer performs data partitioning using a constrained clustering algorithm.</li>
 </ol>
 <p>Thus, at each step of the process :</p>
 <ul>
-<li>
-<p>the user corrects the clustering of the previous steps using constraints, and</p>
-</li>
-<li>
-<p>the computer offers a corrected and more relevant data partitioning for the next step.</p>
-</li>
+<li>the user corrects the clustering of the previous steps using constraints, and</li>
+<li>the computer offers a corrected and more relevant data partitioning for the next step.</li>
 </ul>
 <p>This web application implements this annotation methodology with several features:</p>
 <ul>
@@ -1001,12 +993,8 @@ python3 -m spacy download fr_core_news_md-3.1.0 --direct
 </code></pre></div>
 <p>Then, go to one of the following pages in your browser:</p>
 <ul>
-<li>
-<p>Welcome page (web application home): <a href="http://localhost:8080/welcome">http://localhost:8080/welcome</a></p>
-</li>
-<li>
-<p>Swagger (interactive documentation): <a href="http://localhost:8080/docs">http://localhost:8080/docs</a></p>
-</li>
+<li>Welcome page (web application home): <a href="http://localhost:8080">http://localhost:8080</a></li>
+<li>Swagger (interactive documentation): <a href="http://localhost:8080/docs">http://localhost:8080/docs</a></li>
 </ul>
 <h2 id="development"><a name="Development"></a> Development<a class="headerlink" href="#development" title="Permanent link">&para;</a></h2>
 <p>To work on this project or contribute to it, please read
@@ -1023,6 +1011,11 @@ make setup
 <p>Launch the web application in debug mode:</p>
 <div class="highlight"><pre><span></span><code>make run  <span class="c1"># launch on 127.0.0.1:8080</span>
 </code></pre></div>
+<p>Then, go to one of the following pages in your browser:</p>
+<ul>
+<li>Welcome page (web application home): <a href="http://localhost:8080">http://localhost:8080</a></li>
+<li>Swagger (interactive documentation): <a href="http://localhost:8080/docs">http://localhost:8080/docs</a></li>
+</ul>
 <p>For more details, read the <a href="https://cognitivefactory.github.io/interactive-clustering-gui/contributing/">Contributing</a> documentation.</p>
 <h2 id="references"><a name="References"></a> References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <ul>
