@@ -95,6 +95,7 @@ format = [
 ]
 quality = [
     "darglint>=1.8",
+    "flake8<5",  # TODO: remove after incompatibilities fix
     "flake8-bandit>=2.1",
     "flake8-black>=0.2",
     "flake8-bugbear>=21.9",
