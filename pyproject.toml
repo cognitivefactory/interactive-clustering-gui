@@ -84,7 +84,7 @@ editable-backend = "editables"
 [tool.pdm.dev-dependencies]
 develop = [
     #"locust>=1.1",
-    "fr-core-news-md==3.1.0",  # @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.1.0/fr_core_news_md-3.1.0.tar.gz",
+    "fr-core-news-md @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.1.0/fr_core_news_md-3.1.0.tar.gz",  # ==3.1.0",
 ]
 duty = [
     "duty>=0.7",
@@ -156,7 +156,7 @@ tests = [
     "pytest-randomly>=3.10",
     "pytest-sugar>=0.9",
     "pytest-xdist>=2.4",
-    "fr-core-news-md==3.1.0",  # @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.1.0/fr_core_news_md-3.1.0.tar.gz",
+    "fr-core-news-md @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.1.0/fr_core_news_md-3.1.0.tar.gz",  # ==3.1.0",
 ]
 maintain = [
     "git-changelog>=0.4,<1.0",
