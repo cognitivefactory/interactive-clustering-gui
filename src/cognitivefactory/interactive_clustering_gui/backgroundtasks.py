@@ -621,11 +621,7 @@ def run_constraints_sampling_task(
 
     # Initialize constraints sampler.
     kwargs_sampling_init: Dict[str, Any] = (
-        {
-            key: value
-            for key, value in settings[str(iteration_id)]["sampling"]["init_kargs"].items()
-            if value is not None
-        }
+        settings[str(iteration_id)]["sampling"]["init_kargs"]
         if (settings[str(iteration_id)]["sampling"]["init_kargs"] is not None)
         else {}
     )
@@ -869,11 +865,7 @@ def run_constrained_clustering_task(
 
     # Initialize clustering model.
     kwargs_clustering_init: Dict[str, Any] = (
-        {
-            key: value
-            for key, value in settings[str(iteration_id)]["clustering"]["init_kargs"].items()
-            if value is not None
-        }
+        settings[str(iteration_id)]["clustering"]["init_kargs"]
         if (settings[str(iteration_id)]["clustering"]["init_kargs"] is not None)
         else {}
     )

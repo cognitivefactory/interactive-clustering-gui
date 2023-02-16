@@ -292,7 +292,7 @@
 										class="button_form_submit"
 										id="button_renaming_text_submit"
 										title="Update text renaming."
-										onclick="this.disabled=true; renameText({projectID:'{{project_id}}', textID:'{{text_id}}', newTextValue:document.getElementById('{{ text_id }}.edit.input').value, reloadOption:true});">
+										onclick="renameText({projectID:'{{project_id}}', textID:'{{text_id}}', newTextValue:document.getElementById('{{ text_id }}.edit.input').value, reloadOption:false}); document.getElementById('{{text_id}}.print').getElementsByTagName('i')[0].innerHTML = '&laquo; ' + document.getElementById('{{text_id}}.edit.input').value + ' &raquo;'; document.getElementById('{{text_id}}.edit').classList.add('hide'); document.getElementById('{{text_id}}.print').classList.remove('hide');">
 										Update
 									</button>
 								</form>

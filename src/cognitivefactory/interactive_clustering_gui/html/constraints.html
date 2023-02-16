@@ -342,7 +342,7 @@
 									class="{% if constraint.constraint_type == 'MUST_LINK' %}background_must_link{% elif constraint.constraint_type == 'CANNOT_LINK' %}background_cannot_link{% else %}background_blank{% endif %}"
 									id="{{ constraint_id }}.select"
 									style="font-size: 1em; width: 100%;"
-									onchange="this.disabled=true; this.classList=this.options[this.selectedIndex].classList; updateConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', constraintType:this.value, reloadOption:true});">
+									onchange="this.classList=this.options[this.selectedIndex].classList; updateConstraint({projectID:'{{project_id}}', constraintID:'{{constraint_id}}', constraintType:this.value, reloadOption:false});">
 									<option
 										value=""
 										{% if constraint.constraint_type is none %}selected{% endif %}
