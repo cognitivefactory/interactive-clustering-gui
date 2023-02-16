@@ -5,8 +5,8 @@
 [![pypi version](https://img.shields.io/pypi/v/cognitivefactory-interactive-clustering-gui.svg)](https://pypi.org/project/cognitivefactory-interactive-clustering-gui/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4775270.svg)](https://doi.org/10.5281/zenodo.4775270)
 
-
 A web application designed for NLP data annotation using Interactive Clustering methodology.
+
 
 ## <a name="Description"></a> Quick description
 
@@ -32,37 +32,18 @@ This web application implements this annotation methodology with several feature
 
 For more details, read the [Documentation](#Documentation) and the articles in the [References](#References) section.
 
+
 ## <a name="Documentation"></a> Documentation
 
 - [Main documentation](https://cognitivefactory.github.io/interactive-clustering-gui/)
 
+
 ## <a name="Requirements"></a> Requirements
 
-Interactive Clustering GUI requires Python 3.7 or above.
+Interactive Clustering GUI requires Python 3.8 or above.
 
-<details>
-<summary>To install Python 3.7, I recommend using <a href="https://github.com/pyenv/pyenv"><code>pyenv</code></a>.</summary>
+To install with [`pip`](https://github.com/pypa/pip):
 
-```bash
-# install pyenv
-git clone https://github.com/pyenv/pyenv ~/.pyenv
-
-# setup pyenv (you should also put these three lines in .bashrc or similar)
-export PATH="${HOME}/.pyenv/bin:${PATH}"
-export PYENV_ROOT="${HOME}/.pyenv"
-eval "$(pyenv init -)"
-
-# install Python 3.7
-pyenv install 3.7
-
-# make it available globally
-pyenv global system 3.7
-```
-</details>
-
-## <a name="Installation"></a> Installation
-
-With `pip`:
 ```bash
 # install package
 python3 -m pip install cognitivefactory-interactive-clustering-gui
@@ -71,7 +52,8 @@ python3 -m pip install cognitivefactory-interactive-clustering-gui
 python3 -m spacy download fr_core_news_md-3.1.0 --direct
 ```
 
-With [`pipx`](https://github.com/pipxproject/pipx):
+To install with [`pipx`](https://github.com/pypa/pipx):
+
 ```bash
 # install pipx
 python3 -m pip install --user pipx
@@ -82,6 +64,7 @@ pipx install --python python3 cognitivefactory-interactive-clustering-gui
 # install spacy language model dependencies (the one you want, with version "3.1.x")
 python3 -m spacy download fr_core_news_md-3.1.0 --direct
 ```
+
 
 ## <a name="Run"></a> Run
 
@@ -102,39 +85,16 @@ Then, go to one of the following pages in your browser:
 - Welcome page (web application home): [http://localhost:8080](http://localhost:8080)
 - Swagger (interactive documentation): [http://localhost:8080/docs](http://localhost:8080/docs)
 
+
 ## <a name="Development"></a> Development
 
-To work on this project or contribute to it, please read
-[the Copier PDM documentation](https://pawamoy.github.io/copier-pdm/).
 
-### Quick setup and help
+To work on this project or contribute to it, please read:
 
-Get the code and prepare the environment:
+- the [Copier PDM](https://pawamoy.github.io/copier-pdm/) template documentation ;
+- the [Contributing](https://cognitivefactory.github.io/interactive-clustering-gui/contributing/) page for environment setup and development help ;
+- the [Code of Conduct](https://cognitivefactory.github.io/interactive-clustering-gui/code_of_conduct/) page for contribution rules.
 
-```bash
-git clone https://github.com/cognitivefactory/interactive-clustering-gui/
-cd interactive-clustering-gui
-make setup
-```
-
-Show the help:
-
-```bash
-make help  # or just make
-```
-
-Launch the web application in debug mode:
-
-```bash
-make run  # launch on 127.0.0.1:8080
-```
-
-Then, go to one of the following pages in your browser:
-
-- Welcome page (web application home): [http://localhost:8080](http://localhost:8080)
-- Swagger (interactive documentation): [http://localhost:8080/docs](http://localhost:8080/docs)
-
-For more details, read the [Contributing](https://cognitivefactory.github.io/interactive-clustering-gui/contributing/) documentation.
 
 ## <a name="References"></a> References
 
@@ -146,6 +106,7 @@ For more details, read the [Contributing](https://cognitivefactory.github.io/int
 
 - **Web application**:
     - _FastAPI_: `https://fastapi.tiangolo.com/`
+
 
 ## <a name="How to cite"></a> How to cite
 
