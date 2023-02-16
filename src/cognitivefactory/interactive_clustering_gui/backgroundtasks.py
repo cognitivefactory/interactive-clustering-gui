@@ -16,13 +16,8 @@
 import json
 import os
 import pathlib
-import sys
+import pickle  # noqa: S403
 from typing import Any, Dict, List, Optional, Tuple
-
-if sys.version_info.minor < 8:  # pragma: nocover
-    import pickle5 as pickle  # noqa: S403
-else:  # pragma: nocover
-    import pickle  # type: ignore # noqa: S403 WPS440
 
 from filelock import FileLock
 from numpy import ndarray
@@ -117,6 +112,7 @@ def update_project_status(
 # DEFINE BACKGROUND TASKS FOR MODELIZATION UPDATE
 # ==============================================================================
 
+
 ###
 ### BACKGROUND TASK: Run modelization update task.
 ###
@@ -142,7 +138,6 @@ def run_modelization_update_task(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         ###
         ### Load needed data.
         ###
@@ -303,6 +298,7 @@ def run_modelization_update_task(
         # learning_rate="auto",  # Error on "scikit-learn==0.24.1" !
         init="random",
         random_state=settings[str(iteration_id)]["vectorization"]["random_seed"],
+        perplexity=min(30.0, vectors_ND.shape[0] - 1),  # TSNE requirement.
     ).fit_transform(vectors_ND)
 
     # Store 2D vectors.
@@ -335,6 +331,7 @@ def run_modelization_update_task(
         # learning_rate="auto",  # Error on "scikit-learn==0.24.1" !
         init="random",
         random_state=settings[str(iteration_id)]["vectorization"]["random_seed"],
+        perplexity=min(30.0, vectors_ND.shape[0] - 1),  # TSNE requirement.
     ).fit_transform(vectors_ND)
 
     # Store 3D vectors.
@@ -377,7 +374,6 @@ def run_modelization_update_task(
 
     # Then, update constraints manager with "CANNOT_LINK" constraints.
     for _, constraint_CL in constraints.items():
-
         if constraint_CL["constraint_type"] == "CANNOT_LINK" and constraint_CL["is_hidden"] is False:
             new_constraints_manager.add_constraint(
                 data_ID1=constraint_CL["data"]["id_1"],
@@ -390,7 +386,6 @@ def run_modelization_update_task(
 
     # Finaly, update constraints manager with "MUST_LINK" constraints.
     for constraint_ML_id, constraint_ML in constraints.items():
-
         if constraint_ML["constraint_type"] == "MUST_LINK" and constraint_ML["is_hidden"] is False:
             try:
                 new_constraints_manager.add_constraint(
@@ -399,7 +394,6 @@ def run_modelization_update_task(
                     constraint_type="MUST_LINK",
                 )  # Conflicts can append.
             except ValueError:
-
                 # Update conflicts status.
                 constraints[constraint_ML_id]["to_fix_conflict"] = True
                 number_of_conflicts += 1
@@ -500,6 +494,7 @@ def run_modelization_update_task(
 # DEFINE BACKGROUND TASKS FOR CONSTRAINTS SAMPLING
 # ==============================================================================
 
+
 ###
 ### BACKGROUND TASK: Run constraints sampling task.
 ###
@@ -524,7 +519,6 @@ def run_constraints_sampling_task(
 
     # Lock status file in order to check project iteration and project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         # Load status file.
         with open(DATA_DIRECTORY / project_id / "status.json", "r") as status_fileobject_r:
             project_status: Dict[str, Any] = json.load(status_fileobject_r)
@@ -699,8 +693,7 @@ def run_constraints_sampling_task(
     sampling_results[str(iteration_id)] = []
 
     # For all sampling to annotate...
-    for (data_ID1, data_ID2) in sampling_result:
-
+    for data_ID1, data_ID2 in sampling_result:
         # Define sampling id.
         constraint_id: str = "({data_ID1_str},{data_ID2_str})".format(
             data_ID1_str=data_ID1,
@@ -763,6 +756,7 @@ def run_constraints_sampling_task(
 # DEFINE BACKGROUND TASKS FOR CONSTRAINED CLUSTERING
 # ==============================================================================
 
+
 ###
 ### BACKGROUND TASK: Run constraints clustering task.
 ###
@@ -787,7 +781,6 @@ def run_constrained_clustering_task(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         # Load status file.
         with open(DATA_DIRECTORY / project_id / "status.json", "r") as status_fileobject_r:
             project_status: Dict[str, Any] = json.load(status_fileobject_r)
