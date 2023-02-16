@@ -127,7 +127,6 @@ def create_dummy_projects(tmp_path: Path, list_of_dummy_project_ids: List[str]):
 
     # For each request dummy project ID...
     for dummy_project_id in list_of_dummy_project_ids:
-
         # Copy the dummy project.
         if os.path.isdir(path_to_dummy_projects / dummy_project_id):
             shutil.copytree(

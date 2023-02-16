@@ -290,6 +290,7 @@ async def alive() -> Response:  # pragma: no cover
 # DEFINE ROUTES FOR HOME AND DOCUMENTATION
 # ==============================================================================
 
+
 ###
 ### ROUTE: Get HTML welcome page.
 ###
@@ -614,7 +615,6 @@ async def get_metadata(
         description="The ID of the project.",
     ),
 ) -> Dict[str, Any]:
-
     """
     Get metadata.
 
@@ -639,7 +639,6 @@ async def get_metadata(
 
     # Load the project metadata.
     with open(DATA_DIRECTORY / project_id / "metadata.json", "r") as metadata_fileobject:
-
         # Return the project metadata.
         return {
             "project_id": project_id,
@@ -795,7 +794,6 @@ async def import_project(
     # Try to open archive file.
     try:
         with zipfile.ZipFile(import_archive_path, "r") as import_archive_file:
-
             ###
             ### Check archive content.
             ###
@@ -1099,6 +1097,7 @@ async def get_html_project_home_page(
 # DEFINE ROUTES FOR STATUS
 # ==============================================================================
 
+
 ###
 ### ROUTE: Get status.
 ###
@@ -1137,7 +1136,6 @@ async def get_status(
 
     # Load status file.
     with open(DATA_DIRECTORY / project_id / "status.json", "r") as status_fileobject:
-
         project_status: Dict[str, Any] = json.load(status_fileobject)
         project_status["state_details"] = get_ICGUIStates_details(state=project_status["state"])
 
@@ -1184,7 +1182,6 @@ async def move_to_next_iteration(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         ###
         ### Load needed data.
         ###
@@ -1422,7 +1419,6 @@ async def delete_text(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         ###
         ### Load needed data.
         ###
@@ -1484,7 +1480,6 @@ async def delete_text(
 
         # Update constraints by hidding those associated with the deleted text.
         for constraint_id, constraint_value in constraints.items():
-
             data_id1: str = constraint_value["data"]["id_1"]
             data_id2: str = constraint_value["data"]["id_2"]
 
@@ -1566,7 +1561,6 @@ async def undelete_text(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         ###
         ### Load needed data.
         ###
@@ -1628,12 +1622,10 @@ async def undelete_text(
 
         # Update constraints by unhidding those associated with the undeleted text.
         for constraint_id, constraint_value in constraints.items():
-
             data_id1: str = constraint_value["data"]["id_1"]
             data_id2: str = constraint_value["data"]["id_2"]
 
             if text_id in {data_id1, data_id2}:
-
                 constraints[constraint_id]["is_hidden"] = (
                     texts[data_id1]["is_deleted"] is True or texts[data_id2]["is_deleted"] is True
                 )
@@ -1717,7 +1709,6 @@ async def rename_text(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         ###
         ### Load needed data.
         ###
@@ -2085,7 +2076,6 @@ async def annotate_constraint(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         ###
         ### Load needed data.
         ###
@@ -2221,7 +2211,6 @@ async def review_constraint(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         ###
         ### Load needed data.
         ###
@@ -2322,7 +2311,6 @@ async def comment_constraint(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         ###
         ### Load needed data.
         ###
@@ -2411,7 +2399,6 @@ async def approve_all_constraints(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         # Load status file.
         with open(DATA_DIRECTORY / project_id / "status.json", "r") as status_fileobject:
             project_status: Dict[str, Any] = json.load(status_fileobject)
@@ -2635,6 +2622,7 @@ async def get_html_constraint_annotation_page(
 # DEFINE ROUTES FOR SETTINGS
 # ==============================================================================
 
+
 ###
 ### ROUTE: Get settings.
 ###
@@ -2791,7 +2779,6 @@ async def update_settings(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         ###
         ### Load needed data.
         ###
@@ -3090,7 +3077,6 @@ async def get_modelization(
 
     # Load the modelization inference results.
     with open(DATA_DIRECTORY / project_id / "modelization.json", "r") as modelization_fileobject:
-
         # Return the project modelization inference.
         return {
             "project_id": project_id,
@@ -3221,7 +3207,6 @@ async def prepare_modelization_update_task(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         ###
         ### Load needed data.
         ###
@@ -3416,7 +3401,6 @@ async def get_constraints_sampling_results(
 
     # Load the sampling results.
     with open(DATA_DIRECTORY / project_id / "sampling.json", "r") as sampling_fileobject:
-
         # Return the project sampling.
         return {
             "project_id": project_id,
@@ -3466,7 +3450,6 @@ async def prepare_constraints_sampling_task(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         # Load status file.
         with open(DATA_DIRECTORY / project_id / "status.json", "r") as status_fileobject:
             project_status: Dict[str, Any] = json.load(status_fileobject)
@@ -3668,7 +3651,6 @@ async def prepare_constrained_clustering_task(
 
     # Lock status file in order to check project status for this step.
     with FileLock(str(DATA_DIRECTORY / project_id / "status.json.lock")):
-
         ###
         ### Load needed data.
         ###
