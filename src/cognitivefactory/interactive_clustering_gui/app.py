@@ -1352,14 +1352,13 @@ async def get_texts(
         return text_to_sort[1]["is_deleted"]
 
     # Sorted the texts to return.
-    sorted_texts: Dict[str, Any] = {
-        sorted_text_id: sorted_text
-        for sorted_text_id, sorted_text in sorted(
+    sorted_texts: Dict[str, Any] = dict(
+        sorted(
             texts.items(),
             key=get_value_for_texts_sorting,
             reverse=sorted_reverse,
         )
-    }
+    )
 
     # Return the requested texts.
     return {
@@ -2004,14 +2003,13 @@ async def get_constraints(
         return constraint_to_sort[1]["to_fix_conflict"] is False
 
     # Sorted the constraints to return.
-    sorted_constraints: Dict[str, Any] = {
-        sorted_constraint_id: sorted_constraint
-        for sorted_constraint_id, sorted_constraint in sorted(
+    sorted_constraints: Dict[str, Any] = dict(
+        sorted(
             constraints.items(),
             key=get_value_for_constraints_sorting,
             reverse=sorted_reverse,
         )
-    }
+    )
 
     # Return the requested constraints.
     return {
