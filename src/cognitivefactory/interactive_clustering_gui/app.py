@@ -1989,7 +1989,7 @@ async def get_constraints(
             )
         # By date of update.
         if sorted_by == ConstraintsSortOptions.DATE_OF_UPDATE:
-            return constraint_to_sort[1]["date_of_update"]
+            return constraint_to_sort[1]["date_of_update"] if constraint_to_sort[1]["date_of_update"] is not None else 0
         # By iteration of sampling.
         if sorted_by == ConstraintsSortOptions.ITERATION_OF_SAMPLING:
             return constraint_to_sort[1]["iteration_of_sampling"]
