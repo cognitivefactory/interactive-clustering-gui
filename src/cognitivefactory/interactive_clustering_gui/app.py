@@ -12,6 +12,7 @@
 # IMPORT PYTHON DEPENDENCIES
 # ==============================================================================
 
+import html
 import json
 import os
 import pathlib
