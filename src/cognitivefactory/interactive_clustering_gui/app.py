@@ -1845,14 +1845,20 @@ async def get_html_texts_page(
                 # Get the project status (iteration, step name and status, modelization state and conflict).
                 "status": (await get_status(project_id=project_id))["status"],
                 # Get the project texts.
-                "texts": (
-                    await get_texts(
-                        project_id=project_id,
-                        without_deleted_texts=False,
-                        sorted_by=sorted_by,
-                        sorted_reverse=sorted_reverse,
-                    )
-                )["texts"],
+                "texts": {  # TODO: Escape HTML in get_texts ?
+                    text_id: {  # Force HTML escape.
+                        key: (html.escape(value) if key in {"text_original", "text", "text_preprocessed"} else value)
+                        for key, value in text_value.items()
+                    }
+                    for text_id, text_value in (
+                        await get_texts(
+                            project_id=project_id,
+                            without_deleted_texts=False,
+                            sorted_by=TextsSortOptions.ID,
+                            sorted_reverse=False,
+                        )
+                    )["texts"].items()
+                },
                 # Get the project constraints.
                 "constraints": (
                     await get_constraints(
@@ -2493,14 +2499,20 @@ async def get_html_constraints_page(
                 # Get the project status (iteration, step name and status, modelization state and conflict).
                 "status": (await get_status(project_id=project_id))["status"],
                 # Get the project texts.
-                "texts": (
-                    await get_texts(
-                        project_id=project_id,
-                        without_deleted_texts=False,
-                        sorted_by=TextsSortOptions.ID,
-                        sorted_reverse=False,
-                    )
-                )["texts"],
+                "texts": {  # TODO: Escape HTML in get_texts ?
+                    text_id: {  # Force HTML escape.
+                        key: (html.escape(value) if key in {"text_original", "text", "text_preprocessed"} else value)
+                        for key, value in text_value.items()
+                    }
+                    for text_id, text_value in (
+                        await get_texts(
+                            project_id=project_id,
+                            without_deleted_texts=False,
+                            sorted_by=TextsSortOptions.ID,
+                            sorted_reverse=False,
+                        )
+                    )["texts"].items()
+                },
                 # Get the project constraints.
                 "constraints": (
                     await get_constraints(
@@ -2575,14 +2587,20 @@ async def get_html_constraint_annotation_page(
                 # Get the project status (iteration, step name and status, modelization state and conflict).
                 "status": (await get_status(project_id=project_id))["status"],
                 # Get the project texts.
-                "texts": (
-                    await get_texts(
-                        project_id=project_id,
-                        without_deleted_texts=False,
-                        sorted_by=TextsSortOptions.ID,
-                        sorted_reverse=False,
-                    )
-                )["texts"],
+                "texts": {  # TODO: Escape HTML in get_texts ?
+                    text_id: {  # Force HTML escape.
+                        key: (html.escape(value) if key in {"text_original", "text", "text_preprocessed"} else value)
+                        for key, value in text_value.items()
+                    }
+                    for text_id, text_value in (
+                        await get_texts(
+                            project_id=project_id,
+                            without_deleted_texts=False,
+                            sorted_by=TextsSortOptions.ID,
+                            sorted_reverse=False,
+                        )
+                    )["texts"].items()
+                },
                 # Get the project constraints.
                 "constraints": (
                     await get_constraints(
