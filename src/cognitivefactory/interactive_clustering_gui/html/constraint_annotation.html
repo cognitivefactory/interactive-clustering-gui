@@ -312,7 +312,7 @@
 								var dataToPlot = {
 									"projectID": '{{ project_id }}',
 									"constraintID": '{{ constraint_id }}',
-									"texts": JSON.parse('{{ texts | tojson }}'),  // TODO: Read constraint from jinja variable.
+									"texts": JSON.parse('{{ texts_html_escaped | tojson }}'),  // TODO: Read constraint from jinja variable.
 									"constraints": JSON.parse('{{ constraints | tojson }}'),  // TODO: Read constraint from jinja variable.
 									"modelization": JSON.parse('{{ modelization | tojson }}'),  // TODO: Read constraint from jinja variable.
 								}
