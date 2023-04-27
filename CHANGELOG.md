@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
+## [0.4.1](https://github.com/cognitivefactory/interactive-clustering-gui/releases/tag/0.4.1) - 2023-04-27
+
+<small>[Compare with 0.3.0](https://github.com/cognitivefactory/interactive-clustering-gui/compare/0.4.0...0.4.1)</small>
+
+### Bug Fixes
+- force HTML escape when display texts ([26d3f23](https://github.com/cognitivefactory/interactive-clustering-gui/commit/26d3f231febb01f3cb354685870304ef44b90b7f) by SCHILD Erwan).
+
+
 ## [0.4.0](https://github.com/cognitivefactory/interactive-clustering-gui/releases/tag/0.4.0) - 2022-09-01
 
 <small>[Compare with 0.3.0](https://github.com/cognitivefactory/interactive-clustering-gui/compare/0.3.0...0.4.0)</small>
