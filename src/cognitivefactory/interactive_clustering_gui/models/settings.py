@@ -101,7 +101,7 @@ def default_PreprocessingSettingsModel() -> PreprocessingSettingsModel:
         apply_stopwords_deletion=False,
         apply_parsing_filter=False,
         apply_lemmatization=False,
-        spacy_language_model="fr_core_news_md",
+        spacy_language_model=PreprocessingSpacyLanguageModel.FR_CORE_NEWS_MD,
     )
 
 
