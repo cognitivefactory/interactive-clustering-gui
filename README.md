@@ -48,8 +48,8 @@ To install with [`pip`](https://github.com/pypa/pip):
 # install package
 python3 -m pip install cognitivefactory-interactive-clustering-gui
 
-# install spacy language model dependencies (the one you want, with version "3.1.x")
-python3 -m spacy download fr_core_news_md-3.1.0 --direct
+# install spacy language model dependencies (the one you want, with version "3.4.x")
+python3 -m spacy download fr_core_news_md-3.4.0 --direct
 ```
 
 To install with [`pipx`](https://github.com/pypa/pipx):
@@ -61,8 +61,8 @@ python3 -m pip install --user pipx
 # install package
 pipx install --python python3 cognitivefactory-interactive-clustering-gui
 
-# install spacy language model dependencies (the one you want, with version "3.1.x")
-python3 -m spacy download fr_core_news_md-3.1.0 --direct
+# install spacy language model dependencies (the one you want, with version "3.4.x")
+python3 -m spacy download fr_core_news_md-3.4.0 --direct
 ```
 
 
@@ -99,13 +99,19 @@ To work on this project or contribute to it, please read:
 ## <a name="References"></a> References
 
 - **Interactive Clustering**:
-    - First presentation: `Schild, E., Durantin, G., Lamirel, J.C., & Miconi, F. (2021). Conception itérative et semi-supervisée d'assistants conversationnels par regroupement interactif des questions. In EGC 2021 - 21èmes Journées Francophones Extraction et Gestion des Connaissances. Edition RNTI. ⟨hal-03133007⟩.`
-    - Theoretical study: `Schild, E., Durantin, G., Lamirel, J., & Miconi, F. (2022). Iterative and Semi-Supervised Design of Chatbots Using Interactive Clustering. International Journal of Data Warehousing and Mining (IJDWM), 18(2), 1-19. http://doi.org/10.4018/IJDWM.298007. ⟨hal-03648041⟩.`
-    - Methodological discussion: `Schild, E., Durantin, G., & Lamirel, J.C. (2021). Concevoir un assistant conversationnel de manière itérative et semi-supervisée avec le clustering interactif. In Atelier - Fouille de Textes - Text Mine 2021 - En conjonction avec EGC 2021. ⟨hal-03133060⟩.`
+	- PhD report: `Schild, E. (2024, in press). De l'Importance de Valoriser l'Expertise Humaine dans l'Annotation : Application à la Modélisation de Textes en Intentions à l'aide d'un Clustering Interactif. Université de Lorraine.` ;
+	- First presentation: `Schild, E., Durantin, G., Lamirel, J.C., & Miconi, F. (2021). Conception itérative et semi-supervisée d'assistants conversationnels par regroupement interactif des questions. In EGC 2021 - 21èmes Journées Francophones Extraction et Gestion des Connaissances. Edition RNTI. <hal-03133007>.`
+	- Theoretical study: `Schild, E., Durantin, G., Lamirel, J., & Miconi, F. (2022). Iterative and Semi-Supervised Design of Chatbots Using Interactive Clustering. International Journal of Data Warehousing and Mining (IJDWM), 18(2), 1-19. http://doi.org/10.4018/IJDWM.298007. <hal-03648041>.`
+	- Methodological discussion: `Schild, E., Durantin, G., & Lamirel, J.C. (2021). Concevoir un assistant conversationnel de manière itérative et semi-supervisée avec le clustering interactif. In Atelier - Fouille de Textes - Text Mine 2021 - En conjonction avec EGC 2021. <hal-03133060>.`
     - Implementation: `Schild, E. (2021). cognitivefactory/interactive-clustering. Zenodo. https://doi.org/10.5281/zenodo.4775251.`
 
 - **Web application**:
     - _FastAPI_: `https://fastapi.tiangolo.com/`
+
+
+## <a name="Other links"></a> Other links
+
+- Several comparative studies of Interactive Clustering methodology on NLP datasets: `Schild, E. (2021). cognitivefactory/interactive-clustering-comparative-study. Zenodo. https://doi.org/10.5281/zenodo.5648255`
 
 
 ## <a name="How to cite"></a> How to cite
