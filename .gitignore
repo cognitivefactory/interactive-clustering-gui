@@ -29,7 +29,7 @@ pdm.lock
 poetry.lock
 api-docs-*.html
 openapi.json
-.pdm.toml
+.pdm-python
 __pypackages__/
 .data/
 
