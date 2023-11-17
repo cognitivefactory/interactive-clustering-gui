@@ -22,6 +22,18 @@ Thus, at each step of the process :
 - the user corrects the clustering of the previous steps using constraints, and
 - the computer offers a corrected and more relevant data partitioning for the next step.
 
+<p align="center">
+	<i align="center" style="font-size: smaller; color:grey">Simplified diagram of how Interactive Clustering works.</i>
+	</br>
+	<img src="docs/figures/interactive-clustering.png" alt="Simplified diagram of how Interactive Clustering works." width="75%"/>
+	
+</p>
+<p align="center">
+	<i style="font-size: smaller; color:grey">Example of iterations of Interactive Clustering.</i>
+	</br>
+	<img src="docs/figures/interactive-clustering-example.png" alt="Example of iterations of Interactive Clustering." width="90%"/>
+</p>
+
 This web application implements this annotation methodology with several features:
 
 - _data preprocessing and vectorization_ in order to reduce noise in data;
@@ -29,6 +41,12 @@ This web application implements this annotation methodology with several feature
 - _constraints sampling_ in order to select the most relevant data to annotate;
 - _binary constraints annotation_ in order to correct clustering relevance;
 - _annotation review and conflicts analysis_ in order to improve constraints consistency.
+
+<p align="center">
+	<i style="font-size: smaller; color:grey">Welcome page of Interactive Clustering Web Application.</i>
+	</br>
+	<img src="docs/figures/interactive-clustering-gui-welcome-page.png" alt="Welcome page of Interactive Clustering Web Application." width="75%"/>
+</p>
 
 For more details, read the [Documentation](#Documentation) and the articles in the [References](#References) section.
 
@@ -112,6 +130,12 @@ To work on this project or contribute to it, please read:
 ## <a name="Other links"></a> Other links
 
 - Several comparative studies of Interactive Clustering methodology on NLP datasets: `Schild, E. (2021). cognitivefactory/interactive-clustering-comparative-study. Zenodo. https://doi.org/10.5281/zenodo.5648255`
+
+<p align="center">
+	<i style="font-size: smaller; color:grey">Organizational diagram of the different Comparative Studies of Interactive Clustering.</i>
+	</br>
+	<img src="docs/figures/interactive-clustering-comparative-study.png" alt="Organizational diagram of the different comparative studies of Interactive Clustering." width="75%"/>
+</p>
 
 
 ## <a name="How to cite"></a> How to cite
