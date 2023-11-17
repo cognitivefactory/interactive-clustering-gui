@@ -2,7 +2,7 @@
 
 """
 * Name:         cognitivefactory.interactive_clustering_gui.models.states
-* Description:  Definition of models required to define states of interactive clustering.
+* Description:  Definition of states models required for application runs.
 * Author:       Erwan Schild
 * Created:      25/04/2022
 * Licence:      CeCILL-C License v1.0 (https://cecill.info/licences.fr.html)

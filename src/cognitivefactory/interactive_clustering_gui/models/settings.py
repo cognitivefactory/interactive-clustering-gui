@@ -2,7 +2,7 @@
 
 """
 * Name:         cognitivefactory.interactive_clustering_gui.models.settings
-* Description:  Definition of model parameters required to define settings of interactive clustering.
+* Description:  Definition of algorithm settings models required for application runs.
 * Author:       Erwan Schild
 * Created:      16/12/2021
 * Licence:      CeCILL-C License v1.0 (https://cecill.info/licences.fr.html)

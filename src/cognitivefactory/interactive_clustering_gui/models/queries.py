@@ -2,7 +2,7 @@
 
 """
 * Name:         cognitivefactory.interactive_clustering_gui.models.queries
-* Description:  Definition of model parameters required to define query parameters of interactive clustering.
+* Description:  Definition of query parameters models required for application requests.
 * Author:       Erwan Schild
 * Created:      07/02/2022
 * Licence:      CeCILL-C License v1.0 (https://cecill.info/licences.fr.html)
