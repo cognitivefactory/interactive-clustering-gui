@@ -66,8 +66,8 @@
             <a id="indexLink" class="nav" href="covindex.html">&Hat; index</a> &nbsp; &nbsp;
             <a id="nextFileLink" class="nav" href="d_5e0ffa3275d40cc7_cli_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
-            <a class="nav" href="https://coverage.readthedocs.io">coverage.py v6.4.4</a>,
-            created at 2023-02-16 18:31 +0100
+            <a class="nav" href="https://coverage.readthedocs.io/en/7.3.2">coverage.py v7.3.2</a>,
+            created at 2023-11-16 17:41 +0100
         </p>
         <aside class="hidden">
             <button type="button" class="button_next_chunk" data-shortcut="j"/>
@@ -382,7 +382,7 @@
     <p class="pln"><span class="n"><a id="t298" href="#t298">298</a></span><span class="t">        <span class="com"># learning_rate="auto",  # Error on "scikit-learn==0.24.1" !</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t299" href="#t299">299</a></span><span class="t">        <span class="nam">init</span><span class="op">=</span><span class="str">"random"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t300" href="#t300">300</a></span><span class="t">        <span class="nam">random_state</span><span class="op">=</span><span class="nam">settings</span><span class="op">[</span><span class="nam">str</span><span class="op">(</span><span class="nam">iteration_id</span><span class="op">)</span><span class="op">]</span><span class="op">[</span><span class="str">"vectorization"</span><span class="op">]</span><span class="op">[</span><span class="str">"random_seed"</span><span class="op">]</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t301" href="#t301">301</a></span><span class="t">        <span class="nam">perplexity</span><span class="op">=</span><span class="nam">min</span><span class="op">(</span><span class="num">30.0</span><span class="op">,</span> <span class="nam">vectors_ND</span><span class="op">.</span><span class="nam">shape</span><span class="op">[</span><span class="num">0</span><span class="op">]</span><span class="op">-</span><span class="num">1</span><span class="op">)</span><span class="op">,</span>  <span class="com"># TSNE requirement.</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t301" href="#t301">301</a></span><span class="t">        <span class="nam">perplexity</span><span class="op">=</span><span class="nam">min</span><span class="op">(</span><span class="num">30.0</span><span class="op">,</span> <span class="nam">vectors_ND</span><span class="op">.</span><span class="nam">shape</span><span class="op">[</span><span class="num">0</span><span class="op">]</span> <span class="op">-</span> <span class="num">1</span><span class="op">)</span><span class="op">,</span>  <span class="com"># TSNE requirement.</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t302" href="#t302">302</a></span><span class="t">    <span class="op">)</span><span class="op">.</span><span class="nam">fit_transform</span><span class="op">(</span><span class="nam">vectors_ND</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t303" href="#t303">303</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t304" href="#t304">304</a></span><span class="t">    <span class="com"># Store 2D vectors.</span>&nbsp;</span><span class="r"></span></p>
@@ -415,7 +415,7 @@
     <p class="pln"><span class="n"><a id="t331" href="#t331">331</a></span><span class="t">        <span class="com"># learning_rate="auto",  # Error on "scikit-learn==0.24.1" !</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t332" href="#t332">332</a></span><span class="t">        <span class="nam">init</span><span class="op">=</span><span class="str">"random"</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t333" href="#t333">333</a></span><span class="t">        <span class="nam">random_state</span><span class="op">=</span><span class="nam">settings</span><span class="op">[</span><span class="nam">str</span><span class="op">(</span><span class="nam">iteration_id</span><span class="op">)</span><span class="op">]</span><span class="op">[</span><span class="str">"vectorization"</span><span class="op">]</span><span class="op">[</span><span class="str">"random_seed"</span><span class="op">]</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t334" href="#t334">334</a></span><span class="t">        <span class="nam">perplexity</span><span class="op">=</span><span class="nam">min</span><span class="op">(</span><span class="num">30.0</span><span class="op">,</span> <span class="nam">vectors_ND</span><span class="op">.</span><span class="nam">shape</span><span class="op">[</span><span class="num">0</span><span class="op">]</span><span class="op">-</span><span class="num">1</span><span class="op">)</span><span class="op">,</span>  <span class="com"># TSNE requirement.</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t334" href="#t334">334</a></span><span class="t">        <span class="nam">perplexity</span><span class="op">=</span><span class="nam">min</span><span class="op">(</span><span class="num">30.0</span><span class="op">,</span> <span class="nam">vectors_ND</span><span class="op">.</span><span class="nam">shape</span><span class="op">[</span><span class="num">0</span><span class="op">]</span> <span class="op">-</span> <span class="num">1</span><span class="op">)</span><span class="op">,</span>  <span class="com"># TSNE requirement.</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t335" href="#t335">335</a></span><span class="t">    <span class="op">)</span><span class="op">.</span><span class="nam">fit_transform</span><span class="op">(</span><span class="nam">vectors_ND</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t336" href="#t336">336</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t337" href="#t337">337</a></span><span class="t">    <span class="com"># Store 3D vectors.</span>&nbsp;</span><span class="r"></span></p>
@@ -1014,8 +1014,8 @@
             <a id="indexLink" class="nav" href="covindex.html">&Hat; index</a> &nbsp; &nbsp;
             <a id="nextFileLink" class="nav" href="d_5e0ffa3275d40cc7_cli_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
-            <a class="nav" href="https://coverage.readthedocs.io">coverage.py v6.4.4</a>,
-            created at 2023-02-16 18:31 +0100
+            <a class="nav" href="https://coverage.readthedocs.io/en/7.3.2">coverage.py v7.3.2</a>,
+            created at 2023-11-16 17:41 +0100
         </p>
     </div>
 </footer>

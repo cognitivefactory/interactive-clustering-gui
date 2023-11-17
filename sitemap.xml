@@ -2,82 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/changelog/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/code_of_conduct/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/contributing/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/credits/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/license/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2023-02-16</lastmod>
+         <loc>https://cognitivefactory.github.io/interactive-clustering-gui/docs/figures/</loc>
+         <lastmod>2023-11-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognitivefactory.github.io/interactive-clustering-gui/figures/</loc>
+         <lastmod>2023-11-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cognitivefactory.github.io/interactive-clustering-gui/reference/SUMMARY/</loc>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/reference/cognitivefactory/interactive_clustering_gui/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/reference/cognitivefactory/interactive_clustering_gui/app/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/reference/cognitivefactory/interactive_clustering_gui/backgroundtasks/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/reference/cognitivefactory/interactive_clustering_gui/cli/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/reference/cognitivefactory/interactive_clustering_gui/models/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/reference/cognitivefactory/interactive_clustering_gui/models/queries/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/reference/cognitivefactory/interactive_clustering_gui/models/settings/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/reference/cognitivefactory/interactive_clustering_gui/models/states/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cognitivefactory.github.io/interactive-clustering-gui/coverage/</loc>
-         <lastmod>2023-02-16</lastmod>
+         <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
