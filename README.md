@@ -129,12 +129,14 @@ To work on this project or contribute to it, please read:
 
 ## <a name="Other links"></a> Other links
 
-- Several comparative studies of Interactive Clustering methodology on NLP datasets: `Schild, E. (2021). cognitivefactory/interactive-clustering-comparative-study. Zenodo. https://doi.org/10.5281/zenodo.5648255`
+- Several comparative studies of Interactive Clustering methodology on NLP datasets: `Schild, E. (2021). cognitivefactory/interactive-clustering-comparative-study. Zenodo. https://doi.org/10.5281/zenodo.5648255`. (GitHub: [cognitivefactory/interactive-clustering-comparative-study](https://github.com/cognitivefactory/interactive-clustering-comparative-study)).
 
 <p align="center">
-	<i style="font-size: smaller; color:grey">Organizational diagram of the different Comparative Studies of Interactive Clustering.</i>
-	</br>
-	<img src="docs/figures/interactive-clustering-comparative-study.png" alt="Organizational diagram of the different comparative studies of Interactive Clustering." width="75%"/>
+	<a href="https://github.com/cognitivefactory/interactive-clustering-comparative-study">
+		<i style="font-size: smaller; color:grey">Organizational diagram of the different Comparative Studies of Interactive Clustering.</i>
+		</br>
+		<img src="docs/figures/interactive-clustering-comparative-study.png" alt="Organizational diagram of the different comparative studies of Interactive Clustering." width="75%"/>
+	</a>
 </p>
 
 
