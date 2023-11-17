@@ -42,13 +42,58 @@ This web application implements this annotation methodology with several feature
 - _binary constraints annotation_ in order to correct clustering relevance;
 - _annotation review and conflicts analysis_ in order to improve constraints consistency.
 
-<p align="center">
-	<i style="font-size: smaller; color:grey">Welcome page of Interactive Clustering Web Application.</i>
-	</br>
-	<img src="docs/figures/interactive-clustering-gui-welcome-page.png" alt="Welcome page of Interactive Clustering Web Application." width="75%"/>
-</p>
-
 For more details, read the [Documentation](#Documentation) and the articles in the [References](#References) section.
+
+## Some screenshots
+
+<details open>
+	<summary>Welcome page.</summary>
+	<p align="center">
+		<img src="docs/figures/interactive-clustering-gui-welcome-page.png" alt="Welcome page." width="75%"/>
+	</p>
+</details>
+
+<details>
+	<summary>Projects listing page.</summary>
+	<p align="center">
+		<img src="docs/figures/interactive-clustering-gui-projects-list.png" alt="Projects listing page." style="width:75%;">
+	</p>
+</details>
+
+<details>
+	<summary>Project home page.</summary>
+	<p align="center">
+		<img src="docs/figures/interactive-clustering-gui-project-home.png" alt="Project home page." style="width:75%;">
+	</p>
+</details>
+
+<details>
+	<summary>Settings management.</summary>
+	<p align="center">
+		<img src="docs/figures/interactive-clustering-gui-settings.png" alt="Settings management page." style="width:75%">
+	</p>
+</details>
+
+<details>
+	<summary>Texts listing page.</summary>
+	<p align="center">
+		<img src="docs/figures/interactive-clustering-gui-texts.png" alt="Texts listing page." style="width:75%;">
+	</p>
+</details>
+
+<details>
+	<summary>Constraints listing page.</summary>
+	<p align="center">
+		<img src="docs/figures/interactive-clustering-gui-contraints.png" alt="Constraints listing page." style="width:75%;">
+	</p>
+</details>
+
+<details>
+	<summary>Annotation page.</summary>
+	<p align="center">
+		<img src="docs/figures/interactive-clustering-gui-annotation.png" alt="Constraints annotations page." style="width:75%;">
+	</p>
+</details>
 
 
 ## <a name="Documentation"></a> Documentation
@@ -121,10 +166,10 @@ To work on this project or contribute to it, please read:
 	- First presentation: `Schild, E., Durantin, G., Lamirel, J.C., & Miconi, F. (2021). Conception itérative et semi-supervisée d'assistants conversationnels par regroupement interactif des questions. In EGC 2021 - 21èmes Journées Francophones Extraction et Gestion des Connaissances. Edition RNTI. <hal-03133007>.`
 	- Theoretical study: `Schild, E., Durantin, G., Lamirel, J., & Miconi, F. (2022). Iterative and Semi-Supervised Design of Chatbots Using Interactive Clustering. International Journal of Data Warehousing and Mining (IJDWM), 18(2), 1-19. http://doi.org/10.4018/IJDWM.298007. <hal-03648041>.`
 	- Methodological discussion: `Schild, E., Durantin, G., & Lamirel, J.C. (2021). Concevoir un assistant conversationnel de manière itérative et semi-supervisée avec le clustering interactif. In Atelier - Fouille de Textes - Text Mine 2021 - En conjonction avec EGC 2021. <hal-03133060>.`
-    - Implementation: `Schild, E. (2021). cognitivefactory/interactive-clustering. Zenodo. https://doi.org/10.5281/zenodo.4775251.`
+		- Implementation: `Schild, E. (2021). cognitivefactory/interactive-clustering. Zenodo. https://doi.org/10.5281/zenodo.4775251.`
 
 - **Web application**:
-    - _FastAPI_: `https://fastapi.tiangolo.com/`
+	- _FastAPI_: `https://fastapi.tiangolo.com/`
 
 
 ## <a name="Other links"></a> Other links
