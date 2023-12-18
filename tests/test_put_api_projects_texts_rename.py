@@ -236,7 +236,9 @@ async def test_ok_good_state_1(async_client, tmp_path):
         "project_id": "1d_ANNOTATION_WITH_UPTODATE_MODELIZATION",
         "text_id": "0",
         "text_value": "Changement de valeur !",
-        "detail": "In project with id '1d_ANNOTATION_WITH_UPTODATE_MODELIZATION', the text with id '0' has been renamed.",
+        "detail": (
+            "In project with id '1d_ANNOTATION_WITH_UPTODATE_MODELIZATION', the text with id '0' has been renamed."
+        ),
     }
 
     # Assert route `GET /api/projects/{project_id}/texts` is updated.
@@ -426,7 +428,9 @@ async def test_ok_double_request(async_client, tmp_path):
         "project_id": "1d_ANNOTATION_WITH_UPTODATE_MODELIZATION",
         "text_id": "0",
         "text_value": "Changement de valeur !",
-        "detail": "In project with id '1d_ANNOTATION_WITH_UPTODATE_MODELIZATION', the text with id '0' has been renamed.",
+        "detail": (
+            "In project with id '1d_ANNOTATION_WITH_UPTODATE_MODELIZATION', the text with id '0' has been renamed."
+        ),
     }
 
     # Assert route `PUT /api/projects/{project_id}/texts/{text_id}/rename` works.
@@ -442,7 +446,9 @@ async def test_ok_double_request(async_client, tmp_path):
         "project_id": "1d_ANNOTATION_WITH_UPTODATE_MODELIZATION",
         "text_id": "0",
         "text_value": "Changement de valeur !",
-        "detail": "In project with id '1d_ANNOTATION_WITH_UPTODATE_MODELIZATION', the text with id '0' has been renamed.",
+        "detail": (
+            "In project with id '1d_ANNOTATION_WITH_UPTODATE_MODELIZATION', the text with id '0' has been renamed."
+        ),
     }
 
     # Assert route `GET /api/projects/{project_id}/texts` is updated.

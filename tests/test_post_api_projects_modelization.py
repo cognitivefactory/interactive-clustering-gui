@@ -287,9 +287,11 @@ async def test_ok_2_202(async_client):
     assert response_post.status_code == 202
     assert response_post.json() == {
         "project_id": imported_project_id,
-        "detail": "In project with id '"
-        + imported_project_id
-        + "', the modelization update task has been requested and is waiting for a background task.",
+        "detail": (
+            "In project with id '"
+            + imported_project_id
+            + "', the modelization update task has been requested and is waiting for a background task."
+        ),
     }
 
     # Assert route `GET /api/projects/{project_id}/status` is update.
@@ -348,9 +350,11 @@ async def test_ok_3_202(async_client):
     assert response_post.status_code == 202
     assert response_post.json() == {
         "project_id": imported_project_id,
-        "detail": "In project with id '"
-        + imported_project_id
-        + "', the modelization update task has been requested and is waiting for a background task.",
+        "detail": (
+            "In project with id '"
+            + imported_project_id
+            + "', the modelization update task has been requested and is waiting for a background task."
+        ),
     }
 
     # Assert route `GET /api/projects/{project_id}/status` is update.
@@ -407,9 +411,11 @@ async def test_ok_4_202(async_client):
     assert response_post.status_code == 202
     assert response_post.json() == {
         "project_id": imported_project_id,
-        "detail": "In project with id '"
-        + imported_project_id
-        + "', the modelization update task has been requested and is waiting for a background task.",
+        "detail": (
+            "In project with id '"
+            + imported_project_id
+            + "', the modelization update task has been requested and is waiting for a background task."
+        ),
     }
 
     # Assert route `GET /api/projects/{project_id}/status` is update.
@@ -466,9 +472,11 @@ async def test_ok_5_202(async_client):
     assert response_post.status_code == 202
     assert response_post.json() == {
         "project_id": imported_project_id,
-        "detail": "In project with id '"
-        + imported_project_id
-        + "', the modelization update task has been requested and is waiting for a background task.",
+        "detail": (
+            "In project with id '"
+            + imported_project_id
+            + "', the modelization update task has been requested and is waiting for a background task."
+        ),
     }
 
     # Assert route `GET /api/projects/{project_id}/status` is update.

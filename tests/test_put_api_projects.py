@@ -410,9 +410,9 @@ async def test_ok_during_initialization(async_client):
     imported_project_id: str = response_put.json()["project_id"]
     assert response_put.json() == {
         "project_id": imported_project_id,
-        "detail": "The project with name 'unittests' has been imported. It has the id '"
-        + str(imported_project_id)
-        + "'.",
+        "detail": (
+            "The project with name 'unittests' has been imported. It has the id '" + str(imported_project_id) + "'."
+        ),
     }
 
     # Assert route `GET /api/projects` works and contains the created project.
@@ -463,9 +463,9 @@ async def test_ok_during_sampling(async_client):
     imported_project_id: str = response_put.json()["project_id"]
     assert response_put.json() == {
         "project_id": imported_project_id,
-        "detail": "The project with name 'unittests' has been imported. It has the id '"
-        + str(imported_project_id)
-        + "'.",
+        "detail": (
+            "The project with name 'unittests' has been imported. It has the id '" + str(imported_project_id) + "'."
+        ),
     }
 
     # Assert route `GET /api/projects` works and contains the created project.
@@ -518,9 +518,9 @@ async def test_ok_during_annotation(async_client):
     imported_project_id: str = response_put.json()["project_id"]
     assert response_put.json() == {
         "project_id": imported_project_id,
-        "detail": "The project with name 'unittests' has been imported. It has the id '"
-        + str(imported_project_id)
-        + "'.",
+        "detail": (
+            "The project with name 'unittests' has been imported. It has the id '" + str(imported_project_id) + "'."
+        ),
     }
 
     # Assert route `GET /api/projects` works and contains the created project.
@@ -571,9 +571,9 @@ async def test_ok_during_clustering(async_client):
     imported_project_id: str = response_put.json()["project_id"]
     assert response_put.json() == {
         "project_id": imported_project_id,
-        "detail": "The project with name 'unittests' has been imported. It has the id '"
-        + str(imported_project_id)
-        + "'.",
+        "detail": (
+            "The project with name 'unittests' has been imported. It has the id '" + str(imported_project_id) + "'."
+        ),
     }
 
     # Assert route `GET /api/projects` works and contains the created project.
@@ -624,9 +624,9 @@ async def test_ok_during_iteration_end(async_client):
     imported_project_id: str = response_put.json()["project_id"]
     assert response_put.json() == {
         "project_id": imported_project_id,
-        "detail": "The project with name 'unittests' has been imported. It has the id '"
-        + str(imported_project_id)
-        + "'.",
+        "detail": (
+            "The project with name 'unittests' has been imported. It has the id '" + str(imported_project_id) + "'."
+        ),
     }
 
     # Assert route `GET /api/projects` works and contains the created project.
