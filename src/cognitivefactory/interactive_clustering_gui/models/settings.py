@@ -191,9 +191,9 @@ class VectorizationSettingsModel(BaseModel):
         """
         return {
             "vectorizer_type": self.vectorizer_type.value,
-            "spacy_language_model": self.spacy_language_model.value
-            if (self.spacy_language_model is not None)
-            else None,
+            "spacy_language_model": (
+                self.spacy_language_model.value if (self.spacy_language_model is not None) else None
+            ),
             "random_seed": self.random_seed,
         }
 
@@ -203,7 +203,7 @@ class VectorizationSettingsModel(BaseModel):
 
         schema_extra = {
             "example": {
-                "vectorizer_type": (VectorizerType.TFIDF + "|" + VectorizerType.SPACY),
+                "vectorizer_type": VectorizerType.TFIDF + "|" + VectorizerType.SPACY,
                 "random_seed": 42,
                 "!!!SPECIFIC: 'vectorizer_type'=='spacy'": {
                     "spacy_language_model": VectorizationSpacyLanguageModel.FR_CORE_NEWS_MD,

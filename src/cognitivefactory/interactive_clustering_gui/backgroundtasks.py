@@ -425,9 +425,9 @@ def run_modelization_update_task(
         modelization: Dict[str, Any] = json.load(modelization_fileobject_r)
 
     # Get constraints transitivity.
-    constraints_transitivity: Dict[
-        str, Dict[str, Dict[str, None]]
-    ] = new_constraints_manager._constraints_transitivity  # noqa: WPS437
+    constraints_transitivity: Dict[str, Dict[str, Dict[str, None]]] = (
+        new_constraints_manager._constraints_transitivity  # noqa: WPS437
+    )
 
     # Update modelization inference.
     modelization = {}

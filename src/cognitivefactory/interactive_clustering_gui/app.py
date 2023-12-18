@@ -558,9 +558,11 @@ async def create_project(
     # Return the ID of the created project.
     return {
         "project_id": current_project_id,
-        "detail": "The project with name '{project_name_str}' has been created. It has the id '{project_id_str}'.".format(
-            project_name_str=str(project_name),
-            project_id_str=str(current_project_id),
+        "detail": (
+            "The project with name '{project_name_str}' has been created. It has the id '{project_id_str}'.".format(
+                project_name_str=str(project_name),
+                project_id_str=str(current_project_id),
+            )
         ),
     }
 
@@ -981,9 +983,11 @@ async def import_project(
     # Return the new ID of the imported project.
     return {
         "project_id": metadata["project_id"],
-        "detail": "The project with name '{project_name_str}' has been imported. It has the id '{project_id_str}'.".format(
-            project_name_str=str(metadata["project_name"]),
-            project_id_str=str(metadata["project_id"]),
+        "detail": (
+            "The project with name '{project_name_str}' has been imported. It has the id '{project_id_str}'.".format(
+                project_name_str=str(metadata["project_name"]),
+                project_id_str=str(metadata["project_id"]),
+            )
         ),
     }
 
@@ -2586,7 +2590,7 @@ async def get_html_constraint_annotation_page(
                 )["texts"],
                 "texts_html_escaped": {  # TODO: Escape HTML for javascript
                     text_id: {  # Force HTML escape.
-                        key: (html.escape(value) if key in {"text_original", "text", "text_preprocessed"} else value)
+                        key: html.escape(value) if key in {"text_original", "text", "text_preprocessed"} else value
                         for key, value in text_value.items()
                     }
                     for text_id, text_value in (
@@ -3026,8 +3030,8 @@ async def get_html_settings_page(
                 )["settings"],
                 # Get navigation information.
                 "navigation": {
-                    "previous": (None if (iteration_id == 0) else iteration_id - 1),
-                    "next": (None if (iteration_id == project_status["iteration_id"]) else (iteration_id + 1)),
+                    "previous": None if (iteration_id == 0) else iteration_id - 1,
+                    "next": None if (iteration_id == project_status["iteration_id"]) else (iteration_id + 1),
                 },
             },
             status_code=status.HTTP_200_OK,
