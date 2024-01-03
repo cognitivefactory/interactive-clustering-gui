@@ -293,7 +293,7 @@ async def alive() -> Response:  # pragma: no cover
 
 
 ###
-### ROUTE: Get HTML welcome page.
+### ROUTE: Get HTML welcome page with projects listings.
 ###
 @app.get(
     "/",
@@ -305,7 +305,7 @@ async def get_html_welcome_page(
     request: Request,
 ) -> Response:
     """
-    Define HTML welcome page.
+    Define HTML welcome page with projects listings.
 
     Args:
         request (Request): The request context.
@@ -319,6 +319,14 @@ async def get_html_welcome_page(
         name="welcome.html",
         context={
             "request": request,
+            # Get projects and their description.
+            "projects": {
+                project_id: {
+                    "metadata": (await get_metadata(project_id=project_id))["metadata"],
+                    "status": (await get_status(project_id=project_id))["status"],
+                }
+                for project_id in (await get_projects())
+            },
         },
         status_code=status.HTTP_200_OK,
     )

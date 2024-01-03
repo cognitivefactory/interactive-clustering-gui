@@ -98,13 +98,10 @@ function createProject() {
                 + " " + projectCreationRequest.statusText
                 + ":\n" + JSON.stringify(projectCreationResponse.detail)
             );
-            location.reload();
-            return;
         }
+        
         // Case of accepted request: Redirect to the project home page.
-        goToProjectHomePage({
-            projectID:projectCreationResponse.project_id
-        })
+        location.reload(); // TODO: goToProjectHomePage({projectID:projectCreationResponse.project_id})
     };
 
     // Send request for project creation.
@@ -191,13 +188,10 @@ function importProject() {
                 + " " + projectImportRequest.statusText
                 + ":\n" + JSON.stringify(projectImportResponse.detail)
             );
-            location.reload();
-            return;
         }
+        
         // Case of accepted request: Redirect to the project home page.
-        goToProjectHomePage({
-            projectID:projectImportResponse.project_id
-        })
+        location.reload(); // TODO: goToProjectHomePage({projectID:projectImportResponse.project_id});
     };
 
     // Send request for project import.

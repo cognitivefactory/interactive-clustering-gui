@@ -45,7 +45,7 @@ function deleteProject({
         }
 
         // Go to projects summary page.
-        goToProjectsSummaryPage();
+        goToWelcomePage();
     };
 
     // Send request for project deletion.
