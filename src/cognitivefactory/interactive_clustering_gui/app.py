@@ -1349,7 +1349,7 @@ async def get_texts(
         """Return the values expected for texts sorting.
 
         Args:
-            text_to_sort (Tuple[Dict[str, Any]]): A text (from `.items()`).
+            text_to_sort (Tuple[str, Dict[str, Any]]): A text (from `.items()`).
 
         Returns:
             Any: The expected values of the text need for the sort.
@@ -1978,7 +1978,7 @@ async def get_constraints(
         """Return the values expected for constraints sorting.
 
         Args:
-            constraint_to_sort (Tuple[Dict[str, Any]]): A constraint (from `.items()`).
+            constraint_to_sort (Tuple[str, Dict[str, Any]]): A constraint (from `.items()`).
 
         Returns:
             Any: The expected values of the constraint need for the sort.
@@ -3736,12 +3736,3 @@ async def prepare_constrained_clustering_task(
             project_id_str=str(project_id),
         ),
     }
-
-
-# ==============================================================================
-# DEFINE ROUTES FOR ANALYTICS
-# ==============================================================================
-
-# TODO: Display clusters and FMC patterns.
-# TODO: Display components and FMC patterns.
-# TODO: Display according evolutions.
