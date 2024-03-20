@@ -505,7 +505,7 @@ button:disabled {
     padding-bottom: 3%;
 }
 .annotation_selected, .annotation_selected:disabled {
-    border: 0.2em solid #8040D0;
+    border: 0.1em solid #8040D0;
 }
 .annotation_not_selected, .annotation_not_selected:disabled {
     background-color: #808080 !important;
