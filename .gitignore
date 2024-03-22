@@ -41,3 +41,6 @@ __pypackages__/
 
 # temporary analysis
 .temp/
+
+# credentials
+*credentials.py
