@@ -146,7 +146,7 @@
 									<b>You can approve your work if all annotations are done</b>.
 								{% elif (status.state_details.modelization_status == "OUTDATED") %}
 									<span class="material-icons annotation_tag color_warning">warning</span>
-									<b>Modelization is outdated{% if status.state_details.conflict_status == "TRUE" %} with some conflits{% endif %}</b>.
+									<b>Modelization is outdated{% if status.state_details.conflict_status == "TRUE" %} with some conflicts{% endif %}</b>.
 									<em>Please run modelization update after your modifications to check project consistency and constraints conflicts.</em>
 								{% elif (status.state_details.modelization_status in ["PENDING", "WORKING"]) %}
 									<span class="material-icons annotation_tag color_warning">update</span>
