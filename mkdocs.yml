@@ -15,7 +15,6 @@ nav:
 # defer to gen-files + literate-nav
 - Notebooks:
   - Usage: notebooks/README.md
-  - Credentials: notebooks/credentials.example.py
   - Project analysis: notebooks/analysis.ipynb
 - Code Reference: reference/
 - Development:
@@ -73,6 +72,12 @@ plugins:
     nav_file: SUMMARY.md
 - coverage
 - section-index
+- mkdocs-jupyter:
+    include: ["*.ipynb"]
+    ignore_h1_titles: True
+    remove_tag_config:
+      remove_cell_tags:
+        - hide
 - mkdocstrings:
     watch:
     - src/cognitivefactory/

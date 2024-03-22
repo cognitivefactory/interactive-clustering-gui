@@ -33,8 +33,6 @@ OPENAI_API_TOKEN: str = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 # 2. Change value of `OPENAI_API_TOKEN` with your own API token from OpenAI (https://platform.openai.com/account/api-keys).
 ```
 
-NB: A template file named `credentials.example.py` is available here: [credentials.example.py](./credentials.example.py).
-
 ## 3. Get project data
 
 In the web application, after several iterations of annotation, download the zip archive of your project and extract it near the jupyter notebook.
