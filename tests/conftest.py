@@ -46,7 +46,7 @@ async def async_client(tmp_path: Path, monkeypatch):
     # lifespan = LifespanManager(app)  # To call startup events.
     httpx_client = AsyncClient(
         app=app.app,
-        base_url="http://testserver",
+        base_url="http://localhost",
     )
 
     # Return the application.
