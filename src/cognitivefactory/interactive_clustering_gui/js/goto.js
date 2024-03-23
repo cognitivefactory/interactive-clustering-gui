@@ -10,24 +10,10 @@ function goToWelcomePage() {
 }
 
 /**
- * DESCRIPTION: Go to the help page.
- */
-function goToHelpPage() {
-    location.assign("/gui/help");
-}
-
-/**
  * DESCRIPTION: Mail to contacts.
  */
 function mailToContacts() {
     location.assign("mailto:erwan.schild@e-i.com?cc=eidph330@e-i.com&subject=[congitivefactory/interactive-clustering-gui]");
-}
-
-/**
- * DESCRIPTION: Go to the projects listing and creation page.
- */
-function goToProjectsSummaryPage() {
-    location.assign("/gui/projects");
 }
 
 /**
