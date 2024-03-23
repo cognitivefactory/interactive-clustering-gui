@@ -54,13 +54,6 @@ For more details, read the [Documentation](#Documentation) and the articles in t
 </details>
 
 <details>
-	<summary>Projects listing page.</summary>
-	<p align="center">
-		<img src="docs/figures/interactive-clustering-gui-projects-list.png" alt="Projects listing page." style="width:75%;">
-	</p>
-</details>
-
-<details>
 	<summary>Project home page.</summary>
 	<p align="center">
 		<img src="docs/figures/interactive-clustering-gui-project-home.png" alt="Project home page." style="width:75%;">
