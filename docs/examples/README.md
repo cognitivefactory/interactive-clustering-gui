@@ -4,9 +4,9 @@
 
 > Based on `Schild, E. (2021). French trainset for chatbots dealing with usual requests on bank cards [Data set]. Zenodo. http://doi.org/10.5281/zenodo.4769949`.
 
-- [`Bank cards` at iteration `0`](./archive-archive-demo-bank-cards-iter-00.zip)
-- [`Bank cards` with conflicts](./archive-archive-demo-bank-cards-with-conflicts.zip)
-- [`Bank cards` finished](./archive-archive-demo-bank-cards-iter-max.zip)
+- [`Bank cards` at iteration `0`](./archive-demo-bank-cards-iter-00.zip)
+- [`Bank cards` with conflicts](./archive-demo-bank-cards-with-conflicts.zip)
+- [`Bank cards` finished](./archive-demo-bank-cards-iter-max.zip)
 
 ## Car workshop
 
