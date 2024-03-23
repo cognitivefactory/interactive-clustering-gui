@@ -1,7 +1,7 @@
-# How using Jupyter Notebooks ?
+# How using Jupyter Notebooks for project analysis ?
 
 <details>
-	<summary>Read the Project Jupyter Documentation</summary>
+	<summary>Tips: Read the Project Jupyter Documentation</summary>
 	If needed, see <a href="https://docs.jupyter.org/en/latest/" alt="Project Jupyter Documentation.">https://docs.jupyter.org/en/latest/</a>.
 </details>
 
@@ -20,7 +20,7 @@ pandas
 numpy
 ```
 
-## 2. Set token api if needed
+## 2. Set token api (needed for LLM analysis)
 
 To be able to call a model from OpenAI, you need to register and create a token api key on [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys), then store it in a file named `credentials.py` near the notebook.
 
@@ -37,6 +37,8 @@ OPENAI_API_TOKEN: str = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
 In the web application, after several iterations of annotation, download the zip archive of your project and extract it near the jupyter notebook.
 
+> Tips: Examples of projects data are available here : [Examples/Demo projects](../examples/README.md)
+
 ## 4. Lauch Jupyter
 
 Run the following command:
@@ -44,3 +46,5 @@ Run the following command:
 ```bash
 jupyter notebook
 ```
+
+> Tips: An example of analysis notebook is available here: [Analysis notebook](./analysis.ipynb)

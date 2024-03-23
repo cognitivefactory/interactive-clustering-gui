@@ -1,0 +1,2996 @@
+{
+    "0": {
+        "text_original": "Comment signaler un vol de carte bleue ?",
+        "text": "Comment signaler un vol de carte bleue ?",
+        "text_preprocessed": "comment signaler un vol de carte bleue",
+        "is_deleted": false
+    },
+    "1": {
+        "text_original": "Comment signaler une perte de carte de paiement ?",
+        "text": "Comment signaler une perte de carte de paiement ?",
+        "text_preprocessed": "comment signaler une perte de carte de paiement",
+        "is_deleted": false
+    },
+    "2": {
+        "text_original": "J'ai \u00e9gar\u00e9 ma carte de cr\u00e9dit !",
+        "text": "J'ai \u00e9gar\u00e9 ma carte de cr\u00e9dit !",
+        "text_preprocessed": "j ai egare ma carte de credit",
+        "is_deleted": false
+    },
+    "3": {
+        "text_original": "J'ai \u00e9gar\u00e9 ma carte de paiement.",
+        "text": "J'ai \u00e9gar\u00e9 ma carte de paiement.",
+        "text_preprocessed": "j ai egare ma carte de paiement",
+        "is_deleted": false
+    },
+    "4": {
+        "text_original": "J'ai perdu ma carte bancaire.",
+        "text": "J'ai perdu ma carte bancaire.",
+        "text_preprocessed": "j ai perdu ma carte bancaire",
+        "is_deleted": false
+    },
+    "5": {
+        "text_original": "J'ai perdu ma carte bleue...",
+        "text": "J'ai perdu ma carte bleue...",
+        "text_preprocessed": "j ai perdu ma carte bleue",
+        "is_deleted": false
+    },
+    "6": {
+        "text_original": "J'aimerai d\u00e9clarer un vol de carte.",
+        "text": "J'aimerai d\u00e9clarer un vol de carte.",
+        "text_preprocessed": "j aimerai declarer un vol de carte",
+        "is_deleted": false
+    },
+    "7": {
+        "text_original": "Je me suis fait voler ma carte bancaire.",
+        "text": "Je me suis fait voler ma carte bancaire.",
+        "text_preprocessed": "je me suis fait voler ma carte bancaire",
+        "is_deleted": false
+    },
+    "8": {
+        "text_original": "Je me suis fait voler ma carte bleue.",
+        "text": "Je me suis fait voler ma carte bleue.",
+        "text_preprocessed": "je me suis fait voler ma carte bleue",
+        "is_deleted": false
+    },
+    "9": {
+        "text_original": "Je n'ai pas retrouv\u00e9 ma carte bancaire depuis plusieurs jours.",
+        "text": "Je n'ai pas retrouv\u00e9 ma carte bancaire depuis plusieurs jours.",
+        "text_preprocessed": "je n ai pas retrouve ma carte bancaire depuis plusieurs jours",
+        "is_deleted": false
+    },
+    "10": {
+        "text_original": "Je ne retrouve pas ma carte Visa.",
+        "text": "Je ne retrouve pas ma carte Visa.",
+        "text_preprocessed": "je ne retrouve pas ma carte visa",
+        "is_deleted": false
+    },
+    "11": {
+        "text_original": "Je ne retrouve pas ma Mastercard.",
+        "text": "Je ne retrouve pas ma Mastercard.",
+        "text_preprocessed": "je ne retrouve pas ma mastercard",
+        "is_deleted": false
+    },
+    "12": {
+        "text_original": "Je ne sais pas o\u00f9 j'ai laiss\u00e9 ma carte de cr\u00e9dit, que faire ?",
+        "text": "Je ne sais pas o\u00f9 j'ai laiss\u00e9 ma carte de cr\u00e9dit, que faire ?",
+        "text_preprocessed": "je ne sais pas ou j ai laisse ma carte de credit que faire",
+        "is_deleted": false
+    },
+    "13": {
+        "text_original": "Je souhaite d\u00e9clarer la perte de ma carte Gold.",
+        "text": "Je souhaite d\u00e9clarer la perte de ma carte Gold.",
+        "text_preprocessed": "je souhaite declarer la perte de ma carte gold",
+        "is_deleted": false
+    },
+    "14": {
+        "text_original": "Je souhaite d\u00e9clarer une perte de carte bleue.",
+        "text": "Je souhaite d\u00e9clarer une perte de carte bleue.",
+        "text_preprocessed": "je souhaite declarer une perte de carte bleue",
+        "is_deleted": false
+    },
+    "15": {
+        "text_original": "Je souhaite signaler le vol d'une carte de cr\u00e9dit.",
+        "text": "Je souhaite signaler le vol d'une carte de cr\u00e9dit.",
+        "text_preprocessed": "je souhaite signaler le vol d une carte de credit",
+        "is_deleted": false
+    },
+    "16": {
+        "text_original": "Je souhaite vous avertir de la perte de ma carte.",
+        "text": "Je souhaite vous avertir de la perte de ma carte.",
+        "text_preprocessed": "je souhaite vous avertir de la perte de ma carte",
+        "is_deleted": false
+    },
+    "17": {
+        "text_original": "Je suis victime d'un vol de carte bancaire.",
+        "text": "Je suis victime d'un vol de carte bancaire.",
+        "text_preprocessed": "je suis victime d un vol de carte bancaire",
+        "is_deleted": false
+    },
+    "18": {
+        "text_original": "Je suis victime d'un vol de carte.",
+        "text": "Je suis victime d'un vol de carte.",
+        "text_preprocessed": "je suis victime d un vol de carte",
+        "is_deleted": false
+    },
+    "19": {
+        "text_original": "Je veux signaler la perte de ma carte de paiement.",
+        "text": "Je veux signaler la perte de ma carte de paiement.",
+        "text_preprocessed": "je veux signaler la perte de ma carte de paiement",
+        "is_deleted": false
+    },
+    "20": {
+        "text_original": "Je veux signaler une perte de carte.",
+        "text": "Je veux signaler une perte de carte.",
+        "text_preprocessed": "je veux signaler une perte de carte",
+        "is_deleted": false
+    },
+    "21": {
+        "text_original": "Ma carte Visa a \u00e9t\u00e9 d\u00e9rob\u00e9e.",
+        "text": "Ma carte Visa a \u00e9t\u00e9 d\u00e9rob\u00e9e.",
+        "text_preprocessed": "ma carte visa a ete derobee",
+        "is_deleted": false
+    },
+    "22": {
+        "text_original": "Ma Mastercard a \u00e9t\u00e9 \u00e9gar\u00e9e.",
+        "text": "Ma Mastercard a \u00e9t\u00e9 \u00e9gar\u00e9e.",
+        "text_preprocessed": "ma mastercard a ete egaree",
+        "is_deleted": false
+    },
+    "23": {
+        "text_original": "Ma Mastercard a \u00e9t\u00e9 subtilis\u00e9e.",
+        "text": "Ma Mastercard a \u00e9t\u00e9 subtilis\u00e9e.",
+        "text_preprocessed": "ma mastercard a ete subtilisee",
+        "is_deleted": false
+    },
+    "24": {
+        "text_original": "On a d\u00e9rob\u00e9 ma carte de cr\u00e9dit.",
+        "text": "On a d\u00e9rob\u00e9 ma carte de cr\u00e9dit.",
+        "text_preprocessed": "on a derobe ma carte de credit",
+        "is_deleted": false
+    },
+    "25": {
+        "text_original": "On a subtilis\u00e9 ma carte de cr\u00e9dit.",
+        "text": "On a subtilis\u00e9 ma carte de cr\u00e9dit.",
+        "text_preprocessed": "on a subtilise ma carte de credit",
+        "is_deleted": false
+    },
+    "26": {
+        "text_original": "On a vol\u00e9 ma carte bleue !",
+        "text": "On a vol\u00e9 ma carte bleue !",
+        "text_preprocessed": "on a vole ma carte bleue",
+        "is_deleted": false
+    },
+    "27": {
+        "text_original": "On a vol\u00e9 ma carte, que faire ?",
+        "text": "On a vol\u00e9 ma carte, que faire ?",
+        "text_preprocessed": "on a vole ma carte que faire",
+        "is_deleted": false
+    },
+    "28": {
+        "text_original": "On a vol\u00e9 ma Mastercard !",
+        "text": "On a vol\u00e9 ma Mastercard !",
+        "text_preprocessed": "on a vole ma mastercard",
+        "is_deleted": false
+    },
+    "29": {
+        "text_original": "perte de carte",
+        "text": "perte de carte",
+        "text_preprocessed": "perte de carte",
+        "is_deleted": false
+    },
+    "30": {
+        "text_original": "perte de carte bleue",
+        "text": "perte de carte bleue",
+        "text_preprocessed": "perte de carte bleue",
+        "is_deleted": false
+    },
+    "31": {
+        "text_original": "perte de Mastercard",
+        "text": "perte de Mastercard",
+        "text_preprocessed": "perte de mastercard",
+        "is_deleted": false
+    },
+    "32": {
+        "text_original": "perte ou vol de carte",
+        "text": "perte ou vol de carte",
+        "text_preprocessed": "perte ou vol de carte",
+        "is_deleted": false
+    },
+    "33": {
+        "text_original": "Que dois-je faire en cas de perte de ma carte ?",
+        "text": "Que dois-je faire en cas de perte de ma carte ?",
+        "text_preprocessed": "que dois je faire en cas de perte de ma carte",
+        "is_deleted": false
+    },
+    "34": {
+        "text_original": "Que faire en cas de vol de sa carte bleue ?",
+        "text": "Que faire en cas de vol de sa carte bleue ?",
+        "text_preprocessed": "que faire en cas de vol de sa carte bleue",
+        "is_deleted": false
+    },
+    "35": {
+        "text_original": "Que faire si j'ai \u00e9gar\u00e9 ma carte bleue ?",
+        "text": "Que faire si j'ai \u00e9gar\u00e9 ma carte bleue ?",
+        "text_preprocessed": "que faire si j ai egare ma carte bleue",
+        "is_deleted": false
+    },
+    "36": {
+        "text_original": "Que faire si je ne retrouve pas ma carte bancaire ?",
+        "text": "Que faire si je ne retrouve pas ma carte bancaire ?",
+        "text_preprocessed": "que faire si je ne retrouve pas ma carte bancaire",
+        "is_deleted": false
+    },
+    "37": {
+        "text_original": "Que faire si je perds ma carte de cr\u00e9dit ?",
+        "text": "Que faire si je perds ma carte de cr\u00e9dit ?",
+        "text_preprocessed": "que faire si je perds ma carte de credit",
+        "is_deleted": false
+    },
+    "38": {
+        "text_original": "Que faire si je perds ma carte Gold ?",
+        "text": "Que faire si je perds ma carte Gold ?",
+        "text_preprocessed": "que faire si je perds ma carte gold",
+        "is_deleted": false
+    },
+    "39": {
+        "text_original": "Quelle d\u00e9marche si je ne retrouve plus ma carte bleue ?",
+        "text": "Quelle d\u00e9marche si je ne retrouve plus ma carte bleue ?",
+        "text_preprocessed": "quelle demarche si je ne retrouve plus ma carte bleue",
+        "is_deleted": false
+    },
+    "40": {
+        "text_original": "Quelle est la demarche en cas de perte de carte ?",
+        "text": "Quelle est la demarche en cas de perte de carte ?",
+        "text_preprocessed": "quelle est la demarche en cas de perte de carte",
+        "is_deleted": false
+    },
+    "41": {
+        "text_original": "Quelle est la demarche en cas de vol de carte ?",
+        "text": "Quelle est la demarche en cas de vol de carte ?",
+        "text_preprocessed": "quelle est la demarche en cas de vol de carte",
+        "is_deleted": false
+    },
+    "42": {
+        "text_original": "Quelqu'un a d\u00e9rob\u00e9 ma carte bancaire !",
+        "text": "Quelqu'un a d\u00e9rob\u00e9 ma carte bancaire !",
+        "text_preprocessed": "quelqu un a derobe ma carte bancaire",
+        "is_deleted": false
+    },
+    "43": {
+        "text_original": "Quelqu'un a subtilis\u00e9 ma carte bleue !",
+        "text": "Quelqu'un a subtilis\u00e9 ma carte bleue !",
+        "text_preprocessed": "quelqu un a subtilise ma carte bleue",
+        "is_deleted": false
+    },
+    "44": {
+        "text_original": "Quelqu'un a vol\u00e9 ma carte de paiement !",
+        "text": "Quelqu'un a vol\u00e9 ma carte de paiement !",
+        "text_preprocessed": "quelqu un a vole ma carte de paiement",
+        "is_deleted": false
+    },
+    "45": {
+        "text_original": "Un inconnu a d\u00e9rob\u00e9 ma carte bleue...",
+        "text": "Un inconnu a d\u00e9rob\u00e9 ma carte bleue...",
+        "text_preprocessed": "un inconnu a derobe ma carte bleue",
+        "is_deleted": false
+    },
+    "46": {
+        "text_original": "Un inconnu a subtilis\u00e9 ma carte bancaire.",
+        "text": "Un inconnu a subtilis\u00e9 ma carte bancaire.",
+        "text_preprocessed": "un inconnu a subtilise ma carte bancaire",
+        "is_deleted": false
+    },
+    "47": {
+        "text_original": "vol carte bancaire",
+        "text": "vol carte bancaire",
+        "text_preprocessed": "vol carte bancaire",
+        "is_deleted": false
+    },
+    "48": {
+        "text_original": "vol carte de cr\u00e9dit",
+        "text": "vol carte de cr\u00e9dit",
+        "text_preprocessed": "vol carte de credit",
+        "is_deleted": false
+    },
+    "49": {
+        "text_original": "vol de carte de paiement",
+        "text": "vol de carte de paiement",
+        "text_preprocessed": "vol de carte de paiement",
+        "is_deleted": false
+    },
+    "50": {
+        "text_original": "carte aval\u00e9e",
+        "text": "carte aval\u00e9e",
+        "text_preprocessed": "carte avalee",
+        "is_deleted": false
+    },
+    "51": {
+        "text_original": "carte bancaire aval\u00e9e",
+        "text": "carte bancaire aval\u00e9e",
+        "text_preprocessed": "carte bancaire avalee",
+        "is_deleted": false
+    },
+    "52": {
+        "text_original": "carte bancaire retenue au distributeur",
+        "text": "carte bancaire retenue au distributeur",
+        "text_preprocessed": "carte bancaire retenue au distributeur",
+        "is_deleted": false
+    },
+    "53": {
+        "text_original": "carte bleue aval\u00e9e",
+        "text": "carte bleue aval\u00e9e",
+        "text_preprocessed": "carte bleue avalee",
+        "is_deleted": false
+    },
+    "54": {
+        "text_original": "carte de paiement aval\u00e9e",
+        "text": "carte de paiement aval\u00e9e",
+        "text_preprocessed": "carte de paiement avalee",
+        "is_deleted": false
+    },
+    "55": {
+        "text_original": "Comment faire pour chercher une carte bancaire aval\u00e9e ?",
+        "text": "Comment faire pour chercher une carte bancaire aval\u00e9e ?",
+        "text_preprocessed": "comment faire pour chercher une carte bancaire avalee",
+        "is_deleted": false
+    },
+    "56": {
+        "text_original": "Comment r\u00e9cup\u00e9rer une carte aval\u00e9e ?",
+        "text": "Comment r\u00e9cup\u00e9rer une carte aval\u00e9e ?",
+        "text_preprocessed": "comment recuperer une carte avalee",
+        "is_deleted": false
+    },
+    "57": {
+        "text_original": "Comment r\u00e9cup\u00e9rer une Mastercard retenue par le distributeur ?",
+        "text": "Comment r\u00e9cup\u00e9rer une Mastercard retenue par le distributeur ?",
+        "text_preprocessed": "comment recuperer une mastercard retenue par le distributeur",
+        "is_deleted": false
+    },
+    "58": {
+        "text_original": "En cherchant de l'argent, le GAB a aval\u00e9 ma carte !",
+        "text": "En cherchant de l'argent, le GAB a aval\u00e9 ma carte !",
+        "text_preprocessed": "en cherchant de l argent le gab a avale ma carte",
+        "is_deleted": false
+    },
+    "59": {
+        "text_original": "En retirant de l'argent, le distributeur a gard\u00e9 ma carte...",
+        "text": "En retirant de l'argent, le distributeur a gard\u00e9 ma carte...",
+        "text_preprocessed": "en retirant de l argent le distributeur a garde ma carte",
+        "is_deleted": false
+    },
+    "60": {
+        "text_original": "J'ai voulu retirer de l'argent, et le gab a gard\u00e9 ma carte bancaire.",
+        "text": "J'ai voulu retirer de l'argent, et le gab a gard\u00e9 ma carte bancaire.",
+        "text_preprocessed": "j ai voulu retirer de l argent et le gab a garde ma carte bancaire",
+        "is_deleted": false
+    },
+    "61": {
+        "text_original": "Je me suis fait avaler ma carte, que dois je faire s'il vous plait ?",
+        "text": "Je me suis fait avaler ma carte, que dois je faire s'il vous plait ?",
+        "text_preprocessed": "je me suis fait avaler ma carte que dois je faire s il vous plait",
+        "is_deleted": false
+    },
+    "62": {
+        "text_original": "Je ne comprends pas pourquoi ma carte de paiement a \u00e9t\u00e9 aval\u00e9e.",
+        "text": "Je ne comprends pas pourquoi ma carte de paiement a \u00e9t\u00e9 aval\u00e9e.",
+        "text_preprocessed": "je ne comprends pas pourquoi ma carte de paiement a ete avalee",
+        "is_deleted": false
+    },
+    "63": {
+        "text_original": "Je voudrai r\u00e9cup\u00e9rer la carte bancaire que le GAB a retenue.",
+        "text": "Je voudrai r\u00e9cup\u00e9rer la carte bancaire que le GAB a retenue.",
+        "text_preprocessed": "je voudrai recuperer la carte bancaire que le gab a retenue",
+        "is_deleted": false
+    },
+    "64": {
+        "text_original": "Je voudrai reprendre la carte bancaire que le distributeur a aval\u00e9e.",
+        "text": "Je voudrai reprendre la carte bancaire que le distributeur a aval\u00e9e.",
+        "text_preprocessed": "je voudrai reprendre la carte bancaire que le distributeur a avalee",
+        "is_deleted": false
+    },
+    "65": {
+        "text_original": "Le distributeur a aval\u00e9 ma carte Visa !",
+        "text": "Le distributeur a aval\u00e9 ma carte Visa !",
+        "text_preprocessed": "le distributeur a avale ma carte visa",
+        "is_deleted": false
+    },
+    "66": {
+        "text_original": "Le distributeur a aval\u00e9 ma Mastercard !",
+        "text": "Le distributeur a aval\u00e9 ma Mastercard !",
+        "text_preprocessed": "le distributeur a avale ma mastercard",
+        "is_deleted": false
+    },
+    "67": {
+        "text_original": "Le distributeur a aval\u00e9 ma Visa, comment faire pour la r\u00e9cup\u00e9rer ?",
+        "text": "Le distributeur a aval\u00e9 ma Visa, comment faire pour la r\u00e9cup\u00e9rer ?",
+        "text_preprocessed": "le distributeur a avale ma visa comment faire pour la recuperer",
+        "is_deleted": false
+    },
+    "68": {
+        "text_original": "Le distributeur a confisqu\u00e9 ma carte de paiement...",
+        "text": "Le distributeur a confisqu\u00e9 ma carte de paiement...",
+        "text_preprocessed": "le distributeur a confisque ma carte de paiement",
+        "is_deleted": false
+    },
+    "69": {
+        "text_original": "Le distributeur a gard\u00e9 ma carte lors d'un retrait d'argent...",
+        "text": "Le distributeur a gard\u00e9 ma carte lors d'un retrait d'argent...",
+        "text_preprocessed": "le distributeur a garde ma carte lors d un retrait d argent",
+        "is_deleted": false
+    },
+    "70": {
+        "text_original": "Le distributeur a pris ma Mastercard !",
+        "text": "Le distributeur a pris ma Mastercard !",
+        "text_preprocessed": "le distributeur a pris ma mastercard",
+        "is_deleted": false
+    },
+    "71": {
+        "text_original": "Le distributeur ne m'a pas rendu ma carte bleue.",
+        "text": "Le distributeur ne m'a pas rendu ma carte bleue.",
+        "text_preprocessed": "le distributeur ne m a pas rendu ma carte bleue",
+        "is_deleted": false
+    },
+    "72": {
+        "text_original": "Le GAB a gard\u00e9 ma carte de cr\u00e9dit.",
+        "text": "Le GAB a gard\u00e9 ma carte de cr\u00e9dit.",
+        "text_preprocessed": "le gab a garde ma carte de credit",
+        "is_deleted": false
+    },
+    "73": {
+        "text_original": "Le GAB a retenue ma carte visa.",
+        "text": "Le GAB a retenue ma carte visa.",
+        "text_preprocessed": "le gab a retenue ma carte visa",
+        "is_deleted": false
+    },
+    "74": {
+        "text_original": "Le GAB de la caisse m'a pris ma carte.",
+        "text": "Le GAB de la caisse m'a pris ma carte.",
+        "text_preprocessed": "le gab de la caisse m a pris ma carte",
+        "is_deleted": false
+    },
+    "75": {
+        "text_original": "Le GAB ne m'a pas rendu ma carte Visa...",
+        "text": "Le GAB ne m'a pas rendu ma carte Visa...",
+        "text_preprocessed": "le gab ne m a pas rendu ma carte visa",
+        "is_deleted": false
+    },
+    "76": {
+        "text_original": "Ma carte a \u00e9t\u00e9 aval\u00e9e par un distributeur.",
+        "text": "Ma carte a \u00e9t\u00e9 aval\u00e9e par un distributeur.",
+        "text_preprocessed": "ma carte a ete avalee par un distributeur",
+        "is_deleted": false
+    },
+    "77": {
+        "text_original": "Ma carte a \u00e9t\u00e9 retenue par le distributeur.",
+        "text": "Ma carte a \u00e9t\u00e9 retenue par le distributeur.",
+        "text_preprocessed": "ma carte a ete retenue par le distributeur",
+        "is_deleted": false
+    },
+    "78": {
+        "text_original": "Ma carte a \u00e9t\u00e9 retenue par le GAB.",
+        "text": "Ma carte a \u00e9t\u00e9 retenue par le GAB.",
+        "text_preprocessed": "ma carte a ete retenue par le gab",
+        "is_deleted": false
+    },
+    "79": {
+        "text_original": "Ma carte bancaire a \u00e9t\u00e9 confisqu\u00e9e par le distributeur !",
+        "text": "Ma carte bancaire a \u00e9t\u00e9 confisqu\u00e9e par le distributeur !",
+        "text_preprocessed": "ma carte bancaire a ete confisquee par le distributeur",
+        "is_deleted": false
+    },
+    "80": {
+        "text_original": "Ma carte bleue a \u00e9t\u00e9 aval\u00e9e, comment faire pour la r\u00e9cuperer ?",
+        "text": "Ma carte bleue a \u00e9t\u00e9 aval\u00e9e, comment faire pour la r\u00e9cuperer ?",
+        "text_preprocessed": "ma carte bleue a ete avalee comment faire pour la recuperer",
+        "is_deleted": false
+    },
+    "81": {
+        "text_original": "Ma carte de cr\u00e9dit a \u00e9t\u00e9 aval\u00e9e par le distributeur...",
+        "text": "Ma carte de cr\u00e9dit a \u00e9t\u00e9 aval\u00e9e par le distributeur...",
+        "text_preprocessed": "ma carte de credit a ete avalee par le distributeur",
+        "is_deleted": false
+    },
+    "82": {
+        "text_original": "Ma carte de paiement a \u00e9t\u00e9 gard\u00e9e par le distributeur...",
+        "text": "Ma carte de paiement a \u00e9t\u00e9 gard\u00e9e par le distributeur...",
+        "text_preprocessed": "ma carte de paiement a ete gardee par le distributeur",
+        "is_deleted": false
+    },
+    "83": {
+        "text_original": "Ma carte Gold a \u00e9t\u00e9 gard\u00e9e lors de mon retrait d'argent.",
+        "text": "Ma carte Gold a \u00e9t\u00e9 gard\u00e9e lors de mon retrait d'argent.",
+        "text_preprocessed": "ma carte gold a ete gardee lors de mon retrait d argent",
+        "is_deleted": false
+    },
+    "84": {
+        "text_original": "Ma carte vient d'\u00eatre aval\u00e9e par le distributeur sans motif valable !",
+        "text": "Ma carte vient d'\u00eatre aval\u00e9e par le distributeur sans motif valable !",
+        "text_preprocessed": "ma carte vient d etre avalee par le distributeur sans motif valable",
+        "is_deleted": false
+    },
+    "85": {
+        "text_original": "Ma carte Visa a \u00e9t\u00e9 retenue par le distributeur suite \u00e0 une erreur de code.",
+        "text": "Ma carte Visa a \u00e9t\u00e9 retenue par le distributeur suite \u00e0 une erreur de code.",
+        "text_preprocessed": "ma carte visa a ete retenue par le distributeur suite a une erreur de code",
+        "is_deleted": false
+    },
+    "86": {
+        "text_original": "Ma Mastercard a \u00e9t\u00e9 aval\u00e9e par un distributeur, comment puis-je faire pour la r\u00e9cuperer ?",
+        "text": "Ma Mastercard a \u00e9t\u00e9 aval\u00e9e par un distributeur, comment puis-je faire pour la r\u00e9cuperer ?",
+        "text_preprocessed": "ma mastercard a ete avalee par un distributeur comment puis je faire pour la recuperer",
+        "is_deleted": false
+    },
+    "87": {
+        "text_original": "Ma Mastercard a \u00e9t\u00e9 confisqu\u00e9e par le GAB.",
+        "text": "Ma Mastercard a \u00e9t\u00e9 confisqu\u00e9e par le GAB.",
+        "text_preprocessed": "ma mastercard a ete confisquee par le gab",
+        "is_deleted": false
+    },
+    "88": {
+        "text_original": "On a confisqu\u00e9 ma carte bleue, que faire pour la reprendre ?",
+        "text": "On a confisqu\u00e9 ma carte bleue, que faire pour la reprendre ?",
+        "text_preprocessed": "on a confisque ma carte bleue que faire pour la reprendre",
+        "is_deleted": false
+    },
+    "89": {
+        "text_original": "On ne m'a pas rendu ma carte de paiement au GAB.",
+        "text": "On ne m'a pas rendu ma carte de paiement au GAB.",
+        "text_preprocessed": "on ne m a pas rendu ma carte de paiement au gab",
+        "is_deleted": false
+    },
+    "90": {
+        "text_original": "Pourquoi le distributeur a-t-il gard\u00e9 ma carte bancaire ?",
+        "text": "Pourquoi le distributeur a-t-il gard\u00e9 ma carte bancaire ?",
+        "text_preprocessed": "pourquoi le distributeur a t il garde ma carte bancaire",
+        "is_deleted": false
+    },
+    "91": {
+        "text_original": "Pourquoi le distributeur ne m'a pas rendu ma carte Gold ?",
+        "text": "Pourquoi le distributeur ne m'a pas rendu ma carte Gold ?",
+        "text_preprocessed": "pourquoi le distributeur ne m a pas rendu ma carte gold",
+        "is_deleted": false
+    },
+    "92": {
+        "text_original": "Pourquoi le GAB a-t-il gard\u00e9 ma carte de paiement ?",
+        "text": "Pourquoi le GAB a-t-il gard\u00e9 ma carte de paiement ?",
+        "text_preprocessed": "pourquoi le gab a t il garde ma carte de paiement",
+        "is_deleted": false
+    },
+    "93": {
+        "text_original": "Pourquoi ma carte a-t-elle \u00e9t\u00e9 aval\u00e9e ?",
+        "text": "Pourquoi ma carte a-t-elle \u00e9t\u00e9 aval\u00e9e ?",
+        "text_preprocessed": "pourquoi ma carte a t elle ete avalee",
+        "is_deleted": false
+    },
+    "94": {
+        "text_original": "Que faire pour r\u00e9cuperer une carte bleue lorsque le distributeur l'a aval\u00e9e ?",
+        "text": "Que faire pour r\u00e9cuperer une carte bleue lorsque le distributeur l'a aval\u00e9e ?",
+        "text_preprocessed": "que faire pour recuperer une carte bleue lorsque le distributeur l a avalee",
+        "is_deleted": false
+    },
+    "95": {
+        "text_original": "Que faire si je me suis fait avaler ma carte ?",
+        "text": "Que faire si je me suis fait avaler ma carte ?",
+        "text_preprocessed": "que faire si je me suis fait avaler ma carte",
+        "is_deleted": false
+    },
+    "96": {
+        "text_original": "Que faire si votre carte bleue est retenue par le distributeur ?",
+        "text": "Que faire si votre carte bleue est retenue par le distributeur ?",
+        "text_preprocessed": "que faire si votre carte bleue est retenue par le distributeur",
+        "is_deleted": false
+    },
+    "97": {
+        "text_original": "Quelle est la proc\u00e9dure pour chercher une carte de cr\u00e9dit aval\u00e9e ?",
+        "text": "Quelle est la proc\u00e9dure pour chercher une carte de cr\u00e9dit aval\u00e9e ?",
+        "text_preprocessed": "quelle est la procedure pour chercher une carte de credit avalee",
+        "is_deleted": false
+    },
+    "98": {
+        "text_original": "r\u00e9cup\u00e9rer carte aval\u00e9e",
+        "text": "r\u00e9cup\u00e9rer carte aval\u00e9e",
+        "text_preprocessed": "recuperer carte avalee",
+        "is_deleted": false
+    },
+    "99": {
+        "text_original": "r\u00e9cup\u00e9rer carte bleue aval\u00e9e par distributeur",
+        "text": "r\u00e9cup\u00e9rer carte bleue aval\u00e9e par distributeur",
+        "text_preprocessed": "recuperer carte bleue avalee par distributeur",
+        "is_deleted": false
+    },
+    "100": {
+        "text_original": "changer de carte bancaire",
+        "text": "changer de carte bancaire",
+        "text_preprocessed": "changer de carte bancaire",
+        "is_deleted": false
+    },
+    "101": {
+        "text_original": "changer de carte de cr\u00e9dit",
+        "text": "changer de carte de cr\u00e9dit",
+        "text_preprocessed": "changer de carte de credit",
+        "is_deleted": false
+    },
+    "102": {
+        "text_original": "changer de carte de paiement pour une carte sans frais",
+        "text": "changer de carte de paiement pour une carte sans frais",
+        "text_preprocessed": "changer de carte de paiement pour une carte sans frais",
+        "is_deleted": false
+    },
+    "103": {
+        "text_original": "choisir une nouvelle carte bancaire",
+        "text": "choisir une nouvelle carte bancaire",
+        "text_preprocessed": "choisir une nouvelle carte bancaire",
+        "is_deleted": false
+    },
+    "104": {
+        "text_original": "commander une carte \u00e0 paiement diff\u00e9r\u00e9",
+        "text": "commander une carte \u00e0 paiement diff\u00e9r\u00e9",
+        "text_preprocessed": "commander une carte a paiement differe",
+        "is_deleted": false
+    },
+    "105": {
+        "text_original": "commander une carte avance sant\u00e9",
+        "text": "commander une carte avance sant\u00e9",
+        "text_preprocessed": "commander une carte avance sante",
+        "is_deleted": false
+    },
+    "106": {
+        "text_original": "commander une carte bancaire",
+        "text": "commander une carte bancaire",
+        "text_preprocessed": "commander une carte bancaire",
+        "is_deleted": false
+    },
+    "107": {
+        "text_original": "commander une carte visa",
+        "text": "commander une carte visa",
+        "text_preprocessed": "commander une carte visa",
+        "is_deleted": false
+    },
+    "108": {
+        "text_original": "commander une nouvelle carte bleue",
+        "text": "commander une nouvelle carte bleue",
+        "text_preprocessed": "commander une nouvelle carte bleue",
+        "is_deleted": false
+    },
+    "109": {
+        "text_original": "Comment avoir une carte Gold ?",
+        "text": "Comment avoir une carte Gold ?",
+        "text_preprocessed": "comment avoir une carte gold",
+        "is_deleted": false
+    },
+    "110": {
+        "text_original": "Comment changer de carte bleue ?",
+        "text": "Comment changer de carte bleue ?",
+        "text_preprocessed": "comment changer de carte bleue",
+        "is_deleted": false
+    },
+    "111": {
+        "text_original": "Comment changer de carte de cr\u00e9dit s'il vous pla\u00eet ?",
+        "text": "Comment changer de carte de cr\u00e9dit s'il vous pla\u00eet ?",
+        "text_preprocessed": "comment changer de carte de credit s il vous plait",
+        "is_deleted": false
+    },
+    "112": {
+        "text_original": "Comment changer sa carte pour une carte Gold ?",
+        "text": "Comment changer sa carte pour une carte Gold ?",
+        "text_preprocessed": "comment changer sa carte pour une carte gold",
+        "is_deleted": false
+    },
+    "113": {
+        "text_original": "Comment commander une nouvelle carte bancaire ?",
+        "text": "Comment commander une nouvelle carte bancaire ?",
+        "text_preprocessed": "comment commander une nouvelle carte bancaire",
+        "is_deleted": false
+    },
+    "114": {
+        "text_original": "Comment demander une carte \u00e0 paiement diff\u00e9r\u00e9 ?",
+        "text": "Comment demander une carte \u00e0 paiement diff\u00e9r\u00e9 ?",
+        "text_preprocessed": "comment demander une carte a paiement differe",
+        "is_deleted": false
+    },
+    "115": {
+        "text_original": "Comment demander une carte avance sant\u00e9 ?",
+        "text": "Comment demander une carte avance sant\u00e9 ?",
+        "text_preprocessed": "comment demander une carte avance sante",
+        "is_deleted": false
+    },
+    "116": {
+        "text_original": "Comment \u00e9changer ma carte actuelle avec une carte Gold ?",
+        "text": "Comment \u00e9changer ma carte actuelle avec une carte Gold ?",
+        "text_preprocessed": "comment echanger ma carte actuelle avec une carte gold",
+        "is_deleted": false
+    },
+    "117": {
+        "text_original": "Comment faire une demande de renouvellement de carte ?",
+        "text": "Comment faire une demande de renouvellement de carte ?",
+        "text_preprocessed": "comment faire une demande de renouvellement de carte",
+        "is_deleted": false
+    },
+    "118": {
+        "text_original": "Comment obtenir une Mastercard ?",
+        "text": "Comment obtenir une Mastercard ?",
+        "text_preprocessed": "comment obtenir une mastercard",
+        "is_deleted": false
+    },
+    "119": {
+        "text_original": "Comment peut-on commander une cartes de paiement ?",
+        "text": "Comment peut-on commander une cartes de paiement ?",
+        "text_preprocessed": "comment peut on commander une cartes de paiement",
+        "is_deleted": false
+    },
+    "120": {
+        "text_original": "Comment puis-je commander ma carte bancaire ?",
+        "text": "Comment puis-je commander ma carte bancaire ?",
+        "text_preprocessed": "comment puis je commander ma carte bancaire",
+        "is_deleted": false
+    },
+    "121": {
+        "text_original": "Comment renouveler sa carte bancaire ?",
+        "text": "Comment renouveler sa carte bancaire ?",
+        "text_preprocessed": "comment renouveler sa carte bancaire",
+        "is_deleted": false
+    },
+    "122": {
+        "text_original": "Comment se procurer une nouvelle carte de cr\u00e9dit ?",
+        "text": "Comment se procurer une nouvelle carte de cr\u00e9dit ?",
+        "text_preprocessed": "comment se procurer une nouvelle carte de credit",
+        "is_deleted": false
+    },
+    "123": {
+        "text_original": "demander une nouvelle carte bleue",
+        "text": "demander une nouvelle carte bleue",
+        "text_preprocessed": "demander une nouvelle carte bleue",
+        "is_deleted": false
+    },
+    "124": {
+        "text_original": "\u00e9changer ma carte bleue pour une carte Gold",
+        "text": "\u00e9changer ma carte bleue pour une carte Gold",
+        "text_preprocessed": "echanger ma carte bleue pour une carte gold",
+        "is_deleted": false
+    },
+    "125": {
+        "text_original": "Est-ce que je peux avoir une carte sans frais ?",
+        "text": "Est-ce que je peux avoir une carte sans frais ?",
+        "text_preprocessed": "est ce que je peux avoir une carte sans frais",
+        "is_deleted": false
+    },
+    "126": {
+        "text_original": "Est-ce que je peux commander une carte Gold ?",
+        "text": "Est-ce que je peux commander une carte Gold ?",
+        "text_preprocessed": "est ce que je peux commander une carte gold",
+        "is_deleted": false
+    },
+    "127": {
+        "text_original": "Est-ce que le renouvellement de carte bancaire est automatique ?",
+        "text": "Est-ce que le renouvellement de carte bancaire est automatique ?",
+        "text_preprocessed": "est ce que le renouvellement de carte bancaire est automatique",
+        "is_deleted": false
+    },
+    "128": {
+        "text_original": "J'aimerai changer de carte de cr\u00e9dit.",
+        "text": "J'aimerai changer de carte de cr\u00e9dit.",
+        "text_preprocessed": "j aimerai changer de carte de credit",
+        "is_deleted": false
+    },
+    "129": {
+        "text_original": "Je d\u00e9sire commander une Mastercard.",
+        "text": "Je d\u00e9sire commander une Mastercard.",
+        "text_preprocessed": "je desire commander une mastercard",
+        "is_deleted": false
+    },
+    "130": {
+        "text_original": "Je souhaite avoir une autre carte bancaire.",
+        "text": "Je souhaite avoir une autre carte bancaire.",
+        "text_preprocessed": "je souhaite avoir une autre carte bancaire",
+        "is_deleted": false
+    },
+    "131": {
+        "text_original": "Je souhaite changer de carte bancaire.",
+        "text": "Je souhaite changer de carte bancaire.",
+        "text_preprocessed": "je souhaite changer de carte bancaire",
+        "is_deleted": false
+    },
+    "132": {
+        "text_original": "Je souhaite me procurer une carte Mastercard.",
+        "text": "Je souhaite me procurer une carte Mastercard.",
+        "text_preprocessed": "je souhaite me procurer une carte mastercard",
+        "is_deleted": false
+    },
+    "133": {
+        "text_original": "Je souhaiterai b\u00e9n\u00e9ficier d'une carte \u00e0 d\u00e9bit diff\u00e9r\u00e9.",
+        "text": "Je souhaiterai b\u00e9n\u00e9ficier d'une carte \u00e0 d\u00e9bit diff\u00e9r\u00e9.",
+        "text_preprocessed": "je souhaiterai beneficier d une carte a debit differe",
+        "is_deleted": false
+    },
+    "134": {
+        "text_original": "Je souhaiterai commander une carte visa !",
+        "text": "Je souhaiterai commander une carte visa !",
+        "text_preprocessed": "je souhaiterai commander une carte visa",
+        "is_deleted": false
+    },
+    "135": {
+        "text_original": "Je veux commander une deuxieme carte de paiement.",
+        "text": "Je veux commander une deuxieme carte de paiement.",
+        "text_preprocessed": "je veux commander une deuxieme carte de paiement",
+        "is_deleted": false
+    },
+    "136": {
+        "text_original": "Je veux une nouvelle carte de cr\u00e9dit.",
+        "text": "Je veux une nouvelle carte de cr\u00e9dit.",
+        "text_preprocessed": "je veux une nouvelle carte de credit",
+        "is_deleted": false
+    },
+    "137": {
+        "text_original": "Je voudrai commander une carte Gold.",
+        "text": "Je voudrai commander une carte Gold.",
+        "text_preprocessed": "je voudrai commander une carte gold",
+        "is_deleted": false
+    },
+    "138": {
+        "text_original": "Je voudrai obtenir une carte Visa.",
+        "text": "Je voudrai obtenir une carte Visa.",
+        "text_preprocessed": "je voudrai obtenir une carte visa",
+        "is_deleted": false
+    },
+    "139": {
+        "text_original": "Je voudrais une carte Gold.",
+        "text": "Je voudrais une carte Gold.",
+        "text_preprocessed": "je voudrais une carte gold",
+        "is_deleted": false
+    },
+    "140": {
+        "text_original": "O\u00f9 commander une nouvelle carte bancaire ?",
+        "text": "O\u00f9 commander une nouvelle carte bancaire ?",
+        "text_preprocessed": "ou commander une nouvelle carte bancaire",
+        "is_deleted": false
+    },
+    "141": {
+        "text_original": "Peut-on changer de carte bleue avant le renouvellement automatique ?",
+        "text": "Peut-on changer de carte bleue avant le renouvellement automatique ?",
+        "text_preprocessed": "peut on changer de carte bleue avant le renouvellement automatique",
+        "is_deleted": false
+    },
+    "142": {
+        "text_original": "Puis-je avoir une nouvelle Mastercard ?",
+        "text": "Puis-je avoir une nouvelle Mastercard ?",
+        "text_preprocessed": "puis je avoir une nouvelle mastercard",
+        "is_deleted": false
+    },
+    "143": {
+        "text_original": "Puis-je commander une nouvelle carte bancaire ?",
+        "text": "Puis-je commander une nouvelle carte bancaire ?",
+        "text_preprocessed": "puis je commander une nouvelle carte bancaire",
+        "is_deleted": false
+    },
+    "144": {
+        "text_original": "Puis-je me procurer une nouvelle carte bancaire sans frais supplementaire ?",
+        "text": "Puis-je me procurer une nouvelle carte bancaire sans frais supplementaire ?",
+        "text_preprocessed": "puis je me procurer une nouvelle carte bancaire sans frais supplementaire",
+        "is_deleted": false
+    },
+    "145": {
+        "text_original": "Quelle d\u00e9marche dois-je suivre pour avoir une carte Visa ?",
+        "text": "Quelle d\u00e9marche dois-je suivre pour avoir une carte Visa ?",
+        "text_preprocessed": "quelle demarche dois je suivre pour avoir une carte visa",
+        "is_deleted": false
+    },
+    "146": {
+        "text_original": "Quelles sont les cartes bancaires que je peux commander ?",
+        "text": "Quelles sont les cartes bancaires que je peux commander ?",
+        "text_preprocessed": "quelles sont les cartes bancaires que je peux commander",
+        "is_deleted": false
+    },
+    "147": {
+        "text_original": "Quelles sont les cartes disponibles si je souhaite changer de carte de cr\u00e9dit ?",
+        "text": "Quelles sont les cartes disponibles si je souhaite changer de carte de cr\u00e9dit ?",
+        "text_preprocessed": "quelles sont les cartes disponibles si je souhaite changer de carte de credit",
+        "is_deleted": false
+    },
+    "148": {
+        "text_original": "Serait-il possible de commander une autre carte de paiement ?",
+        "text": "Serait-il possible de commander une autre carte de paiement ?",
+        "text_preprocessed": "serait il possible de commander une autre carte de paiement",
+        "is_deleted": false
+    },
+    "149": {
+        "text_original": "Y a-t-il des cartes bancaires sans frais disponibles \u00e0 la commande ?",
+        "text": "Y a-t-il des cartes bancaires sans frais disponibles \u00e0 la commande ?",
+        "text_preprocessed": "y a t il des cartes bancaires sans frais disponibles a la commande",
+        "is_deleted": false
+    },
+    "150": {
+        "text_original": "\u00c0 combien s'\u00e9l\u00e8ve le solde de mon compte ?",
+        "text": "\u00c0 combien s'\u00e9l\u00e8ve le solde de mon compte ?",
+        "text_preprocessed": "a combien s eleve le solde de mon compte",
+        "is_deleted": false
+    },
+    "151": {
+        "text_original": "Bonjour, comment prendre connaissance du solde de mon compte courant ?",
+        "text": "Bonjour, comment prendre connaissance du solde de mon compte courant ?",
+        "text_preprocessed": "bonjour comment prendre connaissance du solde de mon compte courant",
+        "is_deleted": false
+    },
+    "152": {
+        "text_original": "Combien ai-je sur mon compte ?",
+        "text": "Combien ai-je sur mon compte ?",
+        "text_preprocessed": "combien ai je sur mon compte",
+        "is_deleted": false
+    },
+    "153": {
+        "text_original": "Combien ai-je sur mon compte courant ?",
+        "text": "Combien ai-je sur mon compte courant ?",
+        "text_preprocessed": "combien ai je sur mon compte courant",
+        "is_deleted": false
+    },
+    "154": {
+        "text_original": "Combien d'argent me reste-t-il sur mon compte ?",
+        "text": "Combien d'argent me reste-t-il sur mon compte ?",
+        "text_preprocessed": "combien d argent me reste t il sur mon compte",
+        "is_deleted": false
+    },
+    "155": {
+        "text_original": "Combien me reste-t-il d'argent ?",
+        "text": "Combien me reste-t-il d'argent ?",
+        "text_preprocessed": "combien me reste t il d argent",
+        "is_deleted": false
+    },
+    "156": {
+        "text_original": "Combien me reste-t-il sur mon compte ?",
+        "text": "Combien me reste-t-il sur mon compte ?",
+        "text_preprocessed": "combien me reste t il sur mon compte",
+        "is_deleted": false
+    },
+    "157": {
+        "text_original": "Comment conna\u00eetre la situation de mon compte bancaire ?",
+        "text": "Comment conna\u00eetre la situation de mon compte bancaire ?",
+        "text_preprocessed": "comment connaitre la situation de mon compte bancaire",
+        "is_deleted": false
+    },
+    "158": {
+        "text_original": "Comment connaitre l'\u00e9tat de mes comptes ?",
+        "text": "Comment connaitre l'\u00e9tat de mes comptes ?",
+        "text_preprocessed": "comment connaitre l etat de mes comptes",
+        "is_deleted": false
+    },
+    "159": {
+        "text_original": "Comment consulter mon compte courant ?",
+        "text": "Comment consulter mon compte courant ?",
+        "text_preprocessed": "comment consulter mon compte courant",
+        "is_deleted": false
+    },
+    "160": {
+        "text_original": "Comment voir le solde de mes comptes ?",
+        "text": "Comment voir le solde de mes comptes ?",
+        "text_preprocessed": "comment voir le solde de mes comptes",
+        "is_deleted": false
+    },
+    "161": {
+        "text_original": "consulter mon solde",
+        "text": "consulter mon solde",
+        "text_preprocessed": "consulter mon solde",
+        "is_deleted": false
+    },
+    "162": {
+        "text_original": "Est-ce que j'ai un solde bancaire d\u00e9biteur ?",
+        "text": "Est-ce que j'ai un solde bancaire d\u00e9biteur ?",
+        "text_preprocessed": "est ce que j ai un solde bancaire debiteur",
+        "is_deleted": false
+    },
+    "163": {
+        "text_original": "Est-ce que je peux voir mon solde bancaire ?",
+        "text": "Est-ce que je peux voir mon solde bancaire ?",
+        "text_preprocessed": "est ce que je peux voir mon solde bancaire",
+        "is_deleted": false
+    },
+    "164": {
+        "text_original": "Est-ce que je suis \u00e0 d\u00e9couvert ?",
+        "text": "Est-ce que je suis \u00e0 d\u00e9couvert ?",
+        "text_preprocessed": "est ce que je suis a decouvert",
+        "is_deleted": false
+    },
+    "165": {
+        "text_original": "Est-ce que je suis en solde n\u00e9gatif ?",
+        "text": "Est-ce que je suis en solde n\u00e9gatif ?",
+        "text_preprocessed": "est ce que je suis en solde negatif",
+        "is_deleted": false
+    },
+    "166": {
+        "text_original": "Est-ce que mes comptes sont \u00e0 court de disponibilit\u00e9s ?",
+        "text": "Est-ce que mes comptes sont \u00e0 court de disponibilit\u00e9s ?",
+        "text_preprocessed": "est ce que mes comptes sont a court de disponibilites",
+        "is_deleted": false
+    },
+    "167": {
+        "text_original": "Est-ce que mon solde est n\u00e9gatif ?",
+        "text": "Est-ce que mon solde est n\u00e9gatif ?",
+        "text_preprocessed": "est ce que mon solde est negatif",
+        "is_deleted": false
+    },
+    "168": {
+        "text_original": "J'aimerai consulter le solde de mes comptes en banque s'il vous pla\u00eet.",
+        "text": "J'aimerai consulter le solde de mes comptes en banque s'il vous pla\u00eet.",
+        "text_preprocessed": "j aimerai consulter le solde de mes comptes en banque s il vous plait",
+        "is_deleted": false
+    },
+    "169": {
+        "text_original": "J'aimerai voir ma situation financiaire.",
+        "text": "J'aimerai voir ma situation financiaire.",
+        "text_preprocessed": "j aimerai voir ma situation financiaire",
+        "is_deleted": false
+    },
+    "170": {
+        "text_original": "Je souhaite conna\u00eetre le solde de mon compte.",
+        "text": "Je souhaite conna\u00eetre le solde de mon compte.",
+        "text_preprocessed": "je souhaite connaitre le solde de mon compte",
+        "is_deleted": false
+    },
+    "171": {
+        "text_original": "Je souhaite savoir le montant disponible sur mes comptes.",
+        "text": "Je souhaite savoir le montant disponible sur mes comptes.",
+        "text_preprocessed": "je souhaite savoir le montant disponible sur mes comptes",
+        "is_deleted": false
+    },
+    "172": {
+        "text_original": "Je veux conna\u00eetre mon solde bancaire actuel.",
+        "text": "Je veux conna\u00eetre mon solde bancaire actuel.",
+        "text_preprocessed": "je veux connaitre mon solde bancaire actuel",
+        "is_deleted": false
+    },
+    "173": {
+        "text_original": "Je voudrai conna\u00eetre le solde de mes comptes.",
+        "text": "Je voudrai conna\u00eetre le solde de mes comptes.",
+        "text_preprocessed": "je voudrai connaitre le solde de mes comptes",
+        "is_deleted": false
+    },
+    "174": {
+        "text_original": "Le solde de mon compte en banque est-il dans le rouge ?",
+        "text": "Le solde de mon compte en banque est-il dans le rouge ?",
+        "text_preprocessed": "le solde de mon compte en banque est il dans le rouge",
+        "is_deleted": false
+    },
+    "175": {
+        "text_original": "Me reste-t-il assez d'argent sur le compte courant ?",
+        "text": "Me reste-t-il assez d'argent sur le compte courant ?",
+        "text_preprocessed": "me reste t il assez d argent sur le compte courant",
+        "is_deleted": false
+    },
+    "176": {
+        "text_original": "Mon solde bancaire est-il toujours positif ?",
+        "text": "Mon solde bancaire est-il toujours positif ?",
+        "text_preprocessed": "mon solde bancaire est il toujours positif",
+        "is_deleted": false
+    },
+    "177": {
+        "text_original": "O\u00f9 en est ma situation financi\u00e8re ?",
+        "text": "O\u00f9 en est ma situation financi\u00e8re ?",
+        "text_preprocessed": "ou en est ma situation financiere",
+        "is_deleted": false
+    },
+    "178": {
+        "text_original": "O\u00f9 est-ce que je peux consulter mes comptes bancaires ?",
+        "text": "O\u00f9 est-ce que je peux consulter mes comptes bancaires ?",
+        "text_preprocessed": "ou est ce que je peux consulter mes comptes bancaires",
+        "is_deleted": false
+    },
+    "179": {
+        "text_original": "O\u00f9 puis-je consulter le solde de mes comptes ?",
+        "text": "O\u00f9 puis-je consulter le solde de mes comptes ?",
+        "text_preprocessed": "ou puis je consulter le solde de mes comptes",
+        "is_deleted": false
+    },
+    "180": {
+        "text_original": "O\u00f9 retrouver le solde de mon compte ?",
+        "text": "O\u00f9 retrouver le solde de mon compte ?",
+        "text_preprocessed": "ou retrouver le solde de mon compte",
+        "is_deleted": false
+    },
+    "181": {
+        "text_original": "O\u00f9 trouver le solde de mon compte sur l'application ?",
+        "text": "O\u00f9 trouver le solde de mon compte sur l'application ?",
+        "text_preprocessed": "ou trouver le solde de mon compte sur l application",
+        "is_deleted": false
+    },
+    "182": {
+        "text_original": "Pouvez-vous me communiquer l'\u00e9tat de mon compte bancaire ?",
+        "text": "Pouvez-vous me communiquer l'\u00e9tat de mon compte bancaire ?",
+        "text_preprocessed": "pouvez vous me communiquer l etat de mon compte bancaire",
+        "is_deleted": false
+    },
+    "183": {
+        "text_original": "Puis-je savoir le solde de mes comptes ?",
+        "text": "Puis-je savoir le solde de mes comptes ?",
+        "text_preprocessed": "puis je savoir le solde de mes comptes",
+        "is_deleted": false
+    },
+    "184": {
+        "text_original": "Puis-je voir le solde de mon compte courant ?",
+        "text": "Puis-je voir le solde de mon compte courant ?",
+        "text_preprocessed": "puis je voir le solde de mon compte courant",
+        "is_deleted": false
+    },
+    "185": {
+        "text_original": "Quel est le montant de mon livret ?",
+        "text": "Quel est le montant de mon livret ?",
+        "text_preprocessed": "quel est le montant de mon livret",
+        "is_deleted": false
+    },
+    "186": {
+        "text_original": "Quel est le montant disponible sur mes comptes ?",
+        "text": "Quel est le montant disponible sur mes comptes ?",
+        "text_preprocessed": "quel est le montant disponible sur mes comptes",
+        "is_deleted": false
+    },
+    "187": {
+        "text_original": "Quel est le solde de mon compte courant ?",
+        "text": "Quel est le solde de mon compte courant ?",
+        "text_preprocessed": "quel est le solde de mon compte courant",
+        "is_deleted": false
+    },
+    "188": {
+        "text_original": "Quel est le solde de mon compte en banque ?",
+        "text": "Quel est le solde de mon compte en banque ?",
+        "text_preprocessed": "quel est le solde de mon compte en banque",
+        "is_deleted": false
+    },
+    "189": {
+        "text_original": "Quel est l'\u00e9tat de mes comptes bancaires ?",
+        "text": "Quel est l'\u00e9tat de mes comptes bancaires ?",
+        "text_preprocessed": "quel est l etat de mes comptes bancaires",
+        "is_deleted": false
+    },
+    "190": {
+        "text_original": "Quel est mon solde bancaire ?",
+        "text": "Quel est mon solde bancaire ?",
+        "text_preprocessed": "quel est mon solde bancaire",
+        "is_deleted": false
+    },
+    "191": {
+        "text_original": "Quelle est la situation de mes comptes ?",
+        "text": "Quelle est la situation de mes comptes ?",
+        "text_preprocessed": "quelle est la situation de mes comptes",
+        "is_deleted": false
+    },
+    "192": {
+        "text_original": "Quelle est ma situation financi\u00e8re ?",
+        "text": "Quelle est ma situation financi\u00e8re ?",
+        "text_preprocessed": "quelle est ma situation financiere",
+        "is_deleted": false
+    },
+    "193": {
+        "text_original": "Quelles sont mes disponibilit\u00e9s sur mon compte ?",
+        "text": "Quelles sont mes disponibilit\u00e9s sur mon compte ?",
+        "text_preprocessed": "quelles sont mes disponibilites sur mon compte",
+        "is_deleted": false
+    },
+    "194": {
+        "text_original": "Quels sont les soldes de mes comptes ?",
+        "text": "Quels sont les soldes de mes comptes ?",
+        "text_preprocessed": "quels sont les soldes de mes comptes",
+        "is_deleted": false
+    },
+    "195": {
+        "text_original": "solde de mes comptes",
+        "text": "solde de mes comptes",
+        "text_preprocessed": "solde de mes comptes",
+        "is_deleted": false
+    },
+    "196": {
+        "text_original": "solde de mon compte en banque",
+        "text": "solde de mon compte en banque",
+        "text_preprocessed": "solde de mon compte en banque",
+        "is_deleted": false
+    },
+    "197": {
+        "text_original": "Suis-je dans le rouge ?",
+        "text": "Suis-je dans le rouge ?",
+        "text_preprocessed": "suis je dans le rouge",
+        "is_deleted": false
+    },
+    "198": {
+        "text_original": "visualiser mon solde bancaire",
+        "text": "visualiser mon solde bancaire",
+        "text_preprocessed": "visualiser mon solde bancaire",
+        "is_deleted": false
+    },
+    "199": {
+        "text_original": "voir la situation et le solde de mes comptes",
+        "text": "voir la situation et le solde de mes comptes",
+        "text_preprocessed": "voir la situation et le solde de mes comptes",
+        "is_deleted": false
+    },
+    "200": {
+        "text_original": "Ai-je une extension de garantie avec ma carte Gold pour un achat d'\u00e9l\u00e9trom\u00e9nager ?",
+        "text": "Ai-je une extension de garantie avec ma carte Gold pour un achat d'\u00e9l\u00e9trom\u00e9nager ?",
+        "text_preprocessed": "ai je une extension de garantie avec ma carte gold pour un achat d eletromenager",
+        "is_deleted": false
+    },
+    "201": {
+        "text_original": "assurance comprises avec ma carte bancaire pour un voyage \u00e0 l'\u00e9tranger",
+        "text": "assurance comprises avec ma carte bancaire pour un voyage \u00e0 l'\u00e9tranger",
+        "text_preprocessed": "assurance comprises avec ma carte bancaire pour un voyage a l etranger",
+        "is_deleted": false
+    },
+    "202": {
+        "text_original": "carte de cr\u00e9dit et garanties d'\u00e9lectrom\u00e9nager",
+        "text": "carte de cr\u00e9dit et garanties d'\u00e9lectrom\u00e9nager",
+        "text_preprocessed": "carte de credit et garanties d electromenager",
+        "is_deleted": false
+    },
+    "203": {
+        "text_original": "Comment faire valoir l'assurance de ma Mastercard ?",
+        "text": "Comment faire valoir l'assurance de ma Mastercard ?",
+        "text_preprocessed": "comment faire valoir l assurance de ma mastercard",
+        "is_deleted": false
+    },
+    "204": {
+        "text_original": "Comment fonctionne l'assurance de ma carte ?",
+        "text": "Comment fonctionne l'assurance de ma carte ?",
+        "text_preprocessed": "comment fonctionne l assurance de ma carte",
+        "is_deleted": false
+    },
+    "205": {
+        "text_original": "Comment suis-je couvert avec ma carte en cas d'accident ?",
+        "text": "Comment suis-je couvert avec ma carte en cas d'accident ?",
+        "text_preprocessed": "comment suis je couvert avec ma carte en cas d accident",
+        "is_deleted": false
+    },
+    "206": {
+        "text_original": "Comment utiliser l'assurance de ma carte de cr\u00e9dit ?",
+        "text": "Comment utiliser l'assurance de ma carte de cr\u00e9dit ?",
+        "text_preprocessed": "comment utiliser l assurance de ma carte de credit",
+        "is_deleted": false
+    },
+    "207": {
+        "text_original": "consulter les droits d'assurance de ma carte",
+        "text": "consulter les droits d'assurance de ma carte",
+        "text_preprocessed": "consulter les droits d assurance de ma carte",
+        "is_deleted": false
+    },
+    "208": {
+        "text_original": "couverture carte bancaire pour la r\u00e9paration d'une t\u00e9l\u00e9vision",
+        "text": "couverture carte bancaire pour la r\u00e9paration d'une t\u00e9l\u00e9vision",
+        "text_preprocessed": "couverture carte bancaire pour la reparation d une television",
+        "is_deleted": false
+    },
+    "209": {
+        "text_original": "De quelles couvertures d'assurance je dispose avec ma carte Gold ?",
+        "text": "De quelles couvertures d'assurance je dispose avec ma carte Gold ?",
+        "text_preprocessed": "de quelles couvertures d assurance je dispose avec ma carte gold",
+        "is_deleted": false
+    },
+    "210": {
+        "text_original": "Est-ce que l'assurance de ma carte couvre un bris de lunette ?",
+        "text": "Est-ce que l'assurance de ma carte couvre un bris de lunette ?",
+        "text_preprocessed": "est ce que l assurance de ma carte couvre un bris de lunette",
+        "is_deleted": false
+    },
+    "211": {
+        "text_original": "Est-ce que l'assurance de ma Mastercard suffit pour partir en voyage ?",
+        "text": "Est-ce que l'assurance de ma Mastercard suffit pour partir en voyage ?",
+        "text_preprocessed": "est ce que l assurance de ma mastercard suffit pour partir en voyage",
+        "is_deleted": false
+    },
+    "212": {
+        "text_original": "Est-ce que le rapatriement gratuit est possible avec ma carte Visa ?",
+        "text": "Est-ce que le rapatriement gratuit est possible avec ma carte Visa ?",
+        "text_preprocessed": "est ce que le rapatriement gratuit est possible avec ma carte visa",
+        "is_deleted": false
+    },
+    "213": {
+        "text_original": "Est-ce que ma carte assure les locations de voyage ?",
+        "text": "Est-ce que ma carte assure les locations de voyage ?",
+        "text_preprocessed": "est ce que ma carte assure les locations de voyage",
+        "is_deleted": false
+    },
+    "214": {
+        "text_original": "Est-ce que ma carte de cr\u00e9dit poss\u00e8de une assurance ?",
+        "text": "Est-ce que ma carte de cr\u00e9dit poss\u00e8de une assurance ?",
+        "text_preprocessed": "est ce que ma carte de credit possede une assurance",
+        "is_deleted": false
+    },
+    "215": {
+        "text_original": "Est-ce que ma Mastercard couvre une annulation de voyage ?",
+        "text": "Est-ce que ma Mastercard couvre une annulation de voyage ?",
+        "text_preprocessed": "est ce que ma mastercard couvre une annulation de voyage",
+        "is_deleted": false
+    },
+    "216": {
+        "text_original": "Est-ce que ma Mastercard me permet d'assurer un achat ?",
+        "text": "Est-ce que ma Mastercard me permet d'assurer un achat ?",
+        "text_preprocessed": "est ce que ma mastercard me permet d assurer un achat",
+        "is_deleted": false
+    },
+    "217": {
+        "text_original": "Est-ce que mon conjoint est couvert par ma carte de cr\u00e9dit ?",
+        "text": "Est-ce que mon conjoint est couvert par ma carte de cr\u00e9dit ?",
+        "text_preprocessed": "est ce que mon conjoint est couvert par ma carte de credit",
+        "is_deleted": false
+    },
+    "218": {
+        "text_original": "Est-ce qu'une carte Visa poss\u00e8de de meilleures garanties qu'une Mastercard ?",
+        "text": "Est-ce qu'une carte Visa poss\u00e8de de meilleures garanties qu'une Mastercard ?",
+        "text_preprocessed": "est ce qu une carte visa possede de meilleures garanties qu une mastercard",
+        "is_deleted": false
+    },
+    "219": {
+        "text_original": "Est-ce qu'une chute \u00e0 ski est couverte par ma carte bleue ?",
+        "text": "Est-ce qu'une chute \u00e0 ski est couverte par ma carte bleue ?",
+        "text_preprocessed": "est ce qu une chute a ski est couverte par ma carte bleue",
+        "is_deleted": false
+    },
+    "220": {
+        "text_original": "J'aimerai conna\u00eetre les assistances offertes avec ma carte s'il vous pla\u00eet.",
+        "text": "J'aimerai conna\u00eetre les assistances offertes avec ma carte s'il vous pla\u00eet.",
+        "text_preprocessed": "j aimerai connaitre les assistances offertes avec ma carte s il vous plait",
+        "is_deleted": false
+    },
+    "221": {
+        "text_original": "Je souhaite avoir des informations sur les assurances propos\u00e9es avec ma carte.",
+        "text": "Je souhaite avoir des informations sur les assurances propos\u00e9es avec ma carte.",
+        "text_preprocessed": "je souhaite avoir des informations sur les assurances proposees avec ma carte",
+        "is_deleted": false
+    },
+    "222": {
+        "text_original": "Je voudrais conna\u00eetre les garanties de ma carte Gold.",
+        "text": "Je voudrais conna\u00eetre les garanties de ma carte Gold.",
+        "text_preprocessed": "je voudrais connaitre les garanties de ma carte gold",
+        "is_deleted": false
+    },
+    "223": {
+        "text_original": "Le rapatriement est-il compris dans l'assurance de ma carte ?",
+        "text": "Le rapatriement est-il compris dans l'assurance de ma carte ?",
+        "text_preprocessed": "le rapatriement est il compris dans l assurance de ma carte",
+        "is_deleted": false
+    },
+    "224": {
+        "text_original": "Le rapatriement est-il couvert par ma carte bancaire ?",
+        "text": "Le rapatriement est-il couvert par ma carte bancaire ?",
+        "text_preprocessed": "le rapatriement est il couvert par ma carte bancaire",
+        "is_deleted": false
+    },
+    "225": {
+        "text_original": "O\u00f9 consulter les assurances de ma carte ?",
+        "text": "O\u00f9 consulter les assurances de ma carte ?",
+        "text_preprocessed": "ou consulter les assurances de ma carte",
+        "is_deleted": false
+    },
+    "226": {
+        "text_original": "O\u00f9 puis-je consulter les garnaties incluses avec ma carte ?",
+        "text": "O\u00f9 puis-je consulter les garnaties incluses avec ma carte ?",
+        "text_preprocessed": "ou puis je consulter les garnaties incluses avec ma carte",
+        "is_deleted": false
+    },
+    "227": {
+        "text_original": "Puis je v\u00e9rifier les garanties incluses avec ma carte de paiement ?",
+        "text": "Puis je v\u00e9rifier les garanties incluses avec ma carte de paiement ?",
+        "text_preprocessed": "puis je verifier les garanties incluses avec ma carte de paiement",
+        "is_deleted": false
+    },
+    "228": {
+        "text_original": "Puis-je avoir le d\u00e9tail de l'assurance li\u00e9e \u00e0 ma carte bancaire ?",
+        "text": "Puis-je avoir le d\u00e9tail de l'assurance li\u00e9e \u00e0 ma carte bancaire ?",
+        "text_preprocessed": "puis je avoir le detail de l assurance liee a ma carte bancaire",
+        "is_deleted": false
+    },
+    "229": {
+        "text_original": "Que couvre l'assurance d'une carte Gold ?",
+        "text": "Que couvre l'assurance d'une carte Gold ?",
+        "text_preprocessed": "que couvre l assurance d une carte gold",
+        "is_deleted": false
+    },
+    "230": {
+        "text_original": "Que couvre l'assurance d'une carte Visa ?",
+        "text": "Que couvre l'assurance d'une carte Visa ?",
+        "text_preprocessed": "que couvre l assurance d une carte visa",
+        "is_deleted": false
+    },
+    "231": {
+        "text_original": "Que couvre ma carte bancaire en cas d'hospitalisation ?",
+        "text": "Que couvre ma carte bancaire en cas d'hospitalisation ?",
+        "text_preprocessed": "que couvre ma carte bancaire en cas d hospitalisation",
+        "is_deleted": false
+    },
+    "232": {
+        "text_original": "Que m'apporte ma carte en mati\u00e8re de garanties ?",
+        "text": "Que m'apporte ma carte en mati\u00e8re de garanties ?",
+        "text_preprocessed": "que m apporte ma carte en matiere de garanties",
+        "is_deleted": false
+    },
+    "233": {
+        "text_original": "Quelle est la d\u00e9marche pour faire valoir l'assurance de ma carte de cr\u00e9dit ?",
+        "text": "Quelle est la d\u00e9marche pour faire valoir l'assurance de ma carte de cr\u00e9dit ?",
+        "text_preprocessed": "quelle est la demarche pour faire valoir l assurance de ma carte de credit",
+        "is_deleted": false
+    },
+    "234": {
+        "text_original": "Quelles assurances \u00e0 l'international ma carte bleue me permet-elle d'avoir ?",
+        "text": "Quelles assurances \u00e0 l'international ma carte bleue me permet-elle d'avoir ?",
+        "text_preprocessed": "quelles assurances a l international ma carte bleue me permet elle d avoir",
+        "is_deleted": false
+    },
+    "235": {
+        "text_original": "Quelles assurances comporte ma carte bancaire ?",
+        "text": "Quelles assurances comporte ma carte bancaire ?",
+        "text_preprocessed": "quelles assurances comporte ma carte bancaire",
+        "is_deleted": false
+    },
+    "236": {
+        "text_original": "Quelles assurances sont fournies avec ma carte bleue ?",
+        "text": "Quelles assurances sont fournies avec ma carte bleue ?",
+        "text_preprocessed": "quelles assurances sont fournies avec ma carte bleue",
+        "is_deleted": false
+    },
+    "237": {
+        "text_original": "Quelles assurances sont incluses gr\u00e2ce \u00e0 ma carte bancaire ?",
+        "text": "Quelles assurances sont incluses gr\u00e2ce \u00e0 ma carte bancaire ?",
+        "text_preprocessed": "quelles assurances sont incluses grace a ma carte bancaire",
+        "is_deleted": false
+    },
+    "238": {
+        "text_original": "Quelles sont les assurances disponibles avec ma carte ?",
+        "text": "Quelles sont les assurances disponibles avec ma carte ?",
+        "text_preprocessed": "quelles sont les assurances disponibles avec ma carte",
+        "is_deleted": false
+    },
+    "239": {
+        "text_original": "Quelles sont les assurances incluses avec ma carte bancaire ?",
+        "text": "Quelles sont les assurances incluses avec ma carte bancaire ?",
+        "text_preprocessed": "quelles sont les assurances incluses avec ma carte bancaire",
+        "is_deleted": false
+    },
+    "240": {
+        "text_original": "Quelles sont les garanties de ma carte bleue ?",
+        "text": "Quelles sont les garanties de ma carte bleue ?",
+        "text_preprocessed": "quelles sont les garanties de ma carte bleue",
+        "is_deleted": false
+    },
+    "241": {
+        "text_original": "Quelles sont les garanties fournies par une carte bleue en mati\u00e8re d'assurance ?",
+        "text": "Quelles sont les garanties fournies par une carte bleue en mati\u00e8re d'assurance ?",
+        "text_preprocessed": "quelles sont les garanties fournies par une carte bleue en matiere d assurance",
+        "is_deleted": false
+    },
+    "242": {
+        "text_original": "quelles sont les garanties prevues avec une carte Gold",
+        "text": "quelles sont les garanties prevues avec une carte Gold",
+        "text_preprocessed": "quelles sont les garanties prevues avec une carte gold",
+        "is_deleted": false
+    },
+    "243": {
+        "text_original": "Quelles sont mes garanties d'assurance sur ma carte bleue ?",
+        "text": "Quelles sont mes garanties d'assurance sur ma carte bleue ?",
+        "text_preprocessed": "quelles sont mes garanties d assurance sur ma carte bleue",
+        "is_deleted": false
+    },
+    "244": {
+        "text_original": "Quels risques sont couverts par l'assurance de ma carte ?",
+        "text": "Quels risques sont couverts par l'assurance de ma carte ?",
+        "text_preprocessed": "quels risques sont couverts par l assurance de ma carte",
+        "is_deleted": false
+    },
+    "245": {
+        "text_original": "Quels sont les avantages d'une carte Gold en terme d'assurance ?",
+        "text": "Quels sont les avantages d'une carte Gold en terme d'assurance ?",
+        "text_preprocessed": "quels sont les avantages d une carte gold en terme d assurance",
+        "is_deleted": false
+    },
+    "246": {
+        "text_original": "Suis-je assur\u00e9 lors d'une chute de ski avec ma carte de paiement ?",
+        "text": "Suis-je assur\u00e9 lors d'une chute de ski avec ma carte de paiement ?",
+        "text_preprocessed": "suis je assure lors d une chute de ski avec ma carte de paiement",
+        "is_deleted": false
+    },
+    "247": {
+        "text_original": "Suis-je assur\u00e9 pour la location d'un v\u00e9hicule avec ma carte bancaire ?",
+        "text": "Suis-je assur\u00e9 pour la location d'un v\u00e9hicule avec ma carte bancaire ?",
+        "text_preprocessed": "suis je assure pour la location d un vehicule avec ma carte bancaire",
+        "is_deleted": false
+    },
+    "248": {
+        "text_original": "Suis-je couvert en cas d'hospitalisation avec ma carte ?",
+        "text": "Suis-je couvert en cas d'hospitalisation avec ma carte ?",
+        "text_preprocessed": "suis je couvert en cas d hospitalisation avec ma carte",
+        "is_deleted": false
+    },
+    "249": {
+        "text_original": "Y a-t-il une protection juridique fournies avec ma carte bancaire ?",
+        "text": "Y a-t-il une protection juridique fournies avec ma carte bancaire ?",
+        "text_preprocessed": "y a t il une protection juridique fournies avec ma carte bancaire",
+        "is_deleted": false
+    },
+    "250": {
+        "text_original": "Apr\u00e8s plusieurs mauvais codes, ma carte a \u00e9t\u00e9 bloqu\u00e9e.",
+        "text": "Apr\u00e8s plusieurs mauvais codes, ma carte a \u00e9t\u00e9 bloqu\u00e9e.",
+        "text_preprocessed": "apres plusieurs mauvais codes ma carte a ete bloquee",
+        "is_deleted": false
+    },
+    "251": {
+        "text_original": "Bonjour, j'ai bloqu\u00e9 ma carte et je voudrai la d\u00e9bloquer. Merci d'avance.",
+        "text": "Bonjour, j'ai bloqu\u00e9 ma carte et je voudrai la d\u00e9bloquer. Merci d'avance.",
+        "text_preprocessed": "bonjour j ai bloque ma carte et je voudrai la debloquer merci d avance",
+        "is_deleted": false
+    },
+    "252": {
+        "text_original": "Bonjour, pouvez-vous d\u00e9bloquer ma carte ? Merci !",
+        "text": "Bonjour, pouvez-vous d\u00e9bloquer ma carte ? Merci !",
+        "text_preprocessed": "bonjour pouvez vous debloquer ma carte merci",
+        "is_deleted": false
+    },
+    "253": {
+        "text_original": "Bonjour, serait-il possible de d\u00e9bloquer ma carte s'il vous pla\u00eet ?",
+        "text": "Bonjour, serait-il possible de d\u00e9bloquer ma carte s'il vous pla\u00eet ?",
+        "text_preprocessed": "bonjour serait il possible de debloquer ma carte s il vous plait",
+        "is_deleted": false
+    },
+    "254": {
+        "text_original": "Comment annuler le blocage de ma carte ?",
+        "text": "Comment annuler le blocage de ma carte ?",
+        "text_preprocessed": "comment annuler le blocage de ma carte",
+        "is_deleted": false
+    },
+    "255": {
+        "text_original": "Comment d\u00e9bloquer ma Mastercard ?",
+        "text": "Comment d\u00e9bloquer ma Mastercard ?",
+        "text_preprocessed": "comment debloquer ma mastercard",
+        "is_deleted": false
+    },
+    "256": {
+        "text_original": "Comment d\u00e9bloquer rapidement une carte de cr\u00e9dit ?",
+        "text": "Comment d\u00e9bloquer rapidement une carte de cr\u00e9dit ?",
+        "text_preprocessed": "comment debloquer rapidement une carte de credit",
+        "is_deleted": false
+    },
+    "257": {
+        "text_original": "Comment d\u00e9bloquer sa carte bleue ?",
+        "text": "Comment d\u00e9bloquer sa carte bleue ?",
+        "text_preprocessed": "comment debloquer sa carte bleue",
+        "is_deleted": false
+    },
+    "258": {
+        "text_original": "Comment d\u00e9verrouiller sa carte ?",
+        "text": "Comment d\u00e9verrouiller sa carte ?",
+        "text_preprocessed": "comment deverrouiller sa carte",
+        "is_deleted": false
+    },
+    "259": {
+        "text_original": "Comment d\u00e9verrouiller sa carte bancaire ?",
+        "text": "Comment d\u00e9verrouiller sa carte bancaire ?",
+        "text_preprocessed": "comment deverrouiller sa carte bancaire",
+        "is_deleted": false
+    },
+    "260": {
+        "text_original": "Comment r\u00e9activer sa carte ?",
+        "text": "Comment r\u00e9activer sa carte ?",
+        "text_preprocessed": "comment reactiver sa carte",
+        "is_deleted": false
+    },
+    "261": {
+        "text_original": "Comment r\u00e9activer sa Mastercard ?",
+        "text": "Comment r\u00e9activer sa Mastercard ?",
+        "text_preprocessed": "comment reactiver sa mastercard",
+        "is_deleted": false
+    },
+    "262": {
+        "text_original": "Comment remettre en marche ma carte bancaire ?",
+        "text": "Comment remettre en marche ma carte bancaire ?",
+        "text_preprocessed": "comment remettre en marche ma carte bancaire",
+        "is_deleted": false
+    },
+    "263": {
+        "text_original": "Comment r\u00e9utiliser une carte bancaire bloqu\u00e9e ?",
+        "text": "Comment r\u00e9utiliser une carte bancaire bloqu\u00e9e ?",
+        "text_preprocessed": "comment reutiliser une carte bancaire bloquee",
+        "is_deleted": false
+    },
+    "264": {
+        "text_original": "d\u00e9blocage carte bancaire",
+        "text": "d\u00e9blocage carte bancaire",
+        "text_preprocessed": "deblocage carte bancaire",
+        "is_deleted": false
+    },
+    "265": {
+        "text_original": "d\u00e9blocage carte gold",
+        "text": "d\u00e9blocage carte gold",
+        "text_preprocessed": "deblocage carte gold",
+        "is_deleted": false
+    },
+    "266": {
+        "text_original": "d\u00e9bloquer sa carte apr\u00e8s trois mauvais codes",
+        "text": "d\u00e9bloquer sa carte apr\u00e8s trois mauvais codes",
+        "text_preprocessed": "debloquer sa carte apres trois mauvais codes",
+        "is_deleted": false
+    },
+    "267": {
+        "text_original": "d\u00e9bloquer sa carte via l'application",
+        "text": "d\u00e9bloquer sa carte via l'application",
+        "text_preprocessed": "debloquer sa carte via l application",
+        "is_deleted": false
+    },
+    "268": {
+        "text_original": "Est-ce que je peux r\u00e9activer seul une carte bloqu\u00e9e ?",
+        "text": "Est-ce que je peux r\u00e9activer seul une carte bloqu\u00e9e ?",
+        "text_preprocessed": "est ce que je peux reactiver seul une carte bloquee",
+        "is_deleted": false
+    },
+    "269": {
+        "text_original": "Est-ce que vous pouvez d\u00e9bloquer ma carte de paiement ?",
+        "text": "Est-ce que vous pouvez d\u00e9bloquer ma carte de paiement ?",
+        "text_preprocessed": "est ce que vous pouvez debloquer ma carte de paiement",
+        "is_deleted": false
+    },
+    "270": {
+        "text_original": "Est-ce qu'une carte est d\u00e9blocable en cas d'erreur de code ?",
+        "text": "Est-ce qu'une carte est d\u00e9blocable en cas d'erreur de code ?",
+        "text_preprocessed": "est ce qu une carte est deblocable en cas d erreur de code",
+        "is_deleted": false
+    },
+    "271": {
+        "text_original": "J'ai besoin de d\u00e9verrouiller ma carte de paiement.",
+        "text": "J'ai besoin de d\u00e9verrouiller ma carte de paiement.",
+        "text_preprocessed": "j ai besoin de deverrouiller ma carte de paiement",
+        "is_deleted": false
+    },
+    "272": {
+        "text_original": "J'ai besoin de ma carte bancaire, puis-je la r\u00e9activer ?",
+        "text": "J'ai besoin de ma carte bancaire, puis-je la r\u00e9activer ?",
+        "text_preprocessed": "j ai besoin de ma carte bancaire puis je la reactiver",
+        "is_deleted": false
+    },
+    "273": {
+        "text_original": "J'ai bloqu\u00e9 ma carte bancaire : que faire pour la d\u00e9bloquer ?",
+        "text": "J'ai bloqu\u00e9 ma carte bancaire : que faire pour la d\u00e9bloquer ?",
+        "text_preprocessed": "j ai bloque ma carte bancaire que faire pour la debloquer",
+        "is_deleted": false
+    },
+    "274": {
+        "text_original": "J'ai fait trois mauvais codes et ma carte a \u00e9t\u00e9 bloqu\u00e9e...",
+        "text": "J'ai fait trois mauvais codes et ma carte a \u00e9t\u00e9 bloqu\u00e9e...",
+        "text_preprocessed": "j ai fait trois mauvais codes et ma carte a ete bloquee",
+        "is_deleted": false
+    },
+    "275": {
+        "text_original": "J'ai retrouv\u00e9 ma carte, puis-je la r\u00e9activer ?",
+        "text": "J'ai retrouv\u00e9 ma carte, puis-je la r\u00e9activer ?",
+        "text_preprocessed": "j ai retrouve ma carte puis je la reactiver",
+        "is_deleted": false
+    },
+    "276": {
+        "text_original": "J'aimerai d\u00e9bloquer ma carte svp.",
+        "text": "J'aimerai d\u00e9bloquer ma carte svp.",
+        "text_preprocessed": "j aimerai debloquer ma carte svp",
+        "is_deleted": false
+    },
+    "277": {
+        "text_original": "J'aimerai r\u00e9activer ma carte Visa.",
+        "text": "J'aimerai r\u00e9activer ma carte Visa.",
+        "text_preprocessed": "j aimerai reactiver ma carte visa",
+        "is_deleted": false
+    },
+    "278": {
+        "text_original": "Je souhaite d\u00e9bloquer ma carte bleue.",
+        "text": "Je souhaite d\u00e9bloquer ma carte bleue.",
+        "text_preprocessed": "je souhaite debloquer ma carte bleue",
+        "is_deleted": false
+    },
+    "279": {
+        "text_original": "Je souhaite d\u00e9bloquer ma carte via l'application.",
+        "text": "Je souhaite d\u00e9bloquer ma carte via l'application.",
+        "text_preprocessed": "je souhaite debloquer ma carte via l application",
+        "is_deleted": false
+    },
+    "280": {
+        "text_original": "Ma carte a \u00e9t\u00e9 suspendue suite \u00e0 un mauvais code, puis-je la r\u00e9activer ?",
+        "text": "Ma carte a \u00e9t\u00e9 suspendue suite \u00e0 un mauvais code, puis-je la r\u00e9activer ?",
+        "text_preprocessed": "ma carte a ete suspendue suite a un mauvais code puis je la reactiver",
+        "is_deleted": false
+    },
+    "281": {
+        "text_original": "Ma carte bleue a \u00e9t\u00e9 verrouill\u00e9e, que faire ?",
+        "text": "Ma carte bleue a \u00e9t\u00e9 verrouill\u00e9e, que faire ?",
+        "text_preprocessed": "ma carte bleue a ete verrouillee que faire",
+        "is_deleted": false
+    },
+    "282": {
+        "text_original": "Peut-on d\u00e9bloquer ma carte Visa ?",
+        "text": "Peut-on d\u00e9bloquer ma carte Visa ?",
+        "text_preprocessed": "peut on debloquer ma carte visa",
+        "is_deleted": false
+    },
+    "283": {
+        "text_original": "Peut-on d\u00e9bloquer une carte si on l'a bloqu\u00e9e ?",
+        "text": "Peut-on d\u00e9bloquer une carte si on l'a bloqu\u00e9e ?",
+        "text_preprocessed": "peut on debloquer une carte si on l a bloquee",
+        "is_deleted": false
+    },
+    "284": {
+        "text_original": "Peut-on d\u00e9verouiller sa carte de paiement via l'application ?",
+        "text": "Peut-on d\u00e9verouiller sa carte de paiement via l'application ?",
+        "text_preprocessed": "peut on deverouiller sa carte de paiement via l application",
+        "is_deleted": false
+    },
+    "285": {
+        "text_original": "Peut-on r\u00e9activer sa carte via l'application ?",
+        "text": "Peut-on r\u00e9activer sa carte via l'application ?",
+        "text_preprocessed": "peut on reactiver sa carte via l application",
+        "is_deleted": false
+    },
+    "286": {
+        "text_original": "Pouvez-vous d\u00e9bloquer ma carte ?",
+        "text": "Pouvez-vous d\u00e9bloquer ma carte ?",
+        "text_preprocessed": "pouvez vous debloquer ma carte",
+        "is_deleted": false
+    },
+    "287": {
+        "text_original": "Pouvez-vous d\u00e9verouiller ma carte bancaire ?",
+        "text": "Pouvez-vous d\u00e9verouiller ma carte bancaire ?",
+        "text_preprocessed": "pouvez vous deverouiller ma carte bancaire",
+        "is_deleted": false
+    },
+    "288": {
+        "text_original": "Pouvez-vous r\u00e9activer ma Mastercard ?",
+        "text": "Pouvez-vous r\u00e9activer ma Mastercard ?",
+        "text_preprocessed": "pouvez vous reactiver ma mastercard",
+        "is_deleted": false
+    },
+    "289": {
+        "text_original": "Pouvez-vous remettre en service ma carte ?",
+        "text": "Pouvez-vous remettre en service ma carte ?",
+        "text_preprocessed": "pouvez vous remettre en service ma carte",
+        "is_deleted": false
+    },
+    "290": {
+        "text_original": "Puis-je d\u00e9verrouiller ma carte bleue ?",
+        "text": "Puis-je d\u00e9verrouiller ma carte bleue ?",
+        "text_preprocessed": "puis je deverrouiller ma carte bleue",
+        "is_deleted": false
+    },
+    "291": {
+        "text_original": "Puis-je r\u00e9activer une carte bancaire bloqu\u00e9e ?",
+        "text": "Puis-je r\u00e9activer une carte bancaire bloqu\u00e9e ?",
+        "text_preprocessed": "puis je reactiver une carte bancaire bloquee",
+        "is_deleted": false
+    },
+    "292": {
+        "text_original": "Puis-je remettre en marche ma carte ?",
+        "text": "Puis-je remettre en marche ma carte ?",
+        "text_preprocessed": "puis je remettre en marche ma carte",
+        "is_deleted": false
+    },
+    "293": {
+        "text_original": "Que faire si ma carte bancaire est bloqu\u00e9e ?",
+        "text": "Que faire si ma carte bancaire est bloqu\u00e9e ?",
+        "text_preprocessed": "que faire si ma carte bancaire est bloquee",
+        "is_deleted": false
+    },
+    "294": {
+        "text_original": "Quelle est la d\u00e9marche pour r\u00e9activer ma carte bleue ?",
+        "text": "Quelle est la d\u00e9marche pour r\u00e9activer ma carte bleue ?",
+        "text_preprocessed": "quelle est la demarche pour reactiver ma carte bleue",
+        "is_deleted": false
+    },
+    "295": {
+        "text_original": "Quelle est la proc\u00e9dure pour d\u00e9bloquer une carte de cr\u00e9dit ?",
+        "text": "Quelle est la proc\u00e9dure pour d\u00e9bloquer une carte de cr\u00e9dit ?",
+        "text_preprocessed": "quelle est la procedure pour debloquer une carte de credit",
+        "is_deleted": false
+    },
+    "296": {
+        "text_original": "Quelle est la proc\u00e9dure pour r\u00e9activer une carte de paiement ?",
+        "text": "Quelle est la proc\u00e9dure pour r\u00e9activer une carte de paiement ?",
+        "text_preprocessed": "quelle est la procedure pour reactiver une carte de paiement",
+        "is_deleted": false
+    },
+    "297": {
+        "text_original": "r\u00e9activer ma carte gold",
+        "text": "r\u00e9activer ma carte gold",
+        "text_preprocessed": "reactiver ma carte gold",
+        "is_deleted": false
+    },
+    "298": {
+        "text_original": "r\u00e9activer sa carte bancaire",
+        "text": "r\u00e9activer sa carte bancaire",
+        "text_preprocessed": "reactiver sa carte bancaire",
+        "is_deleted": false
+    },
+    "299": {
+        "text_original": "r\u00e9activer une carte suspendue",
+        "text": "r\u00e9activer une carte suspendue",
+        "text_preprocessed": "reactiver une carte suspendue",
+        "is_deleted": false
+    },
+    "300": {
+        "text_original": "activer les achats avec un num\u00e9ro virtuel",
+        "text": "activer les achats avec un num\u00e9ro virtuel",
+        "text_preprocessed": "activer les achats avec un numero virtuel",
+        "is_deleted": false
+    },
+    "301": {
+        "text_original": "activer les num\u00e9ros de carte virtuelle",
+        "text": "activer les num\u00e9ros de carte virtuelle",
+        "text_preprocessed": "activer les numeros de carte virtuelle",
+        "is_deleted": false
+    },
+    "302": {
+        "text_original": "Ai-je le droit de cr\u00e9er des num\u00e9ros de carte pour des paiements online ?",
+        "text": "Ai-je le droit de cr\u00e9er des num\u00e9ros de carte pour des paiements online ?",
+        "text_preprocessed": "ai je le droit de creer des numeros de carte pour des paiements online",
+        "is_deleted": false
+    },
+    "303": {
+        "text_original": "Ai-je le droit de cr\u00e9er un numero virtuel ?",
+        "text": "Ai-je le droit de cr\u00e9er un numero virtuel ?",
+        "text_preprocessed": "ai je le droit de creer un numero virtuel",
+        "is_deleted": false
+    },
+    "304": {
+        "text_original": "Bonjour, comment g\u00e9rer ses num\u00e9ros de carte virtuelle ?",
+        "text": "Bonjour, comment g\u00e9rer ses num\u00e9ros de carte virtuelle ?",
+        "text_preprocessed": "bonjour comment gerer ses numeros de carte virtuelle",
+        "is_deleted": false
+    },
+    "305": {
+        "text_original": "Comment acheter en ligne avec un num\u00e9ro de carte bancaire virtuelle ?",
+        "text": "Comment acheter en ligne avec un num\u00e9ro de carte bancaire virtuelle ?",
+        "text_preprocessed": "comment acheter en ligne avec un numero de carte bancaire virtuelle",
+        "is_deleted": false
+    },
+    "306": {
+        "text_original": "Comment activer les paiements virtuels ?",
+        "text": "Comment activer les paiements virtuels ?",
+        "text_preprocessed": "comment activer les paiements virtuels",
+        "is_deleted": false
+    },
+    "307": {
+        "text_original": "Comment annuler la cr\u00e9ation d'un num\u00e9ro de carte virtuelle ?",
+        "text": "Comment annuler la cr\u00e9ation d'un num\u00e9ro de carte virtuelle ?",
+        "text_preprocessed": "comment annuler la creation d un numero de carte virtuelle",
+        "is_deleted": false
+    },
+    "308": {
+        "text_original": "Comment consulter ses num\u00e9ros de carte virtuelle ?",
+        "text": "Comment consulter ses num\u00e9ros de carte virtuelle ?",
+        "text_preprocessed": "comment consulter ses numeros de carte virtuelle",
+        "is_deleted": false
+    },
+    "309": {
+        "text_original": "Comment faire pour cr\u00e9er une carte de paiements virtuelle ?",
+        "text": "Comment faire pour cr\u00e9er une carte de paiements virtuelle ?",
+        "text_preprocessed": "comment faire pour creer une carte de paiements virtuelle",
+        "is_deleted": false
+    },
+    "310": {
+        "text_original": "Comment g\u00e9rer une carte virtuelle ?",
+        "text": "Comment g\u00e9rer une carte virtuelle ?",
+        "text_preprocessed": "comment gerer une carte virtuelle",
+        "is_deleted": false
+    },
+    "311": {
+        "text_original": "Comment obtenir un num\u00e9ro de carte virtuelle ?",
+        "text": "Comment obtenir un num\u00e9ro de carte virtuelle ?",
+        "text_preprocessed": "comment obtenir un numero de carte virtuelle",
+        "is_deleted": false
+    },
+    "313": {
+        "text_original": "Comment obtenir une carte virtuelle pour mes achats sur internet ?",
+        "text": "Comment obtenir une carte virtuelle pour mes achats sur internet ?",
+        "text_preprocessed": "comment obtenir une carte virtuelle pour mes achats sur internet",
+        "is_deleted": false
+    },
+    "314": {
+        "text_original": "Comment supprimer un num\u00e9ro de carte online ?",
+        "text": "Comment supprimer un num\u00e9ro de carte online ?",
+        "text_preprocessed": "comment supprimer un numero de carte online",
+        "is_deleted": false
+    },
+    "315": {
+        "text_original": "Comment supprimer un num\u00e9ro de carte virtuelle ?",
+        "text": "Comment supprimer un num\u00e9ro de carte virtuelle ?",
+        "text_preprocessed": "comment supprimer un numero de carte virtuelle",
+        "is_deleted": false
+    },
+    "316": {
+        "text_original": "Comment utiliser un num\u00e9ro de carte virtuelle ?",
+        "text": "Comment utiliser un num\u00e9ro de carte virtuelle ?",
+        "text_preprocessed": "comment utiliser un numero de carte virtuelle",
+        "is_deleted": false
+    },
+    "317": {
+        "text_original": "cr\u00e9er un num\u00e9ro virtuel",
+        "text": "cr\u00e9er un num\u00e9ro virtuel",
+        "text_preprocessed": "creer un numero virtuel",
+        "is_deleted": false
+    },
+    "318": {
+        "text_original": "Cr\u00e9er un num\u00e9ro virtuel pour des achats online ?",
+        "text": "Cr\u00e9er un num\u00e9ro virtuel pour des achats online ?",
+        "text_preprocessed": "creer un numero virtuel pour des achats online",
+        "is_deleted": false
+    },
+    "319": {
+        "text_original": "Cr\u00e9er un num\u00e9ro virtuel pour mes achats en ligne ?",
+        "text": "Cr\u00e9er un num\u00e9ro virtuel pour mes achats en ligne ?",
+        "text_preprocessed": "creer un numero virtuel pour mes achats en ligne",
+        "is_deleted": false
+    },
+    "320": {
+        "text_original": "cr\u00e9er une carte bancaire virtuelle",
+        "text": "cr\u00e9er une carte bancaire virtuelle",
+        "text_preprocessed": "creer une carte bancaire virtuelle",
+        "is_deleted": false
+    },
+    "321": {
+        "text_original": "d\u00e9bloquer le paiement avec carte virtuelle",
+        "text": "d\u00e9bloquer le paiement avec carte virtuelle",
+        "text_preprocessed": "debloquer le paiement avec carte virtuelle",
+        "is_deleted": false
+    },
+    "322": {
+        "text_original": "D\u00e9sactiver les achats avec un num\u00e9ro de carte virtuelle.",
+        "text": "D\u00e9sactiver les achats avec un num\u00e9ro de carte virtuelle.",
+        "text_preprocessed": "desactiver les achats avec un numero de carte virtuelle",
+        "is_deleted": false
+    },
+    "323": {
+        "text_original": "D\u00e9sactiver les num\u00e9ros virtuels.",
+        "text": "D\u00e9sactiver les num\u00e9ros virtuels.",
+        "text_preprocessed": "desactiver les numeros virtuels",
+        "is_deleted": false
+    },
+    "324": {
+        "text_original": "faire un achat avec un num\u00e9ro de carte online",
+        "text": "faire un achat avec un num\u00e9ro de carte online",
+        "text_preprocessed": "faire un achat avec un numero de carte online",
+        "is_deleted": false
+    },
+    "325": {
+        "text_original": "g\u00e9rer la possibilit\u00e9 d'achat avec un num\u00e9ro de carte online",
+        "text": "g\u00e9rer la possibilit\u00e9 d'achat avec un num\u00e9ro de carte online",
+        "text_preprocessed": "gerer la possibilite d achat avec un numero de carte online",
+        "is_deleted": false
+    },
+    "326": {
+        "text_original": "g\u00e9rer la possibilit\u00e9 de payer avec des num\u00e9ros virtuels",
+        "text": "g\u00e9rer la possibilit\u00e9 de payer avec des num\u00e9ros virtuels",
+        "text_preprocessed": "gerer la possibilite de payer avec des numeros virtuels",
+        "is_deleted": false
+    },
+    "327": {
+        "text_original": "g\u00e9rer ses num\u00e9ros virtuels",
+        "text": "g\u00e9rer ses num\u00e9ros virtuels",
+        "text_preprocessed": "gerer ses numeros virtuels",
+        "is_deleted": false
+    },
+    "328": {
+        "text_original": "gestion des cartes online",
+        "text": "gestion des cartes online",
+        "text_preprocessed": "gestion des cartes online",
+        "is_deleted": false
+    },
+    "329": {
+        "text_original": "gestion des num\u00e9ros de carte virtuelle",
+        "text": "gestion des num\u00e9ros de carte virtuelle",
+        "text_preprocessed": "gestion des numeros de carte virtuelle",
+        "is_deleted": false
+    },
+    "330": {
+        "text_original": "J'aimerai faire mes achats internet avec une carte virtuelle.",
+        "text": "J'aimerai faire mes achats internet avec une carte virtuelle.",
+        "text_preprocessed": "j aimerai faire mes achats internet avec une carte virtuelle",
+        "is_deleted": false
+    },
+    "331": {
+        "text_original": "J'aimerai obtenir un num\u00e9ro de carte virtuelle.",
+        "text": "J'aimerai obtenir un num\u00e9ro de carte virtuelle.",
+        "text_preprocessed": "j aimerai obtenir un numero de carte virtuelle",
+        "is_deleted": false
+    },
+    "332": {
+        "text_original": "J'aimerai utiliser une carte virtuelle.",
+        "text": "J'aimerai utiliser une carte virtuelle.",
+        "text_preprocessed": "j aimerai utiliser une carte virtuelle",
+        "is_deleted": false
+    },
+    "333": {
+        "text_original": "Je d\u00e9sire cr\u00e9er une nouvelle carte virtuelle ?",
+        "text": "Je d\u00e9sire cr\u00e9er une nouvelle carte virtuelle ?",
+        "text_preprocessed": "je desire creer une nouvelle carte virtuelle",
+        "is_deleted": false
+    },
+    "334": {
+        "text_original": "Je d\u00e9sire utiliser une carte online pour mes achats sur internet.",
+        "text": "Je d\u00e9sire utiliser une carte online pour mes achats sur internet.",
+        "text_preprocessed": "je desire utiliser une carte online pour mes achats sur internet",
+        "is_deleted": false
+    },
+    "335": {
+        "text_original": "Je souhaite obtenir un num\u00e9ro de carte virtuelle.",
+        "text": "Je souhaite obtenir un num\u00e9ro de carte virtuelle.",
+        "text_preprocessed": "je souhaite obtenir un numero de carte virtuelle",
+        "is_deleted": false
+    },
+    "336": {
+        "text_original": "Je souhaite pouvoir cr\u00e9er des num\u00e9ros de carte virtuelle.",
+        "text": "Je souhaite pouvoir cr\u00e9er des num\u00e9ros de carte virtuelle.",
+        "text_preprocessed": "je souhaite pouvoir creer des numeros de carte virtuelle",
+        "is_deleted": false
+    },
+    "337": {
+        "text_original": "Je souhaite utiliser une carte virtuelle pour mes achats.",
+        "text": "Je souhaite utiliser une carte virtuelle pour mes achats.",
+        "text_preprocessed": "je souhaite utiliser une carte virtuelle pour mes achats",
+        "is_deleted": false
+    },
+    "338": {
+        "text_original": "obtenir un num\u00e9ro virtuel pour mes achats en ligne",
+        "text": "obtenir un num\u00e9ro virtuel pour mes achats en ligne",
+        "text_preprocessed": "obtenir un numero virtuel pour mes achats en ligne",
+        "is_deleted": false
+    },
+    "339": {
+        "text_original": "obtenir une carte online",
+        "text": "obtenir une carte online",
+        "text_preprocessed": "obtenir une carte online",
+        "is_deleted": false
+    },
+    "340": {
+        "text_original": "obtenir une carte virtuelle",
+        "text": "obtenir une carte virtuelle",
+        "text_preprocessed": "obtenir une carte virtuelle",
+        "is_deleted": false
+    },
+    "341": {
+        "text_original": "O\u00f9 peut-on g\u00e9rer ses num\u00e9ros virtuels ?",
+        "text": "O\u00f9 peut-on g\u00e9rer ses num\u00e9ros virtuels ?",
+        "text_preprocessed": "ou peut on gerer ses numeros virtuels",
+        "is_deleted": false
+    },
+    "342": {
+        "text_original": "O\u00f9 puis-je g\u00e9rer mes num\u00e9ros virtuels ?",
+        "text": "O\u00f9 puis-je g\u00e9rer mes num\u00e9ros virtuels ?",
+        "text_preprocessed": "ou puis je gerer mes numeros virtuels",
+        "is_deleted": false
+    },
+    "343": {
+        "text_original": "Pouvez-vous activer les num\u00e9ros de carte virtuelle ?",
+        "text": "Pouvez-vous activer les num\u00e9ros de carte virtuelle ?",
+        "text_preprocessed": "pouvez vous activer les numeros de carte virtuelle",
+        "is_deleted": false
+    },
+    "344": {
+        "text_original": "Puis-je supprimer un num\u00e9ro de carte virtuelle ?",
+        "text": "Puis-je supprimer un num\u00e9ro de carte virtuelle ?",
+        "text_preprocessed": "puis je supprimer un numero de carte virtuelle",
+        "is_deleted": false
+    },
+    "345": {
+        "text_original": "Que faire pour activer une carte bancaire virtuelle ?",
+        "text": "Que faire pour activer une carte bancaire virtuelle ?",
+        "text_preprocessed": "que faire pour activer une carte bancaire virtuelle",
+        "is_deleted": false
+    },
+    "346": {
+        "text_original": "Quelle d\u00e9marche pour cr\u00e9er des num\u00e9ros de carte virtuelle ?",
+        "text": "Quelle d\u00e9marche pour cr\u00e9er des num\u00e9ros de carte virtuelle ?",
+        "text_preprocessed": "quelle demarche pour creer des numeros de carte virtuelle",
+        "is_deleted": false
+    },
+    "347": {
+        "text_original": "supprimer un num\u00e9ro de carte virtuel",
+        "text": "supprimer un num\u00e9ro de carte virtuel",
+        "text_preprocessed": "supprimer un numero de carte virtuel",
+        "is_deleted": false
+    },
+    "348": {
+        "text_original": "supprimer un num\u00e9ro virtuel",
+        "text": "supprimer un num\u00e9ro virtuel",
+        "text_preprocessed": "supprimer un numero virtuel",
+        "is_deleted": false
+    },
+    "349": {
+        "text_original": "supprimer une carte virtuelle",
+        "text": "supprimer une carte virtuelle",
+        "text_preprocessed": "supprimer une carte virtuelle",
+        "is_deleted": false
+    },
+    "350": {
+        "text_original": "Ai-je la possibilit\u00e9 d'avoir un d\u00e9couvert ?",
+        "text": "Ai-je la possibilit\u00e9 d'avoir un d\u00e9couvert ?",
+        "text_preprocessed": "ai je la possibilite d avoir un decouvert",
+        "is_deleted": false
+    },
+    "351": {
+        "text_original": "Ai-je le droit d'avoir un d\u00e9couvert bancaire ?",
+        "text": "Ai-je le droit d'avoir un d\u00e9couvert bancaire ?",
+        "text_preprocessed": "ai je le droit d avoir un decouvert bancaire",
+        "is_deleted": false
+    },
+    "352": {
+        "text_original": "Ai-je l'obligation d'avoir un compte bancaire cr\u00e9diteur ?",
+        "text": "Ai-je l'obligation d'avoir un compte bancaire cr\u00e9diteur ?",
+        "text_preprocessed": "ai je l obligation d avoir un compte bancaire crediteur",
+        "is_deleted": false
+    },
+    "353": {
+        "text_original": "Ai-je une autorisation de d\u00e9couvert ?",
+        "text": "Ai-je une autorisation de d\u00e9couvert ?",
+        "text_preprocessed": "ai je une autorisation de decouvert",
+        "is_deleted": false
+    },
+    "354": {
+        "text_original": "Comment augmenter sa limite de d\u00e9couvert ?",
+        "text": "Comment augmenter sa limite de d\u00e9couvert ?",
+        "text_preprocessed": "comment augmenter sa limite de decouvert",
+        "is_deleted": false
+    },
+    "355": {
+        "text_original": "Comment avoir un plus grand d\u00e9couvert ?",
+        "text": "Comment avoir un plus grand d\u00e9couvert ?",
+        "text_preprocessed": "comment avoir un plus grand decouvert",
+        "is_deleted": false
+    },
+    "356": {
+        "text_original": "Comment b\u00e9n\u00e9ficier d'un d\u00e9couvert ?",
+        "text": "Comment b\u00e9n\u00e9ficier d'un d\u00e9couvert ?",
+        "text_preprocessed": "comment beneficier d un decouvert",
+        "is_deleted": false
+    },
+    "357": {
+        "text_original": "Comment demander une autorisation de d\u00e9couvert ?",
+        "text": "Comment demander une autorisation de d\u00e9couvert ?",
+        "text_preprocessed": "comment demander une autorisation de decouvert",
+        "is_deleted": false
+    },
+    "358": {
+        "text_original": "Comment g\u00e9rer la possibilit\u00e9 de d\u00e9couvert ?",
+        "text": "Comment g\u00e9rer la possibilit\u00e9 de d\u00e9couvert ?",
+        "text_preprocessed": "comment gerer la possibilite de decouvert",
+        "is_deleted": false
+    },
+    "359": {
+        "text_original": "Comment modifier sa limite de d\u00e9couvert ?",
+        "text": "Comment modifier sa limite de d\u00e9couvert ?",
+        "text_preprocessed": "comment modifier sa limite de decouvert",
+        "is_deleted": false
+    },
+    "360": {
+        "text_original": "Comment obtenir une autorisation de d\u00e9couvert ?",
+        "text": "Comment obtenir une autorisation de d\u00e9couvert ?",
+        "text_preprocessed": "comment obtenir une autorisation de decouvert",
+        "is_deleted": false
+    },
+    "361": {
+        "text_original": "Est-ce que j'ai un d\u00e9couvert autoris\u00e9 ?",
+        "text": "Est-ce que j'ai un d\u00e9couvert autoris\u00e9 ?",
+        "text_preprocessed": "est ce que j ai un decouvert autorise",
+        "is_deleted": false
+    },
+    "362": {
+        "text_original": "Est-ce que je peux avoir un solde d\u00e9biteur sur mon compte courant ?",
+        "text": "Est-ce que je peux avoir un solde d\u00e9biteur sur mon compte courant ?",
+        "text_preprocessed": "est ce que je peux avoir un solde debiteur sur mon compte courant",
+        "is_deleted": false
+    },
+    "363": {
+        "text_original": "Est-ce que je peux g\u00e9rer l'autorisation de d\u00e9couvert sur l'application ?",
+        "text": "Est-ce que je peux g\u00e9rer l'autorisation de d\u00e9couvert sur l'application ?",
+        "text_preprocessed": "est ce que je peux gerer l autorisation de decouvert sur l application",
+        "is_deleted": false
+    },
+    "364": {
+        "text_original": "Est-ce que mon compte courant doit toujours \u00eatre cr\u00e9diteur ?",
+        "text": "Est-ce que mon compte courant doit toujours \u00eatre cr\u00e9diteur ?",
+        "text_preprocessed": "est ce que mon compte courant doit toujours etre crediteur",
+        "is_deleted": false
+    },
+    "365": {
+        "text_original": "Est-il possible d'activer la possibilit\u00e9 de d\u00e9couvert via l'application ?",
+        "text": "Est-il possible d'activer la possibilit\u00e9 de d\u00e9couvert via l'application ?",
+        "text_preprocessed": "est il possible d activer la possibilite de decouvert via l application",
+        "is_deleted": false
+    },
+    "366": {
+        "text_original": "Est-il possible d'augmenter le montant de ma limite de d\u00e9couvert ?",
+        "text": "Est-il possible d'augmenter le montant de ma limite de d\u00e9couvert ?",
+        "text_preprocessed": "est il possible d augmenter le montant de ma limite de decouvert",
+        "is_deleted": false
+    },
+    "367": {
+        "text_original": "g\u00e9rer l'autorisation de d\u00e9couvert",
+        "text": "g\u00e9rer l'autorisation de d\u00e9couvert",
+        "text_preprocessed": "gerer l autorisation de decouvert",
+        "is_deleted": false
+    },
+    "368": {
+        "text_original": "g\u00e9rer sa limite de d\u00e9couvert",
+        "text": "g\u00e9rer sa limite de d\u00e9couvert",
+        "text_preprocessed": "gerer sa limite de decouvert",
+        "is_deleted": false
+    },
+    "369": {
+        "text_original": "g\u00e9rer sa possibilit\u00e9 de d\u00e9couvert",
+        "text": "g\u00e9rer sa possibilit\u00e9 de d\u00e9couvert",
+        "text_preprocessed": "gerer sa possibilite de decouvert",
+        "is_deleted": false
+    },
+    "370": {
+        "text_original": "J'aimerai avoir une limite de d\u00e9couvert plus cons\u00e9quente.",
+        "text": "J'aimerai avoir une limite de d\u00e9couvert plus cons\u00e9quente.",
+        "text_preprocessed": "j aimerai avoir une limite de decouvert plus consequente",
+        "is_deleted": false
+    },
+    "371": {
+        "text_original": "J'aimerai qu'on augmente ma limite de d\u00e9couvert",
+        "text": "J'aimerai qu'on augmente ma limite de d\u00e9couvert",
+        "text_preprocessed": "j aimerai qu on augmente ma limite de decouvert",
+        "is_deleted": false
+    },
+    "372": {
+        "text_original": "J'aimerais savoir o\u00f9 aller pour voir notre droit au d\u00e9couvert bancaire.",
+        "text": "J'aimerais savoir o\u00f9 aller pour voir notre droit au d\u00e9couvert bancaire.",
+        "text_preprocessed": "j aimerais savoir ou aller pour voir notre droit au decouvert bancaire",
+        "is_deleted": false
+    },
+    "373": {
+        "text_original": "Je souhaite augmenter ma possibilit\u00e9 de d\u00e9couvert.",
+        "text": "Je souhaite augmenter ma possibilit\u00e9 de d\u00e9couvert.",
+        "text_preprocessed": "je souhaite augmenter ma possibilite de decouvert",
+        "is_deleted": false
+    },
+    "374": {
+        "text_original": "Je souhaite g\u00e9rer ma possibilite de d\u00e9couvert s'il vous pla\u00eet.",
+        "text": "Je souhaite g\u00e9rer ma possibilite de d\u00e9couvert s'il vous pla\u00eet.",
+        "text_preprocessed": "je souhaite gerer ma possibilite de decouvert s il vous plait",
+        "is_deleted": false
+    },
+    "375": {
+        "text_original": "Jusqu'\u00e0 combien peut aller l'autorisation de d\u00e9couvert ?",
+        "text": "Jusqu'\u00e0 combien peut aller l'autorisation de d\u00e9couvert ?",
+        "text_preprocessed": "jusqu a combien peut aller l autorisation de decouvert",
+        "is_deleted": false
+    },
+    "376": {
+        "text_original": "Jusqu'\u00e0 quel montant un compte peut \u00eatre en n\u00e9gatif sans frais suppl\u00e9mentaires ?",
+        "text": "Jusqu'\u00e0 quel montant un compte peut \u00eatre en n\u00e9gatif sans frais suppl\u00e9mentaires ?",
+        "text_preprocessed": "jusqu a quel montant un compte peut etre en negatif sans frais supplementaires",
+        "is_deleted": false
+    },
+    "377": {
+        "text_original": "montant de solde d\u00e9biteur autoris\u00e9",
+        "text": "montant de solde d\u00e9biteur autoris\u00e9",
+        "text_preprocessed": "montant de solde debiteur autorise",
+        "is_deleted": false
+    },
+    "378": {
+        "text_original": "O\u00f9 est mentionn\u00e9 mon autorisation de d\u00e9couvert ?",
+        "text": "O\u00f9 est mentionn\u00e9 mon autorisation de d\u00e9couvert ?",
+        "text_preprocessed": "ou est mentionne mon autorisation de decouvert",
+        "is_deleted": false
+    },
+    "379": {
+        "text_original": "O\u00f9 est sp\u00e9cifi\u00e9 la limite maximale d'un compte bancaire en n\u00e9gatif ?",
+        "text": "O\u00f9 est sp\u00e9cifi\u00e9 la limite maximale d'un compte bancaire en n\u00e9gatif ?",
+        "text_preprocessed": "ou est specifie la limite maximale d un compte bancaire en negatif",
+        "is_deleted": false
+    },
+    "380": {
+        "text_original": "O\u00f9 modifier sa possibilit\u00e9 de d\u00e9couvert ?",
+        "text": "O\u00f9 modifier sa possibilit\u00e9 de d\u00e9couvert ?",
+        "text_preprocessed": "ou modifier sa possibilite de decouvert",
+        "is_deleted": false
+    },
+    "381": {
+        "text_original": "O\u00f9 sont sp\u00e9cifi\u00e9es les conditions d'un d\u00e9couvert bancaire ?",
+        "text": "O\u00f9 sont sp\u00e9cifi\u00e9es les conditions d'un d\u00e9couvert bancaire ?",
+        "text_preprocessed": "ou sont specifiees les conditions d un decouvert bancaire",
+        "is_deleted": false
+    },
+    "382": {
+        "text_original": "Peut-on g\u00e9rer directement son autorisation de d\u00e9couvert ?",
+        "text": "Peut-on g\u00e9rer directement son autorisation de d\u00e9couvert ?",
+        "text_preprocessed": "peut on gerer directement son autorisation de decouvert",
+        "is_deleted": false
+    },
+    "383": {
+        "text_original": "Peut-on moduler une autorisation de d\u00e9couvert ?",
+        "text": "Peut-on moduler une autorisation de d\u00e9couvert ?",
+        "text_preprocessed": "peut on moduler une autorisation de decouvert",
+        "is_deleted": false
+    },
+    "384": {
+        "text_original": "Puis-je annuler mon autorisation de d\u00e9couvert ?",
+        "text": "Puis-je annuler mon autorisation de d\u00e9couvert ?",
+        "text_preprocessed": "puis je annuler mon autorisation de decouvert",
+        "is_deleted": false
+    },
+    "385": {
+        "text_original": "Puis-je avoir un solde d\u00e9biteur",
+        "text": "Puis-je avoir un solde d\u00e9biteur",
+        "text_preprocessed": "puis je avoir un solde debiteur",
+        "is_deleted": false
+    },
+    "386": {
+        "text_original": "Puis-je avoir une autorisation de d\u00e9couvert ?",
+        "text": "Puis-je avoir une autorisation de d\u00e9couvert ?",
+        "text_preprocessed": "puis je avoir une autorisation de decouvert",
+        "is_deleted": false
+    },
+    "387": {
+        "text_original": "Puis-je \u00eatre autonome sur la gestion de mes d\u00e9couverts ?",
+        "text": "Puis-je \u00eatre autonome sur la gestion de mes d\u00e9couverts ?",
+        "text_preprocessed": "puis je etre autonome sur la gestion de mes decouverts",
+        "is_deleted": false
+    },
+    "388": {
+        "text_original": "Puis-je modifier le montant de d\u00e9couvert autoris\u00e9 ?",
+        "text": "Puis-je modifier le montant de d\u00e9couvert autoris\u00e9 ?",
+        "text_preprocessed": "puis je modifier le montant de decouvert autorise",
+        "is_deleted": false
+    },
+    "389": {
+        "text_original": "Quel est le montant de d\u00e9couvert autoris\u00e9 ?",
+        "text": "Quel est le montant de d\u00e9couvert autoris\u00e9 ?",
+        "text_preprocessed": "quel est le montant de decouvert autorise",
+        "is_deleted": false
+    },
+    "390": {
+        "text_original": "Quel est le montant de d\u00e9couvert possible ?",
+        "text": "Quel est le montant de d\u00e9couvert possible ?",
+        "text_preprocessed": "quel est le montant de decouvert possible",
+        "is_deleted": false
+    },
+    "391": {
+        "text_original": "Quel est le montant maximum de mon d\u00e9couvert ?",
+        "text": "Quel est le montant maximum de mon d\u00e9couvert ?",
+        "text_preprocessed": "quel est le montant maximum de mon decouvert",
+        "is_deleted": false
+    },
+    "392": {
+        "text_original": "Quel est le solde d\u00e9biteur autoris\u00e9 ?",
+        "text": "Quel est le solde d\u00e9biteur autoris\u00e9 ?",
+        "text_preprocessed": "quel est le solde debiteur autorise",
+        "is_deleted": false
+    },
+    "393": {
+        "text_original": "Quel est mon d\u00e9couvert autoris\u00e9 ?",
+        "text": "Quel est mon d\u00e9couvert autoris\u00e9 ?",
+        "text_preprocessed": "quel est mon decouvert autorise",
+        "is_deleted": false
+    },
+    "394": {
+        "text_original": "Quelle demarche pour activer la possibilit\u00e9 d'un d\u00e9couvert bancaire ?",
+        "text": "Quelle demarche pour activer la possibilit\u00e9 d'un d\u00e9couvert bancaire ?",
+        "text_preprocessed": "quelle demarche pour activer la possibilite d un decouvert bancaire",
+        "is_deleted": false
+    },
+    "395": {
+        "text_original": "Quelle d\u00e9marche pour faire une demande de d\u00e9couvert ?",
+        "text": "Quelle d\u00e9marche pour faire une demande de d\u00e9couvert ?",
+        "text_preprocessed": "quelle demarche pour faire une demande de decouvert",
+        "is_deleted": false
+    },
+    "396": {
+        "text_original": "Quelle est le plafond de mon d\u00e9couvert autoris\u00e9 ?",
+        "text": "Quelle est le plafond de mon d\u00e9couvert autoris\u00e9 ?",
+        "text_preprocessed": "quelle est le plafond de mon decouvert autorise",
+        "is_deleted": false
+    },
+    "397": {
+        "text_original": "Quelle montant de dette puis-je avoir sur mon compte courant ?",
+        "text": "Quelle montant de dette puis-je avoir sur mon compte courant ?",
+        "text_preprocessed": "quelle montant de dette puis je avoir sur mon compte courant",
+        "is_deleted": false
+    },
+    "398": {
+        "text_original": "Quelle souplesse ai-je avec mon d\u00e9couvert ?",
+        "text": "Quelle souplesse ai-je avec mon d\u00e9couvert ?",
+        "text_preprocessed": "quelle souplesse ai je avec mon decouvert",
+        "is_deleted": false
+    },
+    "399": {
+        "text_original": "Voulez-vous bien m'autoriser un d\u00e9couvert ? Merci d'avance.",
+        "text": "Voulez-vous bien m'autoriser un d\u00e9couvert ? Merci d'avance.",
+        "text_preprocessed": "voulez vous bien m autoriser un decouvert merci d avance",
+        "is_deleted": false
+    },
+    "400": {
+        "text_original": "augmentation du plafond de ma carte",
+        "text": "augmentation du plafond de ma carte",
+        "text_preprocessed": "augmentation du plafond de ma carte",
+        "is_deleted": false
+    },
+    "401": {
+        "text_original": "augmentation du plafond de ma Mastercard",
+        "text": "augmentation du plafond de ma Mastercard",
+        "text_preprocessed": "augmentation du plafond de ma mastercard",
+        "is_deleted": false
+    },
+    "402": {
+        "text_original": "augmentation temporaire du plafond",
+        "text": "augmentation temporaire du plafond",
+        "text_preprocessed": "augmentation temporaire du plafond",
+        "is_deleted": false
+    },
+    "403": {
+        "text_original": "augmenter la plafond de ma carte Visa",
+        "text": "augmenter la plafond de ma carte Visa",
+        "text_preprocessed": "augmenter la plafond de ma carte visa",
+        "is_deleted": false
+    },
+    "404": {
+        "text_original": "augmenter le plafond de ma carte bancaire",
+        "text": "augmenter le plafond de ma carte bancaire",
+        "text_preprocessed": "augmenter le plafond de ma carte bancaire",
+        "is_deleted": false
+    },
+    "405": {
+        "text_original": "augmenter mon plafond de paiement \u00e0 l'\u00e9tranger",
+        "text": "augmenter mon plafond de paiement \u00e0 l'\u00e9tranger",
+        "text_preprocessed": "augmenter mon plafond de paiement a l etranger",
+        "is_deleted": false
+    },
+    "406": {
+        "text_original": "augmenter sa capacit\u00e9 de paiement temporairement",
+        "text": "augmenter sa capacit\u00e9 de paiement temporairement",
+        "text_preprocessed": "augmenter sa capacite de paiement temporairement",
+        "is_deleted": false
+    },
+    "407": {
+        "text_original": "augmenter temporairement ma limite de retrait",
+        "text": "augmenter temporairement ma limite de retrait",
+        "text_preprocessed": "augmenter temporairement ma limite de retrait",
+        "is_deleted": false
+    },
+    "408": {
+        "text_original": "besoin de modifier le plafond de retrait de ma carte bleue",
+        "text": "besoin de modifier le plafond de retrait de ma carte bleue",
+        "text_preprocessed": "besoin de modifier le plafond de retrait de ma carte bleue",
+        "is_deleted": false
+    },
+    "409": {
+        "text_original": "Bonjour, comment puis-je augmenter le plafond de ma carte bancaire ?",
+        "text": "Bonjour, comment puis-je augmenter le plafond de ma carte bancaire ?",
+        "text_preprocessed": "bonjour comment puis je augmenter le plafond de ma carte bancaire",
+        "is_deleted": false
+    },
+    "410": {
+        "text_original": "Bonjour, comment puis-je modifier mon plafond ?",
+        "text": "Bonjour, comment puis-je modifier mon plafond ?",
+        "text_preprocessed": "bonjour comment puis je modifier mon plafond",
+        "is_deleted": false
+    },
+    "411": {
+        "text_original": "changement de plafond carte bancaire",
+        "text": "changement de plafond carte bancaire",
+        "text_preprocessed": "changement de plafond carte bancaire",
+        "is_deleted": false
+    },
+    "412": {
+        "text_original": "changer la limite de d\u00e9pense de ma carte bleue",
+        "text": "changer la limite de d\u00e9pense de ma carte bleue",
+        "text_preprocessed": "changer la limite de depense de ma carte bleue",
+        "is_deleted": false
+    },
+    "413": {
+        "text_original": "Comment augmenter le montant autoris\u00e9 sur ma carte bancaire ?",
+        "text": "Comment augmenter le montant autoris\u00e9 sur ma carte bancaire ?",
+        "text_preprocessed": "comment augmenter le montant autorise sur ma carte bancaire",
+        "is_deleted": false
+    },
+    "414": {
+        "text_original": "Comment augmenter le plafond de ma carte bleue ?",
+        "text": "Comment augmenter le plafond de ma carte bleue ?",
+        "text_preprocessed": "comment augmenter le plafond de ma carte bleue",
+        "is_deleted": false
+    },
+    "415": {
+        "text_original": "Comment augmenter mes plafonds de paiement ?",
+        "text": "Comment augmenter mes plafonds de paiement ?",
+        "text_preprocessed": "comment augmenter mes plafonds de paiement",
+        "is_deleted": false
+    },
+    "416": {
+        "text_original": "Comment augmenter mon montant maximum de paiement ?",
+        "text": "Comment augmenter mon montant maximum de paiement ?",
+        "text_preprocessed": "comment augmenter mon montant maximum de paiement",
+        "is_deleted": false
+    },
+    "417": {
+        "text_original": "Comment g\u00e9rer mon plafond de carte ?",
+        "text": "Comment g\u00e9rer mon plafond de carte ?",
+        "text_preprocessed": "comment gerer mon plafond de carte",
+        "is_deleted": false
+    },
+    "418": {
+        "text_original": "Comment modifier soi-m\u00eame le plafond de sa carte de paiement ?",
+        "text": "Comment modifier soi-m\u00eame le plafond de sa carte de paiement ?",
+        "text_preprocessed": "comment modifier soi meme le plafond de sa carte de paiement",
+        "is_deleted": false
+    },
+    "419": {
+        "text_original": "Comment pouvoir payer d'avantage avec sa carte Visa ?",
+        "text": "Comment pouvoir payer d'avantage avec sa carte Visa ?",
+        "text_preprocessed": "comment pouvoir payer d avantage avec sa carte visa",
+        "is_deleted": false
+    },
+    "420": {
+        "text_original": "Comment puis-je modifier le plafond de ma carte de cr\u00e9dit ?",
+        "text": "Comment puis-je modifier le plafond de ma carte de cr\u00e9dit ?",
+        "text_preprocessed": "comment puis je modifier le plafond de ma carte de credit",
+        "is_deleted": false
+    },
+    "421": {
+        "text_original": "Comment relever la limite de d\u00e9pense de sa carte ?",
+        "text": "Comment relever la limite de d\u00e9pense de sa carte ?",
+        "text_preprocessed": "comment relever la limite de depense de sa carte",
+        "is_deleted": false
+    },
+    "422": {
+        "text_original": "diminuer le plafond d'une carte Gold",
+        "text": "diminuer le plafond d'une carte Gold",
+        "text_preprocessed": "diminuer le plafond d une carte gold",
+        "is_deleted": false
+    },
+    "423": {
+        "text_original": "Est-ce que je peux augmenter la limite des 2000\u20ac de paiement par carte par mois ?",
+        "text": "Est-ce que je peux augmenter la limite des 2000\u20ac de paiement par carte par mois ?",
+        "text_preprocessed": "est ce que je peux augmenter la limite des 2000 \u20ac de paiement par carte par mois",
+        "is_deleted": false
+    },
+    "424": {
+        "text_original": "Est-ce que je peux faire varier le plafond de ma Mastercard ?",
+        "text": "Est-ce que je peux faire varier le plafond de ma Mastercard ?",
+        "text_preprocessed": "est ce que je peux faire varier le plafond de ma mastercard",
+        "is_deleted": false
+    },
+    "425": {
+        "text_original": "Est-ce que je peux g\u00e9rer la limite de d\u00e9bit de ma carte ?",
+        "text": "Est-ce que je peux g\u00e9rer la limite de d\u00e9bit de ma carte ?",
+        "text_preprocessed": "est ce que je peux gerer la limite de debit de ma carte",
+        "is_deleted": false
+    },
+    "426": {
+        "text_original": "Est-ce que je peux modifier le plafond de ma carte de paiement via l'application ?",
+        "text": "Est-ce que je peux modifier le plafond de ma carte de paiement via l'application ?",
+        "text_preprocessed": "est ce que je peux modifier le plafond de ma carte de paiement via l application",
+        "is_deleted": false
+    },
+    "427": {
+        "text_original": "Est-ce que la limite de d\u00e9pense d'une carte peut \u00eatre modifi\u00e9e dans l'application ?",
+        "text": "Est-ce que la limite de d\u00e9pense d'une carte peut \u00eatre modifi\u00e9e dans l'application ?",
+        "text_preprocessed": "est ce que la limite de depense d une carte peut etre modifiee dans l application",
+        "is_deleted": false
+    },
+    "428": {
+        "text_original": "Est-il possible de relever la limite de paiement avec sa carte bancaire ?",
+        "text": "Est-il possible de relever la limite de paiement avec sa carte bancaire ?",
+        "text_preprocessed": "est il possible de relever la limite de paiement avec sa carte bancaire",
+        "is_deleted": false
+    },
+    "429": {
+        "text_original": "Es-tu capable de relever mon plafond de carte bleue ?",
+        "text": "Es-tu capable de relever mon plafond de carte bleue ?",
+        "text_preprocessed": "es tu capable de relever mon plafond de carte bleue",
+        "is_deleted": false
+    },
+    "430": {
+        "text_original": "g\u00e9rer la limite de d\u00e9pense d'une carte de cr\u00e9dit",
+        "text": "g\u00e9rer la limite de d\u00e9pense d'une carte de cr\u00e9dit",
+        "text_preprocessed": "gerer la limite de depense d une carte de credit",
+        "is_deleted": false
+    },
+    "431": {
+        "text_original": "g\u00e9rer le plafond de sa carte bleue",
+        "text": "g\u00e9rer le plafond de sa carte bleue",
+        "text_preprocessed": "gerer le plafond de sa carte bleue",
+        "is_deleted": false
+    },
+    "432": {
+        "text_original": "J'aimerai augmenter le plafond de d\u00e9pense de ma carte de paiement.",
+        "text": "J'aimerai augmenter le plafond de d\u00e9pense de ma carte de paiement.",
+        "text_preprocessed": "j aimerai augmenter le plafond de depense de ma carte de paiement",
+        "is_deleted": false
+    },
+    "433": {
+        "text_original": "J'aimerai limiter la capacit\u00e9 de d\u00e9bit de ma carte.",
+        "text": "J'aimerai limiter la capacit\u00e9 de d\u00e9bit de ma carte.",
+        "text_preprocessed": "j aimerai limiter la capacite de debit de ma carte",
+        "is_deleted": false
+    },
+    "434": {
+        "text_original": "J'aimerai modifier la limite de d\u00e9bit de ma carte bleue.",
+        "text": "J'aimerai modifier la limite de d\u00e9bit de ma carte bleue.",
+        "text_preprocessed": "j aimerai modifier la limite de debit de ma carte bleue",
+        "is_deleted": false
+    },
+    "435": {
+        "text_original": "Je souhaite augmenter le plafond de ma carte de cr\u00e9dit.",
+        "text": "Je souhaite augmenter le plafond de ma carte de cr\u00e9dit.",
+        "text_preprocessed": "je souhaite augmenter le plafond de ma carte de credit",
+        "is_deleted": false
+    },
+    "436": {
+        "text_original": "Je souhaite d\u00e9passer la limite des 2000\u20ac de paiement par carte par mois, comment faire ?",
+        "text": "Je souhaite d\u00e9passer la limite des 2000\u20ac de paiement par carte par mois, comment faire ?",
+        "text_preprocessed": "je souhaite depasser la limite des 2000 \u20ac de paiement par carte par mois comment faire",
+        "is_deleted": false
+    },
+    "437": {
+        "text_original": "Je veux r\u00e9duire le montant de d\u00e9bit maximum d'une carte, que faire ?",
+        "text": "Je veux r\u00e9duire le montant de d\u00e9bit maximum d'une carte, que faire ?",
+        "text_preprocessed": "je veux reduire le montant de debit maximum d une carte que faire",
+        "is_deleted": false
+    },
+    "438": {
+        "text_original": "Je voudrai modifier la limite de paiement de ma carte.",
+        "text": "Je voudrai modifier la limite de paiement de ma carte.",
+        "text_preprocessed": "je voudrai modifier la limite de paiement de ma carte",
+        "is_deleted": false
+    },
+    "439": {
+        "text_original": "Le plafond de ma carte est trop bas, que faire ?",
+        "text": "Le plafond de ma carte est trop bas, que faire ?",
+        "text_preprocessed": "le plafond de ma carte est trop bas que faire",
+        "is_deleted": false
+    },
+    "440": {
+        "text_original": "Ma carte Visa a un plafond de paiment trop bas, puis je l'augmenter ?",
+        "text": "Ma carte Visa a un plafond de paiment trop bas, puis je l'augmenter ?",
+        "text_preprocessed": "ma carte visa a un plafond de paiment trop bas puis je l augmenter",
+        "is_deleted": false
+    },
+    "441": {
+        "text_original": "Ma Mastercard a une limite de d\u00e9bit trop faible, comment puis l'ajuster ?",
+        "text": "Ma Mastercard a une limite de d\u00e9bit trop faible, comment puis l'ajuster ?",
+        "text_preprocessed": "ma mastercard a une limite de debit trop faible comment puis l ajuster",
+        "is_deleted": false
+    },
+    "442": {
+        "text_original": "O\u00f9 puis-je g\u00e9rer mes plafonds de carte Visa ?",
+        "text": "O\u00f9 puis-je g\u00e9rer mes plafonds de carte Visa ?",
+        "text_preprocessed": "ou puis je gerer mes plafonds de carte visa",
+        "is_deleted": false
+    },
+    "443": {
+        "text_original": "Peut-on g\u00e9rer la capacit\u00e9 de paiement d'une carte de cr\u00e9dit via l'application ?",
+        "text": "Peut-on g\u00e9rer la capacit\u00e9 de paiement d'une carte de cr\u00e9dit via l'application ?",
+        "text_preprocessed": "peut on gerer la capacite de paiement d une carte de credit via l application",
+        "is_deleted": false
+    },
+    "444": {
+        "text_original": "Peux-tu relever le plafond de ma carte ?",
+        "text": "Peux-tu relever le plafond de ma carte ?",
+        "text_preprocessed": "peux tu relever le plafond de ma carte",
+        "is_deleted": false
+    },
+    "445": {
+        "text_original": "Puis-je avoir un plafond de carte plus \u00e9lev\u00e9 ?",
+        "text": "Puis-je avoir un plafond de carte plus \u00e9lev\u00e9 ?",
+        "text_preprocessed": "puis je avoir un plafond de carte plus eleve",
+        "is_deleted": false
+    },
+    "446": {
+        "text_original": "Puis-je modifier la limite de d\u00e9pense d'une carte de cr\u00e9dit ?",
+        "text": "Puis-je modifier la limite de d\u00e9pense d'une carte de cr\u00e9dit ?",
+        "text_preprocessed": "puis je modifier la limite de depense d une carte de credit",
+        "is_deleted": false
+    },
+    "447": {
+        "text_original": "Puis-je relever la limite de d\u00e9pense de ma carte bancaire ?",
+        "text": "Puis-je relever la limite de d\u00e9pense de ma carte bancaire ?",
+        "text_preprocessed": "puis je relever la limite de depense de ma carte bancaire",
+        "is_deleted": false
+    },
+    "448": {
+        "text_original": "Quel est le maximum d'argent que je peux d\u00e9biter avec ma carte bleue ?",
+        "text": "Quel est le maximum d'argent que je peux d\u00e9biter avec ma carte bleue ?",
+        "text_preprocessed": "quel est le maximum d argent que je peux debiter avec ma carte bleue",
+        "is_deleted": false
+    },
+    "449": {
+        "text_original": "Quel est le montant maximal que je peux retirer avec ma carte bancaire ?",
+        "text": "Quel est le montant maximal que je peux retirer avec ma carte bancaire ?",
+        "text_preprocessed": "quel est le montant maximal que je peux retirer avec ma carte bancaire",
+        "is_deleted": false
+    },
+    "450": {
+        "text_original": "activer le moyen de paiement NFC sur ma carte Gold",
+        "text": "activer le moyen de paiement NFC sur ma carte Gold",
+        "text_preprocessed": "activer le moyen de paiement nfc sur ma carte gold",
+        "is_deleted": false
+    },
+    "451": {
+        "text_original": "activer l'option NFC sur ma Mastercard",
+        "text": "activer l'option NFC sur ma Mastercard",
+        "text_preprocessed": "activer l option nfc sur ma mastercard",
+        "is_deleted": false
+    },
+    "452": {
+        "text_original": "Activez-moi le sans contact s'il vous pla\u00eet.",
+        "text": "Activez-moi le sans contact s'il vous pla\u00eet.",
+        "text_preprocessed": "activez moi le sans contact s il vous plait",
+        "is_deleted": false
+    },
+    "453": {
+        "text_original": "activiation paiement sans contact",
+        "text": "activiation paiement sans contact",
+        "text_preprocessed": "activiation paiement sans contact",
+        "is_deleted": false
+    },
+    "454": {
+        "text_original": "bloquer le mode de paiement NFC",
+        "text": "bloquer le mode de paiement NFC",
+        "text_preprocessed": "bloquer le mode de paiement nfc",
+        "is_deleted": false
+    },
+    "455": {
+        "text_original": "Comment activer l'option paiement sans contact ?",
+        "text": "Comment activer l'option paiement sans contact ?",
+        "text_preprocessed": "comment activer l option paiement sans contact",
+        "is_deleted": false
+    },
+    "456": {
+        "text_original": "Comment d\u00e9sactiver le sans contact sur ma Mastercard ?",
+        "text": "Comment d\u00e9sactiver le sans contact sur ma Mastercard ?",
+        "text_preprocessed": "comment desactiver le sans contact sur ma mastercard",
+        "is_deleted": false
+    },
+    "457": {
+        "text_original": "Comment enlever le mode NFC sur une carte bancaire ?",
+        "text": "Comment enlever le mode NFC sur une carte bancaire ?",
+        "text_preprocessed": "comment enlever le mode nfc sur une carte bancaire",
+        "is_deleted": false
+    },
+    "458": {
+        "text_original": "Comment mettre en marche le mode NFC sur ma carte bleue ?",
+        "text": "Comment mettre en marche le mode NFC sur ma carte bleue ?",
+        "text_preprocessed": "comment mettre en marche le mode nfc sur ma carte bleue",
+        "is_deleted": false
+    },
+    "459": {
+        "text_original": "Comment savoir si le paiement NFC est activ\u00e9 sur ma carte ?",
+        "text": "Comment savoir si le paiement NFC est activ\u00e9 sur ma carte ?",
+        "text_preprocessed": "comment savoir si le paiement nfc est active sur ma carte",
+        "is_deleted": false
+    },
+    "460": {
+        "text_original": "Comment savoir si le sans contact est actif sur ma carte de cr\u00e9dit ?",
+        "text": "Comment savoir si le sans contact est actif sur ma carte de cr\u00e9dit ?",
+        "text_preprocessed": "comment savoir si le sans contact est actif sur ma carte de credit",
+        "is_deleted": false
+    },
+    "461": {
+        "text_original": "Comment supprimer le sans contact de ma carte ?",
+        "text": "Comment supprimer le sans contact de ma carte ?",
+        "text_preprocessed": "comment supprimer le sans contact de ma carte",
+        "is_deleted": false
+    },
+    "462": {
+        "text_original": "d\u00e9sactiver le NFC sur ma carte",
+        "text": "d\u00e9sactiver le NFC sur ma carte",
+        "text_preprocessed": "desactiver le nfc sur ma carte",
+        "is_deleted": false
+    },
+    "463": {
+        "text_original": "d\u00e9sactiver le sans contact sur toutes mes cartes de cr\u00e9dit",
+        "text": "d\u00e9sactiver le sans contact sur toutes mes cartes de cr\u00e9dit",
+        "text_preprocessed": "desactiver le sans contact sur toutes mes cartes de credit",
+        "is_deleted": false
+    },
+    "464": {
+        "text_original": "enlever le mode sans contact de ma carte",
+        "text": "enlever le mode sans contact de ma carte",
+        "text_preprocessed": "enlever le mode sans contact de ma carte",
+        "is_deleted": false
+    },
+    "465": {
+        "text_original": "enlever le sans contact",
+        "text": "enlever le sans contact",
+        "text_preprocessed": "enlever le sans contact",
+        "is_deleted": false
+    },
+    "466": {
+        "text_original": "enlever l'option sans contact",
+        "text": "enlever l'option sans contact",
+        "text_preprocessed": "enlever l option sans contact",
+        "is_deleted": false
+    },
+    "467": {
+        "text_original": "Est-ce que le mode de paiement NFC est disponible sur ma carte Visa ?",
+        "text": "Est-ce que le mode de paiement NFC est disponible sur ma carte Visa ?",
+        "text_preprocessed": "est ce que le mode de paiement nfc est disponible sur ma carte visa",
+        "is_deleted": false
+    },
+    "468": {
+        "text_original": "Est-ce que le sans contact est actif sur ma carte bleue",
+        "text": "Est-ce que le sans contact est actif sur ma carte bleue",
+        "text_preprocessed": "est ce que le sans contact est actif sur ma carte bleue",
+        "is_deleted": false
+    },
+    "469": {
+        "text_original": "g\u00e9rer le mode de paiement NFC sur ma carte",
+        "text": "g\u00e9rer le mode de paiement NFC sur ma carte",
+        "text_preprocessed": "gerer le mode de paiement nfc sur ma carte",
+        "is_deleted": false
+    },
+    "470": {
+        "text_original": "gestion paiement sans contact",
+        "text": "gestion paiement sans contact",
+        "text_preprocessed": "gestion paiement sans contact",
+        "is_deleted": false
+    },
+    "471": {
+        "text_original": "interdire les paiements sans contact",
+        "text": "interdire les paiements sans contact",
+        "text_preprocessed": "interdire les paiements sans contact",
+        "is_deleted": false
+    },
+    "472": {
+        "text_original": "J'aimerai bloquer le mode sans contact.",
+        "text": "J'aimerai bloquer le mode sans contact.",
+        "text_preprocessed": "j aimerai bloquer le mode sans contact",
+        "is_deleted": false
+    },
+    "473": {
+        "text_original": "J'aimerai ne plus utiliser le mode sans contact de ma carte de paiement.",
+        "text": "J'aimerai ne plus utiliser le mode sans contact de ma carte de paiement.",
+        "text_preprocessed": "j aimerai ne plus utiliser le mode sans contact de ma carte de paiement",
+        "is_deleted": false
+    },
+    "474": {
+        "text_original": "J'aimerais pouvoir d\u00e9sactiver le sans contact de ma carte.",
+        "text": "J'aimerais pouvoir d\u00e9sactiver le sans contact de ma carte.",
+        "text_preprocessed": "j aimerais pouvoir desactiver le sans contact de ma carte",
+        "is_deleted": false
+    },
+    "475": {
+        "text_original": "Je ne veux plus de paiement par NFC s'il vous pla\u00eet. Merci.",
+        "text": "Je ne veux plus de paiement par NFC s'il vous pla\u00eet. Merci.",
+        "text_preprocessed": "je ne veux plus de paiement par nfc s il vous plait merci",
+        "is_deleted": false
+    },
+    "476": {
+        "text_original": "Je ne veux plus pouvoir payer sans entrer le code de ma carte.",
+        "text": "Je ne veux plus pouvoir payer sans entrer le code de ma carte.",
+        "text_preprocessed": "je ne veux plus pouvoir payer sans entrer le code de ma carte",
+        "is_deleted": false
+    },
+    "477": {
+        "text_original": "Je souhaite activer le mode NFC sur ma carte bleue.",
+        "text": "Je souhaite activer le mode NFC sur ma carte bleue.",
+        "text_preprocessed": "je souhaite activer le mode nfc sur ma carte bleue",
+        "is_deleted": false
+    },
+    "478": {
+        "text_original": "Je souhaite d\u00e9sactiver le mode sans contact de ma carte de cr\u00e9dit.",
+        "text": "Je souhaite d\u00e9sactiver le mode sans contact de ma carte de cr\u00e9dit.",
+        "text_preprocessed": "je souhaite desactiver le mode sans contact de ma carte de credit",
+        "is_deleted": false
+    },
+    "479": {
+        "text_original": "Je souhaite g\u00e9rer le mode NFC sur mes cartes bancaires.",
+        "text": "Je souhaite g\u00e9rer le mode NFC sur mes cartes bancaires.",
+        "text_preprocessed": "je souhaite gerer le mode nfc sur mes cartes bancaires",
+        "is_deleted": false
+    },
+    "480": {
+        "text_original": "Je souhaite que les paiements par carte bancaire me demande toujours mon code.",
+        "text": "Je souhaite que les paiements par carte bancaire me demande toujours mon code.",
+        "text_preprocessed": "je souhaite que les paiements par carte bancaire me demande toujours mon code",
+        "is_deleted": false
+    },
+    "481": {
+        "text_original": "Je veux activer le sans contact sur ma carte.",
+        "text": "Je veux activer le sans contact sur ma carte.",
+        "text_preprocessed": "je veux activer le sans contact sur ma carte",
+        "is_deleted": false
+    },
+    "482": {
+        "text_original": "Je veux d\u00e9sactiver le sans contact sur ma carte.",
+        "text": "Je veux d\u00e9sactiver le sans contact sur ma carte.",
+        "text_preprocessed": "je veux desactiver le sans contact sur ma carte",
+        "is_deleted": false
+    },
+    "483": {
+        "text_original": "Je voudrai activer le mode de paiement NFC sur ma carte Visa.",
+        "text": "Je voudrai activer le mode de paiement NFC sur ma carte Visa.",
+        "text_preprocessed": "je voudrai activer le mode de paiement nfc sur ma carte visa",
+        "is_deleted": false
+    },
+    "484": {
+        "text_original": "Le mode de paiement NFC ne fonctionne pas sur ma carte.",
+        "text": "Le mode de paiement NFC ne fonctionne pas sur ma carte.",
+        "text_preprocessed": "le mode de paiement nfc ne fonctionne pas sur ma carte",
+        "is_deleted": false
+    },
+    "485": {
+        "text_original": "Le sans contact ne fonctionne pas sur ma carte bancaire...",
+        "text": "Le sans contact ne fonctionne pas sur ma carte bancaire...",
+        "text_preprocessed": "le sans contact ne fonctionne pas sur ma carte bancaire",
+        "is_deleted": false
+    },
+    "486": {
+        "text_original": "L'option sans contact ne fonctionne pas sur ma carte.",
+        "text": "L'option sans contact ne fonctionne pas sur ma carte.",
+        "text_preprocessed": "l option sans contact ne fonctionne pas sur ma carte",
+        "is_deleted": false
+    },
+    "487": {
+        "text_original": "modifier le mode NFC sur ma carte de paiement",
+        "text": "modifier le mode NFC sur ma carte de paiement",
+        "text_preprocessed": "modifier le mode nfc sur ma carte de paiement",
+        "is_deleted": false
+    },
+    "488": {
+        "text_original": "modifier le mode sans contact",
+        "text": "modifier le mode sans contact",
+        "text_preprocessed": "modifier le mode sans contact",
+        "is_deleted": false
+    },
+    "489": {
+        "text_original": "pas de paiement sans contact sur ma Visa s'il vous pla\u00eet",
+        "text": "pas de paiement sans contact sur ma Visa s'il vous pla\u00eet",
+        "text_preprocessed": "pas de paiement sans contact sur ma visa s il vous plait",
+        "is_deleted": false
+    },
+    "490": {
+        "text_original": "Peut-on annuler le paiement sans contact ?",
+        "text": "Peut-on annuler le paiement sans contact ?",
+        "text_preprocessed": "peut on annuler le paiement sans contact",
+        "is_deleted": false
+    },
+    "491": {
+        "text_original": "Peut-on g\u00e9rer le mode sans contact sur l'application ?",
+        "text": "Peut-on g\u00e9rer le mode sans contact sur l'application ?",
+        "text_preprocessed": "peut on gerer le mode sans contact sur l application",
+        "is_deleted": false
+    },
+    "492": {
+        "text_original": "Pourquoi le sans contact de ma carte Gold ne fonctionne pas ?",
+        "text": "Pourquoi le sans contact de ma carte Gold ne fonctionne pas ?",
+        "text_preprocessed": "pourquoi le sans contact de ma carte gold ne fonctionne pas",
+        "is_deleted": false
+    },
+    "493": {
+        "text_original": "Puis-je activer le sans contact depuis l'application ?",
+        "text": "Puis-je activer le sans contact depuis l'application ?",
+        "text_preprocessed": "puis je activer le sans contact depuis l application",
+        "is_deleted": false
+    },
+    "494": {
+        "text_original": "Puis-je enlever le mode de paiement NFC sur une carte ?",
+        "text": "Puis-je enlever le mode de paiement NFC sur une carte ?",
+        "text_preprocessed": "puis je enlever le mode de paiement nfc sur une carte",
+        "is_deleted": false
+    },
+    "495": {
+        "text_original": "Puis-je mettre en marche le mode sans contact sur ma carte ?",
+        "text": "Puis-je mettre en marche le mode sans contact sur ma carte ?",
+        "text_preprocessed": "puis je mettre en marche le mode sans contact sur ma carte",
+        "is_deleted": false
+    },
+    "496": {
+        "text_original": "Puis-je obtenir le sans contact sur ma carte ?",
+        "text": "Puis-je obtenir le sans contact sur ma carte ?",
+        "text_preprocessed": "puis je obtenir le sans contact sur ma carte",
+        "is_deleted": false
+    },
+    "497": {
+        "text_original": "retirer le paiement sans contact",
+        "text": "retirer le paiement sans contact",
+        "text_preprocessed": "retirer le paiement sans contact",
+        "is_deleted": false
+    },
+    "498": {
+        "text_original": "supprimer le paiement sans contact",
+        "text": "supprimer le paiement sans contact",
+        "text_preprocessed": "supprimer le paiement sans contact",
+        "is_deleted": false
+    },
+    "499": {
+        "text_original": "utiliser le paiement sans contact",
+        "text": "utiliser le paiement sans contact",
+        "text_preprocessed": "utiliser le paiement sans contact",
+        "is_deleted": false
+    }
+}
