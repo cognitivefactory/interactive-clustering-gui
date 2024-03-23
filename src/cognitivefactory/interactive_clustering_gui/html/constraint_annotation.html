@@ -78,12 +78,12 @@
 							<th
 								class="column {% if texts[text_ID1].is_deleted==true %}text_crossed_out{%endif %}"
 								title="Text ID 1: {{ text_ID1 }}">
-								<i style="font-size: 2em;">&laquo; {{ texts[text_ID1].text_preprocessed }} &raquo;</i>
+								<i style="font-size: 2em;">&laquo; {{ texts[text_ID1].text }} &raquo;</i>
 							</th>
 							<th
 							class="column {% if texts[text_ID2].is_deleted==true %}text_crossed_out{%endif %}"
 								title="Text ID 2: {{ text_ID2 }}">
-								<i style="font-size: 2em;">&laquo; {{ texts[text_ID2].text_preprocessed }} &raquo;</i>
+								<i style="font-size: 2em;">&laquo; {{ texts[text_ID2].text }} &raquo;</i>
 							</th>
 						</tr>
 						<tr class="row">
@@ -92,7 +92,7 @@
 								title="Text ID 1: {{ text_ID1 }}">
 								<span
 									class="material-icons info_bulle"
-									title="Unpreprocessed text: &#013; &laquo; {{ texts[text_ID1].text }} &raquo;">
+									title="Unpreprocessed text: &#013; &laquo; {{ texts[text_ID1].text_preprocessed }} &raquo;">
 									info
 								</span>
 							</th>
@@ -101,7 +101,7 @@
 								title="Text ID 2: {{ text_ID2 }}">
 								<span
 									class="material-icons info_bulle"
-									title="Unpreprocessed text: &#013; &laquo; {{ texts[text_ID2].text }} &raquo;">
+									title="Unpreprocessed text: &#013; &laquo; {{ texts[text_ID2].text_preprocessed }} &raquo;">
 									info
 								</span>
 							</th>

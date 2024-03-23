@@ -103,11 +103,13 @@ function plotLocalConstraintsGraph({
                     !Object.keys(modelization).includes(text_id)
                 ) ? "NOT_MODELIZED" : (
                     (
-                        modelization[text_id].COMPONENT == modelization[text_id1].COMPONENT
+                        Object.keys(modelization).includes(text_id1)
+                        && modelization[text_id].COMPONENT == modelization[text_id1].COMPONENT
                     ) ? "COMPONENT_1" : "COMPONENT_2"
                 )
             ],
             "size": CONFIG["NODES"]["SIZE"],
+            "fixed": (text_id == text_id1 || text_id == text_id2)
         };
     }
 

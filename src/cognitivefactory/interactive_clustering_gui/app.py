@@ -1001,46 +1001,6 @@ async def import_project(
 
 
 ###
-### ROUTE: Get HTML projects listing or creation page.
-###
-@app.get(
-    "/gui/projects",
-    tags=["Projects"],
-    response_class=Response,
-    status_code=status.HTTP_200_OK,
-)
-async def get_html_projects_listing_or_creation_page(
-    request: Request,
-) -> Response:
-    """
-    Get HTML projects listing or creation page.
-
-    Args:
-        request (Request): The request context.
-
-    Returns:
-        Response: The requested page.
-    """
-
-    # Return HTML projects listing and creation page.
-    return templates.TemplateResponse(
-        name="projects_listing.html",
-        context={
-            "request": request,
-            # Get projects and their description.
-            "projects": {
-                project_id: {
-                    "metadata": (await get_metadata(project_id=project_id))["metadata"],
-                    "status": (await get_status(project_id=project_id))["status"],
-                }
-                for project_id in (await get_projects())
-            },
-        },
-        status_code=status.HTTP_200_OK,
-    )
-
-
-###
 ### ROUTE: Get HTML project home page.
 ###
 @app.get(
@@ -1862,8 +1822,8 @@ async def get_html_texts_page(
                     await get_texts(
                         project_id=project_id,
                         without_deleted_texts=False,
-                        sorted_by=TextsSortOptions.ID,
-                        sorted_reverse=False,
+                        sorted_by=sorted_by,
+                        sorted_reverse=sorted_reverse,
                     )
                 )["texts"],
                 # Get the project constraints.
@@ -2615,7 +2575,7 @@ async def get_html_constraint_annotation_page(
                     await get_constraints(
                         project_id=project_id,
                         without_hidden_constraints=False,
-                        sorted_by=ConstraintsSortOptions.ITERATION_OF_SAMPLING,
+                        sorted_by=ConstraintsSortOptions.TO_ANNOTATE,
                         sorted_reverse=False,
                     )
                 )["constraints"],
