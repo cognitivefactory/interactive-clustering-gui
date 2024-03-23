@@ -1,5 +1,5 @@
 site_name: "Interactive Clustering GUI"
-site_description: "A web application designed for NLP data annotation using Interactive Clustering methodology.."
+site_description: "A web application designed for NLP data annotation using Interactive Clustering methodology."
 site_url: "https://cognitivefactory.github.io/interactive-clustering-gui"
 repo_url: "https://github.com/cognitivefactory/interactive-clustering-gui"
 repo_name: "cognitivefactory/interactive-clustering-gui"
@@ -13,9 +13,10 @@ nav:
   - Credits: credits.md
   - License: license.md
 # defer to gen-files + literate-nav
-- Notebooks:
-  - Usage: notebooks/README.md
-  - Project analysis: notebooks/analysis.ipynb
+- Examples:
+  - Demo projects: examples/README.md
+  - Analysis preparation: notebooks/README.md
+  - Analysis notebook: notebooks/analysis.ipynb
 - Code Reference: reference/
 - Development:
   - Contributing: contributing.md
