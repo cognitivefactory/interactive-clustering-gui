@@ -66,8 +66,8 @@
             <a id="indexLink" class="nav" href="covindex.html">&Hat; index</a> &nbsp; &nbsp;
             <a id="nextFileLink" class="nav" href="d_4324d12d9da04572_states_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
-            <a class="nav" href="https://coverage.readthedocs.io/en/7.3.2">coverage.py v7.3.2</a>,
-            created at 2023-11-16 17:41 +0100
+            <a class="nav" href="https://coverage.readthedocs.io/en/7.4.3">coverage.py v7.4.3</a>,
+            created at 2024-03-22 23:23 +0100
         </p>
         <aside class="hidden">
             <button type="button" class="button_next_chunk" data-shortcut="j"/>
@@ -86,7 +86,7 @@
     <p class="pln"><span class="n"><a id="t2" href="#t2">2</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t3" href="#t3">3</a></span><span class="t"><span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t4" href="#t4">4</a></span><span class="t"><span class="str">* Name:         cognitivefactory.interactive_clustering_gui.models.settings</span>&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t5" href="#t5">5</a></span><span class="t"><span class="str">* Description:  Definition of model parameters required to define settings of interactive clustering.</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t5" href="#t5">5</a></span><span class="t"><span class="str">* Description:  Definition of algorithm settings models required for application runs.</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t6" href="#t6">6</a></span><span class="t"><span class="str">* Author:       Erwan Schild</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t7" href="#t7">7</a></span><span class="t"><span class="str">* Created:      16/12/2021</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t8" href="#t8">8</a></span><span class="t"><span class="str">* Licence:      CeCILL-C License v1.0 (https://cecill.info/licences.fr.html)</span>&nbsp;</span><span class="r"></span></p>
@@ -275,9 +275,9 @@
     <p class="pln"><span class="n"><a id="t191" href="#t191">191</a></span><span class="t"><span class="str">        """</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t192" href="#t192">192</a></span><span class="t">        <span class="key">return</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t193" href="#t193">193</a></span><span class="t">            <span class="str">"vectorizer_type"</span><span class="op">:</span> <span class="nam">self</span><span class="op">.</span><span class="nam">vectorizer_type</span><span class="op">.</span><span class="nam">value</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t194" href="#t194">194</a></span><span class="t">            <span class="str">"spacy_language_model"</span><span class="op">:</span> <span class="nam">self</span><span class="op">.</span><span class="nam">spacy_language_model</span><span class="op">.</span><span class="nam">value</span>&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t195" href="#t195">195</a></span><span class="t">            <span class="key">if</span> <span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">spacy_language_model</span> <span class="key">is</span> <span class="key">not</span> <span class="key">None</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t196" href="#t196">196</a></span><span class="t">            <span class="key">else</span> <span class="key">None</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t194" href="#t194">194</a></span><span class="t">            <span class="str">"spacy_language_model"</span><span class="op">:</span> <span class="op">(</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t195" href="#t195">195</a></span><span class="t">                <span class="nam">self</span><span class="op">.</span><span class="nam">spacy_language_model</span><span class="op">.</span><span class="nam">value</span> <span class="key">if</span> <span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">spacy_language_model</span> <span class="key">is</span> <span class="key">not</span> <span class="key">None</span><span class="op">)</span> <span class="key">else</span> <span class="key">None</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t196" href="#t196">196</a></span><span class="t">            <span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t197" href="#t197">197</a></span><span class="t">            <span class="str">"random_seed"</span><span class="op">:</span> <span class="nam">self</span><span class="op">.</span><span class="nam">random_seed</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t198" href="#t198">198</a></span><span class="t">        <span class="op">}</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t199" href="#t199">199</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -287,7 +287,7 @@
     <p class="pln"><span class="n"><a id="t203" href="#t203">203</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t204" href="#t204">204</a></span><span class="t">        <span class="nam">schema_extra</span> <span class="op">=</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t205" href="#t205">205</a></span><span class="t">            <span class="str">"example"</span><span class="op">:</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t206" href="#t206">206</a></span><span class="t">                <span class="str">"vectorizer_type"</span><span class="op">:</span> <span class="op">(</span><span class="nam">VectorizerType</span><span class="op">.</span><span class="nam">TFIDF</span> <span class="op">+</span> <span class="str">"|"</span> <span class="op">+</span> <span class="nam">VectorizerType</span><span class="op">.</span><span class="nam">SPACY</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t206" href="#t206">206</a></span><span class="t">                <span class="str">"vectorizer_type"</span><span class="op">:</span> <span class="nam">VectorizerType</span><span class="op">.</span><span class="nam">TFIDF</span> <span class="op">+</span> <span class="str">"|"</span> <span class="op">+</span> <span class="nam">VectorizerType</span><span class="op">.</span><span class="nam">SPACY</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t207" href="#t207">207</a></span><span class="t">                <span class="str">"random_seed"</span><span class="op">:</span> <span class="num">42</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t208" href="#t208">208</a></span><span class="t">                <span class="str">"!!!SPECIFIC: 'vectorizer_type'=='spacy'"</span><span class="op">:</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t209" href="#t209">209</a></span><span class="t">                    <span class="str">"spacy_language_model"</span><span class="op">:</span> <span class="nam">VectorizationSpacyLanguageModel</span><span class="op">.</span><span class="nam">FR_CORE_NEWS_MD</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
@@ -871,8 +871,8 @@
             <a id="indexLink" class="nav" href="covindex.html">&Hat; index</a> &nbsp; &nbsp;
             <a id="nextFileLink" class="nav" href="d_4324d12d9da04572_states_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
-            <a class="nav" href="https://coverage.readthedocs.io/en/7.3.2">coverage.py v7.3.2</a>,
-            created at 2023-11-16 17:41 +0100
+            <a class="nav" href="https://coverage.readthedocs.io/en/7.4.3">coverage.py v7.4.3</a>,
+            created at 2024-03-22 23:23 +0100
         </p>
     </div>
 </footer>

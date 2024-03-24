@@ -1,0 +1,1574 @@
+{
+    "0": {
+        "text_original": "Quel est le co\u00fbt de la r\u00e9paration du freinage de ma voiture ?",
+        "text": "Quel est le co\u00fbt de la r\u00e9paration du freinage de ma voiture ?",
+        "text_preprocessed": "quel est le cout de la reparation du freinage de ma voiture",
+        "is_deleted": false
+    },
+    "1": {
+        "text_original": "Pouvez-vous v\u00e9rifier la pression des pneus de ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier la pression des pneus de ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier la pression des pneus de ma voiture",
+        "is_deleted": false
+    },
+    "2": {
+        "text_original": "Avez-vous un diagnostic pour le voyant lumineux qui s'allume sur mon tableau de bord ?",
+        "text": "Avez-vous un diagnostic pour le voyant lumineux qui s'allume sur mon tableau de bord ?",
+        "text_preprocessed": "avez vous un diagnostic pour le voyant lumineux qui s allume sur mon tableau de bord",
+        "is_deleted": false
+    },
+    "3": {
+        "text_original": "Quels sont les entretiens courants \u00e0 effectuer sur ma voiture ?",
+        "text": "Quels sont les entretiens courants \u00e0 effectuer sur ma voiture ?",
+        "text_preprocessed": "quels sont les entretiens courants a effectuer sur ma voiture",
+        "is_deleted": false
+    },
+    "4": {
+        "text_original": "Combien co\u00fbte un changement d'huile pour ma voiture ?",
+        "text": "Combien co\u00fbte un changement d'huile pour ma voiture ?",
+        "text_preprocessed": "combien coute un changement d huile pour ma voiture",
+        "is_deleted": false
+    },
+    "5": {
+        "text_original": "Pouvez-vous v\u00e9rifier les bougies d'allumage de ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier les bougies d'allumage de ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier les bougies d allumage de ma voiture",
+        "is_deleted": false
+    },
+    "6": {
+        "text_original": "Dois-je remplacer les plaquettes de frein de ma voiture ?",
+        "text": "Dois-je remplacer les plaquettes de frein de ma voiture ?",
+        "text_preprocessed": "dois je remplacer les plaquettes de frein de ma voiture",
+        "is_deleted": false
+    },
+    "7": {
+        "text_original": "Quels sont les signes d'usure de mes pneus ?",
+        "text": "Quels sont les signes d'usure de mes pneus ?",
+        "text_preprocessed": "quels sont les signes d usure de mes pneus",
+        "is_deleted": false
+    },
+    "8": {
+        "text_original": "Avez-vous des recommandations pour l'entretien de ma voiture en hiver ?",
+        "text": "Avez-vous des recommandations pour l'entretien de ma voiture en hiver ?",
+        "text_preprocessed": "avez vous des recommandations pour l entretien de ma voiture en hiver",
+        "is_deleted": false
+    },
+    "9": {
+        "text_original": "Combien de temps prendra la r\u00e9paration de mon syst\u00e8me de refroidissement ?",
+        "text": "Combien de temps prendra la r\u00e9paration de mon syst\u00e8me de refroidissement ?",
+        "text_preprocessed": "combien de temps prendra la reparation de mon systeme de refroidissement",
+        "is_deleted": false
+    },
+    "10": {
+        "text_original": "Pouvez-vous v\u00e9rifier le niveau de liquide de frein de ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier le niveau de liquide de frein de ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier le niveau de liquide de frein de ma voiture",
+        "is_deleted": false
+    },
+    "11": {
+        "text_original": "Ma voiture a besoin d'un nouveau silencieux, quel est le co\u00fbt approximatif ?",
+        "text": "Ma voiture a besoin d'un nouveau silencieux, quel est le co\u00fbt approximatif ?",
+        "text_preprocessed": "ma voiture a besoin d un nouveau silencieux quel est le cout approximatif",
+        "is_deleted": false
+    },
+    "12": {
+        "text_original": "Quels sont les avantages et les inconv\u00e9nients des diff\u00e9rents types d'essence ?",
+        "text": "Quels sont les avantages et les inconv\u00e9nients des diff\u00e9rents types d'essence ?",
+        "text_preprocessed": "quels sont les avantages et les inconvenients des differents types d essence",
+        "is_deleted": false
+    },
+    "13": {
+        "text_original": "Avez-vous des conseils pour prolonger la dur\u00e9e de vie de ma batterie de voiture ?",
+        "text": "Avez-vous des conseils pour prolonger la dur\u00e9e de vie de ma batterie de voiture ?",
+        "text_preprocessed": "avez vous des conseils pour prolonger la duree de vie de ma batterie de voiture",
+        "is_deleted": false
+    },
+    "14": {
+        "text_original": "Combien co\u00fbte un changement de filtre \u00e0 air pour ma voiture ?",
+        "text": "Combien co\u00fbte un changement de filtre \u00e0 air pour ma voiture ?",
+        "text_preprocessed": "combien coute un changement de filtre a air pour ma voiture",
+        "is_deleted": false
+    },
+    "15": {
+        "text_original": "Avez-vous des recommandations pour conduire de mani\u00e8re plus \u00e9cologique ?",
+        "text": "Avez-vous des recommandations pour conduire de mani\u00e8re plus \u00e9cologique ?",
+        "text_preprocessed": "avez vous des recommandations pour conduire de maniere plus ecologique",
+        "is_deleted": false
+    },
+    "16": {
+        "text_original": "Pouvez-vous v\u00e9rifier l'\u00e9tat de mes amortisseurs ?",
+        "text": "Pouvez-vous v\u00e9rifier l'\u00e9tat de mes amortisseurs ?",
+        "text_preprocessed": "pouvez vous verifier l etat de mes amortisseurs",
+        "is_deleted": false
+    },
+    "17": {
+        "text_original": "Mon syst\u00e8me de climatisation fonctionne mal, pouvez-vous le r\u00e9parer ?",
+        "text": "Mon syst\u00e8me de climatisation fonctionne mal, pouvez-vous le r\u00e9parer ?",
+        "text_preprocessed": "mon systeme de climatisation fonctionne mal pouvez vous le reparer",
+        "is_deleted": false
+    },
+    "18": {
+        "text_original": "Quels sont les risques d'un faible niveau d'huile dans ma voiture ?",
+        "text": "Quels sont les risques d'un faible niveau d'huile dans ma voiture ?",
+        "text_preprocessed": "quels sont les risques d un faible niveau d huile dans ma voiture",
+        "is_deleted": false
+    },
+    "19": {
+        "text_original": "Avez-vous des astuces pour \u00e9conomiser du carburant lors de mes trajets quotidiens ?",
+        "text": "Avez-vous des astuces pour \u00e9conomiser du carburant lors de mes trajets quotidiens ?",
+        "text_preprocessed": "avez vous des astuces pour economiser du carburant lors de mes trajets quotidiens",
+        "is_deleted": false
+    },
+    "20": {
+        "text_original": "Pouvez-vous v\u00e9rifier les freins \u00e0 main de ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier les freins \u00e0 main de ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier les freins a main de ma voiture",
+        "is_deleted": false
+    },
+    "21": {
+        "text_original": "Avez-vous des recommandations pour la vidange de ma bo\u00eete de vitesses automatique ?",
+        "text": "Avez-vous des recommandations pour la vidange de ma bo\u00eete de vitesses automatique ?",
+        "text_preprocessed": "avez vous des recommandations pour la vidange de ma boite de vitesses automatique",
+        "is_deleted": false
+    },
+    "22": {
+        "text_original": "Quel est le co\u00fbt d'un changement de courroie de distribution pour ma voiture ?",
+        "text": "Quel est le co\u00fbt d'un changement de courroie de distribution pour ma voiture ?",
+        "text_preprocessed": "quel est le cout d un changement de courroie de distribution pour ma voiture",
+        "is_deleted": false
+    },
+    "23": {
+        "text_original": "Pouvez-vous v\u00e9rifier l'\u00e9tat de mes pneus hiver et me conseiller sur leur remplacement ?",
+        "text": "Pouvez-vous v\u00e9rifier l'\u00e9tat de mes pneus hiver et me conseiller sur leur remplacement ?",
+        "text_preprocessed": "pouvez vous verifier l etat de mes pneus hiver et me conseiller sur leur remplacement",
+        "is_deleted": false
+    },
+    "24": {
+        "text_original": "Combien de temps prendra le remplacement de la batterie de ma voiture ?",
+        "text": "Combien de temps prendra le remplacement de la batterie de ma voiture ?",
+        "text_preprocessed": "combien de temps prendra le remplacement de la batterie de ma voiture",
+        "is_deleted": false
+    },
+    "25": {
+        "text_original": "Avez-vous des astuces pour am\u00e9liorer la consommation de carburant de ma voiture ?",
+        "text": "Avez-vous des astuces pour am\u00e9liorer la consommation de carburant de ma voiture ?",
+        "text_preprocessed": "avez vous des astuces pour ameliorer la consommation de carburant de ma voiture",
+        "is_deleted": false
+    },
+    "26": {
+        "text_original": "Quels sont les signes d'une usure anormale des pneus ?",
+        "text": "Quels sont les signes d'une usure anormale des pneus ?",
+        "text_preprocessed": "quels sont les signes d une usure anormale des pneus",
+        "is_deleted": false
+    },
+    "27": {
+        "text_original": "Pouvez-vous me conseiller sur le changement des filtres \u00e0 huile et \u00e0 air de ma voiture ?",
+        "text": "Pouvez-vous me conseiller sur le changement des filtres \u00e0 huile et \u00e0 air de ma voiture ?",
+        "text_preprocessed": "pouvez vous me conseiller sur le changement des filtres a huile et a air de ma voiture",
+        "is_deleted": false
+    },
+    "28": {
+        "text_original": "Quels sont les avantages et les inconv\u00e9nients des diff\u00e9rents types de pneus neige ?",
+        "text": "Quels sont les avantages et les inconv\u00e9nients des diff\u00e9rents types de pneus neige ?",
+        "text_preprocessed": "quels sont les avantages et les inconvenients des differents types de pneus neige",
+        "is_deleted": false
+    },
+    "29": {
+        "text_original": "Ma voiture a besoin d'un nouveau syst\u00e8me d'\u00e9chappement, quel est le co\u00fbt approximatif ?",
+        "text": "Ma voiture a besoin d'un nouveau syst\u00e8me d'\u00e9chappement, quel est le co\u00fbt approximatif ?",
+        "text_preprocessed": "ma voiture a besoin d un nouveau systeme d echappement quel est le cout approximatif",
+        "is_deleted": false
+    },
+    "30": {
+        "text_original": "Pouvez-vous v\u00e9rifier l'\u00e9tat du syst\u00e8me de refroidissement de ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier l'\u00e9tat du syst\u00e8me de refroidissement de ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier l etat du systeme de refroidissement de ma voiture",
+        "is_deleted": false
+    },
+    "31": {
+        "text_original": "Quand dois-je remplacer mes balais d'essuie-glace ?",
+        "text": "Quand dois-je remplacer mes balais d'essuie-glace ?",
+        "text_preprocessed": "quand dois je remplacer mes balais d essuie glace",
+        "is_deleted": false
+    },
+    "32": {
+        "text_original": "Avez-vous des recommandations pour l'entretien de ma voiture en \u00e9t\u00e9 ?",
+        "text": "Avez-vous des recommandations pour l'entretien de ma voiture en \u00e9t\u00e9 ?",
+        "text_preprocessed": "avez vous des recommandations pour l entretien de ma voiture en ete",
+        "is_deleted": false
+    },
+    "33": {
+        "text_original": "Pouvez-vous me conseiller sur le choix des pneus pour ma voiture ?",
+        "text": "Pouvez-vous me conseiller sur le choix des pneus pour ma voiture ?",
+        "text_preprocessed": "pouvez vous me conseiller sur le choix des pneus pour ma voiture",
+        "is_deleted": false
+    },
+    "34": {
+        "text_original": "Combien co\u00fbte un changement de bougies de pr\u00e9chauffage pour ma voiture ?",
+        "text": "Combien co\u00fbte un changement de bougies de pr\u00e9chauffage pour ma voiture ?",
+        "text_preprocessed": "combien coute un changement de bougies de prechauffage pour ma voiture",
+        "is_deleted": false
+    },
+    "35": {
+        "text_original": "Quels sont les signes d'un probl\u00e8me au niveau du turbo de ma voiture ?",
+        "text": "Quels sont les signes d'un probl\u00e8me au niveau du turbo de ma voiture ?",
+        "text_preprocessed": "quels sont les signes d un probleme au niveau du turbo de ma voiture",
+        "is_deleted": false
+    },
+    "36": {
+        "text_original": "Pouvez-vous v\u00e9rifier le niveau de liquide de refroidissement de ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier le niveau de liquide de refroidissement de ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier le niveau de liquide de refroidissement de ma voiture",
+        "is_deleted": false
+    },
+    "37": {
+        "text_original": "Avez-vous des conseils pour prolonger la dur\u00e9e de vie de mon syst\u00e8me de freinage ?",
+        "text": "Avez-vous des conseils pour prolonger la dur\u00e9e de vie de mon syst\u00e8me de freinage ?",
+        "text_preprocessed": "avez vous des conseils pour prolonger la duree de vie de mon systeme de freinage",
+        "is_deleted": false
+    },
+    "38": {
+        "text_original": "Combien de temps prendra le remplacement des plaquettes et disques de frein de ma voiture ?",
+        "text": "Combien de temps prendra le remplacement des plaquettes et disques de frein de ma voiture ?",
+        "text_preprocessed": "combien de temps prendra le remplacement des plaquettes et disques de frein de ma voiture",
+        "is_deleted": false
+    },
+    "39": {
+        "text_original": "Avez-vous des recommandations pour le choix d'une huile moteur adapt\u00e9e \u00e0 ma voiture ?",
+        "text": "Avez-vous des recommandations pour le choix d'une huile moteur adapt\u00e9e \u00e0 ma voiture ?",
+        "text_preprocessed": "avez vous des recommandations pour le choix d une huile moteur adaptee a ma voiture",
+        "is_deleted": false
+    },
+    "40": {
+        "text_original": "Pouvez-vous v\u00e9rifier l'usure des balais d'essuie-glace de ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier l'usure des balais d'essuie-glace de ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier l usure des balais d essuie glace de ma voiture",
+        "is_deleted": false
+    },
+    "41": {
+        "text_original": "Avez-vous des conseils pour nettoyer les phares de ma voiture et leur redonner leur \u00e9clat initial ?",
+        "text": "Avez-vous des conseils pour nettoyer les phares de ma voiture et leur redonner leur \u00e9clat initial ?",
+        "text_preprocessed": "avez vous des conseils pour nettoyer les phares de ma voiture et leur redonner leur eclat initial",
+        "is_deleted": false
+    },
+    "42": {
+        "text_original": "Quel est le co\u00fbt d'un changement de filtre \u00e0 carburant pour ma voiture ?",
+        "text": "Quel est le co\u00fbt d'un changement de filtre \u00e0 carburant pour ma voiture ?",
+        "text_preprocessed": "quel est le cout d un changement de filtre a carburant pour ma voiture",
+        "is_deleted": false
+    },
+    "43": {
+        "text_original": "Pouvez-vous me conseiller sur le choix des cha\u00eenes \u00e0 neige pour ma voiture ?",
+        "text": "Pouvez-vous me conseiller sur le choix des cha\u00eenes \u00e0 neige pour ma voiture ?",
+        "text_preprocessed": "pouvez vous me conseiller sur le choix des chaines a neige pour ma voiture",
+        "is_deleted": false
+    },
+    "44": {
+        "text_original": "Avez-vous des recommandations pour pr\u00e9parer ma voiture \u00e0 un long voyage ?",
+        "text": "Avez-vous des recommandations pour pr\u00e9parer ma voiture \u00e0 un long voyage ?",
+        "text_preprocessed": "avez vous des recommandations pour preparer ma voiture a un long voyage",
+        "is_deleted": false
+    },
+    "45": {
+        "text_original": "Quels sont les risques de rouler avec une faible pression des pneus dans ma voiture ?",
+        "text": "Quels sont les risques de rouler avec une faible pression des pneus dans ma voiture ?",
+        "text_preprocessed": "quels sont les risques de rouler avec une faible pression des pneus dans ma voiture",
+        "is_deleted": false
+    },
+    "46": {
+        "text_original": "Pouvez-vous me conseiller sur le choix d'une batterie adapt\u00e9e \u00e0 ma voiture ?",
+        "text": "Pouvez-vous me conseiller sur le choix d'une batterie adapt\u00e9e \u00e0 ma voiture ?",
+        "text_preprocessed": "pouvez vous me conseiller sur le choix d une batterie adaptee a ma voiture",
+        "is_deleted": false
+    },
+    "47": {
+        "text_original": "Combien co\u00fbte un changement de courroie de transmission pour ma voiture ?",
+        "text": "Combien co\u00fbte un changement de courroie de transmission pour ma voiture ?",
+        "text_preprocessed": "combien coute un changement de courroie de transmission pour ma voiture",
+        "is_deleted": false
+    },
+    "48": {
+        "text_original": "Avez-vous des astuces pour r\u00e9duire les \u00e9missions de mon v\u00e9hicule ?",
+        "text": "Avez-vous des astuces pour r\u00e9duire les \u00e9missions de mon v\u00e9hicule ?",
+        "text_preprocessed": "avez vous des astuces pour reduire les emissions de mon vehicule",
+        "is_deleted": false
+    },
+    "49": {
+        "text_original": "Quels sont les risques d'une fuite de liquide de frein dans ma voiture ?",
+        "text": "Quels sont les risques d'une fuite de liquide de frein dans ma voiture ?",
+        "text_preprocessed": "quels sont les risques d une fuite de liquide de frein dans ma voiture",
+        "is_deleted": false
+    },
+    "50": {
+        "text_original": "Pouvez-vous me conseiller sur l'entretien de mon syst\u00e8me de climatisation automobile ?",
+        "text": "Pouvez-vous me conseiller sur l'entretien de mon syst\u00e8me de climatisation automobile ?",
+        "text_preprocessed": "pouvez vous me conseiller sur l entretien de mon systeme de climatisation automobile",
+        "is_deleted": false
+    },
+    "51": {
+        "text_original": "Quels sont les signes de d\u00e9faillance du syst\u00e8me de suspension de ma voiture ?",
+        "text": "Quels sont les signes de d\u00e9faillance du syst\u00e8me de suspension de ma voiture ?",
+        "text_preprocessed": "quels sont les signes de defaillance du systeme de suspension de ma voiture",
+        "is_deleted": false
+    },
+    "52": {
+        "text_original": "Avez-vous des recommandations pour am\u00e9liorer la tenue de route de ma voiture en hiver ?",
+        "text": "Avez-vous des recommandations pour am\u00e9liorer la tenue de route de ma voiture en hiver ?",
+        "text_preprocessed": "avez vous des recommandations pour ameliorer la tenue de route de ma voiture en hiver",
+        "is_deleted": false
+    },
+    "53": {
+        "text_original": "Pouvez-vous v\u00e9rifier l'\u00e9tat du syst\u00e8me de direction assist\u00e9e de ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier l'\u00e9tat du syst\u00e8me de direction assist\u00e9e de ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier l etat du systeme de direction assistee de ma voiture",
+        "is_deleted": false
+    },
+    "54": {
+        "text_original": "Combien co\u00fbte un changement du kit de distribution pour ma voiture ?",
+        "text": "Combien co\u00fbte un changement du kit de distribution pour ma voiture ?",
+        "text_preprocessed": "combien coute un changement du kit de distribution pour ma voiture",
+        "is_deleted": false
+    },
+    "55": {
+        "text_original": "Avez-vous des astuces pour am\u00e9liorer l'a\u00e9rodynamisme de ma voiture et r\u00e9duire la consommation de carburant ?",
+        "text": "Avez-vous des astuces pour am\u00e9liorer l'a\u00e9rodynamisme de ma voiture et r\u00e9duire la consommation de carburant ?",
+        "text_preprocessed": "avez vous des astuces pour ameliorer l aerodynamisme de ma voiture et reduire la consommation de carburant",
+        "is_deleted": false
+    },
+    "56": {
+        "text_original": "Quels sont les avantages et les inconv\u00e9nients des diff\u00e9rents types d'embrayage ?",
+        "text": "Quels sont les avantages et les inconv\u00e9nients des diff\u00e9rents types d'embrayage ?",
+        "text_preprocessed": "quels sont les avantages et les inconvenients des differents types d embrayage",
+        "is_deleted": false
+    },
+    "57": {
+        "text_original": "Pouvez-vous me conseiller sur le choix d'un lubrifiant pour les joints de culasse de ma voiture ?",
+        "text": "Pouvez-vous me conseiller sur le choix d'un lubrifiant pour les joints de culasse de ma voiture ?",
+        "text_preprocessed": "pouvez vous me conseiller sur le choix d un lubrifiant pour les joints de culasse de ma voiture",
+        "is_deleted": false
+    },
+    "58": {
+        "text_original": "Avez-vous des recommandations pour \u00e9viter les risques d'incendie dans mon v\u00e9hicule ?",
+        "text": "Avez-vous des recommandations pour \u00e9viter les risques d'incendie dans mon v\u00e9hicule ?",
+        "text_preprocessed": "avez vous des recommandations pour eviter les risques d incendie dans mon vehicule",
+        "is_deleted": false
+    },
+    "59": {
+        "text_original": "Quels sont les signes d'un probl\u00e8me avec le syst\u00e8me d'injection de carburant de ma voiture ?",
+        "text": "Quels sont les signes d'un probl\u00e8me avec le syst\u00e8me d'injection de carburant de ma voiture ?",
+        "text_preprocessed": "quels sont les signes d un probleme avec le systeme d injection de carburant de ma voiture",
+        "is_deleted": false
+    },
+    "60": {
+        "text_original": "Comment puis-je prendre rendez-vous pour l'entretien de ma voiture ?",
+        "text": "Comment puis-je prendre rendez-vous pour l'entretien de ma voiture ?",
+        "text_preprocessed": "comment puis je prendre rendez vous pour l entretien de ma voiture",
+        "is_deleted": false
+    },
+    "61": {
+        "text_original": "Combien de temps \u00e0 l'avance dois-je prendre rendez-vous pour un entretien ou une r\u00e9paration ?",
+        "text": "Combien de temps \u00e0 l'avance dois-je prendre rendez-vous pour un entretien ou une r\u00e9paration ?",
+        "text_preprocessed": "combien de temps a l avance dois je prendre rendez vous pour un entretien ou une reparation",
+        "is_deleted": false
+    },
+    "62": {
+        "text_original": "Avez-vous des disponibilit\u00e9s pour une r\u00e9vision aujourd'hui ou demain matin ?",
+        "text": "Avez-vous des disponibilit\u00e9s pour une r\u00e9vision aujourd'hui ou demain matin ?",
+        "text_preprocessed": "avez vous des disponibilites pour une revision aujourd hui ou demain matin",
+        "is_deleted": false
+    },
+    "63": {
+        "text_original": "Pouvez-vous me confirmer ma r\u00e9servation pour demain \u00e0 9h ?",
+        "text": "Pouvez-vous me confirmer ma r\u00e9servation pour demain \u00e0 9h ?",
+        "text_preprocessed": "pouvez vous me confirmer ma reservation pour demain a 9h",
+        "is_deleted": false
+    },
+    "64": {
+        "text_original": "Quels sont les documents dont j'ai besoin pour faire r\u00e9parer ma voiture dans votre garage ?",
+        "text": "Quels sont les documents dont j'ai besoin pour faire r\u00e9parer ma voiture dans votre garage ?",
+        "text_preprocessed": "quels sont les documents dont j ai besoin pour faire reparer ma voiture dans votre garage",
+        "is_deleted": false
+    },
+    "65": {
+        "text_original": "Comment puis-je obtenir une copie de ma facture d'entretien ou de r\u00e9paration pour mon v\u00e9hicule ?",
+        "text": "Comment puis-je obtenir une copie de ma facture d'entretien ou de r\u00e9paration pour mon v\u00e9hicule ?",
+        "text_preprocessed": "comment puis je obtenir une copie de ma facture d entretien ou de reparation pour mon vehicule",
+        "is_deleted": false
+    },
+    "66": {
+        "text_original": "Quels sont les modes de paiement accept\u00e9s dans votre garage pour le r\u00e8glement de ma facture d'entretien ou de r\u00e9paration ?",
+        "text": "Quels sont les modes de paiement accept\u00e9s dans votre garage pour le r\u00e8glement de ma facture d'entretien ou de r\u00e9paration ?",
+        "text_preprocessed": "quels sont les modes de paiement acceptes dans votre garage pour le reglement de ma facture d entretien ou de reparation",
+        "is_deleted": false
+    },
+    "67": {
+        "text_original": "Pouvez-vous me d\u00e9tailler la facture pour comprendre les co\u00fbts associ\u00e9s \u00e0 chaque r\u00e9paration effectu\u00e9e sur ma voiture ?",
+        "text": "Pouvez-vous me d\u00e9tailler la facture pour comprendre les co\u00fbts associ\u00e9s \u00e0 chaque r\u00e9paration effectu\u00e9e sur ma voiture ?",
+        "text_preprocessed": "pouvez vous me detailler la facture pour comprendre les couts associes a chaque reparation effectuee sur ma voiture",
+        "is_deleted": false
+    },
+    "68": {
+        "text_original": "Quels sont les frais suppl\u00e9mentaires qui peuvent s'ajouter \u00e0 la facture initiale ?",
+        "text": "Quels sont les frais suppl\u00e9mentaires qui peuvent s'ajouter \u00e0 la facture initiale ?",
+        "text_preprocessed": "quels sont les frais supplementaires qui peuvent s ajouter a la facture initiale",
+        "is_deleted": false
+    },
+    "69": {
+        "text_original": "Avez-vous des facilit\u00e9s de paiement ou des programmes de financement pour les frais d'entretien ou de r\u00e9paration ?",
+        "text": "Avez-vous des facilit\u00e9s de paiement ou des programmes de financement pour les frais d'entretien ou de r\u00e9paration ?",
+        "text_preprocessed": "avez vous des facilites de paiement ou des programmes de financement pour les frais d entretien ou de reparation",
+        "is_deleted": false
+    },
+    "70": {
+        "text_original": "Pouvez-vous m'envoyer une copie de ma facture par email ou par courrier postal ?",
+        "text": "Pouvez-vous m'envoyer une copie de ma facture par email ou par courrier postal ?",
+        "text_preprocessed": "pouvez vous m envoyer une copie de ma facture par email ou par courrier postal",
+        "is_deleted": false
+    },
+    "71": {
+        "text_original": "Quand puis-je venir chercher ma voiture apr\u00e8s son entretien ou ses r\u00e9parations ?",
+        "text": "Quand puis-je venir chercher ma voiture apr\u00e8s son entretien ou ses r\u00e9parations ?",
+        "text_preprocessed": "quand puis je venir chercher ma voiture apres son entretien ou ses reparations",
+        "is_deleted": false
+    },
+    "72": {
+        "text_original": "Puis-je reprendre un rendez-vous pour une prochaine r\u00e9vision ou inspection r\u00e9guli\u00e8re de ma voiture pendant que je suis dans votre garage ?",
+        "text": "Puis-je reprendre un rendez-vous pour une prochaine r\u00e9vision ou inspection r\u00e9guli\u00e8re de ma voiture pendant que je suis dans votre garage ?",
+        "text_preprocessed": "puis je reprendre un rendez vous pour une prochaine revision ou inspection reguliere de ma voiture pendant que je suis dans votre garage",
+        "is_deleted": false
+    },
+    "73": {
+        "text_original": "Avez-vous un syst\u00e8me de r\u00e9servation en ligne pour les entretiens et les r\u00e9parations de v\u00e9hicules ?",
+        "text": "Avez-vous un syst\u00e8me de r\u00e9servation en ligne pour les entretiens et les r\u00e9parations de v\u00e9hicules ?",
+        "text_preprocessed": "avez vous un systeme de reservation en ligne pour les entretiens et les reparations de vehicules",
+        "is_deleted": false
+    },
+    "74": {
+        "text_original": "Pouvez-vous m'expliquer les diff\u00e9rents types d'entretien recommand\u00e9s pour maintenir la performance et la s\u00e9curit\u00e9 de ma voiture ?",
+        "text": "Pouvez-vous m'expliquer les diff\u00e9rents types d'entretien recommand\u00e9s pour maintenir la performance et la s\u00e9curit\u00e9 de ma voiture ?",
+        "text_preprocessed": "pouvez vous m expliquer les differents types d entretien recommandes pour maintenir la performance et la securite de ma voiture",
+        "is_deleted": false
+    },
+    "75": {
+        "text_original": "Quels sont les garanties offertes par votre garage pour les entretiens et les r\u00e9parations effectu\u00e9s sur ma voiture ?",
+        "text": "Quels sont les garanties offertes par votre garage pour les entretiens et les r\u00e9parations effectu\u00e9s sur ma voiture ?",
+        "text_preprocessed": "quels sont les garanties offertes par votre garage pour les entretiens et les reparations effectues sur ma voiture",
+        "is_deleted": false
+    },
+    "76": {
+        "text_original": "Avez-vous besoin d'une autorisation pr\u00e9alable pour effectuer des r\u00e9parations non pr\u00e9vues sur ma voiture ?",
+        "text": "Avez-vous besoin d'une autorisation pr\u00e9alable pour effectuer des r\u00e9parations non pr\u00e9vues sur ma voiture ?",
+        "text_preprocessed": "avez vous besoin d une autorisation prealable pour effectuer des reparations non prevues sur ma voiture",
+        "is_deleted": false
+    },
+    "77": {
+        "text_original": "Pouvez-vous me conseiller sur la fr\u00e9quence d'entretien recommand\u00e9e pour les pi\u00e8ces critiques de ma voiture telles que les freins, les pneus, etc. ?",
+        "text": "Pouvez-vous me conseiller sur la fr\u00e9quence d'entretien recommand\u00e9e pour les pi\u00e8ces critiques de ma voiture telles que les freins, les pneus, etc. ?",
+        "text_preprocessed": "pouvez vous me conseiller sur la frequence d entretien recommandee pour les pieces critiques de ma voiture telles que les freins les pneus etc",
+        "is_deleted": false
+    },
+    "78": {
+        "text_original": "Avez-vous des offres promotionnelles ou des remises pour les forfaits d'entretien ou de r\u00e9paration automobile ?",
+        "text": "Avez-vous des offres promotionnelles ou des remises pour les forfaits d'entretien ou de r\u00e9paration automobile ?",
+        "text_preprocessed": "avez vous des offres promotionnelles ou des remises pour les forfaits d entretien ou de reparation automobile",
+        "is_deleted": false
+    },
+    "79": {
+        "text_original": "Pouvez-vous m'expliquer les avantages des programmes d'entretien r\u00e9gulier propos\u00e9s par votre garage pour maintenir la valeur de revente de ma voiture ?",
+        "text": "Pouvez-vous m'expliquer les avantages des programmes d'entretien r\u00e9gulier propos\u00e9s par votre garage pour maintenir la valeur de revente de ma voiture ?",
+        "text_preprocessed": "pouvez vous m expliquer les avantages des programmes d entretien regulier proposes par votre garage pour maintenir la valeur de revente de ma voiture",
+        "is_deleted": false
+    },
+    "80": {
+        "text_original": "Pouvez-vous expliquer l'importance de l'entretien r\u00e9gulier de mon v\u00e9hicule ?",
+        "text": "Pouvez-vous expliquer l'importance de l'entretien r\u00e9gulier de mon v\u00e9hicule ?",
+        "text_preprocessed": "pouvez vous expliquer l importance de l entretien regulier de mon vehicule",
+        "is_deleted": false
+    },
+    "81": {
+        "text_original": "Combien de temps dure un entretien de routine pour ma voiture ?",
+        "text": "Combien de temps dure un entretien de routine pour ma voiture ?",
+        "text_preprocessed": "combien de temps dure un entretien de routine pour ma voiture",
+        "is_deleted": false
+    },
+    "82": {
+        "text_original": "Avez-vous des conseils pour prolonger la dur\u00e9e de vie de ma batterie de voiture ?",
+        "text": "Avez-vous des conseils pour prolonger la dur\u00e9e de vie de ma batterie de voiture ?",
+        "text_preprocessed": "avez vous des conseils pour prolonger la duree de vie de ma batterie de voiture",
+        "is_deleted": false
+    },
+    "83": {
+        "text_original": "Quand faut-il remplacer les filtres \u00e0 air de ma voiture ?",
+        "text": "Quand faut-il remplacer les filtres \u00e0 air de ma voiture ?",
+        "text_preprocessed": "quand faut il remplacer les filtres a air de ma voiture",
+        "is_deleted": false
+    },
+    "84": {
+        "text_original": "Pouvez-vous me conseiller sur les huiles moteur de qualit\u00e9 sup\u00e9rieure pour maintenir la performance de ma voiture ?",
+        "text": "Pouvez-vous me conseiller sur les huiles moteur de qualit\u00e9 sup\u00e9rieure pour maintenir la performance de ma voiture ?",
+        "text_preprocessed": "pouvez vous me conseiller sur les huiles moteur de qualite superieure pour maintenir la performance de ma voiture",
+        "is_deleted": false
+    },
+    "85": {
+        "text_original": "Quel est le co\u00fbt moyen d'un entretien de routine pour ma voiture ?",
+        "text": "Quel est le co\u00fbt moyen d'un entretien de routine pour ma voiture ?",
+        "text_preprocessed": "quel est le cout moyen d un entretien de routine pour ma voiture",
+        "is_deleted": false
+    },
+    "86": {
+        "text_original": "Comment puis-je savoir si mon niveau d'huile moteur est suffisant pour mon v\u00e9hicule ?",
+        "text": "Comment puis-je savoir si mon niveau d'huile moteur est suffisant pour mon v\u00e9hicule ?",
+        "text_preprocessed": "comment puis je savoir si mon niveau d huile moteur est suffisant pour mon vehicule",
+        "is_deleted": false
+    },
+    "87": {
+        "text_original": "Pouvez-vous v\u00e9rifier le niveau de liquide de refroidissement de ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier le niveau de liquide de refroidissement de ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier le niveau de liquide de refroidissement de ma voiture",
+        "is_deleted": false
+    },
+    "88": {
+        "text_original": "Quand faut-il remplacer les bougies d'allumage de ma voiture ?",
+        "text": "Quand faut-il remplacer les bougies d'allumage de ma voiture ?",
+        "text_preprocessed": "quand faut il remplacer les bougies d allumage de ma voiture",
+        "is_deleted": false
+    },
+    "89": {
+        "text_original": "Pouvez-vous v\u00e9rifier la pression des pneus de ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier la pression des pneus de ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier la pression des pneus de ma voiture",
+        "is_deleted": false
+    },
+    "90": {
+        "text_original": "Quels sont les signes d'un syst\u00e8me de freinage d\u00e9faillant dans ma voiture ?",
+        "text": "Quels sont les signes d'un syst\u00e8me de freinage d\u00e9faillant dans ma voiture ?",
+        "text_preprocessed": "quels sont les signes d un systeme de freinage defaillant dans ma voiture",
+        "is_deleted": false
+    },
+    "91": {
+        "text_original": "Pouvez-vous v\u00e9rifier les freins \u00e0 main de ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier les freins \u00e0 main de ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier les freins a main de ma voiture",
+        "is_deleted": false
+    },
+    "92": {
+        "text_original": "Avez-vous des astuces pour r\u00e9duire l'usure des freins de ma voiture ?",
+        "text": "Avez-vous des astuces pour r\u00e9duire l'usure des freins de ma voiture ?",
+        "text_preprocessed": "avez vous des astuces pour reduire l usure des freins de ma voiture",
+        "is_deleted": false
+    },
+    "93": {
+        "text_original": "Pouvez-vous m'expliquer la diff\u00e9rence entre les freins \u00e0 disque et les freins \u00e0 tambour pour un v\u00e9hicule ?",
+        "text": "Pouvez-vous m'expliquer la diff\u00e9rence entre les freins \u00e0 disque et les freins \u00e0 tambour pour un v\u00e9hicule ?",
+        "text_preprocessed": "pouvez vous m expliquer la difference entre les freins a disque et les freins a tambour pour un vehicule",
+        "is_deleted": false
+    },
+    "94": {
+        "text_original": "Quels sont les avantages et les inconv\u00e9nients des diff\u00e9rents types de pneus pour un v\u00e9hicule ?",
+        "text": "Quels sont les avantages et les inconv\u00e9nients des diff\u00e9rents types de pneus pour un v\u00e9hicule ?",
+        "text_preprocessed": "quels sont les avantages et les inconvenients des differents types de pneus pour un vehicule",
+        "is_deleted": false
+    },
+    "95": {
+        "text_original": "Avez-vous des recommandations pour les pneus d'hiver ou toutes saisons pour ma voiture ?",
+        "text": "Avez-vous des recommandations pour les pneus d'hiver ou toutes saisons pour ma voiture ?",
+        "text_preprocessed": "avez vous des recommandations pour les pneus d hiver ou toutes saisons pour ma voiture",
+        "is_deleted": false
+    },
+    "96": {
+        "text_original": "Quels sont les signes d'usure anormale des pneus dans ma voiture ?",
+        "text": "Quels sont les signes d'usure anormale des pneus dans ma voiture ?",
+        "text_preprocessed": "quels sont les signes d usure anormale des pneus dans ma voiture",
+        "is_deleted": false
+    },
+    "97": {
+        "text_original": "Pouvez-vous me conseiller sur les pneus adapt\u00e9s \u00e0 mon v\u00e9hicule et \u00e0 mon style de conduite ?",
+        "text": "Pouvez-vous me conseiller sur les pneus adapt\u00e9s \u00e0 mon v\u00e9hicule et \u00e0 mon style de conduite ?",
+        "text_preprocessed": "pouvez vous me conseiller sur les pneus adaptes a mon vehicule et a mon style de conduite",
+        "is_deleted": false
+    },
+    "98": {
+        "text_original": "Puis-je conduire avec une ampoule grill\u00e9e dans mon v\u00e9hicule ?",
+        "text": "Puis-je conduire avec une ampoule grill\u00e9e dans mon v\u00e9hicule ?",
+        "text_preprocessed": "puis je conduire avec une ampoule grillee dans mon vehicule",
+        "is_deleted": false
+    },
+    "99": {
+        "text_original": "Pouvez-vous v\u00e9rifier l'\u00e9tat des amortisseurs dans ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier l'\u00e9tat des amortisseurs dans ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier l etat des amortisseurs dans ma voiture",
+        "is_deleted": false
+    },
+    "100": {
+        "text_original": "Avez-vous des conseils pour r\u00e9duire la consommation de carburant de ma voiture ?",
+        "text": "Avez-vous des conseils pour r\u00e9duire la consommation de carburant de ma voiture ?",
+        "text_preprocessed": "avez vous des conseils pour reduire la consommation de carburant de ma voiture",
+        "is_deleted": false
+    },
+    "101": {
+        "text_original": "Quel est le co\u00fbt moyen d'un changement de courroie de distribution pour ma voiture ?",
+        "text": "Quel est le co\u00fbt moyen d'un changement de courroie de distribution pour ma voiture ?",
+        "text_preprocessed": "quel est le cout moyen d un changement de courroie de distribution pour ma voiture",
+        "is_deleted": false
+    },
+    "102": {
+        "text_original": "Quels sont les signes d'une courroie de distribution us\u00e9e dans ma voiture ?",
+        "text": "Quels sont les signes d'une courroie de distribution us\u00e9e dans ma voiture ?",
+        "text_preprocessed": "quels sont les signes d une courroie de distribution usee dans ma voiture",
+        "is_deleted": false
+    },
+    "103": {
+        "text_original": "Puis-je continuer \u00e0 conduire avec un voyant lumineux allum\u00e9 sur mon tableau de bord ?",
+        "text": "Puis-je continuer \u00e0 conduire avec un voyant lumineux allum\u00e9 sur mon tableau de bord ?",
+        "text_preprocessed": "puis je continuer a conduire avec un voyant lumineux allume sur mon tableau de bord",
+        "is_deleted": false
+    },
+    "104": {
+        "text_original": "Avez-vous des astuces pour r\u00e9duire les \u00e9missions polluantes de ma voiture ?",
+        "text": "Avez-vous des astuces pour r\u00e9duire les \u00e9missions polluantes de ma voiture ?",
+        "text_preprocessed": "avez vous des astuces pour reduire les emissions polluantes de ma voiture",
+        "is_deleted": false
+    },
+    "105": {
+        "text_original": "Pouvez-vous me conseiller sur la meilleure fa\u00e7on de stocker ma voiture pendant une longue p\u00e9riode ?",
+        "text": "Pouvez-vous me conseiller sur la meilleure fa\u00e7on de stocker ma voiture pendant une longue p\u00e9riode ?",
+        "text_preprocessed": "pouvez vous me conseiller sur la meilleure facon de stocker ma voiture pendant une longue periode",
+        "is_deleted": false
+    },
+    "106": {
+        "text_original": "Avez-vous des recommandations pour maintenir la propret\u00e9 interne et externe de ma voiture en hiver ?",
+        "text": "Avez-vous des recommandations pour maintenir la propret\u00e9 interne et externe de ma voiture en hiver ?",
+        "text_preprocessed": "avez vous des recommandations pour maintenir la proprete interne et externe de ma voiture en hiver",
+        "is_deleted": false
+    },
+    "107": {
+        "text_original": "Pouvez-vous me conseiller sur les pi\u00e8ces m\u00e9caniques les plus souvent remplac\u00e9es dans une voiture ?",
+        "text": "Pouvez-vous me conseiller sur les pi\u00e8ces m\u00e9caniques les plus souvent remplac\u00e9es dans une voiture ?",
+        "text_preprocessed": "pouvez vous me conseiller sur les pieces mecaniques les plus souvent remplacees dans une voiture",
+        "is_deleted": false
+    },
+    "108": {
+        "text_original": "Comment puis-je savoir si mon variateur de vitesse fonctionne correctement dans ma voiture automatique ?",
+        "text": "Comment puis-je savoir si mon variateur de vitesse fonctionne correctement dans ma voiture automatique ?",
+        "text_preprocessed": "comment puis je savoir si mon variateur de vitesse fonctionne correctement dans ma voiture automatique",
+        "is_deleted": false
+    },
+    "109": {
+        "text_original": "Pouvez-vous me conseiller sur le choix du carburant pour mon v\u00e9hicule diesel ou essence ?",
+        "text": "Pouvez-vous me conseiller sur le choix du carburant pour mon v\u00e9hicule diesel ou essence ?",
+        "text_preprocessed": "pouvez vous me conseiller sur le choix du carburant pour mon vehicule diesel ou essence",
+        "is_deleted": false
+    },
+    "110": {
+        "text_original": "Quand dois-je remplacer le filtre \u00e0 carburant de ma voiture diesel ou essence ?",
+        "text": "Quand dois-je remplacer le filtre \u00e0 carburant de ma voiture diesel ou essence ?",
+        "text_preprocessed": "quand dois je remplacer le filtre a carburant de ma voiture diesel ou essence",
+        "is_deleted": false
+    },
+    "111": {
+        "text_original": "Quels sont les signes d'une d\u00e9faillance du syst\u00e8me d'injection diesel ou essence dans ma voiture ?",
+        "text": "Quels sont les signes d'une d\u00e9faillance du syst\u00e8me d'injection diesel ou essence dans ma voiture ?",
+        "text_preprocessed": "quels sont les signes d une defaillance du systeme d injection diesel ou essence dans ma voiture",
+        "is_deleted": false
+    },
+    "112": {
+        "text_original": "Avez-vous des astuces pour adapter sa conduite en montagne ou en ville pour \u00e9conomiser du carburant dans sa voiture \uff1f",
+        "text": "Avez-vous des astuces pour adapter sa conduite en montagne ou en ville pour \u00e9conomiser du carburant dans sa voiture \uff1f",
+        "text_preprocessed": "avez vous des astuces pour adapter sa conduite en montagne ou en ville pour economiser du carburant dans sa voiture",
+        "is_deleted": false
+    },
+    "113": {
+        "text_original": "Pouvez-vous expliquer le fonctionnement du syst\u00e8me anti-pollution sur une voiture diesel ou essence \uff1f",
+        "text": "Pouvez-vous expliquer le fonctionnement du syst\u00e8me anti-pollution sur une voiture diesel ou essence \uff1f",
+        "text_preprocessed": "pouvez vous expliquer le fonctionnement du systeme anti pollution sur une voiture diesel ou essence",
+        "is_deleted": false
+    },
+    "114": {
+        "text_original": "Pouvez-vous commander des pi\u00e8ces sp\u00e9cifiques pour la r\u00e9paration de ma voiture ?",
+        "text": "Pouvez-vous commander des pi\u00e8ces sp\u00e9cifiques pour la r\u00e9paration de ma voiture ?",
+        "text_preprocessed": "pouvez vous commander des pieces specifiques pour la reparation de ma voiture",
+        "is_deleted": false
+    },
+    "115": {
+        "text_original": "Avez-vous des partenaires fiables pour la commande de pi\u00e8ces d\u00e9tach\u00e9es pour ma voiture ?",
+        "text": "Avez-vous des partenaires fiables pour la commande de pi\u00e8ces d\u00e9tach\u00e9es pour ma voiture ?",
+        "text_preprocessed": "avez vous des partenaires fiables pour la commande de pieces detachees pour ma voiture",
+        "is_deleted": false
+    },
+    "116": {
+        "text_original": "Quel est le d\u00e9lai de livraison des pi\u00e8ces command\u00e9es pour la r\u00e9paration de ma voiture ?",
+        "text": "Quel est le d\u00e9lai de livraison des pi\u00e8ces command\u00e9es pour la r\u00e9paration de ma voiture ?",
+        "text_preprocessed": "quel est le delai de livraison des pieces commandees pour la reparation de ma voiture",
+        "is_deleted": false
+    },
+    "117": {
+        "text_original": "Pouvez-vous estimer le co\u00fbt de la r\u00e9paration de ma voiture apr\u00e8s la r\u00e9ception des pi\u00e8ces command\u00e9es ?",
+        "text": "Pouvez-vous estimer le co\u00fbt de la r\u00e9paration de ma voiture apr\u00e8s la r\u00e9ception des pi\u00e8ces command\u00e9es ?",
+        "text_preprocessed": "pouvez vous estimer le cout de la reparation de ma voiture apres la reception des pieces commandees",
+        "is_deleted": false
+    },
+    "118": {
+        "text_original": "Avez-vous des informations sur les garanties offertes par les fabricants pour les pi\u00e8ces que vous commandez ?",
+        "text": "Avez-vous des informations sur les garanties offertes par les fabricants pour les pi\u00e8ces que vous commandez ?",
+        "text_preprocessed": "avez vous des informations sur les garanties offertes par les fabricants pour les pieces que vous commandez",
+        "is_deleted": false
+    },
+    "119": {
+        "text_original": "Pouvez-vous me conseiller sur les pi\u00e8ces les plus appropri\u00e9es pour mon v\u00e9hicule et ma situation g\u00e9ographique (climat, routes, etc.) ?",
+        "text": "Pouvez-vous me conseiller sur les pi\u00e8ces les plus appropri\u00e9es pour mon v\u00e9hicule et ma situation g\u00e9ographique (climat, routes, etc.) ?",
+        "text_preprocessed": "pouvez vous me conseiller sur les pieces les plus appropriees pour mon vehicule et ma situation geographique climat routes etc",
+        "is_deleted": false
+    },
+    "120": {
+        "text_original": "Quand dois-je faire r\u00e9viser mon v\u00e9hicule pour respecter le contr\u00f4le technique obligatoire ?",
+        "text": "Quand dois-je faire r\u00e9viser mon v\u00e9hicule pour respecter le contr\u00f4le technique obligatoire ?",
+        "text_preprocessed": "quand dois je faire reviser mon vehicule pour respecter le controle technique obligatoire",
+        "is_deleted": false
+    },
+    "121": {
+        "text_original": "Quels sont les points de contr\u00f4le obligatoires lors du contr\u00f4le technique pour ma voiture ?",
+        "text": "Quels sont les points de contr\u00f4le obligatoires lors du contr\u00f4le technique pour ma voiture ?",
+        "text_preprocessed": "quels sont les points de controle obligatoires lors du controle technique pour ma voiture",
+        "is_deleted": false
+    },
+    "122": {
+        "text_original": "Avez-vous des conseils pour pr\u00e9parer ma voiture au contr\u00f4le technique ?",
+        "text": "Avez-vous des conseils pour pr\u00e9parer ma voiture au contr\u00f4le technique ?",
+        "text_preprocessed": "avez vous des conseils pour preparer ma voiture au controle technique",
+        "is_deleted": false
+    },
+    "123": {
+        "text_original": "Combien co\u00fbte en moyenne le contr\u00f4le technique pour une voiture diesel ou essence de ma gamme ?",
+        "text": "Combien co\u00fbte en moyenne le contr\u00f4le technique pour une voiture diesel ou essence de ma gamme ?",
+        "text_preprocessed": "combien coute en moyenne le controle technique pour une voiture diesel ou essence de ma gamme",
+        "is_deleted": false
+    },
+    "124": {
+        "text_original": "Pouvez-vous me conseiller sur les d\u00e9marches \u00e0 effectuer apr\u00e8s une contre-visite du contr\u00f4le technique ?",
+        "text": "Pouvez-vous me conseiller sur les d\u00e9marches \u00e0 effectuer apr\u00e8s une contre-visite du contr\u00f4le technique ?",
+        "text_preprocessed": "pouvez vous me conseiller sur les demarches a effectuer apres une contre visite du controle technique",
+        "is_deleted": false
+    },
+    "125": {
+        "text_original": "Avez-vous des astuces pour prolonger la validit\u00e9 du contr\u00f4le technique de ma voiture ?",
+        "text": "Avez-vous des astuces pour prolonger la validit\u00e9 du contr\u00f4le technique de ma voiture ?",
+        "text_preprocessed": "avez vous des astuces pour prolonger la validite du controle technique de ma voiture",
+        "is_deleted": false
+    },
+    "126": {
+        "text_original": "Quels sont les risques de rouler avec un contr\u00f4le technique p\u00e9rim\u00e9 dans mon v\u00e9hicule ?",
+        "text": "Quels sont les risques de rouler avec un contr\u00f4le technique p\u00e9rim\u00e9 dans mon v\u00e9hicule ?",
+        "text_preprocessed": "quels sont les risques de rouler avec un controle technique perime dans mon vehicule",
+        "is_deleted": false
+    },
+    "127": {
+        "text_original": "Quels sont les risques de rouler avec des pneus us\u00e9s ou sous-gonfl\u00e9s dans ma voiture ?",
+        "text": "Quels sont les risques de rouler avec des pneus us\u00e9s ou sous-gonfl\u00e9s dans ma voiture ?",
+        "text_preprocessed": "quels sont les risques de rouler avec des pneus uses ou sous gonfles dans ma voiture",
+        "is_deleted": false
+    },
+    "128": {
+        "text_original": "Avez-vous des conseils pour \u00e9viter les crevaisons de pneus dans ma voiture ?",
+        "text": "Avez-vous des conseils pour \u00e9viter les crevaisons de pneus dans ma voiture ?",
+        "text_preprocessed": "avez vous des conseils pour eviter les crevaisons de pneus dans ma voiture",
+        "is_deleted": false
+    },
+    "129": {
+        "text_original": "Combien co\u00fbte en moyenne le remplacement d'un pneu crev\u00e9 sur une voiture diesel ou essence de ma gamme ?",
+        "text": "Combien co\u00fbte en moyenne le remplacement d'un pneu crev\u00e9 sur une voiture diesel ou essence de ma gamme ?",
+        "text_preprocessed": "combien coute en moyenne le remplacement d un pneu creve sur une voiture diesel ou essence de ma gamme",
+        "is_deleted": false
+    },
+    "130": {
+        "text_original": "Avez-vous des astuces pour \u00e9conomiser du carburant en hiver dans ma voiture ?",
+        "text": "Avez-vous des astuces pour \u00e9conomiser du carburant en hiver dans ma voiture ?",
+        "text_preprocessed": "avez vous des astuces pour economiser du carburant en hiver dans ma voiture",
+        "is_deleted": false
+    },
+    "131": {
+        "text_original": "Pouvez-vous v\u00e9rifier l'\u00e9tat du syst\u00e8me de climatisation dans ma voiture en \u00e9t\u00e9 et en hiver ?",
+        "text": "Pouvez-vous v\u00e9rifier l'\u00e9tat du syst\u00e8me de climatisation dans ma voiture en \u00e9t\u00e9 et en hiver ?",
+        "text_preprocessed": "pouvez vous verifier l etat du systeme de climatisation dans ma voiture en ete et en hiver",
+        "is_deleted": false
+    },
+    "132": {
+        "text_original": "Quels sont les risques de rouler avec une climatisation d\u00e9faillante dans ma voiture en \u00e9t\u00e9 ou en hiver ?",
+        "text": "Quels sont les risques de rouler avec une climatisation d\u00e9faillante dans ma voiture en \u00e9t\u00e9 ou en hiver ?",
+        "text_preprocessed": "quels sont les risques de rouler avec une climatisation defaillante dans ma voiture en ete ou en hiver",
+        "is_deleted": false
+    },
+    "133": {
+        "text_original": "Avez-vous des recommandations pour l'entretien r\u00e9gulier de la climatisation dans ma voiture en \u00e9t\u00e9 et en hiver ?",
+        "text": "Avez-vous des recommandations pour l'entretien r\u00e9gulier de la climatisation dans ma voiture en \u00e9t\u00e9 et en hiver ?",
+        "text_preprocessed": "avez vous des recommandations pour l entretien regulier de la climatisation dans ma voiture en ete et en hiver",
+        "is_deleted": false
+    },
+    "134": {
+        "text_original": "Quels sont les signes d'une mauvaise tenue de route dans ma voiture ?",
+        "text": "Quels sont les signes d'une mauvaise tenue de route dans ma voiture ?",
+        "text_preprocessed": "quels sont les signes d une mauvaise tenue de route dans ma voiture",
+        "is_deleted": false
+    },
+    "135": {
+        "text_original": "Pouvez-vous me conseiller sur le choix des pneus adapt\u00e9s \u00e0 l'hiver dans ma voiture ?",
+        "text": "Pouvez-vous me conseiller sur le choix des pneus adapt\u00e9s \u00e0 l'hiver dans ma voiture ?",
+        "text_preprocessed": "pouvez vous me conseiller sur le choix des pneus adaptes a l hiver dans ma voiture",
+        "is_deleted": false
+    },
+    "136": {
+        "text_original": "Avez-vous des conseils pour r\u00e9duire l'usure pr\u00e9matur\u00e9e des freins dans ma voiture ?",
+        "text": "Avez-vous des conseils pour r\u00e9duire l'usure pr\u00e9matur\u00e9e des freins dans ma voiture ?",
+        "text_preprocessed": "avez vous des conseils pour reduire l usure prematuree des freins dans ma voiture",
+        "is_deleted": false
+    },
+    "137": {
+        "text_original": "Quels sont les risques de rouler avec un syst\u00e8me de freinage d\u00e9faillant dans ma voiture ?",
+        "text": "Quels sont les risques de rouler avec un syst\u00e8me de freinage d\u00e9faillant dans ma voiture ?",
+        "text_preprocessed": "quels sont les risques de rouler avec un systeme de freinage defaillant dans ma voiture",
+        "is_deleted": false
+    },
+    "138": {
+        "text_original": "Pouvez-vous v\u00e9rifier l'\u00e9tat des rotules et des tirants avant et arri\u00e8re dans ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier l'\u00e9tat des rotules et des tirants avant et arri\u00e8re dans ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier l etat des rotules et des tirants avant et arriere dans ma voiture",
+        "is_deleted": false
+    },
+    "139": {
+        "text_original": "Avez-vous des astuces pour r\u00e9duire l'usure excessive des pneus dans ma voiture ?",
+        "text": "Avez-vous des astuces pour r\u00e9duire l'usure excessive des pneus dans ma voiture ?",
+        "text_preprocessed": "avez vous des astuces pour reduire l usure excessive des pneus dans ma voiture",
+        "is_deleted": false
+    },
+    "140": {
+        "text_original": "Quels sont les risques de rouler avec une courroie d'accessoire ou de distribution us\u00e9e dans ma voiture ?",
+        "text": "Quels sont les risques de rouler avec une courroie d'accessoire ou de distribution us\u00e9e dans ma voiture ?",
+        "text_preprocessed": "quels sont les risques de rouler avec une courroie d accessoire ou de distribution usee dans ma voiture",
+        "is_deleted": false
+    },
+    "141": {
+        "text_original": "Pouvez-vous me conseiller sur le choix des huiles moteur adapt\u00e9es \u00e0 mon v\u00e9hicule en fonction du kilom\u00e9trage et des conditions climatiques \uff1f",
+        "text": "Pouvez-vous me conseiller sur le choix des huiles moteur adapt\u00e9es \u00e0 mon v\u00e9hicule en fonction du kilom\u00e9trage et des conditions climatiques \uff1f",
+        "text_preprocessed": "pouvez vous me conseiller sur le choix des huiles moteur adaptees a mon vehicule en fonction du kilometrage et des conditions climatiques",
+        "is_deleted": false
+    },
+    "142": {
+        "text_original": "Pouvez-vous me proposer un rendez-vous pour une r\u00e9vision de ma voiture ?",
+        "text": "Pouvez-vous me proposer un rendez-vous pour une r\u00e9vision de ma voiture ?",
+        "text_preprocessed": "pouvez vous me proposer un rendez vous pour une revision de ma voiture",
+        "is_deleted": false
+    },
+    "143": {
+        "text_original": "Auriez-vous un cr\u00e9neau disponible pour un contr\u00f4le technique de mon v\u00e9hicule ?",
+        "text": "Auriez-vous un cr\u00e9neau disponible pour un contr\u00f4le technique de mon v\u00e9hicule ?",
+        "text_preprocessed": "auriez vous un creneau disponible pour un controle technique de mon vehicule",
+        "is_deleted": false
+    },
+    "144": {
+        "text_original": "Je souhaiterais commander des pi\u00e8ces d\u00e9tach\u00e9es pour ma voiture, pouvez-vous m'aider ?",
+        "text": "Je souhaiterais commander des pi\u00e8ces d\u00e9tach\u00e9es pour ma voiture, pouvez-vous m'aider ?",
+        "text_preprocessed": "je souhaiterais commander des pieces detachees pour ma voiture pouvez vous m aider",
+        "is_deleted": false
+    },
+    "145": {
+        "text_original": "Pouvez-vous m'envoyer la facture de ma derni\u00e8re r\u00e9paration s'il vous pla\u00eet ?",
+        "text": "Pouvez-vous m'envoyer la facture de ma derni\u00e8re r\u00e9paration s'il vous pla\u00eet ?",
+        "text_preprocessed": "pouvez vous m envoyer la facture de ma derniere reparation s il vous plait",
+        "is_deleted": false
+    },
+    "146": {
+        "text_original": "Quel est le co\u00fbt pr\u00e9visionnel d'une r\u00e9vision compl\u00e8te pour mon v\u00e9hicule ?",
+        "text": "Quel est le co\u00fbt pr\u00e9visionnel d'une r\u00e9vision compl\u00e8te pour mon v\u00e9hicule ?",
+        "text_preprocessed": "quel est le cout previsionnel d une revision complete pour mon vehicule",
+        "is_deleted": false
+    },
+    "147": {
+        "text_original": "Avez-vous un technicien disponible pour diagnostiquer un probl\u00e8me \u00e9lectrique sur ma voiture ?",
+        "text": "Avez-vous un technicien disponible pour diagnostiquer un probl\u00e8me \u00e9lectrique sur ma voiture ?",
+        "text_preprocessed": "avez vous un technicien disponible pour diagnostiquer un probleme electrique sur ma voiture",
+        "is_deleted": false
+    },
+    "148": {
+        "text_original": "Je voudrais prendre rendez-vous pour un entretien pr\u00e9ventif de mon v\u00e9hicule, quel est le meilleur moment pour cela ?",
+        "text": "Je voudrais prendre rendez-vous pour un entretien pr\u00e9ventif de mon v\u00e9hicule, quel est le meilleur moment pour cela ?",
+        "text_preprocessed": "je voudrais prendre rendez vous pour un entretien preventif de mon vehicule quel est le meilleur moment pour cela",
+        "is_deleted": false
+    },
+    "149": {
+        "text_original": "Auriez-vous des conseils pour am\u00e9liorer l'\u00e9conomie de carburant de ma voiture ?",
+        "text": "Auriez-vous des conseils pour am\u00e9liorer l'\u00e9conomie de carburant de ma voiture ?",
+        "text_preprocessed": "auriez vous des conseils pour ameliorer l economie de carburant de ma voiture",
+        "is_deleted": false
+    },
+    "150": {
+        "text_original": "Pouvez-vous v\u00e9rifier les niveaux d'huile et de liquide de refroidissement de ma voiture s'il vous pla\u00eet ?",
+        "text": "Pouvez-vous v\u00e9rifier les niveaux d'huile et de liquide de refroidissement de ma voiture s'il vous pla\u00eet ?",
+        "text_preprocessed": "pouvez vous verifier les niveaux d huile et de liquide de refroidissement de ma voiture s il vous plait",
+        "is_deleted": false
+    },
+    "151": {
+        "text_original": "Je souhaite faire installer des pneus neufs sur ma voiture, auriez-vous des recommandations pour moi ?",
+        "text": "Je souhaite faire installer des pneus neufs sur ma voiture, auriez-vous des recommandations pour moi ?",
+        "text_preprocessed": "je souhaite faire installer des pneus neufs sur ma voiture auriez vous des recommandations pour moi",
+        "is_deleted": false
+    },
+    "152": {
+        "text_original": "Avez-vous des offres sp\u00e9ciales ou des promotions en ce moment pour les services de garage ?",
+        "text": "Avez-vous des offres sp\u00e9ciales ou des promotions en ce moment pour les services de garage ?",
+        "text_preprocessed": "avez vous des offres speciales ou des promotions en ce moment pour les services de garage",
+        "is_deleted": false
+    },
+    "153": {
+        "text_original": "Pouvez-vous me dire si ma voiture a besoin d'un changement de courroie de distribution bient\u00f4t ?",
+        "text": "Pouvez-vous me dire si ma voiture a besoin d'un changement de courroie de distribution bient\u00f4t ?",
+        "text_preprocessed": "pouvez vous me dire si ma voiture a besoin d un changement de courroie de distribution bientot",
+        "is_deleted": false
+    },
+    "154": {
+        "text_original": "Je cherche \u00e0 faire remplacer les freins de ma voiture, quel est le co\u00fbt estim\u00e9 pour cette r\u00e9paration ?",
+        "text": "Je cherche \u00e0 faire remplacer les freins de ma voiture, quel est le co\u00fbt estim\u00e9 pour cette r\u00e9paration ?",
+        "text_preprocessed": "je cherche a faire remplacer les freins de ma voiture quel est le cout estime pour cette reparation",
+        "is_deleted": false
+    },
+    "155": {
+        "text_original": "Pouvez-vous v\u00e9rifier les plaquettes et les disques de frein de ma voiture lors de mon prochain rendez-vous ?",
+        "text": "Pouvez-vous v\u00e9rifier les plaquettes et les disques de frein de ma voiture lors de mon prochain rendez-vous ?",
+        "text_preprocessed": "pouvez vous verifier les plaquettes et les disques de frein de ma voiture lors de mon prochain rendez vous",
+        "is_deleted": false
+    },
+    "156": {
+        "text_original": "Je suis int\u00e9ress\u00e9 par l'installation d'un syst\u00e8me d'alarme pour ma voiture, avez-vous des solutions \u00e0 me proposer ?",
+        "text": "Je suis int\u00e9ress\u00e9 par l'installation d'un syst\u00e8me d'alarme pour ma voiture, avez-vous des solutions \u00e0 me proposer ?",
+        "text_preprocessed": "je suis interesse par l installation d un systeme d alarme pour ma voiture avez vous des solutions a me proposer",
+        "is_deleted": false
+    },
+    "157": {
+        "text_original": "Ma voiture a des difficult\u00e9s \u00e0 d\u00e9marrer, pouvez-vous m'aider \u00e0 diagnostiquer le probl\u00e8me ?",
+        "text": "Ma voiture a des difficult\u00e9s \u00e0 d\u00e9marrer, pouvez-vous m'aider \u00e0 diagnostiquer le probl\u00e8me ?",
+        "text_preprocessed": "ma voiture a des difficultes a demarrer pouvez vous m aider a diagnostiquer le probleme",
+        "is_deleted": false
+    },
+    "158": {
+        "text_original": "J'ai besoin d'une r\u00e9paration urgente sur mon v\u00e9hicule, pouvez-vous m'accueillir en urgence ?",
+        "text": "J'ai besoin d'une r\u00e9paration urgente sur mon v\u00e9hicule, pouvez-vous m'accueillir en urgence ?",
+        "text_preprocessed": "j ai besoin d une reparation urgente sur mon vehicule pouvez vous m accueillir en urgence",
+        "is_deleted": false
+    },
+    "159": {
+        "text_original": "Pouvez-vous me dire si mon v\u00e9hicule est \u00e9ligible \u00e0 la prime \u00e0 la conversion gouvernementale ?",
+        "text": "Pouvez-vous me dire si mon v\u00e9hicule est \u00e9ligible \u00e0 la prime \u00e0 la conversion gouvernementale ?",
+        "text_preprocessed": "pouvez vous me dire si mon vehicule est eligible a la prime a la conversion gouvernementale",
+        "is_deleted": false
+    },
+    "160": {
+        "text_original": "Avez-vous des techniciens qualifi\u00e9s pour effectuer la vidange d'huile de ma voiture ?",
+        "text": "Avez-vous des techniciens qualifi\u00e9s pour effectuer la vidange d'huile de ma voiture ?",
+        "text_preprocessed": "avez vous des techniciens qualifies pour effectuer la vidange d huile de ma voiture",
+        "is_deleted": false
+    },
+    "161": {
+        "text_original": "Je souhaiterais prendre rendez-vous pour un changement de filtre \u00e0 air sur ma voiture, merci de me proposer un cr\u00e9neau disponible.",
+        "text": "Je souhaiterais prendre rendez-vous pour un changement de filtre \u00e0 air sur ma voiture, merci de me proposer un cr\u00e9neau disponible.",
+        "text_preprocessed": "je souhaiterais prendre rendez vous pour un changement de filtre a air sur ma voiture merci de me proposer un creneau disponible",
+        "is_deleted": false
+    },
+    "162": {
+        "text_original": "Pouvez-vous me proposer un rendez-vous pour la r\u00e9vision de ma voiture ?",
+        "text": "Pouvez-vous me proposer un rendez-vous pour la r\u00e9vision de ma voiture ?",
+        "text_preprocessed": "pouvez vous me proposer un rendez vous pour la revision de ma voiture",
+        "is_deleted": false
+    },
+    "163": {
+        "text_original": "Souhaitez-vous v\u00e9rifier pourquoi mon voyant d'huile moteur s'allume constamment ?",
+        "text": "Souhaitez-vous v\u00e9rifier pourquoi mon voyant d'huile moteur s'allume constamment ?",
+        "text_preprocessed": "souhaitez vous verifier pourquoi mon voyant d huile moteur s allume constamment",
+        "is_deleted": true
+    },
+    "164": {
+        "text_original": "Pourrais-je avoir une estimation du co\u00fbt des r\u00e9parations pour ma batterie d\u00e9charg\u00e9e ?",
+        "text": "Pourrais-je avoir une estimation du co\u00fbt des r\u00e9parations pour ma batterie d\u00e9charg\u00e9e ?",
+        "text_preprocessed": "pourrais je avoir une estimation du cout des reparations pour ma batterie dechargee",
+        "is_deleted": false
+    },
+    "165": {
+        "text_original": "Auriez-vous en stock les plaquettes de freins dont j'ai besoin pour ma voiture ?",
+        "text": "Auriez-vous en stock les plaquettes de freins dont j'ai besoin pour ma voiture ?",
+        "text_preprocessed": "auriez vous en stock les plaquettes de freins dont j ai besoin pour ma voiture",
+        "is_deleted": false
+    },
+    "166": {
+        "text_original": "Pouvez-vous \u00e9diter une facture d\u00e9taill\u00e9e des travaux que vous avez effectu\u00e9s sur ma voiture ?",
+        "text": "Pouvez-vous \u00e9diter une facture d\u00e9taill\u00e9e des travaux que vous avez effectu\u00e9s sur ma voiture ?",
+        "text_preprocessed": "pouvez vous editer une facture detaillee des travaux que vous avez effectues sur ma voiture",
+        "is_deleted": false
+    },
+    "167": {
+        "text_original": "Mon pare-brise est fissur\u00e9, puis-je prendre rendez-vous pour le faire r\u00e9parer ou le remplacer ?",
+        "text": "Mon pare-brise est fissur\u00e9, puis-je prendre rendez-vous pour le faire r\u00e9parer ou le remplacer ?",
+        "text_preprocessed": "mon pare brise est fissure puis je prendre rendez vous pour le faire reparer ou le remplacer",
+        "is_deleted": false
+    },
+    "168": {
+        "text_original": "Est-il n\u00e9cessaire de changer l'huile moteur de ma voiture et quel type d'huile me conseillez-vous ?",
+        "text": "Est-il n\u00e9cessaire de changer l'huile moteur de ma voiture et quel type d'huile me conseillez-vous ?",
+        "text_preprocessed": "est il necessaire de changer l huile moteur de ma voiture et quel type d huile me conseillez vous",
+        "is_deleted": false
+    },
+    "169": {
+        "text_original": "Pouvez-vous v\u00e9rifier la g\u00e9om\u00e9trie de mes roues et les aligner si n\u00e9cessaire ?",
+        "text": "Pouvez-vous v\u00e9rifier la g\u00e9om\u00e9trie de mes roues et les aligner si n\u00e9cessaire ?",
+        "text_preprocessed": "pouvez vous verifier la geometrie de mes roues et les aligner si necessaire",
+        "is_deleted": false
+    },
+    "170": {
+        "text_original": "Auriez-vous un filtre \u00e0 air pour ma voiture en stock ? Si non, quand pourriez-vous en recevoir un ?",
+        "text": "Auriez-vous un filtre \u00e0 air pour ma voiture en stock ? Si non, quand pourriez-vous en recevoir un ?",
+        "text_preprocessed": "auriez vous un filtre a air pour ma voiture en stock si non quand pourriez vous en recevoir un",
+        "is_deleted": false
+    },
+    "171": {
+        "text_original": "Est-il temps de changer mes pneus et quel type me recommandez-vous pour la saison \u00e0 venir ?",
+        "text": "Est-il temps de changer mes pneus et quel type me recommandez-vous pour la saison \u00e0 venir ?",
+        "text_preprocessed": "est il temps de changer mes pneus et quel type me recommandez vous pour la saison a venir",
+        "is_deleted": false
+    },
+    "172": {
+        "text_original": "Mon contr\u00f4le technique approche, puis-je prendre rendez-vous pour le faire passer dans votre garage ?",
+        "text": "Mon contr\u00f4le technique approche, puis-je prendre rendez-vous pour le faire passer dans votre garage ?",
+        "text_preprocessed": "mon controle technique approche puis je prendre rendez vous pour le faire passer dans votre garage",
+        "is_deleted": false
+    },
+    "173": {
+        "text_original": "Avez-vous des conseils \u00e0 me donner pour r\u00e9duire ma consommation de carburant ?",
+        "text": "Avez-vous des conseils \u00e0 me donner pour r\u00e9duire ma consommation de carburant ?",
+        "text_preprocessed": "avez vous des conseils a me donner pour reduire ma consommation de carburant",
+        "is_deleted": false
+    },
+    "174": {
+        "text_original": "Pouvez-vous me dire si mon pot d'\u00e9chappement a besoin d'\u00eatre remplac\u00e9 et quel serait le co\u00fbt de cette r\u00e9paration ?",
+        "text": "Pouvez-vous me dire si mon pot d'\u00e9chappement a besoin d'\u00eatre remplac\u00e9 et quel serait le co\u00fbt de cette r\u00e9paration ?",
+        "text_preprocessed": "pouvez vous me dire si mon pot d echappement a besoin d etre remplace et quel serait le cout de cette reparation",
+        "is_deleted": false
+    },
+    "175": {
+        "text_original": "Est-ce normal que ma voiture fasse un bruit inhabituel lorsque je tourne le volant ?",
+        "text": "Est-ce normal que ma voiture fasse un bruit inhabituel lorsque je tourne le volant ?",
+        "text_preprocessed": "est ce normal que ma voiture fasse un bruit inhabituel lorsque je tourne le volant",
+        "is_deleted": false
+    },
+    "176": {
+        "text_original": "Mon embrayage semble faible, est-ce que cela n\u00e9cessite une r\u00e9paration ou un remplacement ?",
+        "text": "Mon embrayage semble faible, est-ce que cela n\u00e9cessite une r\u00e9paration ou un remplacement ?",
+        "text_preprocessed": "mon embrayage semble faible est ce que cela necessite une reparation ou un remplacement",
+        "is_deleted": false
+    },
+    "177": {
+        "text_original": "Auriez-vous des recommandations pour l'entretien r\u00e9gulier de ma voiture afin de prolonger sa dur\u00e9e de vie ?",
+        "text": "Auriez-vous des recommandations pour l'entretien r\u00e9gulier de ma voiture afin de prolonger sa dur\u00e9e de vie ?",
+        "text_preprocessed": "auriez vous des recommandations pour l entretien regulier de ma voiture afin de prolonger sa duree de vie",
+        "is_deleted": false
+    },
+    "178": {
+        "text_original": "Pouvez-vous v\u00e9rifier les niveaux de liquide de frein et de liquide de refroidissement dans ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier les niveaux de liquide de frein et de liquide de refroidissement dans ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier les niveaux de liquide de frein et de liquide de refroidissement dans ma voiture",
+        "is_deleted": false
+    },
+    "179": {
+        "text_original": "Ma courroie de distribution semble us\u00e9e, avez-vous les comp\u00e9tences n\u00e9cessaires pour la remplacer ?",
+        "text": "Ma courroie de distribution semble us\u00e9e, avez-vous les comp\u00e9tences n\u00e9cessaires pour la remplacer ?",
+        "text_preprocessed": "ma courroie de distribution semble usee avez vous les competences necessaires pour la remplacer",
+        "is_deleted": false
+    },
+    "180": {
+        "text_original": "Puis-je vous demander de v\u00e9rifier si mes amortisseurs sont encore en \u00e9tat de fonctionner correctement ?",
+        "text": "Puis-je vous demander de v\u00e9rifier si mes amortisseurs sont encore en \u00e9tat de fonctionner correctement ?",
+        "text_preprocessed": "puis je vous demander de verifier si mes amortisseurs sont encore en etat de fonctionner correctement",
+        "is_deleted": false
+    },
+    "181": {
+        "text_original": "Ai-je besoin d'une vidange de ma bo\u00eete de vitesses automatique et quels sont les co\u00fbts associ\u00e9s \u00e0 cette proc\u00e9dure ?",
+        "text": "Ai-je besoin d'une vidange de ma bo\u00eete de vitesses automatique et quels sont les co\u00fbts associ\u00e9s \u00e0 cette proc\u00e9dure ?",
+        "text_preprocessed": "ai je besoin d une vidange de ma boite de vitesses automatique et quels sont les couts associes a cette procedure",
+        "is_deleted": false
+    },
+    "182": {
+        "text_original": "Pouvez-vous d\u00e9caler mon rendez-vous de cette semaine \u00e0 la semaine prochaine ?",
+        "text": "Pouvez-vous d\u00e9caler mon rendez-vous de cette semaine \u00e0 la semaine prochaine ?",
+        "text_preprocessed": "pouvez vous decaler mon rendez vous de cette semaine a la semaine prochaine",
+        "is_deleted": false
+    },
+    "183": {
+        "text_original": "Puis-je avoir un devis pour le remplacement des plaquettes de frein de ma voiture ?",
+        "text": "Puis-je avoir un devis pour le remplacement des plaquettes de frein de ma voiture ?",
+        "text_preprocessed": "puis je avoir un devis pour le remplacement des plaquettes de frein de ma voiture",
+        "is_deleted": false
+    },
+    "184": {
+        "text_original": "Est-il possible de commander des pi\u00e8ces d\u00e9tach\u00e9es pour ma voiture ?",
+        "text": "Est-il possible de commander des pi\u00e8ces d\u00e9tach\u00e9es pour ma voiture ?",
+        "text_preprocessed": "est il possible de commander des pieces detachees pour ma voiture",
+        "is_deleted": false
+    },
+    "185": {
+        "text_original": "J'ai un probl\u00e8me avec la climatisation de ma voiture, pouvez-vous y jeter un coup d'\u0153il ?",
+        "text": "J'ai un probl\u00e8me avec la climatisation de ma voiture, pouvez-vous y jeter un coup d'\u0153il ?",
+        "text_preprocessed": "j ai un probleme avec la climatisation de ma voiture pouvez vous y jeter un coup d \u0153il",
+        "is_deleted": false
+    },
+    "186": {
+        "text_original": "Vous pouvez me dire combien de temps prendra la r\u00e9paration de ma voiture ?",
+        "text": "Vous pouvez me dire combien de temps prendra la r\u00e9paration de ma voiture ?",
+        "text_preprocessed": "vous pouvez me dire combien de temps prendra la reparation de ma voiture",
+        "is_deleted": false
+    },
+    "187": {
+        "text_original": "Je dois passer le contr\u00f4le technique bient\u00f4t, pouvez-vous le pr\u00e9parer ?",
+        "text": "Je dois passer le contr\u00f4le technique bient\u00f4t, pouvez-vous le pr\u00e9parer ?",
+        "text_preprocessed": "je dois passer le controle technique bientot pouvez vous le preparer",
+        "is_deleted": false
+    },
+    "188": {
+        "text_original": "Pouvez-vous v\u00e9rifier l'\u00e9tat des pneus et des suspensions de ma voiture ?",
+        "text": "Pouvez-vous v\u00e9rifier l'\u00e9tat des pneus et des suspensions de ma voiture ?",
+        "text_preprocessed": "pouvez vous verifier l etat des pneus et des suspensions de ma voiture",
+        "is_deleted": false
+    },
+    "189": {
+        "text_original": "J'ai remarqu\u00e9 une fuite d'huile sur ma voiture, pouvez-vous l'inspecter ?",
+        "text": "J'ai remarqu\u00e9 une fuite d'huile sur ma voiture, pouvez-vous l'inspecter ?",
+        "text_preprocessed": "j ai remarque une fuite d huile sur ma voiture pouvez vous l inspecter",
+        "is_deleted": false
+    },
+    "190": {
+        "text_original": "Puis-je avoir un rendez-vous pour un vidange et un changement de filtre ?",
+        "text": "Puis-je avoir un rendez-vous pour un vidange et un changement de filtre ?",
+        "text_preprocessed": "puis je avoir un rendez vous pour un vidange et un changement de filtre",
+        "is_deleted": false
+    },
+    "191": {
+        "text_original": "Pouvez-vous me fournir un certificat de contr\u00f4le pour mon assurance ?",
+        "text": "Pouvez-vous me fournir un certificat de contr\u00f4le pour mon assurance ?",
+        "text_preprocessed": "pouvez vous me fournir un certificat de controle pour mon assurance",
+        "is_deleted": false
+    },
+    "192": {
+        "text_original": "Mon pare-brise est fissur\u00e9, puis-je avoir un devis pour sa r\u00e9paration ?",
+        "text": "Mon pare-brise est fissur\u00e9, puis-je avoir un devis pour sa r\u00e9paration ?",
+        "text_preprocessed": "mon pare brise est fissure puis je avoir un devis pour sa reparation",
+        "is_deleted": false
+    },
+    "193": {
+        "text_original": "J'ai entendu un bruit \u00e9trange en roulant, pouvez-vous l'identifier ?",
+        "text": "J'ai entendu un bruit \u00e9trange en roulant, pouvez-vous l'identifier ?",
+        "text_preprocessed": "j ai entendu un bruit etrange en roulant pouvez vous l identifier",
+        "is_deleted": false
+    },
+    "194": {
+        "text_original": "Est-il n\u00e9cessaire de remplacer les bougies d'allumage de ma voiture ?",
+        "text": "Est-il n\u00e9cessaire de remplacer les bougies d'allumage de ma voiture ?",
+        "text_preprocessed": "est il necessaire de remplacer les bougies d allumage de ma voiture",
+        "is_deleted": false
+    },
+    "195": {
+        "text_original": "Pouvez-vous me donner des conseils sur l'entretien r\u00e9gulier de ma voiture ?",
+        "text": "Pouvez-vous me donner des conseils sur l'entretien r\u00e9gulier de ma voiture ?",
+        "text_preprocessed": "pouvez vous me donner des conseils sur l entretien regulier de ma voiture",
+        "is_deleted": false
+    },
+    "196": {
+        "text_original": "J'ai besoin d'une r\u00e9vision compl\u00e8te de ma voiture, quel est le co\u00fbt estim\u00e9 ?",
+        "text": "J'ai besoin d'une r\u00e9vision compl\u00e8te de ma voiture, quel est le co\u00fbt estim\u00e9 ?",
+        "text_preprocessed": "j ai besoin d une revision complete de ma voiture quel est le cout estime",
+        "is_deleted": false
+    },
+    "197": {
+        "text_original": "Mon klaxon ne fonctionne plus, est-ce un gros probl\u00e8me \u00e0 r\u00e9gler ?",
+        "text": "Mon klaxon ne fonctionne plus, est-ce un gros probl\u00e8me \u00e0 r\u00e9gler ?",
+        "text_preprocessed": "mon klaxon ne fonctionne plus est ce un gros probleme a regler",
+        "is_deleted": false
+    },
+    "198": {
+        "text_original": "Pouvez-vous me fournir une facture d\u00e9taill\u00e9e pour les r\u00e9parations d\u00e9j\u00e0 effectu\u00e9es ?",
+        "text": "Pouvez-vous me fournir une facture d\u00e9taill\u00e9e pour les r\u00e9parations d\u00e9j\u00e0 effectu\u00e9es ?",
+        "text_preprocessed": "pouvez vous me fournir une facture detaillee pour les reparations deja effectuees",
+        "is_deleted": false
+    },
+    "199": {
+        "text_original": "J'ai oubli\u00e9 de vous rendre les cl\u00e9s apr\u00e8s la derni\u00e8re r\u00e9paration, les voici.",
+        "text": "J'ai oubli\u00e9 de vous rendre les cl\u00e9s apr\u00e8s la derni\u00e8re r\u00e9paration, les voici.",
+        "text_preprocessed": "j ai oublie de vous rendre les cles apres la derniere reparation les voici",
+        "is_deleted": false
+    },
+    "200": {
+        "text_original": "Puis-je payer en plusieurs fois pour les r\u00e9parations \u00e0 venir ?",
+        "text": "Puis-je payer en plusieurs fois pour les r\u00e9parations \u00e0 venir ?",
+        "text_preprocessed": "puis je payer en plusieurs fois pour les reparations a venir",
+        "is_deleted": false
+    },
+    "201": {
+        "text_original": "Quels sont vos horaires d'ouverture pendant les f\u00eates de fin d'ann\u00e9e ?",
+        "text": "Quels sont vos horaires d'ouverture pendant les f\u00eates de fin d'ann\u00e9e ?",
+        "text_preprocessed": "quels sont vos horaires d ouverture pendant les fetes de fin d annee",
+        "is_deleted": false
+    },
+    "202": {
+        "text_original": "Pouvez-vous me proposer un rendez-vous pour la r\u00e9vision de ma voiture ?",
+        "text": "Pouvez-vous me proposer un rendez-vous pour la r\u00e9vision de ma voiture ?",
+        "text_preprocessed": "pouvez vous me proposer un rendez vous pour la revision de ma voiture",
+        "is_deleted": false
+    },
+    "203": {
+        "text_original": "Je souhaiterais modifier l'heure de mon rendez-vous de demain, est-ce possible ?",
+        "text": "Je souhaiterais modifier l'heure de mon rendez-vous de demain, est-ce possible ?",
+        "text_preprocessed": "je souhaiterais modifier l heure de mon rendez vous de demain est ce possible",
+        "is_deleted": false
+    },
+    "204": {
+        "text_original": "Pouvez-vous m'\u00e9tablir un devis pour le remplacement des plaquettes de freins de ma voiture ?",
+        "text": "Pouvez-vous m'\u00e9tablir un devis pour le remplacement des plaquettes de freins de ma voiture ?",
+        "text_preprocessed": "pouvez vous m etablir un devis pour le remplacement des plaquettes de freins de ma voiture",
+        "is_deleted": false
+    },
+    "205": {
+        "text_original": "Je voudrais commander des pi\u00e8ces d\u00e9tach\u00e9es pour ma voiture, pouvez-vous m'indiquer la proc\u00e9dure \u00e0 suivre ?",
+        "text": "Je voudrais commander des pi\u00e8ces d\u00e9tach\u00e9es pour ma voiture, pouvez-vous m'indiquer la proc\u00e9dure \u00e0 suivre ?",
+        "text_preprocessed": "je voudrais commander des pieces detachees pour ma voiture pouvez vous m indiquer la procedure a suivre",
+        "is_deleted": false
+    },
+    "206": {
+        "text_original": "J'ai re\u00e7u une facture pour une r\u00e9paration que je n'ai pas autoris\u00e9e, pouvez-vous m'expliquer ?",
+        "text": "J'ai re\u00e7u une facture pour une r\u00e9paration que je n'ai pas autoris\u00e9e, pouvez-vous m'expliquer ?",
+        "text_preprocessed": "j ai recu une facture pour une reparation que je n ai pas autorisee pouvez vous m expliquer",
+        "is_deleted": false
+    },
+    "207": {
+        "text_original": "Pouvez-vous v\u00e9rifier si ma voiture est pr\u00eate pour le contr\u00f4le technique ?",
+        "text": "Pouvez-vous v\u00e9rifier si ma voiture est pr\u00eate pour le contr\u00f4le technique ?",
+        "text_preprocessed": "pouvez vous verifier si ma voiture est prete pour le controle technique",
+        "is_deleted": false
+    },
+    "208": {
+        "text_original": "J'ai des probl\u00e8mes de d\u00e9marrage avec ma voiture, pouvez-vous la diagnostiquer ?",
+        "text": "J'ai des probl\u00e8mes de d\u00e9marrage avec ma voiture, pouvez-vous la diagnostiquer ?",
+        "text_preprocessed": "j ai des problemes de demarrage avec ma voiture pouvez vous la diagnostiquer",
+        "is_deleted": false
+    },
+    "209": {
+        "text_original": "Pouvez-vous m'indiquer les travaux n\u00e9cessaires pour passer le contr\u00f4le technique ?",
+        "text": "Pouvez-vous m'indiquer les travaux n\u00e9cessaires pour passer le contr\u00f4le technique ?",
+        "text_preprocessed": "pouvez vous m indiquer les travaux necessaires pour passer le controle technique",
+        "is_deleted": false
+    },
+    "210": {
+        "text_original": "Ma voiture a \u00e9t\u00e9 impliqu\u00e9e dans un accident, pouvez-vous me fournir une estimation des r\u00e9parations ?",
+        "text": "Ma voiture a \u00e9t\u00e9 impliqu\u00e9e dans un accident, pouvez-vous me fournir une estimation des r\u00e9parations ?",
+        "text_preprocessed": "ma voiture a ete impliquee dans un accident pouvez vous me fournir une estimation des reparations",
+        "is_deleted": false
+    },
+    "211": {
+        "text_original": "Je souhaiterais obtenir une copie de mon carnet d'entretien, est-ce possible ?",
+        "text": "Je souhaiterais obtenir une copie de mon carnet d'entretien, est-ce possible ?",
+        "text_preprocessed": "je souhaiterais obtenir une copie de mon carnet d entretien est ce possible",
+        "is_deleted": false
+    },
+    "212": {
+        "text_original": "Pouvez-vous me recommander des pneus d'hiver pour ma voiture ?",
+        "text": "Pouvez-vous me recommander des pneus d'hiver pour ma voiture ?",
+        "text_preprocessed": "pouvez vous me recommander des pneus d hiver pour ma voiture",
+        "is_deleted": false
+    },
+    "213": {
+        "text_original": "J'ai remarqu\u00e9 une fuite d'huile sous ma voiture, que dois-je faire ?",
+        "text": "J'ai remarqu\u00e9 une fuite d'huile sous ma voiture, que dois-je faire ?",
+        "text_preprocessed": "j ai remarque une fuite d huile sous ma voiture que dois je faire",
+        "is_deleted": false
+    },
+    "214": {
+        "text_original": "Pouvez-vous v\u00e9rifier la pression de mes pneus et leur usure ?",
+        "text": "Pouvez-vous v\u00e9rifier la pression de mes pneus et leur usure ?",
+        "text_preprocessed": "pouvez vous verifier la pression de mes pneus et leur usure",
+        "is_deleted": false
+    },
+    "215": {
+        "text_original": "J'ai perdu mes cl\u00e9s de voiture, pouvez-vous me faire une nouvelle cl\u00e9 ?",
+        "text": "J'ai perdu mes cl\u00e9s de voiture, pouvez-vous me faire une nouvelle cl\u00e9 ?",
+        "text_preprocessed": "j ai perdu mes cles de voiture pouvez vous me faire une nouvelle cle",
+        "is_deleted": false
+    },
+    "216": {
+        "text_original": "Ma voiture a des probl\u00e8mes de climatisation, pouvez-vous la r\u00e9parer ?",
+        "text": "Ma voiture a des probl\u00e8mes de climatisation, pouvez-vous la r\u00e9parer ?",
+        "text_preprocessed": "ma voiture a des problemes de climatisation pouvez vous la reparer",
+        "is_deleted": false
+    },
+    "217": {
+        "text_original": "Pouvez-vous me recommander une huile moteur adapt\u00e9e \u00e0 ma voiture ?",
+        "text": "Pouvez-vous me recommander une huile moteur adapt\u00e9e \u00e0 ma voiture ?",
+        "text_preprocessed": "pouvez vous me recommander une huile moteur adaptee a ma voiture",
+        "is_deleted": false
+    },
+    "218": {
+        "text_original": "J'ai remarqu\u00e9 une odeur \u00e9trange dans ma voiture, pouvez-vous l'identifier ?",
+        "text": "J'ai remarqu\u00e9 une odeur \u00e9trange dans ma voiture, pouvez-vous l'identifier ?",
+        "text_preprocessed": "j ai remarque une odeur etrange dans ma voiture pouvez vous l identifier",
+        "is_deleted": false
+    },
+    "219": {
+        "text_original": "Pouvez-vous m'indiquer la date limite pour le prochain changement d'huile moteur ?",
+        "text": "Pouvez-vous m'indiquer la date limite pour le prochain changement d'huile moteur ?",
+        "text_preprocessed": "pouvez vous m indiquer la date limite pour le prochain changement d huile moteur",
+        "is_deleted": false
+    },
+    "220": {
+        "text_original": "Ma voiture \u00e9met un bruit suspect lorsque je conduis, pouvez-vous l'examiner ?",
+        "text": "Ma voiture \u00e9met un bruit suspect lorsque je conduis, pouvez-vous l'examiner ?",
+        "text_preprocessed": "ma voiture emet un bruit suspect lorsque je conduis pouvez vous l examiner",
+        "is_deleted": false
+    },
+    "221": {
+        "text_original": "Pouvez-vous me proposer un forfait entretien pour ma voiture sur une ann\u00e9e ?",
+        "text": "Pouvez-vous me proposer un forfait entretien pour ma voiture sur une ann\u00e9e ?",
+        "text_preprocessed": "pouvez vous me proposer un forfait entretien pour ma voiture sur une annee",
+        "is_deleted": false
+    },
+    "222": {
+        "text_original": "Pouvez-vous diagnostiquer pourquoi mon moteur fait ce bruit \u00e9trange?",
+        "text": "Pouvez-vous diagnostiquer pourquoi mon moteur fait ce bruit \u00e9trange?",
+        "text_preprocessed": "pouvez vous diagnostiquer pourquoi mon moteur fait ce bruit etrange",
+        "is_deleted": false
+    },
+    "223": {
+        "text_original": "Quel est le prix pour une vidange d'huile et un changement de filtre?",
+        "text": "Quel est le prix pour une vidange d'huile et un changement de filtre?",
+        "text_preprocessed": "quel est le prix pour une vidange d huile et un changement de filtre",
+        "is_deleted": false
+    },
+    "224": {
+        "text_original": "Combien de temps prendra la r\u00e9paration de ma suspension?",
+        "text": "Combien de temps prendra la r\u00e9paration de ma suspension?",
+        "text_preprocessed": "combien de temps prendra la reparation de ma suspension",
+        "is_deleted": false
+    },
+    "225": {
+        "text_original": "Pouvez-vous v\u00e9rifier pourquoi mes freins grincent?",
+        "text": "Pouvez-vous v\u00e9rifier pourquoi mes freins grincent?",
+        "text_preprocessed": "pouvez vous verifier pourquoi mes freins grincent",
+        "is_deleted": false
+    },
+    "226": {
+        "text_original": "Est-il temps de remplacer mes pneus?",
+        "text": "Est-il temps de remplacer mes pneus?",
+        "text_preprocessed": "est il temps de remplacer mes pneus",
+        "is_deleted": false
+    },
+    "227": {
+        "text_original": "Pouvez-vous installer un nouveau syst\u00e8me d'\u00e9chappement sur mon v\u00e9hicule?",
+        "text": "Pouvez-vous installer un nouveau syst\u00e8me d'\u00e9chappement sur mon v\u00e9hicule?",
+        "text_preprocessed": "pouvez vous installer un nouveau systeme d echappement sur mon vehicule",
+        "is_deleted": false
+    },
+    "228": {
+        "text_original": "Quel est le co\u00fbt pour remplacer les plaquettes de frein?",
+        "text": "Quel est le co\u00fbt pour remplacer les plaquettes de frein?",
+        "text_preprocessed": "quel est le cout pour remplacer les plaquettes de frein",
+        "is_deleted": false
+    },
+    "229": {
+        "text_original": "Pouvez-vous effectuer une r\u00e9vision compl\u00e8te sur ma voiture?",
+        "text": "Pouvez-vous effectuer une r\u00e9vision compl\u00e8te sur ma voiture?",
+        "text_preprocessed": "pouvez vous effectuer une revision complete sur ma voiture",
+        "is_deleted": false
+    },
+    "230": {
+        "text_original": "Mon v\u00e9hicule a \u00e9chou\u00e9 l'inspection technique, pouvez-vous r\u00e9parer les probl\u00e8mes d\u00e9tect\u00e9s?",
+        "text": "Mon v\u00e9hicule a \u00e9chou\u00e9 l'inspection technique, pouvez-vous r\u00e9parer les probl\u00e8mes d\u00e9tect\u00e9s?",
+        "text_preprocessed": "mon vehicule a echoue l inspection technique pouvez vous reparer les problemes detectes",
+        "is_deleted": false
+    },
+    "231": {
+        "text_original": "Pouvez-vous r\u00e9gler mon probl\u00e8me de d\u00e9marrage difficile?",
+        "text": "Pouvez-vous r\u00e9gler mon probl\u00e8me de d\u00e9marrage difficile?",
+        "text_preprocessed": "pouvez vous regler mon probleme de demarrage difficile",
+        "is_deleted": false
+    },
+    "232": {
+        "text_original": "Combien co\u00fbterait le remplacement de mon syst\u00e8me de climatisation?",
+        "text": "Combien co\u00fbterait le remplacement de mon syst\u00e8me de climatisation?",
+        "text_preprocessed": "combien couterait le remplacement de mon systeme de climatisation",
+        "is_deleted": false
+    },
+    "233": {
+        "text_original": "Pouvez-vous v\u00e9rifier pourquoi ma voiture consomme autant d'essence?",
+        "text": "Pouvez-vous v\u00e9rifier pourquoi ma voiture consomme autant d'essence?",
+        "text_preprocessed": "pouvez vous verifier pourquoi ma voiture consomme autant d essence",
+        "is_deleted": false
+    },
+    "234": {
+        "text_original": "Mon voyant de contr\u00f4le du moteur est allum\u00e9, savez-vous ce que cela signifie?",
+        "text": "Mon voyant de contr\u00f4le du moteur est allum\u00e9, savez-vous ce que cela signifie?",
+        "text_preprocessed": "mon voyant de controle du moteur est allume savez vous ce que cela signifie",
+        "is_deleted": false
+    },
+    "235": {
+        "text_original": "Pouvez-vous remplacer mes essuie-glaces?",
+        "text": "Pouvez-vous remplacer mes essuie-glaces?",
+        "text_preprocessed": "pouvez vous remplacer mes essuie glaces",
+        "is_deleted": false
+    },
+    "236": {
+        "text_original": "Quel est le co\u00fbt pour remplacer ma batterie de d\u00e9marrage?",
+        "text": "Quel est le co\u00fbt pour remplacer ma batterie de d\u00e9marrage?",
+        "text_preprocessed": "quel est le cout pour remplacer ma batterie de demarrage",
+        "is_deleted": false
+    },
+    "237": {
+        "text_original": "Pouvez-vous v\u00e9rifier pourquoi ma voiture tire \u00e0 gauche ou \u00e0 droite?",
+        "text": "Pouvez-vous v\u00e9rifier pourquoi ma voiture tire \u00e0 gauche ou \u00e0 droite?",
+        "text_preprocessed": "pouvez vous verifier pourquoi ma voiture tire a gauche ou a droite",
+        "is_deleted": false
+    },
+    "238": {
+        "text_original": "Est-il temps de changer mon filtre \u00e0 air?",
+        "text": "Est-il temps de changer mon filtre \u00e0 air?",
+        "text_preprocessed": "est il temps de changer mon filtre a air",
+        "is_deleted": false
+    },
+    "239": {
+        "text_original": "Pouvez-vous installer un nouvel autoradio dans ma voiture?",
+        "text": "Pouvez-vous installer un nouvel autoradio dans ma voiture?",
+        "text_preprocessed": "pouvez vous installer un nouvel autoradio dans ma voiture",
+        "is_deleted": false
+    },
+    "240": {
+        "text_original": "Quel est le co\u00fbt pour la r\u00e9paration de mon pare-brise endommag\u00e9?",
+        "text": "Quel est le co\u00fbt pour la r\u00e9paration de mon pare-brise endommag\u00e9?",
+        "text_preprocessed": "quel est le cout pour la reparation de mon pare brise endommage",
+        "is_deleted": false
+    },
+    "241": {
+        "text_original": "Pouvez-vous me donner des conseils pour l'entretien r\u00e9gulier de ma voiture pour prolonger sa dur\u00e9e de vie?",
+        "text": "Pouvez-vous me donner des conseils pour l'entretien r\u00e9gulier de ma voiture pour prolonger sa dur\u00e9e de vie?",
+        "text_preprocessed": "pouvez vous me donner des conseils pour l entretien regulier de ma voiture pour prolonger sa duree de vie",
+        "is_deleted": false
+    },
+    "242": {
+        "text_original": "Pouvez-vous v\u00e9rifier pourquoi mon moteur fait un bruit \u00e9trange ?",
+        "text": "Pouvez-vous v\u00e9rifier pourquoi mon moteur fait un bruit \u00e9trange ?",
+        "text_preprocessed": "pouvez vous verifier pourquoi mon moteur fait un bruit etrange",
+        "is_deleted": false
+    },
+    "243": {
+        "text_original": "Ma voiture a besoin d'une vidange d'huile, pouvez-vous le faire ?",
+        "text": "Ma voiture a besoin d'une vidange d'huile, pouvez-vous le faire ?",
+        "text_preprocessed": "ma voiture a besoin d une vidange d huile pouvez vous le faire",
+        "is_deleted": false
+    },
+    "244": {
+        "text_original": "Pouvez-vous diagnostiquer la raison pour laquelle mon voyant de contr\u00f4le moteur s'allume ?",
+        "text": "Pouvez-vous diagnostiquer la raison pour laquelle mon voyant de contr\u00f4le moteur s'allume ?",
+        "text_preprocessed": "pouvez vous diagnostiquer la raison pour laquelle mon voyant de controle moteur s allume",
+        "is_deleted": false
+    },
+    "245": {
+        "text_original": "J'ai besoin de nouveaux pneus, est-ce que vous les avez en stock ?",
+        "text": "J'ai besoin de nouveaux pneus, est-ce que vous les avez en stock ?",
+        "text_preprocessed": "j ai besoin de nouveaux pneus est ce que vous les avez en stock",
+        "is_deleted": false
+    },
+    "246": {
+        "text_original": "Pouvez-vous r\u00e9parer ma fuite de liquide de refroidissement ?",
+        "text": "Pouvez-vous r\u00e9parer ma fuite de liquide de refroidissement ?",
+        "text_preprocessed": "pouvez vous reparer ma fuite de liquide de refroidissement",
+        "is_deleted": false
+    },
+    "247": {
+        "text_original": "Ma voiture a du mal \u00e0 d\u00e9marrer, savez-vous ce qui pourrait en \u00eatre la cause ?",
+        "text": "Ma voiture a du mal \u00e0 d\u00e9marrer, savez-vous ce qui pourrait en \u00eatre la cause ?",
+        "text_preprocessed": "ma voiture a du mal a demarrer savez vous ce qui pourrait en etre la cause",
+        "is_deleted": false
+    },
+    "248": {
+        "text_original": "Pouvez-vous remplacer mes plaquettes de frein ?",
+        "text": "Pouvez-vous remplacer mes plaquettes de frein ?",
+        "text_preprocessed": "pouvez vous remplacer mes plaquettes de frein",
+        "is_deleted": false
+    },
+    "249": {
+        "text_original": "Ma voiture a besoin d'une r\u00e9vision, est-ce que vous pouvez m'indiquer ce qui doit \u00eatre fait ?",
+        "text": "Ma voiture a besoin d'une r\u00e9vision, est-ce que vous pouvez m'indiquer ce qui doit \u00eatre fait ?",
+        "text_preprocessed": "ma voiture a besoin d une revision est ce que vous pouvez m indiquer ce qui doit etre fait",
+        "is_deleted": false
+    },
+    "250": {
+        "text_original": "Pouvez-vous v\u00e9rifier si ma batterie est en bon \u00e9tat de fonctionnement ?",
+        "text": "Pouvez-vous v\u00e9rifier si ma batterie est en bon \u00e9tat de fonctionnement ?",
+        "text_preprocessed": "pouvez vous verifier si ma batterie est en bon etat de fonctionnement",
+        "is_deleted": false
+    },
+    "251": {
+        "text_original": "J'ai besoin d'un contr\u00f4le technique, est-ce que vous pouvez le faire ici ?",
+        "text": "J'ai besoin d'un contr\u00f4le technique, est-ce que vous pouvez le faire ici ?",
+        "text_preprocessed": "j ai besoin d un controle technique est ce que vous pouvez le faire ici",
+        "is_deleted": false
+    },
+    "252": {
+        "text_original": "Pouvez-vous aligner mes roues ?",
+        "text": "Pouvez-vous aligner mes roues ?",
+        "text_preprocessed": "pouvez vous aligner mes roues",
+        "is_deleted": false
+    },
+    "253": {
+        "text_original": "Ma voiture consomme beaucoup d'essence, savez-vous pourquoi ?",
+        "text": "Ma voiture consomme beaucoup d'essence, savez-vous pourquoi ?",
+        "text_preprocessed": "ma voiture consomme beaucoup d essence savez vous pourquoi",
+        "is_deleted": false
+    },
+    "254": {
+        "text_original": "Pouvez-vous remplacer mes amortisseurs ?",
+        "text": "Pouvez-vous remplacer mes amortisseurs ?",
+        "text_preprocessed": "pouvez vous remplacer mes amortisseurs",
+        "is_deleted": false
+    },
+    "255": {
+        "text_original": "J'ai des probl\u00e8mes avec mon syst\u00e8me de climatisation, est-ce que vous pouvez le r\u00e9parer ?",
+        "text": "J'ai des probl\u00e8mes avec mon syst\u00e8me de climatisation, est-ce que vous pouvez le r\u00e9parer ?",
+        "text_preprocessed": "j ai des problemes avec mon systeme de climatisation est ce que vous pouvez le reparer",
+        "is_deleted": false
+    },
+    "256": {
+        "text_original": "Pouvez-vous v\u00e9rifier mes freins et m'assurer qu'ils sont en bon \u00e9tat de fonctionnement ?",
+        "text": "Pouvez-vous v\u00e9rifier mes freins et m'assurer qu'ils sont en bon \u00e9tat de fonctionnement ?",
+        "text_preprocessed": "pouvez vous verifier mes freins et m assurer qu ils sont en bon etat de fonctionnement",
+        "is_deleted": false
+    },
+    "257": {
+        "text_original": "Ma voiture a des probl\u00e8mes de d\u00e9marrage par temps froid, savez-vous ce qui pourrait en \u00eatre la cause ?",
+        "text": "Ma voiture a des probl\u00e8mes de d\u00e9marrage par temps froid, savez-vous ce qui pourrait en \u00eatre la cause ?",
+        "text_preprocessed": "ma voiture a des problemes de demarrage par temps froid savez vous ce qui pourrait en etre la cause",
+        "is_deleted": false
+    },
+    "258": {
+        "text_original": "Pouvez-vous r\u00e9parer ma courroie de distribution ?",
+        "text": "Pouvez-vous r\u00e9parer ma courroie de distribution ?",
+        "text_preprocessed": "pouvez vous reparer ma courroie de distribution",
+        "is_deleted": false
+    },
+    "259": {
+        "text_original": "J'ai des probl\u00e8mes avec mon syst\u00e8me d'\u00e9chappement, est-ce que vous pouvez le r\u00e9parer ?",
+        "text": "J'ai des probl\u00e8mes avec mon syst\u00e8me d'\u00e9chappement, est-ce que vous pouvez le r\u00e9parer ?",
+        "text_preprocessed": "j ai des problemes avec mon systeme d echappement est ce que vous pouvez le reparer",
+        "is_deleted": false
+    },
+    "260": {
+        "text_original": "Pouvez-vous v\u00e9rifier mes filtres \u00e0 air et \u00e0 carburant et les remplacer si n\u00e9cessaire ?",
+        "text": "Pouvez-vous v\u00e9rifier mes filtres \u00e0 air et \u00e0 carburant et les remplacer si n\u00e9cessaire ?",
+        "text_preprocessed": "pouvez vous verifier mes filtres a air et a carburant et les remplacer si necessaire",
+        "is_deleted": false
+    },
+    "261": {
+        "text_original": "Ma voiture a des vibrations lorsque je conduis, savez-vous ce qui pourrait en \u00eatre la cause ?",
+        "text": "Ma voiture a des vibrations lorsque je conduis, savez-vous ce qui pourrait en \u00eatre la cause ?",
+        "text_preprocessed": "ma voiture a des vibrations lorsque je conduis savez vous ce qui pourrait en etre la cause",
+        "is_deleted": false
+    }
+}

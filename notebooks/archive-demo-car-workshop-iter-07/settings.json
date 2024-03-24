@@ -1,0 +1,228 @@
+{
+    "0": {
+        "preprocessing": {
+            "apply_stopwords_deletion": false,
+            "apply_parsing_filter": false,
+            "apply_lemmatization": false,
+            "spacy_language_model": "fr_core_news_md"
+        },
+        "vectorization": {
+            "vectorizer_type": "tfidf",
+            "spacy_language_model": null,
+            "random_seed": 42
+        },
+        "clustering": {
+            "algorithm": "kmeans",
+            "random_seed": 42,
+            "nb_clusters": 8,
+            "init_kargs": {
+                "model": "COP",
+                "max_iteration": 50,
+                "tolerance": 0.001
+            }
+        }
+    },
+    "1": {
+        "sampling": {
+            "algorithm": "closest_in_different_clusters",
+            "random_seed": 42,
+            "nb_to_select": 15,
+            "init_kargs": null
+        },
+        "preprocessing": {
+            "apply_stopwords_deletion": false,
+            "apply_parsing_filter": false,
+            "apply_lemmatization": false,
+            "spacy_language_model": "fr_core_news_md"
+        },
+        "vectorization": {
+            "vectorizer_type": "tfidf",
+            "spacy_language_model": null,
+            "random_seed": 42
+        },
+        "clustering": {
+            "algorithm": "kmeans",
+            "random_seed": 42,
+            "nb_clusters": 8,
+            "init_kargs": {
+                "model": "COP",
+                "max_iteration": 50,
+                "tolerance": 0.001
+            }
+        }
+    },
+    "2": {
+        "sampling": {
+            "algorithm": "closest_in_different_clusters",
+            "random_seed": 42,
+            "nb_to_select": 15,
+            "init_kargs": null
+        },
+        "preprocessing": {
+            "apply_stopwords_deletion": false,
+            "apply_parsing_filter": false,
+            "apply_lemmatization": false,
+            "spacy_language_model": "fr_core_news_md"
+        },
+        "vectorization": {
+            "vectorizer_type": "tfidf",
+            "spacy_language_model": null,
+            "random_seed": 42
+        },
+        "clustering": {
+            "algorithm": "kmeans",
+            "random_seed": 42,
+            "nb_clusters": 8,
+            "init_kargs": {
+                "model": "COP",
+                "max_iteration": 50,
+                "tolerance": 0.001
+            }
+        }
+    },
+    "3": {
+        "sampling": {
+            "algorithm": "closest_in_different_clusters",
+            "random_seed": 42,
+            "nb_to_select": 15,
+            "init_kargs": null
+        },
+        "preprocessing": {
+            "apply_stopwords_deletion": false,
+            "apply_parsing_filter": false,
+            "apply_lemmatization": false,
+            "spacy_language_model": "fr_core_news_md"
+        },
+        "vectorization": {
+            "vectorizer_type": "tfidf",
+            "spacy_language_model": null,
+            "random_seed": 42
+        },
+        "clustering": {
+            "algorithm": "kmeans",
+            "random_seed": 42,
+            "nb_clusters": 8,
+            "init_kargs": {
+                "model": "COP",
+                "max_iteration": 50,
+                "tolerance": 0.001
+            }
+        }
+    },
+    "4": {
+        "sampling": {
+            "algorithm": "closest_in_different_clusters",
+            "random_seed": 42,
+            "nb_to_select": 15,
+            "init_kargs": null
+        },
+        "preprocessing": {
+            "apply_stopwords_deletion": false,
+            "apply_parsing_filter": false,
+            "apply_lemmatization": false,
+            "spacy_language_model": "fr_core_news_md"
+        },
+        "vectorization": {
+            "vectorizer_type": "tfidf",
+            "spacy_language_model": null,
+            "random_seed": 42
+        },
+        "clustering": {
+            "algorithm": "kmeans",
+            "random_seed": 42,
+            "nb_clusters": 8,
+            "init_kargs": {
+                "model": "COP",
+                "max_iteration": 50,
+                "tolerance": 0.001
+            }
+        }
+    },
+    "5": {
+        "sampling": {
+            "algorithm": "closest_in_different_clusters",
+            "random_seed": 42,
+            "nb_to_select": 15,
+            "init_kargs": null
+        },
+        "preprocessing": {
+            "apply_stopwords_deletion": false,
+            "apply_parsing_filter": false,
+            "apply_lemmatization": false,
+            "spacy_language_model": "fr_core_news_md"
+        },
+        "vectorization": {
+            "vectorizer_type": "tfidf",
+            "spacy_language_model": null,
+            "random_seed": 42
+        },
+        "clustering": {
+            "algorithm": "kmeans",
+            "random_seed": 42,
+            "nb_clusters": 8,
+            "init_kargs": {
+                "model": "COP",
+                "max_iteration": 50,
+                "tolerance": 0.001
+            }
+        }
+    },
+    "6": {
+        "sampling": {
+            "algorithm": "closest_in_different_clusters",
+            "random_seed": 42,
+            "nb_to_select": 15,
+            "init_kargs": null
+        },
+        "preprocessing": {
+            "apply_stopwords_deletion": false,
+            "apply_parsing_filter": false,
+            "apply_lemmatization": false,
+            "spacy_language_model": "fr_core_news_md"
+        },
+        "vectorization": {
+            "vectorizer_type": "tfidf",
+            "spacy_language_model": null,
+            "random_seed": 42
+        },
+        "clustering": {
+            "algorithm": "kmeans",
+            "random_seed": 42,
+            "nb_clusters": 8,
+            "init_kargs": {
+                "model": "COP",
+                "max_iteration": 50,
+                "tolerance": 0.001
+            }
+        }
+    },
+    "7": {
+        "sampling": {
+            "algorithm": "closest_in_different_clusters",
+            "random_seed": 42,
+            "nb_to_select": 15,
+            "init_kargs": null
+        },
+        "preprocessing": {
+            "apply_stopwords_deletion": false,
+            "apply_parsing_filter": false,
+            "apply_lemmatization": false,
+            "spacy_language_model": "fr_core_news_md"
+        },
+        "vectorization": {
+            "vectorizer_type": "tfidf",
+            "spacy_language_model": null,
+            "random_seed": 42
+        },
+        "clustering": {
+            "algorithm": "kmeans",
+            "random_seed": 42,
+            "nb_clusters": 8,
+            "init_kargs": {
+                "model": "COP",
+                "max_iteration": 50,
+                "tolerance": 0.001
+            }
+        }
+    }
+}
